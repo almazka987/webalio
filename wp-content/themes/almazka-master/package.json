@@ -1,0 +1,8 @@
+{
+  "name": "Tg_2.0",
+  "version": "0.1.0",
+  "devDependencies": {
+    "gulp": "^3.8.10",
+    "gulp-compass": "^2.0.4"
+  }
+}

@@ -1,0 +1,14 @@
+	<script type="text/javascript" src="pixlayout/pixlayout.js"></script>
+	<script type="text/javascript">
+    $(function(){
+        $.pixlayout("pixlayout/layout.jpg");
+        $.pixlayout({
+        src: "pixlayout/layout.jpg",
+        opacity: 0.5,
+        top: -5,
+        center: true,
+        clip: true,
+        show: true
+    }, ".wrapper");
+    });
+	</script>
