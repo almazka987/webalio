@@ -1,35 +1,20 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head profile="http://gmpg.org/xfn/11">
 
+<head>
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1" />
-	<meta name="viewport" content="minimal-ui">
-	<meta name="format-detection" content="telephone=no">
-	<meta name="description" content="Cайт портфолио веб-верстальщика Алены Яковленко">
-	<link rel="icon" href="<?php bloginfo('template_url') ?>/favicon.ico">
-	<title><?php bloginfo('name'); ?><?php wp_title(); ?></title>
-	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-	<!--[if lt IE 9]>
-	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-	<![endif]-->
+	<meta name="viewport" content="width=device-width">
 	<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" /> 
-	<meta name="generator" content="WordPress <?php bloginfo('version'); ?>" /> <!-- leave this for stats please -->
-	<link rel="stylesheet" href="<?php bloginfo('template_url') ?>/css/bootstrap.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
-	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?php bloginfo('rss2_url'); ?>" />
-	<link rel="alternate" type="text/xml" title="RSS .92" href="<?php bloginfo('rss_url'); ?>" />
-	<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="<?php bloginfo('atom_url'); ?>" />
-	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
+	<meta name="generator" content="WordPress <?php bloginfo('version'); ?>" />
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
-	<?php wp_get_archives('type=monthly&format=link'); ?>
-	<?php //comments_popup_script(); // off by default ?>
+	<title><?php bloginfo('name'); ?> | <?php is_front_page() ? bloginfo('description') : wp_title(''); ?></title>
 	<?php wp_head(); ?>
 </head>
-<body>
+
+<body <?php body_class(); ?>>
+
 <!-- begin main-container -->
 <section id="main-container">
 		<!-- begin Header -->

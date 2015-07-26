@@ -1,4 +1,6 @@
-$(document).ready(function(){
+jQuery(document).ready(function($){
+
+
 
 /* prettyPhoto */
 
@@ -40,4 +42,4 @@ $('a[href*=#]').bind("click", function(e){
 
 /* end of ancor */
 
-});
+}); /* jQuery end */
