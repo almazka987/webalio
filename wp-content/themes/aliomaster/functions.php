@@ -3,10 +3,12 @@
 // require files
 //require_once(get_stylesheet_directory() . '/templates/wp_bootstrap_navwalker.php'); // Bootstrap navwalker
 
-function pr($val) {
-	echo '<pre>';
-	print_r($val);
-	echo '</pre>';
+if ( ! function_exists( 'pr' ) ) {
+	function pr($val) {
+		echo '<pre>';
+		print_r($val);
+		echo '</pre>';
+	}
 }
 
 /* Register scripts and styles */
@@ -15,7 +17,7 @@ add_action( 'wp_enqueue_scripts', 'add_scripts' );
 function add_scripts() {
 
 	/* include styles */
-	wp_register_style( 'maincss', get_template_directory_uri() . '/style.css' );
+	wp_register_style( 'maincss', get_template_directory_uri() . '/css/responsive.css' );
 	wp_register_style( 'bootstraptheme', get_template_directory_uri() . '/css/bootstrap-theme.css' );
 	wp_register_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.css' );
 	wp_register_style( 'bootstrapmap', get_template_directory_uri() . '/css/bootstrap.css.map' );
@@ -39,43 +41,7 @@ function add_scripts() {
 	wp_enqueue_script( 'prettyPhotojs' );
 }
 
-// register sidebars
-function register_wpm_sidebars() {
-
-	 register_sidebar(
-		  array(
-			   'id' => 'coloumn_side', // уникальный id
-			   'name' => 'Right coloumn', // название сайдбара
-			   'description' => 'Drag widgets to add them in the sidebar', // описание
-			   'before_widget' => '<li id="%1$s" class="side widget %2$s">', // по умолчанию виджеты выводятся <li>-списком
-			   'after_widget' => '</li>',
-			   'before_title' => '<h2 class="widgettitle">', // по умолчанию заголовки виджетов в <h2>
-			   'after_title' => '</h2>'
-		  )
-	 );
-
-	 register_sidebar(
-		  array(
-			   'id' => 'custom_side',
-			   'name' => 'Custom Place Sidebar',
-			   'description' => 'Drag widgets to add them in the sidebar',
-			   'before_widget' => '<div id="%1$s" class="foot widget %2$s">',
-			   'after_widget' => '</div>',
-			   'before_title' => '<h3 class="widget-title">',
-			   'after_title' => '</h3>'
-		  )
-	 );
-}
-
-add_action( 'widgets_init', 'register_wpm_sidebars' );
-
-/* add favicon */
-/*function favicon_link() {
-	 echo '<link rel="shortcut icon" type="image/x-icon" href="' . get_stylesheet_directory_uri() . '/favicon.ico" />' . "\n";
-}
-add_action('wp_head', 'favicon_link');*/
-
-/* add images thumbnails */
+// add images thumbnails
 add_theme_support( 'post-thumbnails' );
 add_image_size( 'sizeThumb', 300, 200, true );
 
