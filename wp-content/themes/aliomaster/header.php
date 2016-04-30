@@ -24,52 +24,57 @@
 			<div class="row">
 				<div class="col-md-6 col-sm-6 col-xs-12">
 					<span class="skype"><i></i><a href="skype:almazka987?chat">almazka987</a></span>
-					<span class="github"><i></i><a href="https://github.com/almazka">almazka</a></span>
+					<span class="github"><i></i><a href="https://github.com/aliomaster">aliomaster</a></span>
 				</div>
 				<div class="col-md-6 col-sm-6 col-xs-12 right">
-					<span class="mail"><i></i><a href="mailto:almazka@flylady.su">almazka@flylady.su</a></span>
+					<span class="mail"><i></i><a href="mailto:aliowebdeveloper@gmail.com">aliowebdeveloper@gmail.com</a></span>
 				</div>
 			</div>
 			</div>
 			</div>
 				<!-- begin Nav -->
-				<nav class="navbar" role="navigation">
-				<div class="container">
-					<!-- Brand and toggle get grouped for better mobile display -->
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-						<a class="navbar-brand" href="/"><img src="<?php bloginfo('template_url') ?>/img/logo2.png" alt="Logo" /></a>
+				<nav class="navbar">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-3">
+								<a class="alio-logo" href="/"><img src="<?php echo get_template_directory_uri() . '/img/logo.png' ?>" alt="Logo" /></a>
+							</div>
+							<div class="col-md-9">
+								<a href="#" class="hmbrgr"></a>
+								<?php 
+									wp_nav_menu(
+										array(
+											'menu'              => 'primary',
+											'theme_location'    => 'primary',
+											'depth'             => 2,
+											'container'         => 'div',
+											'container_class'   => 'collapse navbar-collapse',
+											'container_id'      => 'primary-navbar-collapse',
+											'menu_class'        => 'alio-navbar',
+											'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+										)
+									);
+								 ?>
+							</div>
+						</div>
+						<div class="bg-navbar"><div></div></div>
 					</div>
-					
-					<!-- Collect the nav links, forms, and other content for toggling -->
-					<div class="collapse navbar-collapse">
-						<ul class="nav navbar-nav">
-							<li class="active"><a href="/">Главная</a><i></i></li>
-							<li ><a href="#about">Обо мне</a><i></i></li>
-							<li ><a href="#works">Мои работы</a><i></i></li>
-							<li ><a href="#order">Как заказать верстку</a><i></i></li>
-							<li ><a href="#contacts">Контакты</a></li>
-						</ul>
-					</div><!--/.nav-collapse -->
-					<div class="bg-navbar"><div></div></div>
-				</div>
 				</nav>
 				<!-- end Nav -->
-				<div class="bottom">
-					<div class="container">
-						<div class="description">
-						<span class="astronavt"></span>
-								<small>Нужна верстка?</small>
-								<span>Вы по адресу</span>
-								<a href="#order" class="btn">Заказать верстку</a>
+				<?php if ( is_front_page() ): ?>
+					<div class="bottom">
+						<div class="container">
+							<div class="description">
+							<span class="astronavt"></span>
+									<small>Нужен сайт?</small>
+									<span class="address">Вы по адресу</span>
+									<a href="#" class="alio-btn">
+									<i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+									<span class="in-button"> Заказать сайт</span></a>
+							</div>
 						</div>
 					</div>
-				</div>
+				<?php endif; ?>
 			</div>
 		</header>
 		<!-- end Header -->

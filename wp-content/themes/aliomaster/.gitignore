@@ -1,0 +1,17 @@
+# All Gulp plugins & dependencies
+node_modules
+
+# SASS cache
+.sass-cache
+
+# SFTP sublime plugin file
+# sftp-config.json
+
+# SASS config file
+# config.rb
+
+# Gulp config file
+# gulpfile.js
+
+# Gulp packages info
+# package.json

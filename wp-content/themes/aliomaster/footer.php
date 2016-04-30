@@ -33,15 +33,10 @@
 		<div class="footer-bottom">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-12 copy">Space Front-End AlmazkaMaster © 2015</div>
+					<div class="col-md-12 copy">Space web development AlmazkaMaster © 2015</div>
 				</div>
 			</div>
 		</div>
 </footer>
-		<script src="<?php bloginfo('template_url') ?>/js/jquery-1.11.2.min.js"></script>
-		<script type="text/javascript" src="<?php bloginfo('template_url') ?>/js/jquery.mixitup.min.js"></script>
-		<script type="text/javascript" src="<?php bloginfo('template_url') ?>/js/jquery.prettyPhoto.js"></script>
-		<script src="<?php bloginfo('template_url') ?>/js/bootstrap.min.js"></script>
-		<script src="<?php bloginfo('template_url') ?>/js/scripts.js"></script>
 </body>
 </html>

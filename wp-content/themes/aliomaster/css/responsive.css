@@ -2,7 +2,150 @@
 
 @import 'style.css';
 
-/* min-width: 940px */
-@media screen and (min-width: 940px) {
-    
+/* min-width: 768px */
+@media screen and (min-width: 768px) {
+	.hmbrgr {
+		display: none;
+	}
 }
+
+/* min-width: 1200px */
+@media (min-width: 1200px) {
+	.container {
+		width: 940px;
+	}
+}
+
+
+/* @media handheld,  only screen and (max-width: 1200px) {
+	.navbar>.container {
+		text-align: center;
+	}
+	.navbar>.container .bg-navbar {
+		padding: 0 25px;
+	}
+	.navbar>.container .navbar-header {
+		float: none;
+	}
+	.navbar>.container .navbar-nav {
+		text-align: inherit;
+	}
+	.header .bottom .description small {
+		font-size: 2em;
+	}
+	.header .bottom .description span {
+		font-size: 3em;
+	}
+}
+
+@media handheld,  only screen and (max-width: 992px) {
+	header .bottom .description {
+		margin: 15px auto !important;
+		padding: 0 50px !important;
+		width: 100% !important;
+	}
+	header .bottom .description .astronavt {
+		width: 150px !important;
+		height: 247px !important;
+	}
+	.navbar .bg-navbar {
+		padding: 0 28px;
+	}
+	.container>.navbar-header {
+		width: 100%}
+	.navbar-nav {
+		text-align: center;
+	}
+	.container>.navbar-collapse {
+		margin: 0 -15px;
+	}
+	footer>.container .row {
+		margin-top: 0;
+	}
+	footer>.container div {
+		margin: 30px 0 0 0;
+		clear: both;
+	}
+	.services .row .item {
+		margin-bottom: 50px;
+	}
+}
+
+@media handheld,  only screen and (max-width: 768px) {
+	.header .bg-navbar {
+		display: none;
+	}
+	.header .navbar-toggle {
+		margin: 18px 0 0 0;
+	}
+	.header .top {
+		font-size: 0.8em;
+		line-height: 20px !important;
+		padding: 10px 0 15px 0;
+	}
+	.header .top .row>div {
+		text-align: center !important;
+	}
+	.header .top .row span i {
+		top: 4px;
+	}
+	.header .bottom .description {
+		padding: 0 50px;
+		margin: 30px 0 0 0 !important;
+	}
+	footer>.container .row {
+		margin-right: 0;
+		margin-left: 0;
+	}
+	footer #contacts {
+		padding-top: 0;
+	}
+	.container>.navbar-collapse {
+		margin: 0 -15px;
+	}
+	.navbar-nav {
+		margin: 0;
+	}
+	.navbar-nav li i {
+		display: none;
+	}
+}
+
+@media handheld,  only screen and (max-width: 600px) {
+	header .top {
+		line-height: 30 !important;
+		font-size: 0.7em !important;
+	}
+	header .bottom .description {
+		padding: 0px !important;
+	}
+}
+
+@media handheld,  only screen and (max-width: 480px) {
+	header .bottom .description small {
+		font-size: 1.3em !important;
+	}
+	header .bottom .description span {
+		font-size: 2em !important;
+	}
+}
+
+@media handheld,  only screen and (max-width: 353px) {
+	header .navbar-header {
+		margin-right: 0 !important;
+		margin-left: 0 !important;
+		text-align: center;
+	}
+	header .navbar-header .navbar-brand {
+		float: none;
+		display: inline-block;
+	}
+	header .navbar-header .navbar-toggle {
+		float: none;
+		display: inline-block;
+	}
+	header .bottom .description .astronavt {
+		width: 100px !important;
+		height: 164px !important;
+	}
+} */
