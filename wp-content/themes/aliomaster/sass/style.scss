@@ -35,7 +35,7 @@ $sprite-spacing: 10px;
 /* variables */
 $purple: #541737;
 $light-purple: #968dba;
-$super-puple: #990066;
+$super-purple: #990066;
 
 html, body {
 	height: 100%;
@@ -232,11 +232,31 @@ ul {
 
 .alio-navbar {
 	display: inline-block;
+	.dropdown-menu {
+		background-color: rgba(242, 239, 239, 0.93);
+		font-weight: 400;
+		a {
+			border-bottom: 1px solid #e8e5e5;
+			padding-top: 9px;
+			padding-bottom: 9px;
+			color: #333333;
+			font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+			font-weight: 400;
+			font-size: 13px;
+			border: 0;
+			padding: 7px 20px;
+			line-height: 19px;
+			text-indent: 0;
+			height: auto;
+			display: block;
+			box-sizing: content-box;
+		}
+	}
 }
 
-.alio-navbar li {
+.alio-navbar > li {
 	display: inline-block;
-	padding: 23px 10px 0px;
+	margin: 23px 10px 0px;
 }
 
 .alio-navbar li a {
@@ -281,6 +301,18 @@ ul {
 	position: relative;
 }
 
+.navbar.sticky {
+	position: fixed;
+	top: -1px;
+	z-index: 500;
+	.container {
+		background: rgba(255, 255, 255, 0.8);
+		-webkit-box-shadow: 1px -4px 6px -1px rgba(0, 0, 0, 0.3), -1px -4px 6px -1px rgba(0, 0, 0, 0.3);
+		box-shadow: 1px -4px 6px -1px rgba(0, 0, 0, 0.3), -1px -4px 6px -1px rgba(0, 0, 0, 0.3);
+	}
+}
+	
+
 #primary-navbar-collapse {
 	text-align: right;
 }
@@ -290,14 +322,26 @@ ul {
 	padding: 0 13px;
 	position: absolute;
 	top: 99%;
-	width: 100%}
+	width: 100%
+}
 
 .navbar .container .bg-navbar div {
 	background-image: url("../img/bg-nav-bottom.png");
 	background-position: bottom center;
 	background-repeat: repeat-x;
 	height: 10px;
-	width: 100%}
+	width: 100%
+}
+
+.navbar.sticky .container .bg-navbar {
+	top: 100%;
+}
+
+.navbar.sticky .container .bg-navbar div {
+	background-image: url("../img/bg-nav-bottom-white.png");
+	opacity: .8;
+	border-bottom-right-radius: 45px;
+}
 
 .services {
 	text-align: center;
@@ -498,9 +542,9 @@ ul {
 	backface-visibility: hidden;
 	-webkit-transition: color .1s ease-in-out,background .1s ease-in-out,border .1s ease-in-out;
 	   -moz-transition: color .1s ease-in-out,background .1s ease-in-out,border .1s ease-in-out;
-	    -ms-transition: color .1s ease-in-out,background .1s ease-in-out,border .1s ease-in-out;
-	     -o-transition: color .1s ease-in-out,background .1s ease-in-out,border .1s ease-in-out;
-	        transition: color .1s ease-in-out,background .1s ease-in-out,border .1s ease-in-out;
+		-ms-transition: color .1s ease-in-out,background .1s ease-in-out,border .1s ease-in-out;
+		 -o-transition: color .1s ease-in-out,background .1s ease-in-out,border .1s ease-in-out;
+			transition: color .1s ease-in-out,background .1s ease-in-out,border .1s ease-in-out;
 }
 
 .alio-btn i {
@@ -524,22 +568,22 @@ ul {
 
 .alio-btn:after {
 	content: "";
-    position: absolute;
-    transition: all 0.2s ease-out;
-    -webkit-transition: all 0.2s ease-out;
-    left: 50%;
-    top: 50%;
-    transform: translateX(-50%) translateY(-50%) rotate(45deg) translateZ(0);
-    -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg) translateZ(0);
-    height: 0;
-    width: 0;
-    opacity: 0;
+	position: absolute;
+	transition: all 0.2s ease-out;
+	-webkit-transition: all 0.2s ease-out;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%) rotate(45deg) translateZ(0);
+	-webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg) translateZ(0);
+	height: 0;
+	width: 0;
+	opacity: 0;
 	background-color: $purple;
 }
 
 a:active, a:focus, a:hover, a:link, a:visited {
 	outline: 0;
-    text-decoration: none;
+	text-decoration: none;
 }
 
 .odd {

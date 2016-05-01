@@ -1,7 +1,7 @@
 <?php
 
 // require files
-//require_once(get_stylesheet_directory() . '/templates/wp_bootstrap_navwalker.php'); // Bootstrap navwalker
+require_once( get_stylesheet_directory() . '/lib/wp_bootstrap_navwalker.php' ); // Bootstrap navwalker
 
 if ( ! function_exists( 'pr' ) ) {
 	function pr($val) {
