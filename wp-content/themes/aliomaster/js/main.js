@@ -22,9 +22,33 @@ if($("a[rel^='prettyPhoto']").length > 0){
 }
 
 /* filter image block */
-if($('#container').length > 0){
-	$('#container').mixItUp();
+var $container = $('#isotope-list');
+setTimeout( function() {
+	$container.isotope({
+		itemSelector : '.item', 
+		layoutMode : 'masonry'
+	});
+}, 500 );
+
+var $optionSets = $('#filters'),
+$optionLinks = $optionSets.find('a');
+
+$optionLinks.click(function(){
+var $this = $(this);
+// don't proceed if already selected
+if ( $this.hasClass('selected') ) {
+  return false;
 }
+var $optionSet = $this.parents('#filters');
+$optionSets.find('.selected').removeClass('selected');
+$this.addClass('selected');
+
+//When an item is clicked, sort the items.
+ var selector = $(this).attr('data-filter');
+$container.isotope({ filter: selector });
+
+return false;
+});
 
 /* ancor */
 $('a[href^="#lnk"]').bind("click", function(e){

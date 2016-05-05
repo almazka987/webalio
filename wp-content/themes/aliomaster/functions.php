@@ -33,7 +33,7 @@ function add_scripts() {
 	wp_register_script( 'hamburgerButton', get_template_directory_uri() . '/js/jquery.hmbrgr.min.js', array('jquery') );
 	wp_register_script( 'mainscripts', get_template_directory_uri() . '/js/main.js', array('jquery') );
 	wp_register_script( 'bootstrapjs', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery') );
-	wp_register_script( 'mixitupjs', get_template_directory_uri() . '/js/jquery.mixitup.min.js', array('jquery') );
+	wp_register_script( 'isotopeJS', get_template_directory_uri() . '/js/isotope.js', array('jquery') );
 	wp_register_script( 'prettyPhotojs', get_template_directory_uri() . '/js/jquery.prettyPhoto.js', array('jquery') );
 
 	wp_enqueue_style( 'faStyle' );
@@ -48,7 +48,7 @@ function add_scripts() {
 	wp_enqueue_style( 'maincss' );
 
 	wp_enqueue_script( 'hamburgerButton' );
-	wp_enqueue_script( 'mixitupjs' );
+	wp_enqueue_script( 'isotopeJS' );
 	wp_enqueue_script( 'prettyPhotojs' );
 	wp_enqueue_script( 'bootstrapjs' );
 	wp_enqueue_script( 'mainscripts' );
@@ -56,7 +56,7 @@ function add_scripts() {
 
 // add images thumbnails
 add_theme_support( 'post-thumbnails' );
-add_image_size( 'sizeThumb', 300, 200, true );
+add_image_size( 'sizeThumb', 300, 320, true );
 
 // register menu
 function theme_register_nav_menu() {

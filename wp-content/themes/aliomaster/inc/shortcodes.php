@@ -90,6 +90,140 @@ function alio_three_columns_area( $atts, $content = null ){
 	return $out;
 }
 
+add_shortcode('alio_works_grid', 'alio_works_grid');
+function alio_works_grid( $atts, $content = null ) {
+	extract( shortcode_atts( array(
+		'heading' => '',
+		'count_posts' => 6,
+	), $atts ) );
+	$output = '';
+
+	$output .= '<div class="categories_section">';
+	$output .= '<div class="isotope_block">';
+	if ( $heading ) {
+		$output .= '<h2>' . $heading . '</h2>';
+	}
+	$output .= '<ul id="filters">';
+	$output .= '<li><a href="#" data-filter="*" class="selected">All</a></li>';
+
+	$terms = get_terms("category");
+	$count = count($terms);
+	if ( $count > 0 ) {
+		foreach ( $terms as $term ) {
+			$output .= "<li><a href='#' data-filter='.".$term->slug."'>" . $term->name . "</a></li>\n";
+		}
+	}
+	$output .= '</ul>';
+
+	$the_query = new WP_Query( 'posts_per_page = ' . $count_posts );
+
+	if ( $the_query->have_posts() ) {
+		$output .= '<div class="isotope container">';
+		$output .= '<div id="isotope-list" class="row">';
+		while ( $the_query->have_posts() ) {
+			$the_query->the_post(); 
+			$termsArray = get_the_terms( $post->ID, "category" );
+			$termsString = "";
+			foreach ( $termsArray as $term ) {
+				$termsString .= $term->slug.' ';
+			}
+			$output .= '<div class="' . $termsString . ' item col-sm-6 col-md-4"><div class="grid_content"><figure>';
+			if ( has_post_thumbnail() ) {
+				$output .= get_the_post_thumbnail( $id, 'sizeThumb' );
+			} else {
+				$output .= '<img src="' . get_template_directory_uri() . '/img/default-thumbnail-middle.jpg" alt="">';
+			}
+			$output .= '<figcaption><a href="' . get_permalink() . '" class="text_box">';
+			$output .= '<h3>' . get_the_title() . '</h3>';
+			$output .= '<p class="descr">' . the_excerpt_max_charlength(100) . '</p>';
+			$output .= '<i class="fa fa-chevron-down"></i></a></figcaption></figure></div></div> <!-- end item -->';
+		}
+		$output .= '</div> <!-- end isotope-list -->';
+		$output .= '</div></div></div>';
+	}
+
+	return $output;
+}
+
+add_shortcode('alio_works_area', 'alio_works_area');
+function alio_works_area( $atts, $content = null ) {
+	extract( shortcode_atts( array(
+		'section' => '',
+		'title' => '',
+		'lnk_id' => '',
+		'tag' => 'h2',
+		'count_posts' => 6,
+	), $atts ) );
+	$lnk_id = ( $lnk_id ) ? ' id="#lnk_' . $lnk_id . '"' : '';
+	$class_box = ( $section ) ? '' : ' shortcode-box';
+	$out = '';
+
+	if ( $section ) {
+		$out .= '<section class="' . $section . ' shortcode-box">
+					<div class="bg-top"></div>
+						<div class="bg-middle">';
+	}
+	$out .= '<div class="container' . $class_box . '">';
+	if ( $title ) {
+		$out .= '<' . $tag . $lnk_id . '>' . $title . '</' . $tag . '>';
+	}
+	$out .= '<div class="row">';
+	$out .= '<div class="col-md-12 works">';
+	$terms = get_terms( 'workscategory' );
+	$count = count( $terms );
+	if ( $count > 0 ) {
+		$out .= '<ul id="filter">';
+		$out .= '<li class="filter active" data-filter="all"><span>Все</span></li>';
+		foreach ( $terms as $term ) {
+			$out .= '<li class="filter data-filter=".' . $term->slug . '">' . $term->name . '</li>';
+		}
+		$out .= '</ul>';
+	}
+
+	$args = array(
+		'post_type' => 'works',
+		'posts_per_page' => $count_posts,
+	);
+	$query = new WP_Query( $args );
+
+	$out .= '<ul id="mixContainer">';
+	if( $query->have_posts() ) {
+		while ( $query->have_posts() ) {
+			$query->the_post();
+			$categ = get_the_terms( get_the_ID(), 'workscategory' );
+			$cat_nm = '';
+			if ( is_array( $categ ) ) {
+				foreach ( $categ as $key => $obj ) {
+					$cat_nm .= ' ' . $obj->slug;
+				}
+			}
+			$out .= '<li class="mix' . $cat_nm . '">';
+			if ( has_post_thumbnail() ) {
+				$out .= get_the_post_thumbnail( $id, 'sizeThumb' );
+			} else {
+				$out .= '<img src="' . get_template_directory_uri() . '/img/image.png" alt="' . get_the_title() . '">';
+			}
+			$out .= '<span class="layer"><h4>' . get_the_title() . '</h4>
+					<a href="' . get_permalink() . '" class="stage-lnk link" target="_blank"><b></b><span>Подробнее</span></a>
+					<a href="" class="stage-lnk zoom" rel="prettyPhoto[gallery]"><b></b><span>Увеличить скриншот</span></a>
+				</span>
+			</li>';
+		}
+	}
+	wp_reset_query();
+	$out .= '</ul>';
+
+	$out .= '</div>';
+	$out .= '</div></div>';
+	if ( $section ) {
+		$out .= '</div>
+			<div class="bg-bottom"></div>
+		</section>';
+	}
+
+	return $out;
+}
+
 	/*<div class="container three-columns">
 		<div class="row">
 			<div class="col-md-4 item">

@@ -552,61 +552,83 @@ ul {
 }
 
 .alio-btn {
+	background: #2c8d0a;
+	background: -webkit-linear-gradient(top, #b5fe01, #2c8d0a);
+	background: -moz-linear-gradient(top, #b5fe01, #2c8d0a);
+	background: -o-linear-gradient(top, #b5fe01, #2c8d0a);
+	background: -ms-linear-gradient(top, #b5fe01, #2c8d0a);
+	background: linear-gradient(to bottom, #b5fe01, #2c8d0a);
 	display: inline-block;
 	font-size: 18px;
 	font-weight: bold;
-	padding: 18px 33px 22px;
-	border-color: $purple;
-	color: $purple;
+	padding: 20px 28px;
+	line-height: 100%;
+	color: #fff;
 	overflow: hidden;
 	position: relative;
 	text-align: center;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.4);
+	box-shadow: 0px 3px 0px 0px #206a07;
 	border-width: 2px;
 	letter-spacing: 1px;
-	border-style: solid;
 	border-radius: 3px;
 	box-sizing: border-box;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 	-webkit-transition: color .1s ease-in-out,background .1s ease-in-out,border .1s ease-in-out;
-	   -moz-transition: color .1s ease-in-out,background .1s ease-in-out,border .1s ease-in-out;
-		-ms-transition: color .1s ease-in-out,background .1s ease-in-out,border .1s ease-in-out;
-		 -o-transition: color .1s ease-in-out,background .1s ease-in-out,border .1s ease-in-out;
-			transition: color .1s ease-in-out,background .1s ease-in-out,border .1s ease-in-out;
+	-moz-transition: color .1s ease-in-out,background .1s ease-in-out,border .1s ease-in-out;
+	-ms-transition: color .1s ease-in-out,background .1s ease-in-out,border .1s ease-in-out;
+	-o-transition: color .1s ease-in-out,background .1s ease-in-out,border .1s ease-in-out;
+	transition: color .1s ease-in-out,background .1s ease-in-out,border .1s ease-in-out;
+	&:hover {
+		background: -webkit-linear-gradient(top,  #5ef700,  #2b8c0b);
+		background: -moz-linear-gradient(top,  #5ef700,  #2b8c0b);
+		background: -o-linear-gradient(top,  #5ef700,  #2b8c0b);
+		background: -ms-linear-gradient(top,  #5ef700,  #2b8c0b);
+		background: linear-gradient(to bottom,  #5ef700,  #2b8c0b);
+	}
+	&:after {
+		content: "";
+		position: absolute;
+		transition: all 0.2s ease-out;
+		-webkit-transition: all 0.2s ease-out;
+		left: 50%;
+		top: 50%;
+		transform: translateX(-50%) translateY(-50%) rotate(45deg) translateZ(0);
+		-webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg) translateZ(0);
+		height: 0;
+		width: 0;
+		opacity: 0;
+		background-color: $purple;
+	}
+	&:hover i, &:hover span {
+		color: #FFF;
+		transform: translateX(0);
+		-webkit-transform: translateX(0);
+	    opacity: 1;
+	}
+	.in-button {
+		transform: translateX(-17.5px);
+	    -webkit-transform: translateX(-17.5px);
+	    display: inline-block;
+	    transform: translateX(-17px);
+	    -webkit-transform: translateX(-17px);
+	    transition: transform .2s;
+	    -webkit-transition: -webkit-transform .2s;
+	    transition-delay: .01s;
+	    -webkit-transition-delay: .01s;
+	}
 }
 
 .alio-btn i {
 	font-size: 30px;
-}
-
-.alio-btn:hover, .alio-btn:hover .in-button, .alio-btn:hover i:before {
-	color: #fff;
-}
-
-.alio-btn:hover .in-button, .alio-btn:hover i {
-	z-index: 2;
-	position: relative;
-}
-
-.alio-btn:hover:after {
-	width: 100%;
-	height: 4000%;
-	opacity: 1;
-}
-
-.alio-btn:after {
-	content: "";
-	position: absolute;
-	transition: all 0.2s ease-out;
-	-webkit-transition: all 0.2s ease-out;
-	left: 50%;
-	top: 50%;
-	transform: translateX(-50%) translateY(-50%) rotate(45deg) translateZ(0);
-	-webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg) translateZ(0);
-	height: 0;
-	width: 0;
 	opacity: 0;
-	background-color: $purple;
+	transform: translateX(-30px);
+	-webkit-transform: translateX(-30px);
+	transition: opacity .2s, transform .2s;
+	-webkit-transition: opacity .2s, -webkit-transform .2s;
+	color: #FFF;
+	line-height: 4px;
 }
 
 a:active, a:focus, a:hover, a:link, a:visited {
@@ -910,7 +932,18 @@ section.shortcode-box {
 	}
 }
 
-
+#mixContainer .mix {
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    position: relative;
+    text-align: right;
+    margin-bottom: 4%;
+    display: none;
+    padding-right: .5em;
+    -webkit-backface-visibility: hidden;
+}
 
 
 
