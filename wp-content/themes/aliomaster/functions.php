@@ -56,7 +56,7 @@ function add_scripts() {
 
 // add images thumbnails
 add_theme_support( 'post-thumbnails' );
-add_image_size( 'sizeThumb', 300, 320, true );
+add_image_size( 'sizeThumb', 300, 320, array( 'top', 'left' ) );
 
 // register menu
 function theme_register_nav_menu() {

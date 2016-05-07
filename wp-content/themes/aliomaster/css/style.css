@@ -192,7 +192,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 126, ../sass/style.scss */
-.sprite-sprite, .sprite-github, .header .top .github i, .sprite-github2, footer #contacts i.github, .sprite-link, #container li .blank .stage-lnk.link b, .sprite-loop, #container li .blank .stage-lnk.zoom b, .sprite-mail, .header .top .mail i, .sprite-mail2, footer #contacts i.mail, .sprite-map, footer #contacts i.point, .sprite-skype, .header .top .skype i, .sprite-skype2, footer #contacts i.skype {
+.sprite-sprite, .sprite-github, .header .top .github i, .sprite-github2, footer #contacts i.github, .sprite-link, #isotope-list .item .blank .stage-lnk.link b, .sprite-loop, #isotope-list .item .blank .stage-lnk.zoom b, .sprite-mail, .header .top .mail i, .sprite-mail2, footer #contacts i.mail, .sprite-map, footer #contacts i.point, .sprite-skype, .header .top .skype i, .sprite-skype2, footer #contacts i.skype {
   background-image: url("../img/sprite-s882fa6ff2c.png");
   background-repeat: no-repeat;
 }
@@ -208,12 +208,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 139, ../sass/style.scss */
-.sprite-link, #container li .blank .stage-lnk.link b {
+.sprite-link, #isotope-list .item .blank .stage-lnk.link b {
   background-position: 0 -61px;
 }
 
 /* line 143, ../sass/style.scss */
-.sprite-loop, #container li .blank .stage-lnk.zoom b {
+.sprite-loop, #isotope-list .item .blank .stage-lnk.zoom b {
   background-position: 0 -107px;
 }
 
@@ -780,207 +780,250 @@ a:active, a:focus, a:hover, a:link, a:visited {
 }
 
 /* line 639, ../sass/style.scss */
-.odd {
+.odd, .gray {
   background-color: transparent;
   position: relative;
   margin-top: 0;
 }
 
 /* line 645, ../sass/style.scss */
-.odd .bg-top {
-  background-image: url("../img/bg-top.png");
-  background-position: top center;
+.odd .bg-top, .gray .bg-top, .odd .bg-bottom, .gray .bg-bottom {
   background-repeat: repeat-x;
   height: 15px;
   background-color: transparent;
 }
 
-/* line 653, ../sass/style.scss */
+/* line 651, ../sass/style.scss */
+.odd .bg-top {
+  background-image: url("../img/bg-top.png");
+}
+
+/* line 656, ../sass/style.scss */
+.gray .bg-top {
+  background-image: url("../img/gray-bg-top.png");
+}
+/* line 659, ../sass/style.scss */
+.gray .bg-middle {
+  background-color: #ccc;
+}
+/* line 662, ../sass/style.scss */
+.gray .bg-bottom {
+  background-image: url("../img/gray-bg-bottom.png");
+}
+
+/* line 667, ../sass/style.scss */
 .odd .bg-middle {
   background-color: #effbfb;
 }
 
-/* line 657, ../sass/style.scss */
+/* line 671, ../sass/style.scss */
 .odd .bg-bottom {
   background-image: url("../img/bg-bottom.png");
-  background-position: bottom center;
-  background-repeat: repeat-x;
-  height: 15px;
 }
 
-/* line 664, ../sass/style.scss */
-#container {
+/* line 675, ../sass/style.scss */
+#isotope-list {
   overflow: hidden;
-  margin-top: 39px;
 }
 
-/* line 669, ../sass/style.scss */
-#container .mix {
-  display: none;
+/* line 679, ../sass/style.scss */
+#isotope-list .item {
+  margin-bottom: 30px;
+  overflow: hidden;
 }
-
-/* line 673, ../sass/style.scss */
-#container li {
-  width: 300px;
+/* line 682, ../sass/style.scss */
+#isotope-list .item .image-block {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   position: relative;
-  margin: 0 16px 32px;
   overflow: hidden;
+  line-height: 4px;
+  vertical-align: baseline;
 }
-
-/* line 680, ../sass/style.scss */
-#container li .blank {
-  overflow: hidden;
-  width: 300px;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 100;
-}
-
 /* line 690, ../sass/style.scss */
-#container li .blank .layer {
-  position: absolute;
-  top: -55px;
-  width: 100%;
-  text-align: center;
-  display: table;
-}
-
-/* line 698, ../sass/style.scss */
-#container li .blank h4 {
-  color: #fff;
-  text-transform: uppercase;
-  font-family: 'Roboto',  sans-serif;
-  font-weight: bold;
-  padding: 8px 11px;
-  font-size: 14px;
-  display: table-cell;
-}
-
-/* line 708, ../sass/style.scss */
-#container li .blank .stage-lnk {
-  opacity: .6;
-  display: block;
-  position: absolute;
-  height: 82px;
-  top: 125px;
-  color: #fff;
-  font-size: 14px;
-  font-weight: bold;
-  text-align: center;
-}
-
-/* line 720, ../sass/style.scss */
-#container li .blank .stage-lnk span {
-  display: inline-block;
-  line-height: 17px;
-}
-
-/* line 725, ../sass/style.scss */
-#container li .blank .stage-lnk b {
-  display: inline-block;
-  margin-bottom: 10px;
-}
-
-/* line 730, ../sass/style.scss */
-#container li .blank .stage-lnk.link {
-  left: -74px;
-  width: 54px;
-}
-
-/* line 735, ../sass/style.scss */
-#container li .blank .stage-lnk.link b {
-  width: 42px;
-  height: 36px;
-  margin-left: 9px;
-}
-
-/* line 741, ../sass/style.scss */
-#container li .blank .stage-lnk.zoom {
-  right: -95px;
-  width: 74px;
-}
-
-/* line 746, ../sass/style.scss */
-#container li .blank .stage-lnk.zoom b {
-  width: 38px;
-  height: 38px;
-}
-
-/* line 751, ../sass/style.scss */
-#container li .blank .stage-lnk:hover {
+#isotope-list .item .image-block:hover .icons-holder {
+  top: 60%;
   opacity: 1;
 }
-
-/* line 755, ../sass/style.scss */
-#container li:hover .blank {
-  background: rgba(0, 0, 0, 0.8);
+/* line 694, ../sass/style.scss */
+#isotope-list .item .image-block:hover .meta-info {
+  opacity: 1;
+  bottom: 60%;
 }
-
-/* line 759, ../sass/style.scss */
-#container li:hover .blank .layer {
-  top: 55px;
+/* line 698, ../sass/style.scss */
+#isotope-list .item .image-block:hover img {
+  -webkit-transform: scale(1.15);
+  -ms-transform: scale(1.15);
+  transform: scale(1.15);
 }
-
-/* line 763, ../sass/style.scss */
-#container li:hover .blank .stage-lnk.link {
-  left: 60px;
+/* line 703, ../sass/style.scss */
+#isotope-list .item .image-block:hover .img-hover-overlay {
+  opacity: .5;
 }
-
+/* line 705, ../sass/style.scss */
+#isotope-list .item .image-block:hover .img-hover-overlay:before {
+  -webkit-transform: scaleY(1) !important;
+  -ms-transform: scaleY(1) !important;
+  transform: scaleY(1) !important;
+}
+/* line 710, ../sass/style.scss */
+#isotope-list .item .image-block:hover .img-hover-overlay:after {
+  -webkit-transform: scaleX(1) !important;
+  -ms-transform: scaleX(1) !important;
+  transform: scaleX(1) !important;
+}
+/* line 717, ../sass/style.scss */
+#isotope-list .item .image-block img {
+  position: relative;
+  width: 100%;
+  z-index: 10;
+  max-width: 100%;
+  height: auto;
+  border: 0;
+  vertical-align: middle;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  transition: all .35s ease-in-out;
+}
+/* line 730, ../sass/style.scss */
+#isotope-list .item .image-block .icons-holder {
+  position: absolute;
+  top: 65%;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  transition: all .3s ease-in-out;
+  z-index: 13;
+}
+/* line 738, ../sass/style.scss */
+#isotope-list .item .image-block .icons-holder .hover-icon {
+  display: inline-block;
+  margin: 0 5px;
+  width: 48px;
+  height: 48px;
+  line-height: 50px;
+  text-align: center;
+  opacity: .7;
+  color: #fff;
+  transition: all .15s ease-in-out;
+  -webkit-perspective: 1000;
+}
+/* line 749, ../sass/style.scss */
+#isotope-list .item .image-block .icons-holder .hover-icon i {
+  font-size: 32px;
+  vertical-align: middle;
+}
+/* line 753, ../sass/style.scss */
+#isotope-list .item .image-block .icons-holder .hover-icon:hover {
+  opacity: 1;
+}
+/* line 758, ../sass/style.scss */
+#isotope-list .item .image-block .meta-info {
+  position: absolute;
+  bottom: 70%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  transition: all .3s ease-out;
+  z-index: 20;
+}
 /* line 767, ../sass/style.scss */
-#container li:hover .blank .stage-lnk.zoom {
-  right: 42px;
+#isotope-list .item .image-block .meta-info .the-title {
+  padding: 0 20px;
+  font-size: 14px !important;
+  line-height: 18px !important;
+  font-weight: 700;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #fff !important;
+}
+/* line 778, ../sass/style.scss */
+#isotope-list .item .image-block .img-hover-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  background-color: #000;
+  z-index: 11;
+  transition: opacity .25s ease-in-out;
+}
+/* line 788, ../sass/style.scss */
+#isotope-list .item .image-block .img-hover-overlay:before, #isotope-list .item .image-block .img-hover-overlay:after {
+  content: '';
+  position: absolute;
+  top: 9%;
+  left: 8%;
+  right: 8%;
+  bottom: 9%;
+  opacity: 1;
+  display: block;
+  transition: all .35s ease-out;
+}
+/* line 799, ../sass/style.scss */
+#isotope-list .item .image-block .img-hover-overlay:before {
+  border-right: 1px solid #fff;
+  border-left: 1px solid #fff;
+  -webkit-transform-origin: 100% 0;
+  -ms-transform-origin: 100% 0;
+  transform-origin: 100% 0;
+  -webkit-transform: scaleY(0) !important;
+  -ms-transform: scaleY(0) !important;
+  transform: scaleY(0) !important;
+}
+/* line 809, ../sass/style.scss */
+#isotope-list .item .image-block .img-hover-overlay:after {
+  border-bottom: 1px solid #fff;
+  border-top: 1px solid #fff;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: scaleX(0) !important;
+  -ms-transform: scaleX(0) !important;
+  transform: scaleX(0) !important;
 }
 
-/* line 771, ../sass/style.scss */
-.works {
+/* line 823, ../sass/style.scss */
+#filters {
+  list-style: none;
+  padding: 0;
+  margin: 18px 0 26px;
   text-align: center;
 }
 
-/* line 775, ../sass/style.scss */
-.works #filter {
-  overflow: hidden;
-}
-
-/* line 779, ../sass/style.scss */
-.works #filter li {
+/* line 830, ../sass/style.scss */
+#filters li {
   cursor: pointer;
   display: inline-block;
-  padding: 6px 14px 8px 14px;
+  margin: 6px;
 }
 
-/* line 785, ../sass/style.scss */
-.works #filter li.active span {
+/* line 836, ../sass/style.scss */
+#filters a {
+  color: #545454;
+  font-size: 16px;
+  display: inline-block;
+  line-height: 32px;
+  padding: 0 13px;
+  border: 1px solid #545454;
+}
+
+/* line 845, ../sass/style.scss */
+#filters a:hover, #filters a.selected {
+  background: #FFF;
   color: #000;
-  font-weight: bold;
-  border-color: transparent;
 }
 
-/* line 791, ../sass/style.scss */
-.works #filter li.active span:hover {
-  cursor: default;
-}
-
-/* line 795, ../sass/style.scss */
-.works #filter span {
-  color: #6b7285;
-  font-family: 'Roboto',  sans-serif;
-  font-size: 14px;
-  border-bottom: 1px dashed #6b7285;
-}
-
-/* line 802, ../sass/style.scss */
-.works #filter span:hover {
-  border-bottom: none;
-}
-
-/* line 806, ../sass/style.scss */
-.transition, #container li .blank, #container li .blank .layer, #container li .blank h4, #container li .blank .stage-lnk, #container li:hover .blank, #container li:hover .blank .layer, #container li:hover .blank h4, #container li:hover .blank .stage-lnk {
+/* line 850, ../sass/style.scss */
+.transition, #isotope-list .item .blank, #isotope-list .item .blank .layer, #isotope-list .item .blank h4, #isotope-list .item .blank .stage-lnk, #isotope-list .item:hover .blank, #isotope-list .item:hover .blank .layer, #isotope-list .item:hover .blank h4, #isotope-list .item:hover .blank .stage-lnk {
   transition: all .5s ease-in-out 0s;
 }
 
-/* line 810, ../sass/style.scss */
+/* line 854, ../sass/style.scss */
 .lnk-opacity, footer #contacts span, footer .menu li {
   opacity: 0.5;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
@@ -992,14 +1035,14 @@ a:active, a:focus, a:hover, a:link, a:visited {
   transition: all .3s ease;
 }
 
-/* line 821, ../sass/style.scss */
+/* line 865, ../sass/style.scss */
 .lnk-opacity:hover, footer #contacts span:hover, footer .menu li:hover {
   opacity: 1;
   -ms-filter: none;
   filter: none;
 }
 
-/* line 827, ../sass/style.scss */
+/* line 871, ../sass/style.scss */
 footer {
   color: #fff;
   position: relative;
@@ -1007,18 +1050,18 @@ footer {
   background-size: cover;
 }
 
-/* line 834, ../sass/style.scss */
+/* line 878, ../sass/style.scss */
 footer p {
   color: #FFF;
   margin-bottom: 25px;
 }
 
-/* line 839, ../sass/style.scss */
+/* line 883, ../sass/style.scss */
 footer #contacts {
   overflow: hidden;
 }
 
-/* line 843, ../sass/style.scss */
+/* line 887, ../sass/style.scss */
 footer #contacts span {
   display: block;
   position: relative;
@@ -1028,13 +1071,13 @@ footer #contacts span {
   clear: both;
 }
 
-/* line 852, ../sass/style.scss */
+/* line 896, ../sass/style.scss */
 footer #contacts a {
   color: #FFF;
   text-decoration: none;
 }
 
-/* line 857, ../sass/style.scss */
+/* line 901, ../sass/style.scss */
 footer #contacts i {
   position: absolute;
   display: block;
@@ -1043,36 +1086,36 @@ footer #contacts i {
   height: 23px;
 }
 
-/* line 865, ../sass/style.scss */
+/* line 909, ../sass/style.scss */
 footer #contacts i.point {
   width: 22px;
   height: 24px;
 }
 
-/* line 870, ../sass/style.scss */
+/* line 914, ../sass/style.scss */
 footer #contacts i.mail {
   width: 22px;
   height: 22px;
 }
 
-/* line 875, ../sass/style.scss */
+/* line 919, ../sass/style.scss */
 footer .menu li {
   float: left;
   clear: both;
 }
 
-/* line 880, ../sass/style.scss */
+/* line 924, ../sass/style.scss */
 footer .menu a {
   color: #fff;
   padding-left: 8px;
 }
 
-/* line 885, ../sass/style.scss */
+/* line 929, ../sass/style.scss */
 footer .menu a:hover {
   text-decoration: none;
 }
 
-/* line 889, ../sass/style.scss */
+/* line 933, ../sass/style.scss */
 footer .footer-bottom {
   background-image: url("../img/bg-ribbon-b.png");
   background-position: center top;
@@ -1087,55 +1130,42 @@ footer .footer-bottom {
   position: relative;
 }
 
-/* line 903, ../sass/style.scss */
+/* line 947, ../sass/style.scss */
 footer .footer-bottom .row {
   padding: 0;
 }
 
-/* line 907, ../sass/style.scss */
+/* line 951, ../sass/style.scss */
 footer .footer-bottom .copy {
   font-weight: 700;
   text-transform: uppercase;
 }
 
-/* line 912, ../sass/style.scss */
+/* line 956, ../sass/style.scss */
 .inline-lnk {
   color: #00CCFF;
   font-weight: 400;
 }
-/* line 915, ../sass/style.scss */
+/* line 959, ../sass/style.scss */
 .inline-lnk:hover {
   color: #FF0033;
 }
-/* line 918, ../sass/style.scss */
+/* line 962, ../sass/style.scss */
 .inline-lnk:before {
   content: '\f08e';
   font-size: 8px;
   margin-right: 3px;
 }
 
-/* line 925, ../sass/style.scss */
-.shortcode-box, section.shortcode-box {
-  margin-bottom: 50px;
-}
-
-/* line 930, ../sass/style.scss */
+/* line 970, ../sass/style.scss */
 section.shortcode-box .bg-middle {
   padding: 50px 0;
 }
 
-/* line 935, ../sass/style.scss */
-#mixContainer .mix {
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  -ms-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  position: relative;
-  text-align: right;
-  margin-bottom: 4%;
-  display: none;
-  padding-right: .5em;
-  -webkit-backface-visibility: hidden;
+/* line 975, ../sass/style.scss */
+.divider.wave {
+  height: 16px;
+  background: transparent url("../img/wave-divider.png") left top repeat-x;
 }
 
 /******** Other styles end ********/
