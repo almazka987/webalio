@@ -3,7 +3,7 @@
 /**** ALIO SHORTCODES AREA ****/
 
 add_shortcode('alio_text_block', 'alio_text_block');
-function alio_text_block( $atts, $content = null ){
+function alio_text_block( $atts, $content = null ) {
 	extract( shortcode_atts( array(
 		'class' => 'col-md-12',
 		'lnk_id' => '',
@@ -12,7 +12,7 @@ function alio_text_block( $atts, $content = null ){
 	), $atts ) );
 	$out = '';
 
-	$lnk_id = ( $lnk_id ) ? ' id="#lnk_' . $lnk_id . '"' : '';
+	$lnk_id = ( $lnk_id ) ? ' id="lnk_' . $lnk_id . '"' : '';
 
 	if ( $content ) {
 		$out .= '<div class="container shortcode-box">
@@ -24,6 +24,47 @@ function alio_text_block( $atts, $content = null ){
 		$out .= $content . '</div>
 						</div>
 					</div>';
+	}
+	return $out;
+}
+
+add_shortcode('alio_form_block', 'alio_form_block');
+function alio_form_block( $atts, $content = null ) {
+	extract( shortcode_atts( array(
+		'bottom_shape' => '',
+		'class' => 'col-md-12',
+		'additional_class' => '',
+		'lnk_id' => '',
+		'title' => '',
+		'section' => '',
+		'tag' => 'h2',
+	), $atts ) );
+	$out = '';
+	$add_class = ( $additional_class ) ? ' ' . $additional_class : '';
+	$bt_class = ( $bottom_shape ) ? ' no-wave' : '';
+	if ( $section ) {
+		$out .= '<section class="' . $section . ' shortcode-box">
+					<div class="bg-top"></div>
+						<div class="bg-middle">';
+	}
+	$lnk_id = ( $lnk_id ) ? ' id="lnk_' . $lnk_id . '"' : '';
+
+	if ( $content ) {
+		$out .= '<div class="container shortcode-box' . $add_class . '">
+					<div class="row">
+						<div class="' . $class . '">';
+		if ( $title ) {
+			$out .= '<' . $tag . $lnk_id . '>' . $title . '</' . $tag . '>';
+		}
+		$out .= do_shortcode( $content );
+		$out .= '</div>
+			</div>
+		</div>';
+	}
+	if ( $section ) {
+		$out .= '</div>
+			<div class="bg-bottom' . $bt_class . '"></div>
+		</section>';
 	}
 	return $out;
 }
@@ -53,12 +94,14 @@ function alio_three_columns_block( $atts, $content = null ){
 add_shortcode('alio_three_columns_area', 'alio_three_columns_area');
 function alio_three_columns_area( $atts, $content = null ){
 	extract( shortcode_atts( array(
+		'bottom_shape' => '',
 		'section' => '',
 		'lnk_id' => '',
 		'title' => '',
 		'tag' => 'h2',
 	), $atts ) );
-	$lnk_id = ( $lnk_id ) ? ' id="#lnk_' . $lnk_id . '"' : '';
+	$lnk_id = ( $lnk_id ) ? ' id="lnk_' . $lnk_id . '"' : '';
+	$bt_class = ( $bottom_shape ) ? ' no-wave' : '';
 	$class_box = ( $section ) ? '' : ' shortcode-box';
 	$out = '';
 
@@ -82,7 +125,7 @@ function alio_three_columns_area( $atts, $content = null ){
 		$out .= '</div></div>';
 		if ( $section ) {
 			$out .= '</div>
-				<div class="bg-bottom"></div>
+				<div class="bg-bottom' . $bt_class . '"></div>
 			</section>';
 		}
 	}
@@ -93,13 +136,15 @@ function alio_three_columns_area( $atts, $content = null ){
 add_shortcode('alio_works_area', 'alio_works_area');
 function alio_works_area( $atts, $content = null ) {
 	extract( shortcode_atts( array(
+		'bottom_shape' => '',
 		'section' => '',
 		'title' => '',
 		'lnk_id' => '',
 		'tag' => 'h2',
 		'count_posts' => 6,
 	), $atts ) );
-	$lnk_id = ( $lnk_id ) ? ' id="#lnk_' . $lnk_id . '"' : '';
+	$lnk_id = ( $lnk_id ) ? ' id="lnk_' . $lnk_id . '"' : '';
+	$bt_class = ( $bottom_shape ) ? ' no-wave' : '';
 	$class_box = ( $section ) ? '' : ' shortcode-box';
 	$out = '';
 
@@ -171,7 +216,7 @@ function alio_works_area( $atts, $content = null ) {
 	$out .= '</div><!-- end of isotope-block -->';
 	if ( $section ) {
 		$out .= '</div>
-			<div class="bg-bottom"></div>
+			<div class="bg-bottom' . $bt_class . '"></div>
 		</section>';
 	}
 

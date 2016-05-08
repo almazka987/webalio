@@ -217,7 +217,7 @@ h3 {
 }
 
 p {
-	color: #6b7285;
+	color: #000;
 	font-family: 'Roboto',  sans-serif;
 	font-size: 100%;
 	font-weight: 300;
@@ -225,7 +225,7 @@ p {
 }
 
 ul {
-	color: #6b7285;
+	color: #000;
 	font-family: 'Roboto',  sans-serif;
 	line-height: 1.5em;
 	font-weight: 300;
@@ -551,7 +551,7 @@ ul {
 	margin-top: 20px;
 }
 
-.alio-btn {
+.alio-btn, input[type=submit] {
 	background: #2c8d0a;
 	background: -webkit-linear-gradient(top, #b5fe01, #2c8d0a);
 	background: -moz-linear-gradient(top, #b5fe01, #2c8d0a);
@@ -570,6 +570,9 @@ ul {
 	text-shadow: 0 1px rgba(0, 0, 0, 0.4);
 	box-shadow: 0px 3px 0px 0px #206a07;
 	border-width: 2px;
+	text-transform: uppercase;
+	border: 0;
+	outline: none;
 	letter-spacing: 1px;
 	border-radius: 3px;
 	box-sizing: border-box;
@@ -601,6 +604,9 @@ ul {
 		opacity: 0;
 		background-color: $purple;
 	}
+	&:focus, &:focus span {
+		color: #fff;
+	}
 	&:hover i, &:hover span {
 		color: #FFF;
 		transform: translateX(0);
@@ -620,6 +626,10 @@ ul {
 	}
 }
 
+input[type=submit] {
+	padding: 12px 28px;
+}
+
 .alio-btn i {
 	font-size: 30px;
 	opacity: 0;
@@ -631,7 +641,8 @@ ul {
 	line-height: 4px;
 }
 
-a:active, a:focus, a:hover, a:link, a:visited {
+a:active, a:focus, a:hover, .alio-btn:focus span {
+	color: inherit;
 	outline: 0;
 	text-decoration: none;
 }
@@ -661,7 +672,17 @@ a:active, a:focus, a:hover, a:link, a:visited {
 	}
 	.bg-bottom {
 		background-image: url("../img/gray-bg-bottom.png");
+		&.no-wave {
+			background: -moz-linear-gradient(top,  rgba(204,204,204,1) 0%, rgba(255,255,255,0) 100%);
+			background: -webkit-linear-gradient(top,  rgba(204,204,204,1) 0%,rgba(255,255,255,0) 100%);
+			background: linear-gradient(to bottom,  rgba(204,204,204,1) 0%,rgba(255,255,255,0) 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccccc', endColorstr='#00ffffff',GradientType=0 );
+		}
 	}
+}
+
+.bg-bottom.no-wave {
+	height: 50px;
 }
 
 .odd .bg-middle {
@@ -670,6 +691,12 @@ a:active, a:focus, a:hover, a:link, a:visited {
 
 .odd .bg-bottom {
 	background-image: url("../img/bg-bottom.png");
+	&.no-wave {
+		background: -moz-linear-gradient(top,  rgba(239,251,251,1) 0%, rgba(255,255,255,0) 100%);
+		background: -webkit-linear-gradient(top,  rgba(239,251,251,1) 0%,rgba(255,255,255,0) 100%);
+		background: linear-gradient(to bottom,  rgba(239,251,251,1) 0%,rgba(255,255,255,0) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#effbfb', endColorstr='#00ffffff',GradientType=0 );
+	}
 }
 
 #isotope-list {
@@ -869,10 +896,14 @@ a:active, a:focus, a:hover, a:link, a:visited {
 }
 
 footer {
+	padding-top: 50px;
 	color: #fff;
 	position: relative;
 	background: url(../img/bg-footer.png) no-repeat;
 	background-size: cover;
+	.top-footer {
+		padding-bottom: 18px;
+	}
 }
 
 footer p {
@@ -936,8 +967,7 @@ footer .footer-bottom {
 	background-repeat: repeat-x;
 	color: #fff;
 	font-size: 0.8em;
-	line-height: 55px;
-	min-height: 75px;
+	line-height: 47px;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
 	filter: alpha(opacity=60);
 	padding: 20px 0 0 0;
@@ -949,7 +979,6 @@ footer .footer-bottom .row {
 }
 
 footer .footer-bottom .copy {
-	font-weight: 700;
 	text-transform: uppercase;
 }
 
@@ -977,6 +1006,87 @@ section.shortcode-box {
 	background:transparent url('../img/wave-divider.png') left top repeat-x;
 }
 
+#alio_to_top a {
+	display: none;
+	z-index: 9;
+	position: fixed;
+	bottom: 5px;
+	right: 3%;
+	width: 73px;
+	height: 123px;
+	opacity: 0.8;
+	background: url('../img/rocket-arrow.png') no-repeat;
+	background-size: contain;
+	&:hover {
+		opacity: 1;
+	}
+}
 
+form {
+	input[type=text], input[type=email], input[type=file] {
+		height: 40px;
+	}
+	input[type=submit] {
+		margin-top: 20px;
+	}
+	input[type=text], input[type=email], textarea, input[type=file] {
+		position: relative;
+		padding: 10px 10px 10px 45px;
+		border: 1px solid #e3e3e3;
+		background: url('../img/inputs-bg.png') left top repeat-y #ffffff;
+		color: #667282;
+		margin-top: 13px;
+		font-size: 14px;
+		-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+		box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+		-webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+		transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+	}
+	input[type=text]:focus, input[type=email]:focus, textarea:focus {
+		border-color: #66afe9;
+		outline: 0;
+		-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(102,175,233,0.6);
+		box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(102,175,233,0.6);
+	}
+}
+
+.order-form form {
+	position: relative;
+	overflow: hidden;
+}
+
+div.wpcf7-response-output {
+	display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 300px;
+    padding: 12px;
+}
+
+.field_box {
+	margin-bottom: 36px;
+	input[type=text], input[type=email], textarea, input[type=file] {
+		width: 100%;
+	}
+	i.fa {
+		z-index: 11;
+		color: #545454;
+		position: absolute;
+		left: 29px;
+		top: 25px;
+	}
+	&.odd-field {
+			i.fa {
+			left: 25px;
+		}
+	}
+}
+
+p.description {
+	font-size: 12px;
+}
 
 /******** Other styles end ********/

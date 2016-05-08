@@ -13,7 +13,7 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class( 'alio' ); ?>>
 
 <!-- begin main-container -->
 <section id="main-container">
@@ -69,7 +69,7 @@
 							<span class="astronavt"></span>
 									<small>Нужен сайт?</small>
 									<span class="address">Вы по адресу</span>
-									<a href="#" class="alio-btn">
+									<a href="#lnk_order-form" class="alio-btn">
 									<i class="fa fa-lightbulb-o" aria-hidden="true"></i>
 									<span class="in-button"> Заказать сайт</span></a>
 							</div>

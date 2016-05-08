@@ -53,11 +53,11 @@ if ( $('#isotope-list').size() > 0 ) {
 }
 
 
-/* ancor */
-$('a[href^="#lnk"]').bind("click", function(e){
+/* anchor */
+$('a[href^="#lnk_"]').bind("click", function(e){
 	 var anchor = $(this);
 	 $('html, body').stop().animate({
-			scrollTop: $(anchor.attr('href')).offset().top-50
+			scrollTop: $(anchor.attr('href')).offset().top-120
 	 }, 1000);
 	 e.preventDefault();
 });
@@ -106,4 +106,26 @@ if ( $( '.navbar' ).size() > 0 ) {
 	}, 10 );
 }
 
-}); /* jQuery end */
+// Scroll to Top Button
+var scroll_timer;
+var displayed = false;
+var top = jQuery( document.body ).children(0).position().top;
+jQuery( window ).scroll(function () {
+	window.clearTimeout( scroll_timer );
+	scroll_timer = window.setTimeout( function () {
+		if( jQuery( window ).scrollTop() <= top ) {
+			displayed = false;
+			jQuery( '#alio_to_top a' ).fadeOut(500);
+		}
+		else if(displayed == false) {
+			displayed = true;
+			jQuery( '#alio_to_top a' ).stop( true, true ).show().click( function () { jQuery( '#alio_to_top a' ).fadeOut( 500 ); } );
+		}
+	}, 100);
+});
+jQuery('#alio_to_top a').click(function(){
+	jQuery('html, body').animate({scrollTop:0}, 'slow');
+});
+
+
+}); /* document ready end */
