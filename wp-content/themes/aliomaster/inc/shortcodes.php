@@ -198,7 +198,7 @@ function alio_works_area( $atts, $content = null ) {
 			$out .= '<div class="img-hover-overlay"></div>';
 			$out .= '<div class="icons-holder">
 						<a class="hover-icon" target="" href="' . get_permalink() . '"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
-						<a class="lnk-zoom hover-icon" href="#" title="" rel="prettyPhoto[gallery]"><i class="fa fa-search-plus" aria-hidden="true"></i></a>
+						<a class="lnk-zoom hover-icon" href="' . wp_get_attachment_url( get_post_thumbnail_id() ) . '" title="' . get_the_title() . '" rel="prettyPhoto[gallery]"><i class="fa fa-search-plus" aria-hidden="true"></i></a>
 					</div>';
 			$out .= '<div class="meta-info">
 						<div class="add-middle-align">

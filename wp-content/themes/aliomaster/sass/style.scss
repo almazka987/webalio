@@ -75,7 +75,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	vertical-align: baseline;
 }
 
-a, a:hover, .alio-navbar > li > a:after, .alio-navbar > li:hover > a:after {
+a, a:hover, .alio-navbar > li > a:after, .alio-navbar > li:hover > a:after, .loop-btn, .loop-btn:hover {
 	-webkit-transition: all 0.2s ease-out;;
 	   -moz-transition: all 0.2s ease-out;;
 		-ms-transition: all 0.2s ease-out;;
@@ -448,6 +448,11 @@ ul {
 	background-size: cover;
 }
 
+.header.middle {
+	min-height: 267px;
+	background: url("../img/bg-middle-header.png") no-repeat;
+}
+
 .header .top {
 	font-size: 12px;
 	font-weight: 800;
@@ -551,7 +556,7 @@ ul {
 	margin-top: 20px;
 }
 
-.alio-btn, input[type=submit] {
+.alio-btn, input[type=submit]:not(#searchsubmit) {
 	background: #2c8d0a;
 	background: -webkit-linear-gradient(top, #b5fe01, #2c8d0a);
 	background: -moz-linear-gradient(top, #b5fe01, #2c8d0a);
@@ -626,7 +631,7 @@ ul {
 	}
 }
 
-input[type=submit] {
+input[type=submit]:not(#searchsubmit) {
 	padding: 12px 28px;
 }
 
@@ -641,7 +646,7 @@ input[type=submit] {
 	line-height: 4px;
 }
 
-a:active, a:focus, a:hover, .alio-btn:focus span {
+a:active, a:focus, a:hover, .alio-btn:focus span, button:focus {
 	color: inherit;
 	outline: 0;
 	text-decoration: none;
@@ -1022,25 +1027,54 @@ section.shortcode-box {
 	}
 }
 
-form {
-	input[type=text], input[type=email], input[type=file] {
-		height: 40px;
+#searchform {
+	margin-top: 13px;
+	position: relative;
+	input[type=text] {
+		padding: 10px 45px 10px 10px;
 	}
-	input[type=submit] {
-		margin-top: 20px;
+}
+
+.page-title {
+	margin-top: 33px;
+	color: #fff;
+}
+
+input[type=text], input[type=email], input[type=file] {
+	height: 40px;
+}
+
+.loop-btn {
+	background: none;
+	border: 1px solid transparent;
+	position: absolute;
+	right: 6px;
+	top: 11px;
+	opacity: .6;
+	&:hover {
+		opacity: 1;
 	}
-	input[type=text], input[type=email], textarea, input[type=file] {
-		position: relative;
-		padding: 10px 10px 10px 45px;
+}
+
+input[type=text], input[type=email], textarea, input[type=file] {
 		border: 1px solid #e3e3e3;
-		background: url('../img/inputs-bg.png') left top repeat-y #ffffff;
 		color: #667282;
-		margin-top: 13px;
 		font-size: 14px;
 		-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
 		box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
 		-webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 		transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+form:not(#searchform) {
+	input[type=submit] {
+		margin-top: 20px;
+	}
+	input[type=text], input[type=email], textarea, input[type=file] {
+		position: relative;
+		background: url('../img/inputs-bg.png') left top repeat-y #ffffff;
+		padding: 10px 10px 10px 45px;
+		margin-top: 13px;
 	}
 	input[type=text]:focus, input[type=email]:focus, textarea:focus {
 		border-color: #66afe9;
@@ -1066,11 +1100,12 @@ div.wpcf7-response-output {
     padding: 12px;
 }
 
+input[type=text], input[type=email], textarea, input[type=file] {
+	width: 100%;
+}
+
 .field_box {
 	margin-bottom: 36px;
-	input[type=text], input[type=email], textarea, input[type=file] {
-		width: 100%;
-	}
 	i.fa {
 		z-index: 11;
 		color: #545454;

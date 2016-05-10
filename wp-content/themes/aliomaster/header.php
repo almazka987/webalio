@@ -16,9 +16,12 @@
 <body <?php body_class( 'alio' ); ?>>
 
 <!-- begin main-container -->
+<?php
+	$hdr_class = ( is_front_page() ) ? '' : ' middle';
+?>
 <section id="main-container">
 		<!-- begin Header -->
-		<header class="header">
+		<header class="header<?php echo $hdr_class; ?>">
 			<div class="top">
 			<div class="container">
 			<div class="row">
@@ -39,7 +42,7 @@
 							<div class="col-md-3">
 								<a class="alio-logo" href="/"><img src="<?php echo get_template_directory_uri() . '/img/logo.png' ?>" alt="Logo" /></a>
 							</div>
-							<div class="col-md-9">
+							<div class="col-md-7">
 								<a href="#" class="hmbrgr"></a>
 								<?php 
 									wp_nav_menu(
@@ -55,7 +58,11 @@
 											'walker' => new wp_bootstrap_navwalker(),
 										)
 									);
-								 ?>
+								?>
+							</div>
+							<div class="col-md-2">
+								<!-- <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a> -->
+								<?php get_search_form(); ?>
 							</div>
 						</div>
 						<div class="bg-navbar"><div></div></div>
@@ -72,6 +79,14 @@
 									<a href="#lnk_order-form" class="alio-btn">
 									<i class="fa fa-lightbulb-o" aria-hidden="true"></i>
 									<span class="in-button"> Заказать сайт</span></a>
+							</div>
+						</div>
+					</div>
+				<?php else: ?>
+					<div class="heading-page container">
+						<div class="row">
+							<div class="col-md-6">
+								<h1 class="page-title"><?php the_title(); ?></h1>
 							</div>
 						</div>
 					</div>

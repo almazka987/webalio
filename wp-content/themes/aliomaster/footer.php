@@ -16,16 +16,16 @@
 					<span><i class="point"></i><a href="https://goo.gl/maps/gyJkHFTjN722" target="_blank">Россия, Омск</a>
 					</span>
 					<span><i class="skype"></i><a href="skype:almazka987?chat">Skype: almazka987</a></span>
-					<span><i class="github"></i><a href="https://github.com/almazka">GitHub: almazka</a></span>
-					<span><i class="mail"></i><a href="mailto:almazka@flylady.su">E-mail: almazka@flylady.su</a></span>
+					<span><i class="github"></i><a href="https://github.com/aliomaster">GitHub: aliomaster</a></span>
+					<span><i class="mail"></i><a href="mailto:aliowebdeveloper@gmail.com">E-mail: aliowebdeveloper@gmail.com</a></span>
 				</div>
 			</div>
 			<div class="col-md-4">
 				<ul class="menu">
 					<li><a href="/">Главная</a><i></i></li>
-					<li ><a href="#about">Обо мне</a><i></i></li>
-					<li ><a href="#works">Мои работы</a><i></i></li>
-					<li ><a href="#order">Как заказать верстку</a><i></i></li>
+					<li ><a href="/#lnk_about">Обо мне</a><i></i></li>
+					<li ><a href="/#lnk_works">Мои работы</a><i></i></li>
+					<li ><a href="/#lnk_how">Как заказать сайт</a><i></i></li>
 				</ul>
 			</div>
 		</div>

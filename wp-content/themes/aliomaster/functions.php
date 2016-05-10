@@ -64,11 +64,6 @@ function theme_register_nav_menu() {
 }
 add_action( 'after_setup_theme', 'theme_register_nav_menu' );
 
-if (function_exists('register_sidebar')) {
-	register_sidebar(array("name" => "header-sidebar"));
-	register_sidebar(array("name" => "footer-sidebar"));
-}
-
 // register Works custom type
 function work_init() {
 	$labels = array(
