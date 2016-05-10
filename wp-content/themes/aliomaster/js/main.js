@@ -73,6 +73,27 @@ $('.hmbrgr').click(function(event) {
 	$('#primary-navbar-collapse').stop().slideToggle().toggleClass('animated slideInTop');
 });
 
+/*from nexus:
+	$mainMenu.find('a[href*=#]').bind("click", function(e){
+		var anchor = $(this).find('i').attr('class');
+		anchor = anchor.replace('fa ', '');
+		$('html, body').stop().animate({
+			scrollTop: $('.wpb_wrapper p i#' + anchor + '').offset().top - 150
+		}, 1000);
+
+		e.preventDefault();
+	});
+});
+
+jQuery(window).bind("load", function() {
+		var hash =  jQuery(location).attr('hash');
+		if(hash != '') {
+			jQuery('html, body').stop().animate({
+				scrollTop: jQuery('.wpb_wrapper p i' + hash + '').offset().top - 150
+			}, 1000);
+		}
+});*/
+
 // Nav hover
 $('.alio-navbar .dropdown').hover(function() {
 	$(this).find('.dropdown-menu').first().stop(true, true).delay(250).fadeIn();

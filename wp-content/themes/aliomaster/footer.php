@@ -23,9 +23,9 @@
 			<div class="col-md-4">
 				<ul class="menu">
 					<li><a href="/">Главная</a><i></i></li>
-					<li ><a href="/#lnk_about">Обо мне</a><i></i></li>
-					<li ><a href="/#lnk_works">Мои работы</a><i></i></li>
-					<li ><a href="/#lnk_how">Как заказать сайт</a><i></i></li>
+					<li ><a href="<?php echo get_site_url() ?>/#lnk_about">Обо мне</a><i></i></li>
+					<li ><a href="<?php echo get_site_url() ?>/#lnk_works">Мои работы</a><i></i></li>
+					<li ><a href="<?php echo get_site_url() ?>/#lnk_how">Как заказать сайт</a><i></i></li>
 				</ul>
 			</div>
 		</div>
