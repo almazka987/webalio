@@ -57,7 +57,7 @@ if ( $('#isotope-list').size() > 0 ) {
 $('a[href^="#lnk_"]').bind("click", function(e){
 	 var anchor = $(this);
 	 $('html, body').stop().animate({
-			scrollTop: $(anchor.attr('href')).offset().top-120
+			scrollTop: $(anchor.attr('href')).offset().top - 120
 	 }, 1000);
 	 e.preventDefault();
 });
@@ -73,26 +73,14 @@ $('.hmbrgr').click(function(event) {
 	$('#primary-navbar-collapse').stop().slideToggle().toggleClass('animated slideInTop');
 });
 
-/*from nexus:
-	$mainMenu.find('a[href*=#]').bind("click", function(e){
-		var anchor = $(this).find('i').attr('class');
-		anchor = anchor.replace('fa ', '');
-		$('html, body').stop().animate({
-			scrollTop: $('.wpb_wrapper p i#' + anchor + '').offset().top - 150
-		}, 1000);
-
-		e.preventDefault();
-	});
-});
-
 jQuery(window).bind("load", function() {
 		var hash =  jQuery(location).attr('hash');
 		if(hash != '') {
 			jQuery('html, body').stop().animate({
-				scrollTop: jQuery('.wpb_wrapper p i' + hash + '').offset().top - 150
+				scrollTop: jQuery(hash).offset().top - 120
 			}, 1000);
 		}
-});*/
+});
 
 // Nav hover
 $('.alio-navbar .dropdown').hover(function() {
