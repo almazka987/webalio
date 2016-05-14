@@ -61,7 +61,6 @@
 								?>
 							</div>
 							<div class="col-md-2">
-								<!-- <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a> -->
 								<?php get_search_form(); ?>
 							</div>
 						</div>
