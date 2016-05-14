@@ -57,7 +57,7 @@ if ( $('#isotope-list').size() > 0 ) {
 $('a[href^="#lnk_"]').bind("click", function(e){
 	 var anchor = $(this);
 	 $('html, body').stop().animate({
-			scrollTop: $(anchor.attr('href')).offset().top-120
+			scrollTop: $(anchor.attr('href')).offset().top - 120
 	 }, 1000);
 	 e.preventDefault();
 });
@@ -71,6 +71,15 @@ $('.hmbrgr').hmbrgr({
 
 $('.hmbrgr').click(function(event) {
 	$('#primary-navbar-collapse').stop().slideToggle().toggleClass('animated slideInTop');
+});
+
+jQuery(window).bind("load", function() {
+		var hash =  jQuery(location).attr('hash');
+		if(hash != '') {
+			jQuery('html, body').stop().animate({
+				scrollTop: jQuery(hash).offset().top - 120
+			}, 1000);
+		}
 });
 
 // Nav hover
