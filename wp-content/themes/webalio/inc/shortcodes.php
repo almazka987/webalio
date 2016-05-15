@@ -2,26 +2,26 @@
 
 /**** ALIO SHORTCODES AREA ****/
 
-add_shortcode('alio_text_block', 'alio_text_block');
-function alio_text_block( $atts, $content = null ) {
+add_shortcode( 'alio_text_block', 'alio_text_block' );
+function alio_text_block( $atts, $atb_content = null ) {
 	extract( shortcode_atts( array(
-		'class' => 'col-md-12',
-		'lnk_id' => '',
-		'title' => '',
-		'tag' => 'h2',
+		'atb_class' => 'col-md-12',
+		'atb_lnk_id' => '',
+		'atb_title' => '',
+		'atb_tag' => 'h2',
 	), $atts ) );
 	$out = '';
 
-	$lnk_id = ( $lnk_id ) ? ' id="lnk_' . $lnk_id . '"' : '';
+	$atb_lnk_id = ( $atb_lnk_id ) ? ' id="lnk_' . $atb_lnk_id . '"' : '';
 
-	if ( $content ) {
+	if ( $atb_content ) {
 		$out .= '<div class="container shortcode-box">
 					<div class="row">
-						<div class="' . $class . '">';
-		if ( $title ) {
-			$out .= '<' . $tag . $lnk_id . '>' . $title . '</' . $tag . '>';
+						<div class="' . $atb_class . '">';
+		if ( $atb_title ) {
+			$out .= '<' . $atb_tag . $atb_lnk_id . '>' . $atb_title . '</' . $atb_tag . '>';
 		}
-		$out .= $content . '</div>
+		$out .= $atb_content . '</div>
 						</div>
 					</div>';
 	}
@@ -29,39 +29,39 @@ function alio_text_block( $atts, $content = null ) {
 }
 
 add_shortcode('alio_form_block', 'alio_form_block');
-function alio_form_block( $atts, $content = null ) {
+function alio_form_block( $atts, $afb_content = null ) {
 	extract( shortcode_atts( array(
-		'bottom_shape' => '',
-		'class' => 'col-md-12',
-		'additional_class' => '',
-		'lnk_id' => '',
-		'title' => '',
-		'section' => '',
-		'tag' => 'h2',
+		'afb_class' => 'col-md-12',
+		'afb_lnk_id' => '',
+		'afb_title' => '',
+		'afb_tag' => 'h2',
+		'afb_section' => '',
+		'afb_bottom_shape' => '',
+		'afb_additional_class' => '',
 	), $atts ) );
 	$out = '';
-	$add_class = ( $additional_class ) ? ' ' . $additional_class : '';
-	$bt_class = ( $bottom_shape ) ? ' no-wave' : '';
-	if ( $section ) {
-		$out .= '<section class="' . $section . ' shortcode-box">
+	$add_class = ( $afb_additional_class ) ? ' ' . $afb_additional_class : '';
+	$bt_class = ( $afb_bottom_shape ) ? ' no-wave' : '';
+	if ( $afb_section ) {
+		$out .= '<section class="' . $afb_section . ' shortcode-box">
 					<div class="bg-top"></div>
 						<div class="bg-middle">';
 	}
-	$lnk_id = ( $lnk_id ) ? ' id="lnk_' . $lnk_id . '"' : '';
+	$afb_lnk_id = ( $afb_lnk_id ) ? ' id="lnk_' . $afb_lnk_id . '"' : '';
 
-	if ( $content ) {
-		$out .= '<div class="container shortcode-box' . $add_class . '">
+	if ( $afb_content ) {
+		$out .= '<div class="container shortcode-box' . $afb_add_class . '">
 					<div class="row">
-						<div class="' . $class . '">';
-		if ( $title ) {
-			$out .= '<' . $tag . $lnk_id . '>' . $title . '</' . $tag . '>';
+						<div class="' . $afb_class . '">';
+		if ( $afb_title ) {
+			$out .= '<' . $afb_tag . $afb_lnk_id . '>' . $afb_title . '</' . $afb_tag . '>';
 		}
-		$out .= do_shortcode( $content );
+		$out .= do_shortcode( $afb_content );
 		$out .= '</div>
 			</div>
 		</div>';
 	}
-	if ( $section ) {
+	if ( $afb_section ) {
 		$out .= '</div>
 			<div class="bg-bottom' . $bt_class . '"></div>
 		</section>';
@@ -70,21 +70,23 @@ function alio_form_block( $atts, $content = null ) {
 }
 
 add_shortcode('alio_three_columns_block', 'alio_three_columns_block');
-function alio_three_columns_block( $atts, $content = null ){
+function alio_three_columns_block( $atts, $atcb_content = null ){
 	extract( shortcode_atts( array(
-		'title' => '',
-		'img' => '',
-		'tag' => 'h3',
+		'atcb_title' => '',
+		'atcb_tag' => 'h3',
+		'atcb_img' => '',
 	), $atts ) );
 	$out = '';
 
-	if ( $content && $img ) {
+	$atcb_img = ( $atcb_img ) ? wp_get_attachment_url( $atcb_img ) : '';
+
+	if ( $atcb_content && $atcb_img ) {
 		$out .= '<div class="col-md-4 item">
-					<img src="' . $img . '" alt="">';
-		if ( $title ) {
-			$out .= '<' . $tag . '>' . $title . '</' . $tag . '>';
+					<img src="' . $atcb_img . '" alt="">';
+		if ( $atcb_title ) {
+			$out .= '<' . $atcb_tag . '>' . $atcb_title . '</' . $atcb_tag . '>';
 		}
-		$out .= $content;
+		$out .= $atcb_content;
 		$out .= '</div>';
 	}
 
@@ -92,38 +94,38 @@ function alio_three_columns_block( $atts, $content = null ){
 }
 
 add_shortcode('alio_three_columns_area', 'alio_three_columns_area');
-function alio_three_columns_area( $atts, $content = null ){
+function alio_three_columns_area( $atts, $atca_content = null ){
 	extract( shortcode_atts( array(
-		'bottom_shape' => '',
-		'section' => '',
-		'lnk_id' => '',
-		'title' => '',
-		'tag' => 'h2',
+		'atca_lnk_id' => '',
+		'atca_title' => '',
+		'atca_tag' => 'h2',
+		'atca_section' => '',
+		'atca_bottom_shape' => '',
 	), $atts ) );
-	$lnk_id = ( $lnk_id ) ? ' id="lnk_' . $lnk_id . '"' : '';
-	$bt_class = ( $bottom_shape ) ? ' no-wave' : '';
-	$class_box = ( $section ) ? '' : ' shortcode-box';
+	$atca_lnk_id = ( $atca_lnk_id ) ? ' id="lnk_' . $atca_lnk_id . '"' : '';
+	$bt_class = ( $atca_bottom_shape ) ? ' no-wave' : '';
+	$class_box = ( $atca_section ) ? '' : ' shortcode-box';
 	$out = '';
 
-	if ( $content ) {
-		if ( $section ) {
-			$out .= '<section class="' . $section . ' shortcode-box">
+	if ( $atca_content ) {
+		if ( $atca_section ) {
+			$out .= '<section class="' . $atca_section . ' shortcode-box">
 						<div class="bg-top"></div>
 							<div class="bg-middle">';
 		}
 		$out .= '<div class="container three-columns' . $class_box . '">';
-		if ( $title ) {
-			$out .= '<' . $tag . $lnk_id . '>' . $title . '</' . $tag . '>';
+		if ( $atca_title ) {
+			$out .= '<' . $atca_tag . $atca_lnk_id . '>' . $atca_title . '</' . $atca_tag . '>';
 		}
 		$out .= '<div class="row">';
-		$arr = explode( '|', $content );
+		$arr = explode( '|', $atca_content );
 		if ( is_array( $arr ) ) {
 			foreach ( $arr as $value ) {
 				$out .= do_shortcode( $value );
 			}
 		}
 		$out .= '</div></div>';
-		if ( $section ) {
+		if ( $atca_section ) {
 			$out .= '</div>
 				<div class="bg-bottom' . $bt_class . '"></div>
 			</section>';
@@ -133,29 +135,29 @@ function alio_three_columns_area( $atts, $content = null ){
 	return $out;
 }
 
-add_shortcode('alio_works_area', 'alio_works_area');
-function alio_works_area( $atts, $content = null ) {
+add_shortcode( 'alio_works_area', 'alio_works_area' );
+function alio_works_area( $atts, $awa_content = null ) {
 	extract( shortcode_atts( array(
-		'bottom_shape' => '',
-		'section' => '',
-		'title' => '',
-		'lnk_id' => '',
-		'tag' => 'h2',
-		'count_posts' => 6,
+		'awa_lnk_id' => '',
+		'awa_title' => '',
+		'awa_tag' => 'h2',
+		'awa_section' => '',
+		'awa_bottom_shape' => '',
+		'awa_count_posts' => 6,
 	), $atts ) );
-	$lnk_id = ( $lnk_id ) ? ' id="lnk_' . $lnk_id . '"' : '';
-	$bt_class = ( $bottom_shape ) ? ' no-wave' : '';
-	$class_box = ( $section ) ? '' : ' shortcode-box';
+	$awa_lnk_id = ( $awa_lnk_id ) ? ' id="lnk_' . $awa_lnk_id . '"' : '';
+	$bt_class = ( $awa_bottom_shape ) ? ' no-wave' : '';
+	$class_box = ( $awa_section ) ? '' : ' shortcode-box';
 	$out = '';
 
-	if ( $section ) {
-		$out .= '<section class="' . $section . ' shortcode-box">
+	if ( $awa_section ) {
+		$out .= '<section class="' . $awa_section . ' shortcode-box">
 					<div class="bg-top"></div>
 						<div class="bg-middle">';
 	}
 	$out .= '<div class="isotope-block' . $class_box . '">';
-	if ( $title ) {
-		$out .= '<' . $tag . $lnk_id . '>' . $title . '</' . $tag . '>';
+	if ( $awa_title ) {
+		$out .= '<' . $awa_tag . $awa_lnk_id . '>' . $awa_title . '</' . $awa_tag . '>';
 	}
 
 	$terms = get_terms( 'workscategory' );
@@ -171,7 +173,7 @@ function alio_works_area( $atts, $content = null ) {
 
 	$args = array(
 		'post_type' => 'works',
-		'posts_per_page' => $count_posts,
+		'posts_per_page' => $awa_count_posts,
 	);
 	$query = new WP_Query( $args );
 
@@ -214,7 +216,7 @@ function alio_works_area( $atts, $content = null ) {
 	wp_reset_query();
 
 	$out .= '</div><!-- end of isotope-block -->';
-	if ( $section ) {
+	if ( $awa_section ) {
 		$out .= '</div>
 			<div class="bg-bottom' . $bt_class . '"></div>
 		</section>';
@@ -224,20 +226,20 @@ function alio_works_area( $atts, $content = null ) {
 }
 
 add_shortcode('alio_divider', 'alio_divider');
-function alio_divider( $atts, $content = null ) {
+function alio_divider( $atts, $ad_content = null ) {
 	extract( shortcode_atts( array(
-		'style' => 'empty',
-		'top' => '',
-		'bottom' => '',
+		'ad_style' => 'empty',
+		'ad_top' => '',
+		'ad_bottom' => '',
 	), $atts ) );
-	$style = ( $style ) ? $style : 'empty';
-	$marg_top = ( $top ) ? 'margin-top: ' . $top . 'px;' : '';
-	$marg_bottom = ( $bottom ) ? 'margin-bottom: ' . $bottom . 'px;' : '';
+	$ad_style = ( $ad_style ) ? $ad_style : 'empty';
+	$marg_top = ( $ad_top ) ? 'margin-top: ' . $ad_top . 'px;' : '';
+	$marg_bottom = ( $ad_bottom ) ? 'margin-bottom: ' . $ad_bottom . 'px;' : '';
 	$css_style ='';
 	if ( $marg_top || $marg_bottom ) {
 		$css_style = ' style="' . $marg_top . ' ' . $marg_bottom . '"';
 	}
-	$out = '<div class="divider ' . $style . '"' . $css_style . '></div>';
+	$out = '<div class="divider ' . $ad_style . '"' . $css_style . '></div>';
 	return $out;
 }
 

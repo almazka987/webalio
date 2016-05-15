@@ -12,8 +12,11 @@ if ( ! function_exists( 'pr' ) ) {
 	}
 }
 
-/* Register scripts and styles */
-add_action( 'wp_enqueue_scripts', 'add_scripts' );
+// Register scripts and styles
+function add_scripts_admin() {
+	wp_enqueue_script( 'js_admin', get_template_directory_uri() . '/js/admin.js', array( 'jquery' ) );
+}
+add_action( 'admin_init', 'add_scripts_admin' );
 
 function add_scripts() {
 
@@ -53,6 +56,7 @@ function add_scripts() {
 	wp_enqueue_script( 'bootstrapjs' );
 	wp_enqueue_script( 'mainscripts' );
 }
+add_action( 'wp_enqueue_scripts', 'add_scripts' );
 
 // add images thumbnails
 add_theme_support( 'post-thumbnails' );
@@ -101,9 +105,7 @@ function work_init() {
 
 add_action( 'init', 'work_init' );
 
-/* register taxonomy Category for Listing */
-add_action( 'init', 'prowp_define_works_workscategory_taxonomy' );
-
+// register taxonomy Category for Listing
 function prowp_define_works_workscategory_taxonomy() {
 	register_taxonomy( 'workscategory', 'works', array(
 		'hierarchical' => true,
@@ -114,3 +116,21 @@ function prowp_define_works_workscategory_taxonomy() {
 		)
 	);
 }
+add_action( 'init', 'prowp_define_works_workscategory_taxonomy' );
+
+// register sidebars
+function register_alio_sidebars() {
+
+	register_sidebar(
+		array(
+			'id' => 'footer3_sidebar',
+			'name' => 'Footer 3  column',
+			'description' => 'Drag widgets to add them in the sidebar',
+			'before_widget' => '<div id="%1$s" class="foot widget %2$s">',
+			'after_widget' => '</div>',
+			'before_title' => '<h3 class="widget-title">',
+			'after_title' => '</h3>'
+		)
+	);
+}
+add_action( 'widgets_init', 'register_alio_sidebars' );
