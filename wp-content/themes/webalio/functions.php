@@ -1,6 +1,7 @@
 <?php
 
 // require files
+require_once( get_stylesheet_directory() . '/lib/Mobile_Detect.php' );
 require_once( get_stylesheet_directory() . '/lib/wp_bootstrap_navwalker.php' );
 require_once( get_stylesheet_directory() . '/inc/shortcodes.php');
 

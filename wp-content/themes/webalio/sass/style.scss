@@ -68,11 +68,101 @@ html, body {
 	height: 100%;
 }
 
+b, strong {
+    font-weight: bold;
+}
+
 body {
 	font-family: 'PFDinDisplayPro', sans-serif;
 	color: $textColor;
 	font-size: 14px;
 }
+
+// WordPress Core
+.alignnone {
+	margin: 0 15px 15px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+	display: block;
+	margin: 0 auto 15px auto;
+}
+
+.alignright {
+	float: right;
+	margin: 0 0 15px 15px;
+}
+
+.alignleft {
+	float: left;
+	margin: 0 15px 15px 0;
+}
+
+.aligncenter {
+	display: block;
+	margin: 0 auto 15px auto;
+}
+
+a img.alignright {
+	float: right;
+	margin: 0 0 15px 15px;
+}
+
+a img.alignnone {
+	margin: 0 15px 15px 0;
+}
+
+a img.alignleft {
+	float: left;
+	margin: 0 15px 15px 0;
+}
+
+a img.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wp-caption {
+	background: #f2f2f2;
+	border: 1px solid #e6e6e6;
+	max-width: 100%;
+	padding: 6px;
+	text-align: center;
+}
+
+.wp-caption.alignnone {
+	margin: 0 15px 15px 0;
+}
+
+.wp-caption.alignleft {
+	margin: 0 15px 15px 0;
+}
+
+.wp-caption.alignright {
+	margin: 0 0 15px 15px;
+}
+
+.wp-caption img {
+	border: 0 none;
+	height: auto;
+	margin: 0;
+	max-width: 100%;
+	padding: 0;
+	width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+	font-size: 14px;
+	margin: 0;
+	padding: 6px 6px 0;
+}
+
+.sticky {
+	display: block;
+}
+// WordPress Core end
 
 #main-container {
 	min-height: 100%;
@@ -82,21 +172,13 @@ body {
 	margin-bottom: -$footerSize;
 }
 
-#push, #footer {
+#push {
 	height: $footerSize;
 }
 
 /******** General styles end ********/
 
 /******** Other styles ********/
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font: inherit;
-	font-size: 100%;
-	vertical-align: baseline;
-}
 
 a, a:hover, .alio-navbar > li > a:after, .alio-navbar > li:hover > a:after, .loop-btn, .loop-btn:hover, .single-gallery .layer, .single-gallery li:hover .layer {
 	-webkit-transition: all 0.2s ease-out;;
@@ -111,6 +193,16 @@ html {
 }
 
 ol, ul {
+	list-style: none;
+}
+
+.single .content.container > ol, .single .content.container > ul {
+	list-style: inherit;
+	margin-left: 18px;
+}
+
+ul.dropdown-menu, ul#menu-footer-menu {
+	margin: 0;
 	list-style: none;
 }
 
@@ -144,6 +236,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 .content {
 	padding-top: 50px;
+	min-height: 250px;
+	padding-bottom: 30px;
 }
 
 .sprite-sprite, .sprite-github, .header .top .github i, .sprite-github2, footer #contacts i.github, .sprite-link, #isotope-list .item .blank .stage-lnk.link b, .sprite-loop, #isotope-list .item .blank .stage-lnk.zoom b, .sprite-mail, .header .top .mail i, .sprite-mail2, footer #contacts i.mail, .sprite-map, footer #contacts i.point, .sprite-skype, .header .top .skype i, .sprite-skype2, footer #contacts i.skype {
@@ -254,8 +348,13 @@ ul {
 	font-weight: 300;
 }
 
-.alio-logo {
+.hmbrgr {
+	margin-top: 26px;
 	float: left;
+}
+
+.alio-logo {
+	float: right;
 	padding: 5px 15px 11px;
 }
 
@@ -297,8 +396,8 @@ ul {
 }
 
 .alio-navbar > li {
-	display: inline-block;
-	margin: 27px 10px 0px;
+	display: block;
+	margin: 27px 5px 0px;
 }
 
 .alio-navbar li a {
@@ -315,7 +414,7 @@ ul {
 	color: $blue;
 	text-decoration: none;
 	background-color: transparent;
-    background-image: none;
+	background-image: none;
 }
 
 .alio-navbar li i {
@@ -332,15 +431,19 @@ ul {
 	text-align: left;
 }
 
+.navbar {
+	border: none;
+	width: 100%;
+}
+
 .navbar .container {
+	width: 100%;
 	background: #d1e5ee;
 	background: -webkit-linear-gradient(top,  #f6fafd 0%,  #d1e5ee 100%);
 	background: -moz-linear-gradient(top,  #f6fafd 0%,  #d1e5ee 100%);
 	background: -o-linear-gradient(top,  #f6fafd 0%,  #d1e5ee 100%);
 	background: -ms-linear-gradient(top,  #f6fafd 0%,  #d1e5ee 100%);
 	background: linear-gradient(to bottom,  #f6fafd 0%,  #d1e5ee 100%);
-	-webkit-border-radius: 13px;
-	border-radius: 13px;
 	-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 	position: relative;
@@ -364,10 +467,13 @@ ul {
 
 .navbar .container .bg-navbar {
 	left: 0;
-	padding: 0 13px;
 	position: absolute;
-	top: 99%;
+	top: 100%;
 	width: 100%
+}
+
+.nav-holder {
+	padding-bottom: 15px;
 }
 
 .navbar .container .bg-navbar div {
@@ -468,15 +574,14 @@ ul {
 }
 
 .header {
-	min-height: 512px;
+	min-height: 397px;
 	width: 100%;
 	background: url("../img/bg-header.png") no-repeat;
 	background-size: cover;
 }
 
 .header.middle {
-	min-height: 267px;
-	background: url("../img/bg-middle-header.png") no-repeat;
+	min-height: 358px;
 }
 
 .header .top {
@@ -488,10 +593,6 @@ ul {
 
 .header .top .row>div {
 	overflow: hidden;
-}
-
-.header .top .row .right {
-	text-align: right;
 }
 
 .header .top span.skype, .header .top span.mail, .header .top span.github {
@@ -509,18 +610,27 @@ ul {
 .header .top span.skype i, .header .top span.mail i, .header .top span.github i {
 	display: block;
 	position: absolute;
-	top: 17px;
+	top: 6px;
 	margin: 0 14px 0 3px;
 	width: 18px;
 	height: 18px;
 }
 
+.header .top .row .right.contacts-top, .header .top .row .right.contacts-bottom {
+	text-align: center;
+}
+
+.contacts-holder {
+	line-height: 25px;
+	margin: 16px 0;
+}
+
 .header .top span.skype a, .header .top span.mail a, .header .top span.github a {
 	text-transform: uppercase;
 	font-family: 'Montserrat', sans-serif;
+	padding-top: 2px;
 	display: block;
 	float: left;
-	padding-top: 11px;
 	color: #fff;
 	margin-left: 34px;
 }
@@ -547,8 +657,7 @@ ul {
 .header .bottom .description {
 	position: relative;
 	color: #FFF;
-	margin: 55px auto;
-	width: 766px;
+	margin: 22px auto 50px;
 	text-align: right;
 }
 
@@ -658,10 +767,19 @@ input[type=submit]:not(#searchsubmit) {
 	line-height: 4px;
 }
 
+a {
+	color: #0099cc;
+}
+
 a:active, a:focus, a:hover, .alio-btn:focus span, button:focus {
-	color: inherit;
+	color: #ff0066;
 	outline: 0;
 	text-decoration: none;
+}
+
+.live-site-lnk {
+	margin-top: 14px;
+	display: inline-block;
 }
 
 .odd, .gray {
@@ -771,6 +889,7 @@ a:active, a:focus, a:hover, .alio-btn:focus span, button:focus {
 			transform: scale(1);
 			transition: all .35s ease-in-out;
 		}
+
 		.icons-holder {
 			position: absolute;
 			top: 65%;
@@ -779,21 +898,27 @@ a:active, a:focus, a:hover, .alio-btn:focus span, button:focus {
 			opacity: 0;
 			transition: all .3s ease-in-out;
 			z-index: 13;
+
 			.hover-icon {
 				display: inline-block;
-				margin: 0 5px;
-				width: 48px;
-				height: 48px;
-				line-height: 50px;
+				margin: 0 12px;
+				line-height: 35px;
 				text-align: center;
 				opacity: .7;
 				color: #fff;
 				transition: all .15s ease-in-out;
 				-webkit-perspective: 1000;
+
+				small {
+					font-size: 14px;
+					display: block;
+				}
+
 				i {
 					font-size: 32px;
 					vertical-align: middle;
 				}
+
 				&:hover {
 					opacity: 1;
 				}
@@ -971,7 +1096,10 @@ footer .menu li {
 
 footer .menu a {
 	color: #fff;
-	padding-left: 8px;
+}
+
+menu-footer-menu-container {
+	margin-top: 20px;
 }
 
 footer .menu a:hover {
@@ -1025,7 +1153,7 @@ section.shortcode-box {
 
 #alio_to_top a {
 	display: none;
-	z-index: 9;
+	z-index: 999;
 	position: fixed;
 	bottom: 5px;
 	right: 3%;
@@ -1039,9 +1167,14 @@ section.shortcode-box {
 	}
 }
 
+.search-holder.col-xs-9 {
+	float: right;
+}
+
 #searchform {
-	margin-top: 13px;
 	position: relative;
+	float: right;
+	width: 200px;
 	input[type=text] {
 		padding: 10px 45px 10px 10px;
 	}
@@ -1049,7 +1182,7 @@ section.shortcode-box {
 
 .page-title {
 	margin-top: 33px;
-	color: #fff;
+	color: #FFF;
 }
 
 input[type=text], input[type=email], input[type=file] {
@@ -1103,13 +1236,13 @@ form:not(#searchform) {
 
 div.wpcf7-response-output {
 	display: block;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    margin: auto;
-    width: 300px;
-    padding: 12px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+	width: 300px;
+	padding: 12px;
 }
 
 input[type=text], input[type=email], textarea, input[type=file] {
@@ -1118,13 +1251,19 @@ input[type=text], input[type=email], textarea, input[type=file] {
 
 .field_box {
 	margin-bottom: 36px;
+
 	i.fa {
 		z-index: 11;
 		color: #545454;
 		position: absolute;
 		left: 29px;
 		top: 25px;
+
+		&.fa-upload {
+			top: 16px;
+		}
 	}
+
 	&.odd-field {
 			i.fa {
 			left: 25px;
@@ -1141,6 +1280,9 @@ p.description {
 		position: relative;
 		display: inline-block;
 		margin-right: 6px;
+		margin-bottom: 15px;
+		border: 1px solid #ccc;
+
 		.layer {
 			position: absolute;
 			width: 100%;
@@ -1171,8 +1313,8 @@ p.description {
 
 .single h4 {
 	margin-top: 20px;
-    font-weight: bold;
-    color: #3415B0;
+	font-weight: bold;
+	color: #3415B0;
 }
 
 .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {

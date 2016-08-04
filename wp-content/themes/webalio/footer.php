@@ -6,12 +6,12 @@
 <footer id="footer">
 	<div class="container top-footer">
 		<div class="row">
-			<div class="col-md-4">
+			<div class="col-sm-4">
 				<p>Яковленко Алена<br>
 					Веб-верстка, создание сайтов
 				</p>
 			</div>
-			<div class="col-md-4">
+			<div class="col-sm-6 col-md-4">
 				<div id="contacts">
 					<span><i class="point"></i><a href="https://goo.gl/maps/gyJkHFTjN722" target="_blank">Россия, Омск</a>
 					</span>
@@ -20,7 +20,7 @@
 					<span><i class="mail"></i><a href="mailto:aliowebdeveloper@gmail.com" target="_blank">E-mail: aliowebdeveloper@gmail.com</a></span>
 				</div>
 			</div>
-			<div class="col-md-4">
+			<div class="col-sm-4">
 				<?php get_sidebar( 'footer3_sidebar' ); ?>
 			</div>
 		</div>

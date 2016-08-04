@@ -1,3 +1,10 @@
+<?php
+	$detect = new Mobile_Detect;
+	$mobile = ( $detect->isMobile() && ! $detect->isTablet() ) ? true : false;
+	$mob_class = ( $mobile ) ? ' mobile' : '';
+
+?>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
@@ -13,7 +20,7 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class( 'alio' ); ?>>
+<body <?php body_class( 'alio' . $mob_class ); ?>>
 
 <!-- begin main-container -->
 <?php
@@ -24,12 +31,12 @@
 		<header class="header<?php echo $hdr_class; ?>">
 			<div class="top">
 			<div class="container">
-			<div class="row">
-				<div class="col-md-6 col-sm-6 col-xs-12">
+			<div class="row contacts-holder">
+				<div class="col-md-6 col-sm-6 col-xs-12 contacts-top">
 					<span class="skype"><i></i><a href="skype:almazka987?chat">almazka987</a></span>
 					<span class="github"><i></i><a href="https://github.com/aliomaster">aliomaster</a></span>
 				</div>
-				<div class="col-md-6 col-sm-6 col-xs-12 right">
+				<div class="col-md-6 col-sm-6 col-xs-12 right contacts-bottom">
 					<span class="mail"><i></i><a href="mailto:aliowebdeveloper@gmail.com">aliowebdeveloper@gmail.com</a></span>
 				</div>
 			</div>
@@ -38,12 +45,16 @@
 				<!-- begin Nav -->
 				<nav class="navbar">
 					<div class="container">
-						<div class="row">
+						<div class="row nav-holder">
 							<div class="col-md-3">
+								<a href="#" class="hmbrgr"></a>
 								<a class="alio-logo" href="/"><img src="<?php echo get_template_directory_uri() . '/img/logo.png' ?>" alt="Logo" /></a>
 							</div>
-							<div class="col-md-7">
-								<a href="#" class="hmbrgr"></a>
+							<?php if ( $mobile ): ?>
+								<div class="search-holder col-xs-9">
+									<?php get_search_form(); ?>
+								</div>
+								<div class="col-xs-12">
 								<?php 
 									wp_nav_menu(
 										array(
@@ -60,9 +71,28 @@
 									);
 								?>
 							</div>
-							<div class="col-md-2">
-								<?php get_search_form(); ?>
-							</div>
+							<?php else: ?>
+								<div class="col-md-7">
+									<?php 
+										wp_nav_menu(
+											array(
+												'menu'              => 'primary',
+												'theme_location'    => 'primary',
+												'depth'             => 2,
+												'container'         => 'div',
+												'container_class'   => 'collapse navbar-collapse',
+												'container_id'      => 'primary-navbar-collapse',
+												'menu_class'        => 'alio-navbar',
+												'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+												'walker' => new wp_bootstrap_navwalker(),
+											)
+										);
+									?>
+								</div>
+								<div class="col-md-2">
+									<?php get_search_form(); ?>
+								</div>
+							<?php endif; ?>
 						</div>
 						<div class="bg-navbar"><div></div></div>
 					</div>

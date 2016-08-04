@@ -7,6 +7,62 @@
 	.hmbrgr {
 		display: none;
 	}
+
+	.alio-navbar > li {
+		display: inline-block;
+	}
+
+	menu-footer-menu-container {
+		margin-top: 0;
+	}
+
+	#searchform {
+		margin-top: 13px;
+	}
+
+	.alio-logo {
+		float: left;
+	}
+
+	.header .top span.skype a, .header .top span.mail a, .header .top span.github a {
+		padding-top: 11px;
+	}
+
+	.contacts-holder {
+		line-height: inherit;
+		margin-bottom: 0;
+	}
+
+	.header .top span.skype i, .header .top span.mail i, .header .top span.github i {
+		top: 17px;
+	}
+
+	.header .top .row .right.contacts-top, .header .top .row .right.contacts-bottom {
+		text-align: right;
+	}
+}
+
+/* min-width: 992px */
+@media screen and (min-width: 992px) {
+	footer .menu a {
+		padding-left: 8px;
+	}
+
+	#searchform {
+		width: 100%;
+	}
+
+	.navbar-collapse {
+		padding: 0;
+	}
+
+	.alio-navbar li a {
+		padding: 0 7px;
+	}
+
+	.field_box i.fa.fa-upload {
+		top: 25px;
+	}
 }
 
 /* min-width: 1200px */

@@ -69,9 +69,9 @@ jQuery(window).bind("load", function() {
 
 // Menu
 $('.hmbrgr').hmbrgr({
-	width     : 42,
-	height    : 30,
-	barHeight : 6
+	width     : 30,
+	height    : 20,
+	barHeight : 4
 });
 
 $('.hmbrgr').click(function(event) {
@@ -91,8 +91,14 @@ $('.alio-navbar .dropdown > a').click(function(){
 
 // Sticky menu
 var barSpace = 0;
-if ( $( 'body' ).hasClass( 'admin-bar' ) ) {
-	barSpace = $( '#wpadminbar' ).height() - 1;
+if ( $( 'body' ).hasClass( 'mobile' ) ) {
+	if ( $( 'body' ).hasClass( 'admin-bar' ) && document.documentElement.offsetWidth > 600 ) {
+		barSpace = $( '#wpadminbar' ).height() - 1;
+	}
+} else {
+	if ( $( 'body' ).hasClass( 'admin-bar' ) && document.documentElement.offsetWidth > 600 ) {
+		barSpace = $( '#wpadminbar' ).height() - 1;
+	}
 }
 
 if ( $( '.navbar' ).size() > 0 ) {
@@ -103,8 +109,8 @@ if ( $( '.navbar' ).size() > 0 ) {
 			orgElement = $('.navbar');
 			coordsOrgElement = orgElement.offset();
 			leftOrgElement = coordsOrgElement.left;  
-			widthOrgElement = orgElement.css('width');
-			$( '.navbar' ).addClass('sticky').css('margin-top',barSpace).css('left',leftOrgElement+'px').css('top',0).css('width',widthOrgElement);
+			//widthOrgElement = orgElement.css('width');
+			$( '.navbar' ).addClass('sticky').css('margin-top',barSpace).css('left',leftOrgElement+'px').css('top',0);//.css('width',widthOrgElement);
 		} else {
 			$('.navbar').removeClass('sticky').css('margin-top','');
 		}
