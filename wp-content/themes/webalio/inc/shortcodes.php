@@ -143,7 +143,7 @@ function alio_works_area( $atts, $awa_content = null ) {
 		'awa_tag' => 'h2',
 		'awa_section' => '',
 		'awa_bottom_shape' => '',
-		'awa_count_posts' => 6,
+		'awa_count_posts' => -1,
 	), $atts ) );
 	$awa_lnk_id = ( $awa_lnk_id ) ? ' id="lnk_' . $awa_lnk_id . '"' : '';
 	$bt_class = ( $awa_bottom_shape ) ? ' no-wave' : '';

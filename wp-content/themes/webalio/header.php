@@ -72,7 +72,6 @@
 					<div class="bottom">
 						<div class="container">
 							<div class="description">
-							<span class="astronavt"></span>
 									<small>Нужен сайт?</small>
 									<span class="address">Вы по адресу</span>
 									<a href="#lnk_order-form" class="alio-btn">

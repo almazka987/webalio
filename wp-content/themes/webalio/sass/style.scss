@@ -32,6 +32,28 @@ $sprite-spacing: 10px;
 
 /******** General styles start ********/
 /* fonts */
+@font-face{
+	font-family: "PFDinDisplayPro";
+	src: url("../fonts/PFDinDisplayPro/regular/PFDinDisplayPro-Reg.eot");
+	src: url("../fonts/PFDinDisplayPro/regularPFDinDisplayPro-Reg.eot?#iefix") format('embedded-opentype'),
+		url("../fonts/PFDinDisplayPro/regular/PFDinDisplayPro-Reg.ttf") format('truetype'),
+		url("../fonts/PFDinDisplayPro/regular/PFDinDisplayPro-Reg.woff") format('woff'),
+		url("../fonts/PFDinDisplayPro/regular/PFDinDisplayPro-Reg.svg") format('svg');
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face{
+	font-family: "PFDinDisplayPro";
+	src: url("../fonts/PFDinDisplayPro/medium/PFDinDisplayPro-Med.eot");
+	src: url("../fonts/PFDinDisplayPro/mediumPFDinDisplayPro-Med.eot?#iefix") format('embedded-opentype'),
+		url("../fonts/PFDinDisplayPro/medium/PFDinDisplayPro-Med.ttf") format('truetype'),
+		url("../fonts/PFDinDisplayPro/medium/PFDinDisplayPro-Med.woff") format('woff'),
+		url("../fonts/PFDinDisplayPro/medium/PFDinDisplayPro-Med.svg") format('svg');
+	font-style: normal;
+	font-weight: 500;
+}
+
 /* variables */
 $purple: #541737;
 $lightPurple: #968dba;
@@ -47,7 +69,7 @@ html, body {
 }
 
 body {
-	font-family: "Roboto", sans-serif;
+	font-family: 'PFDinDisplayPro', sans-serif;
 	color: $textColor;
 	font-size: 14px;
 }
@@ -528,20 +550,6 @@ ul {
 	margin: 55px auto;
 	width: 766px;
 	text-align: right;
-}
-
-.header .bottom .description .astronavt {
-	display: block;
-	position: absolute;
-	width: 342px;
-	height: 563px;
-	background: url(../img/astronavt2.png) no-repeat;
-	background-size: cover;
-}
-
-.header .bottom .description img {
-	position: absolute;
-	left: 0;
 }
 
 .header .bottom .description small {
