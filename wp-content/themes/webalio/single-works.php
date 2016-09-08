@@ -9,19 +9,6 @@
 				$images = ( get_field( 'gallery' ) ) ? get_field( 'gallery' ) : '';
 				$live_website_link = ( get_field( 'live_website_link' ) ) ? get_field( 'live_website_link' ) : '';
 				?>
-				<?php if ( $live_website_link ): ?>
-					<?php
-						$categs = get_the_terms( get_the_ID(), 'workscategory' );
-						$plugin_categ = false;
-						foreach ( $categs as $value ) {
-							if ( $value->slug == 'plugins' ) {
-								$plugin_categ = true;
-							}
-						}
-						$text = ( $plugin_categ ) ? 'Страница плагина на WordPress.org' : 'Перейти к просмотру живого сайта';
-					?>
-					<a href="<?php echo $live_website_link; ?>" class="live-site-lnk inline-lnk"><?php echo $text; ?></a>
-				<?php endif; ?>
 				<?php if( $images ): ?>
 				<div class="gallery-box">
 				<hr>
@@ -36,6 +23,19 @@
 						<?php endforeach; ?>
 					</ul>
 				</div>
+				<?php endif; ?>
+				<?php if ( $live_website_link ): ?>
+					<?php
+						$categs = get_the_terms( get_the_ID(), 'workscategory' );
+						$plugin_categ = false;
+						foreach ( $categs as $value ) {
+							if ( $value->slug == 'plugins' ) {
+								$plugin_categ = true;
+							}
+						}
+						$text = ( $plugin_categ ) ? 'Страница плагина на WordPress.org' : 'Перейти к просмотру живого сайта';
+					?>
+					<a href="<?php echo $live_website_link; ?>" class="live-site-lnk inline-lnk" target="blank"><?php echo $text; ?></a>
 				<?php endif; ?>
 			 <?php endwhile; ?>
 			<?php echo do_shortcode( '[alio_divider bottom="50"]' ); ?>
