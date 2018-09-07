@@ -1,0 +1,45 @@
+body { background-image: url(http://webalio/wp-content/uploads/2018/08/floral-background-1.jpg); background-repeat: repeat-x; background-position: center top; } body {font-family:"Lato", sans-serif; }
+@media (min-width: 768px) {
+
+			/* masonry */
+		#masonry-layout .grid .grid-sizer, 
+        #masonry-layout .grid .grid-item {width:100%}
+		#masonry-layout .grid .gutter-sizer {width:0%}
+		
+		/* grid */
+		#masonry-layout .grid.post-grid .grid-sizer, 
+        #masonry-layout .grid.post-grid .grid-item {width:100%}
+		#masonry-layout .grid.post-grid .grid-item {border-right:0px}
+	
+}
+
+@media (min-width: 992px){
+
+			/* masonry */
+		#masonry-layout .grid .grid-sizer, 
+        #masonry-layout .grid .grid-item {width:30%}
+		#masonry-layout .grid .gutter-sizer {width:5%}
+		
+        /* masonry -> allow only 2 columns with sidebar */
+        #masonry-layout .has-sidebar .grid .grid-sizer, 
+        #masonry-layout .has-sidebar .grid .grid-item {width:47.5%}
+        #masonry-layout .has-sidebar .grid .gutter-sizer {width:5%}
+
+				
+		/* grid */
+		#masonry-layout .grid.post-grid .grid-sizer, 
+        #masonry-layout .grid.post-grid .grid-item {width:33.33333%}
+		#masonry-layout .grid.post-grid .grid-item:nth-child(3n-2), 
+		#masonry-layout .grid.post-grid .grid-item:nth-child(3n-1) {border-right:1px solid #eee}
+		#masonry-layout .grid.post-grid .grid-item:nth-last-of-type(1), 
+		#masonry-layout .grid.post-grid .grid-item:nth-last-of-type(2), 
+		#masonry-layout .grid.post-grid .grid-item:nth-last-of-type(3) {border-bottom:0px}
+	
+}
+
+@media (min-width: 1200px){
+
+	
+}
+		
+

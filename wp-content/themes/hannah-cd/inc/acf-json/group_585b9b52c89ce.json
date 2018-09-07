@@ -1,0 +1,326 @@
+{
+    "key": "group_585b9b52c89ce",
+    "title": "Section: Posts Teaser",
+    "fields": [
+        {
+            "key": "field_585b9b530c810",
+            "label": "Content",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_585b9b530c881",
+            "label": "Title",
+            "name": "custom_post_teaser_headline",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_585b9b530c8f1",
+            "label": "Text",
+            "name": "custom_post_teaser_text",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "tabs": "text",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "default_value": "",
+            "delay": 1
+        },
+        {
+            "key": "field_585b9b530c95f",
+            "label": "Teaser",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_585ba09543da5",
+            "label": "Filter by",
+            "name": "custom_post_teaser_types",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "custom_post_teaser_show_popular": "Popular Posts",
+                "custom_post_teaser_show_liked": "Most Liked Posts",
+                "custom_post_teaser_show_rated": "Most Rated Posts",
+                "custom_post_teaser_show_commented": "Most Commented Posts",
+                "custom_post_teaser_show_recent": "Recent Posts",
+                "custom_post_teaser_show_selected": "Selected Posts"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_585bba7a33cd1",
+            "label": "Selection",
+            "name": "custom_post_teaser_selected",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_585ba09543da5",
+                        "operator": "==",
+                        "value": "custom_post_teaser_show_selected"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "post"
+            ],
+            "taxonomy": [],
+            "allow_null": 0,
+            "multiple": 1,
+            "return_format": "id",
+            "ui": 1
+        },
+        {
+            "key": "field_59a4761a767f0",
+            "label": "Filtered by category",
+            "name": "custom_post_teaser_category_filter",
+            "type": "taxonomy",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_585ba09543da5",
+                        "operator": "!=",
+                        "value": "custom_post_teaser_show_selected"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "category",
+            "field_type": "multi_select",
+            "allow_null": 0,
+            "add_term": 0,
+            "save_terms": 0,
+            "load_terms": 0,
+            "return_format": "id",
+            "multiple": 0
+        },
+        {
+            "key": "field_59a4761c767f1",
+            "label": "Filtered by tag",
+            "name": "custom_post_teaser_tag_filter",
+            "type": "taxonomy",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_585ba09543da5",
+                        "operator": "!=",
+                        "value": "custom_post_teaser_show_selected"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "post_tag",
+            "field_type": "multi_select",
+            "allow_null": 0,
+            "add_term": 0,
+            "save_terms": 0,
+            "load_terms": 0,
+            "return_format": "id",
+            "multiple": 0
+        },
+        {
+            "key": "field_585ba20a848fc",
+            "label": "Amount of Items",
+            "name": "custom_post_teaser_amount",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_585ba09543da5",
+                        "operator": "!=",
+                        "value": "custom_post_teaser_show_selected"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 3,
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": ""
+        },
+        {
+            "key": "field_585bad08b6e1e",
+            "label": "Columns",
+            "name": "custom_post_teaser_column",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "col_1": "1 Column",
+                "col_2": "2 Columns",
+                "col_3": "3 Columns",
+                "col_4": "4 Columns"
+            },
+            "default_value": [
+                "col_3"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 1,
+            "ajax": 1,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_585bb8afa9ea8",
+            "label": "Category",
+            "name": "custom_post_teaser_category",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Hide",
+            "ui_off_text": "Show"
+        },
+        {
+            "key": "field_585b9f9eac08f",
+            "label": "Post Format exclude",
+            "name": "custom_post_teaser_postformat_exclude",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5a23b8a946845",
+                        "operator": "==",
+                        "value": "post_type_post"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "post-format-video": "Video",
+                "post-format-audio": "Audio",
+                "post-format-quote": "Quote",
+                "post-format-link": "Link",
+                "post-format-gallery": "Gallery",
+                "post-format-image": "Image"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 1,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "array",
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "default"
+            }
+        ]
+    ],
+    "menu_order": 3,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "",
+    "modified": 1512396066
+}

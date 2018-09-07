@@ -9,6 +9,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 add_filter( 'popmake_popup_display_defaults', 'popmake_popup_display_defaults', 0 );
+add_filter( 'pum_popup_display_defaults', 'popmake_popup_display_defaults', 0 );
 
 /**
  * Returns default display settings for popups.
@@ -22,6 +23,7 @@ function popmake_popup_display_defaults( $defaults = array() ) {
 		'stackable'                 => false,
 		'overlay_disabled'          => false,
 		'scrollable_content'        => false,
+		'disable_reposition'        => false,
 		'size'                      => 'medium',
 		'responsive_min_width'      => '',
 		'responsive_min_width_unit' => 'px',
@@ -29,11 +31,11 @@ function popmake_popup_display_defaults( $defaults = array() ) {
 		'responsive_max_width_unit' => 'px',
 		'custom_width'              => 640,
 		'custom_width_unit'         => 'px',
-		'custom_width_unit'         => 'px',
 		'custom_height'             => 380,
 		'custom_height_unit'        => 'px',
-		'custom_height_auto'        => true,
+		'custom_height_auto'        => false,
 		'location'                  => 'center top',
+		'position_from_trigger'     => false,
 		'position_top'              => 100,
 		'position_left'             => 0,
 		'position_bottom'           => 0,
@@ -49,6 +51,7 @@ function popmake_popup_display_defaults( $defaults = array() ) {
 
 
 add_filter( 'popmake_popup_close_defaults', 'popmake_popup_close_defaults', 0 );
+add_filter( 'pum_popup_close_defaults', 'popmake_popup_close_defaults', 0 );
 function popmake_popup_close_defaults( $defaults = array() ) {
 	return array_merge( $defaults, array(
 		'text'          => '',
@@ -59,35 +62,6 @@ function popmake_popup_close_defaults( $defaults = array() ) {
 	) );
 }
 
-
-add_filter( 'popmake_popup_click_open_defaults', 'popmake_popup_click_open_defaults', 0 );
-function popmake_popup_click_open_defaults( $defaults = array() ) {
-	return array_merge( $defaults, array(
-		'extra_selectors' => '',
-	) );
-}
-
-
-add_filter( 'popmake_popup_auto_open_defaults', 'popmake_popup_auto_open_defaults' );
-function popmake_popup_auto_open_defaults( $defaults = array() ) {
-	return array_merge( $defaults, array(
-		'enabled'        => null,
-		'delay'          => 500,
-		'cookie_trigger' => 'close',
-		'session_cookie' => false,
-		'cookie_time'    => '1 month',
-		'cookie_path'    => '/',
-		'cookie_key'     => '',
-	) );
-}
-
-
-add_filter( 'popmake_popup_admin_debug_defaults', 'popmake_popup_admin_debug_defaults' );
-function popmake_popup_admin_debug_defaults( $defaults = array() ) {
-	return array_merge( $defaults, array(
-		'enabled' => null,
-	) );
-}
 
 
 add_filter( 'popmake_popup_theme_overlay_defaults', 'popmake_popup_theme_overlay_defaults', 0 );

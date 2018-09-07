@@ -1,0 +1,591 @@
+{
+    "key": "group_5a7847f1a4916",
+    "title": "Settings: Blog List",
+    "fields": [
+        {
+            "key": "field_5a7847f1a901b",
+            "label": "Layout",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5a7847f1a90fe",
+            "label": "List Style",
+            "name": "layout_show",
+            "type": "radio",
+            "instructions": "Choose the default blog list style for the latest posts, archive or taxonomy pages like categories and tags.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "normal": "Normal",
+                "magazine": "Magazine",
+                "metro": "Metro",
+                "grid": "Grid",
+                "masonry": "Masonry Grid",
+                "visual_left": "Visual Left",
+                "visual_right": "Visual Right",
+                "book_left": "Book Left",
+                "book_right": "Book Right"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "normal",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_5a7847f1a916d",
+            "label": "Posts per Page",
+            "name": "masonry_posts_per_page",
+            "type": "number",
+            "instructions": "If is an empty value entered, the global post per page setting from \"Settings > Reading\" will used.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 10,
+            "placeholder": "",
+            "prepend": "",
+            "append": "Post(s)",
+            "min": "",
+            "max": "",
+            "step": ""
+        },
+        {
+            "key": "field_5a7847f1a91da",
+            "label": "Column Count",
+            "name": "masonry_custom_column",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5a7847f1a90fe",
+                        "operator": "==",
+                        "value": "masonry"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5a7847f1a90fe",
+                        "operator": "==",
+                        "value": "grid"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5a7847f1a90fe",
+                        "operator": "==",
+                        "value": "metro"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "masonry_colnum_2": "2",
+                "masonry_colnum_3": "3",
+                "masonry_colnum_4": "4"
+            },
+            "default_value": [
+                "masonry_colnum_3"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 1,
+            "ajax": 1,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_5a7847f1a924c",
+            "label": "First Post Element",
+            "name": "masonry_double_width",
+            "type": "true_false",
+            "instructions": "Show the first masonry element in double width. It's possible for 3 and 4 column masonry grid.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5a7847f1a90fe",
+                        "operator": "==",
+                        "value": "masonry"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Yes",
+            "ui_off_text": "No"
+        },
+        {
+            "key": "field_5aa53eb03eecb",
+            "label": "Alternating Orientation",
+            "name": "alt_orientation",
+            "type": "true_false",
+            "instructions": "Alternate orientation for image and content.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5a7847f1a90fe",
+                        "operator": "==",
+                        "value": "book_left"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5a7847f1a90fe",
+                        "operator": "==",
+                        "value": "book_right"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5a7847f1a90fe",
+                        "operator": "==",
+                        "value": "visual_left"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5a7847f1a90fe",
+                        "operator": "==",
+                        "value": "visual_right"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Yes",
+            "ui_off_text": "No"
+        },
+        {
+            "key": "field_5a78486eeb71b",
+            "label": "Post Meta",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5a94059f8a2bc",
+            "label": "Meta Box",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Shows the post meta box (Author, Comments & Views) for the latest posts, archive or taxonomy pages like categories and tags.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5a7847f1a9415",
+            "label": "Meta Box",
+            "name": "post_meta_show_archive",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Hide",
+            "ui_off_text": "Show"
+        },
+        {
+            "key": "field_5a7847f1a9485",
+            "label": "Author",
+            "name": "post_author_meta_show",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Hide",
+            "ui_off_text": "Show"
+        },
+        {
+            "key": "field_5a7847f1a9561",
+            "label": "Comments",
+            "name": "post_comments_meta_show",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Hide",
+            "ui_off_text": "Show"
+        },
+        {
+            "key": "field_5a7847f1a95d1",
+            "label": "Views",
+            "name": "post_views_meta_show",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "34",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Hide",
+            "ui_off_text": "Show"
+        },
+        {
+            "key": "field_5a7847f1a96b2",
+            "label": "Rating",
+            "name": "post_rating_meta_show",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Hide",
+            "ui_off_text": "Show"
+        },
+        {
+            "key": "field_5a7847f1a9724",
+            "label": "Likes",
+            "name": "post_like_meta_show",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "67",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Hide",
+            "ui_off_text": "Show"
+        },
+        {
+            "key": "field_5a7847f1a963f",
+            "label": "Other",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5a7847f1a92c8",
+            "label": "Dropcap",
+            "name": "dropcap_post_list",
+            "type": "true_false",
+            "instructions": "Show the first letter of the post excerpt as initial letter.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Hide",
+            "ui_off_text": "Show"
+        },
+        {
+            "key": "field_5a92b3ddb97df",
+            "label": "Taxonomy",
+            "name": "post_taxonomy",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Hide",
+            "ui_off_text": "Show"
+        },
+        {
+            "key": "field_5a92b3fab97e0",
+            "label": "Type",
+            "name": "post_taxonomy_select",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "67",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "cat": "Categories",
+                "tag": "Tags"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_5a9404ee66815",
+            "label": "Date",
+            "name": "post_date",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Hide",
+            "ui_off_text": "Show"
+        },
+        {
+            "key": "field_5a9409b10ea8a",
+            "label": "Read more",
+            "name": "post_read_more",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Hide",
+            "ui_off_text": "Show"
+        },
+        {
+            "key": "field_5a78484ceb71a",
+            "label": "Latest Posts Page",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5a7847f1a9791",
+            "label": "Latest Posts",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "If is the front page selected for \"Your latest posts\" or a specific post page is selected at “Settings > Reading”, you can manage the title and content for this page here.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5a7847f1a97fd",
+            "label": "Latest Posts Title",
+            "name": "latest_posts_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "Latest Posts",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5a7847f1a986a",
+            "label": "Latest Posts Content",
+            "name": "latest_posts_content",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_5a7847f1a98d7",
+            "label": "Page Title",
+            "name": "page_title_global",
+            "type": "true_false",
+            "instructions": "Show or hide the title of archive or latest posts pages.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Hide",
+            "ui_off_text": "Show"
+        },
+        {
+            "key": "field_5a7847f1a9944",
+            "label": "Main Content",
+            "name": "main_content_global",
+            "type": "true_false",
+            "instructions": "Show or hide the main content of archive or latest posts pages.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Hide",
+            "ui_off_text": "Show"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "theme-blog-list"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1520792739
+}

@@ -24,11 +24,8 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
 function popmake_add_popup_theme_meta_box() {
 
-	$singular = popmake_get_label_singular( 'popup_theme' );
-	$plural   = popmake_get_label_plural( 'popup_theme' );
-
 	/** Preview Window **/
-	add_meta_box( 'popmake_popup_theme_preview', __( 'Theme Preview', 'popup-maker' ), 'popmake_render_popup_theme_preview_meta_box', 'popup_theme', 'side', 'high' );
+	add_meta_box( 'popmake_popup_theme_preview', __( 'Theme Preview', 'popup-maker' ), 'popmake_render_popup_theme_preview_meta_box', 'popup_theme', 'side', 'low' );
 
 	/** Overlay Meta **/
 	add_meta_box( 'popmake_popup_theme_overlay', __( 'Overlay Settings', 'popup-maker' ), 'popmake_render_popup_theme_overlay_meta_box', 'popup_theme', 'normal', 'high' );
@@ -52,7 +49,7 @@ add_action( 'add_meta_boxes', 'popmake_add_popup_theme_meta_box' );
 
 function popmake_popup_theme_meta_fields() {
 	$fields = array(
-		'popup_theme_defaults_set'
+		'popup_theme_defaults_set',
 	);
 	foreach ( popmake_popup_theme_meta_field_groups() as $group ) {
 		foreach ( apply_filters( 'popmake_popup_theme_meta_field_group_' . $group, array() ) as $field ) {
@@ -67,8 +64,6 @@ function popmake_popup_theme_meta_fields() {
 function popmake_popup_theme_meta_field_groups() {
 	return apply_filters( 'popmake_popup_theme_meta_field_groups', array() );
 }
-
-
 
 
 /**
@@ -135,12 +130,12 @@ function popmake_popup_theme_meta_box_save( $post_id, $post ) {
 		}
 	}
 
-    // If this is a built in theme and the user has modified it set a key so that we know not to make automatic upgrades to it in the future.
-    if ( get_post_meta( $post_id, '_pum_built_in', true ) !== false ) {
-        update_post_meta( $post_id, '_pum_user_modified', true );
-    }
+	// If this is a built in theme and the user has modified it set a key so that we know not to make automatic upgrades to it in the future.
+	if ( get_post_meta( $post_id, '_pum_built_in', true ) !== false ) {
+		update_post_meta( $post_id, '_pum_user_modified', true );
+	}
 
-    pum_force_theme_css_refresh();
+	pum_force_theme_css_refresh();
 
 	do_action( 'popmake_save_popup_theme', $post_id, $post );
 }
@@ -161,15 +156,27 @@ add_action( 'save_post', 'popmake_popup_theme_meta_box_save', 10, 2 );
  */
 function popmake_render_popup_theme_preview_meta_box() { ?>
 	<div class="empreview">
-	<div id="PopMake-Preview">
-		<div class="example-popup-overlay"></div>
-		<div class="example-popup">
-			<div class="title"><?php _e( 'Title Text', 'popup-maker' ); ?></div>
-			<div class="content"><?php do_action( 'popmake_example_popup_content' ); ?></div>
-			<a class="close-popup"><?php _e( '&#215;', 'popup-maker' ); ?></a>
+		<div id="PopMake-Preview">
+			<div class="example-popup-overlay"></div>
+			<div class="example-popup">
+				<div class="title"><?php _e( 'Title Text', 'popup-maker' ); ?></div>
+				<div class="content">
+					<?php do_action( 'popmake_example_popup_content' ); ?>
+				</div>
+				<a class="close-popup">&#215;</a>
+			</div>
+			<p class="pum-desc"><?php
+				$tips = array(
+					__( 'If you move this theme preview to the bottom of your sidebar here it will follow you down the page?', 'popup-maker' ),
+					__( 'Clicking on an element in this theme preview will take you to its relevant settings in the editor?', 'popup-maker' ),
+				);
+				$key  = array_rand( $tips, 1 ); ?>
+				<i class="dashicons dashicons-info"></i> <?php echo '<strong>' . __( 'Did you know:', 'popup-maker' ) . '</strong>  ' . $tips[ $key ]; ?>
+			</p>
 		</div>
 	</div>
-	</div><?php
+
+	<?php
 }
 
 
@@ -189,7 +196,7 @@ function popmake_render_popup_theme_overlay_meta_box() {
 	<div id="popmake_popup_theme_overlay_fields" class="popmake_meta_table_wrap">
 	<table class="form-table">
 		<tbody>
-			<?php do_action( 'popmake_popup_theme_overlay_meta_box_fields', $post->ID ); ?>
+		<?php do_action( 'popmake_popup_theme_overlay_meta_box_fields', $post->ID ); ?>
 		</tbody>
 	</table>
 	</div><?php
@@ -210,7 +217,7 @@ function popmake_render_popup_theme_container_meta_box() {
 	<div id="popmake_popup_theme_container_fields" class="popmake_meta_table_wrap">
 	<table class="form-table">
 		<tbody>
-			<?php do_action( 'popmake_popup_theme_container_meta_box_fields', $post->ID ); ?>
+		<?php do_action( 'popmake_popup_theme_container_meta_box_fields', $post->ID ); ?>
 		</tbody>
 	</table>
 	</div><?php
@@ -231,7 +238,7 @@ function popmake_render_popup_theme_title_meta_box() {
 	<div id="popmake_popup_theme_title_fields" class="popmake_meta_table_wrap">
 	<table class="form-table">
 		<tbody>
-			<?php do_action( 'popmake_popup_theme_title_meta_box_fields', $post->ID ); ?>
+		<?php do_action( 'popmake_popup_theme_title_meta_box_fields', $post->ID ); ?>
 		</tbody>
 	</table>
 	</div><?php
@@ -252,7 +259,7 @@ function popmake_render_popup_theme_content_meta_box() {
 	<div id="popmake_popup_theme_content_fields" class="popmake_meta_table_wrap">
 	<table class="form-table">
 		<tbody>
-			<?php do_action( 'popmake_popup_theme_content_meta_box_fields', $post->ID ); ?>
+		<?php do_action( 'popmake_popup_theme_content_meta_box_fields', $post->ID ); ?>
 		</tbody>
 	</table>
 	</div><?php
@@ -273,76 +280,8 @@ function popmake_render_popup_theme_close_meta_box() {
 	<div id="popmake_popup_theme_close_fields" class="popmake_meta_table_wrap">
 	<table class="form-table">
 		<tbody>
-			<?php do_action( 'popmake_popup_theme_close_meta_box_fields', $post->ID ); ?>
+		<?php do_action( 'popmake_popup_theme_close_meta_box_fields', $post->ID ); ?>
 		</tbody>
 	</table>
 	</div><?php
 }
-
-
-/**
- * Adds Popup Theme meta fields to revisions.
- *
- * @since 1.0
- * @return array $fields Array of fields.
- */
-function popmake_popup_theme_post_revision_fields( $fields ) {
-	$theme_fields = popmake_popup_theme_meta_fields();
-	foreach ( $theme_fields as $field ) {
-		$fields[ $field ] = __( 'Theme Overlay', ucwords( str_replace( '_', ' ', str_replace( 'popup_theme_', '', $field ) ) ), 'popup-maker' );
-	}
-
-	return $fields;
-}
-
-add_filter( '_wp_post_revision_fields', 'popmake_popup_theme_post_revision_fields' );
-
-
-function popmake_popup_theme_revision_field( $value, $field, $revision ) {
-	return get_metadata( 'post', $revision->ID, $field, true );
-}
-
-
-function popmake_add_popup_theme_revision_fields() {
-	foreach ( popmake_popup_theme_meta_fields() as $field ) {
-		add_filter( '_wp_post_revision_field_' . $field, 'popmake_popup_theme_revision_field', 10, 3 );
-	}
-}
-
-add_action( 'plugins_loaded', 'popmake_add_popup_theme_revision_fields' );
-
-function popmake_popup_theme_meta_restore_revision( $post_id, $revision_id ) {
-	$post = get_post( $post_id );
-	if ( $post->post_type != 'popup_theme' ) {
-		return;
-	}
-	$revision = get_post( $revision_id );
-	foreach ( popmake_popup_theme_meta_fields() as $field ) {
-		$meta = get_metadata( 'post', $revision->ID, $field, true );
-		if ( false === $meta ) {
-			delete_post_meta( $post_id, $field );
-		} else {
-			update_post_meta( $post_id, $field, $meta );
-		}
-	}
-}
-
-add_action( 'wp_restore_post_revision', 'popmake_popup_theme_meta_restore_revision', 10, 2 );
-
-function popmake_popup_theme_meta_save_revision( $post_id, $post ) {
-	if ( $post->post_type != 'popup_theme' ) {
-		return;
-	}
-	if ( $parent_id = wp_is_post_revision( $post_id ) ) {
-		foreach ( popmake_popup_theme_meta_fields() as $field ) {
-			$meta = get_post_meta( $parent_id, $field, true );
-			if ( false !== $meta ) {
-				add_metadata( 'post', $post_id, $field, $meta );
-			}
-
-		}
-	}
-}
-
-add_action( 'save_post', 'popmake_popup_theme_meta_save_revision', 11, 2 );
-

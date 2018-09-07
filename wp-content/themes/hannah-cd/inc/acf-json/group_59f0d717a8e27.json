@@ -1,0 +1,84 @@
+{
+    "key": "group_59f0d717a8e27",
+    "title": "Global: Page",
+    "fields": [
+        {
+            "key": "field_59f0d717acbdc",
+            "label": "Page Title",
+            "name": "page_title",
+            "type": "true_false",
+            "value": null,
+            "instructions": "Show or hide the page title of this site.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Hide",
+            "ui_off_text": "Show"
+        },
+        {
+            "key": "field_59f0da2ef2760",
+            "label": "Main Content",
+            "name": "main_content",
+            "type": "true_false",
+            "value": null,
+            "instructions": "Show or hide the main content of this site.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Hide",
+            "ui_off_text": "Show"
+        },
+        {
+            "key": "field_59f0d757eea98",
+            "label": "Content below",
+            "name": "content_below",
+            "type": "wysiwyg",
+            "value": null,
+            "instructions": "Enter custom content below the main content here.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_format",
+                "operator": "==",
+                "value": "standard"
+            }
+        ]
+    ],
+    "menu_order": 10,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "",
+    "modified": 1509033567
+}

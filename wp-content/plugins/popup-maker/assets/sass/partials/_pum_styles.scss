@@ -47,7 +47,6 @@
   z-index: 1;
 }
 
-
 .pum-overlay {
   position: fixed;
   height: 100%;
@@ -60,6 +59,7 @@
   overflow: auto;
   overflow: initial;
   display: none;
+  transition: all .15s ease-in-out;
 
   &.pum-preview,
   &.pum-form-submission-detected {
@@ -82,7 +82,7 @@
   top: 100px;
   position: absolute;
   margin-bottom: 3em;
-  z-index: 1;
+  z-index: 1999999999;
 
   &.pum-responsive {
 
@@ -158,7 +158,8 @@
     margin-left: inherit;
   }
 
-  .pum-title {}
+  .pum-title {
+  }
 
   .pum-content {
 
@@ -193,7 +194,6 @@
     }
 
   }
-
 
 }
 
@@ -233,6 +233,7 @@ html.pum-open {
 
       .pum-overlay.pum-active {
         overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
       }
 
     }
@@ -256,7 +257,5 @@ html.pum-open {
     }
 
   }
-
-
 
 }

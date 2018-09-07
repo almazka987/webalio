@@ -164,7 +164,7 @@ function alio_works_area( $atts, $awa_content = null ) {
 	$count = count( $terms );
 	if ( $count > 0 ) {
 		$out .= '<ul id="filters">';
-		$out .= '<li class="filter selected" data-filter="all"><a href="#" data-filter="*" class="selected">Все</a></li>';
+		$out .= '<li class="filter selected" data-filter="all"><a href="#" data-filter="*" class="selected">' . __("Все", "webalio") . '</a></li>';
 		foreach ( $terms as $term ) {
 			$out .= "<li><a href='#' data-filter='.".$term->slug."'>" . $term->name . "</a></li>\n";
 		}
@@ -199,8 +199,8 @@ function alio_works_area( $atts, $awa_content = null ) {
 			}
 			$out .= '<div class="img-hover-overlay"></div>';
 			$out .= '<div class="icons-holder">
-			<a class="hover-icon" target="" href="' . get_permalink() . '"><i class="fa fa-arrow-right" aria-hidden="true"></i><small>Подробнее...</small></a>
-						<a class="lnk-zoom hover-icon" href="' . wp_get_attachment_url( get_post_thumbnail_id() ) . '" title="' . get_the_title() . '" rel="prettyPhoto[gallery]"><i class="fa fa-search-plus" aria-hidden="true"></i><small>Увеличить</small></a>
+			<a class="hover-icon" target="" href="' . get_permalink() . '"><i class="fa fa-arrow-right" aria-hidden="true"></i><small>' . __("Подробнее...", "webalio") . '</small></a>
+						<a class="lnk-zoom hover-icon" href="' . wp_get_attachment_url( get_post_thumbnail_id() ) . '" title="' . get_the_title() . '" rel="prettyPhoto[gallery]"><i class="fa fa-search-plus" aria-hidden="true"></i><small>' . __("Увеличить", "webalio") . '</small></a>
 					</div>';
 			$out .= '<div class="meta-info">
 						<div class="add-middle-align">

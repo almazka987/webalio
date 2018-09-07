@@ -1,0 +1,102 @@
+{
+    "key": "group_5aa413a6be7a6",
+    "title": "User: Social Profiles",
+    "fields": [
+        {
+            "key": "field_5aa4148c2745e",
+            "label": "Social Profiles",
+            "name": "user_social_profiles",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "Add new",
+            "sub_fields": [
+                {
+                    "key": "field_5aa4148c2745f",
+                    "label": "Link",
+                    "name": "user_social_profiles_link",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "40",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "URL",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5aa4148c27460",
+                    "label": "Icon",
+                    "name": "user_social_profiles_icon",
+                    "type": "text",
+                    "instructions": "<a href=\"\/\/fontawesome.com\/v4.7.0\/icons\/\" target=\"_blank\">All icons here<\/a> e.g. \"fa-check\"",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "30",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "fa-facebook",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5aa4148c27461",
+                    "label": "Label",
+                    "name": "user_social_profiles_label",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "30",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "Facebook",
+                    "prepend": "",
+                    "append": "Label",
+                    "maxlength": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "user_form",
+                "operator": "==",
+                "value": "edit"
+            }
+        ]
+    ],
+    "menu_order": 6,
+    "position": "normal",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1520713380
+}

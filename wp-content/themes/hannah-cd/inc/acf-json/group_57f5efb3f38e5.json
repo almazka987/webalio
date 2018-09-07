@@ -1,0 +1,390 @@
+{
+    "key": "group_57f5efb3f38e5",
+    "title": "Global: Image or Video Background for Section",
+    "fields": [
+        {
+            "key": "field_57f56646f7908",
+            "label": "Background",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_57f565b0f7907",
+            "label": "Type",
+            "name": "image_or_video",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "bgcolor": "Color",
+                "bggradient": "Gradient",
+                "bgimage": "Image",
+                "bgfeaturedimage": "Featured Image",
+                "bgvideo": "Video",
+                "bgvideoextern": "External Video"
+            },
+            "default_value": [
+                "bgimage"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 1,
+            "ajax": 1,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_5a075cd7f03e6",
+            "label": "Color",
+            "name": "background_color",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_57f565b0f7907",
+                        "operator": "==",
+                        "value": "bgcolor"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#222222"
+        },
+        {
+            "key": "field_5a8d9b05ce006",
+            "label": "Gradient Start-Color",
+            "name": "background_gradient_start_color",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_57f565b0f7907",
+                        "operator": "==",
+                        "value": "bggradient"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#222222"
+        },
+        {
+            "key": "field_5a8d9b1ace007",
+            "label": "Gradient End-Color",
+            "name": "background_gradient_end_color",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_57f565b0f7907",
+                        "operator": "==",
+                        "value": "bggradient"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#222222"
+        },
+        {
+            "key": "field_57ecd550bfe9f",
+            "label": "Image",
+            "name": "background_image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_57f565b0f7907",
+                        "operator": "==",
+                        "value": "bgimage"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_57f5719bf5002",
+            "label": "Video",
+            "name": "background_video",
+            "type": "file",
+            "instructions": "File format: mp4",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_57f565b0f7907",
+                        "operator": "==",
+                        "value": "bgvideo"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "library": "all",
+            "min_size": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_57f571e8f5003",
+            "label": "Video (alternate)",
+            "name": "background_video_alternate",
+            "type": "file",
+            "instructions": "File format: webm",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_57f565b0f7907",
+                        "operator": "==",
+                        "value": "bgvideo"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "library": "all",
+            "min_size": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_57f5721ff5004",
+            "label": "Video",
+            "name": "background_video_external",
+            "type": "url",
+            "instructions": "File format: mp4",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_57f565b0f7907",
+                        "operator": "==",
+                        "value": "bgvideoextern"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_57f57247f5005",
+            "label": "Video (alternate)",
+            "name": "background_video_external_alternate",
+            "type": "url",
+            "instructions": "File format: webm",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_57f565b0f7907",
+                        "operator": "==",
+                        "value": "bgvideoextern"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_57f5797d7f9ae",
+            "label": "Video-Poster",
+            "name": "background_video_poster",
+            "type": "image",
+            "instructions": "Use an alternate image, if the video cannot load.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_57f565b0f7907",
+                        "operator": "==",
+                        "value": "bgvideo"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_57f565b0f7907",
+                        "operator": "==",
+                        "value": "bgvideoextern"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_59b63ce9dd1c5",
+            "label": "Transparent overlay",
+            "name": "remove_overlay",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Hide",
+            "ui_off_text": "Show"
+        },
+        {
+            "key": "field_596cb93e3c305",
+            "label": "Particle Animation",
+            "name": "particles_show",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Show",
+            "ui_off_text": "Hide"
+        },
+        {
+            "key": "field_596cb9603c306",
+            "label": "Style",
+            "name": "particles_style",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_596cb93e3c305",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "34",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "style_1": "Polygon Grab",
+                "style_2": "Polygon Repulse",
+                "style_3": "Polygon Bubble",
+                "style_4": "Particles",
+                "style_5": "Particles Repulse",
+                "style_6": "Snow",
+                "style_7": "Snow Storm",
+                "style_8": "Cosmos"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "default"
+            }
+        ]
+    ],
+    "menu_order": 10,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "",
+    "modified": 1520087381
+}

@@ -1,0 +1,456 @@
+{
+    "key": "group_59707d498cbfe",
+    "title": "Settings: Web Fonts",
+    "fields": [
+        {
+            "key": "field_59707d4994365",
+            "label": "Define Theme Fonts",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_597080245e7fd",
+            "label": "Info",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "message": "Please note the following guidelines. Font familiy usage: e.g. <code>Open+Sans<\/code> or <code>mrs-eaves<\/code>, for free spaces in Google Webfonts, use <code>+<\/code> and for Typekit Webfonts <code>-<\/code> instead. Font weight usage: e.g. <code>300<\/code> or <code>600<\/code>, use only one value.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_59707d49944c1",
+            "label": "Default Font",
+            "name": "main_google_font_name",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "Font-Familiy",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59707d4994535",
+            "label": "Weight (Default Font)",
+            "name": "main_google_font_weight",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "Font-Weight",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59707d49945a6",
+            "label": "Menu",
+            "name": "menu_google_font_name",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "Font-Familiy",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59707d4994617",
+            "label": "Weight (Menu)",
+            "name": "menu_google_font_weight",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "Font-Weight",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59707d49946a5",
+            "label": "H1 Headline",
+            "name": "main_google_font_h1_name",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "Font-Familiy",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59707d4994719",
+            "label": "Weight (H1)",
+            "name": "main_google_font_h1_weight",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "Font-Weight",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59707d499478b",
+            "label": "H2 Headline",
+            "name": "main_google_font_h2_name",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "Font-Familiy",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59707d49947fc",
+            "label": "Weight (H2)",
+            "name": "main_google_font_h2_weight",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "Font-Weight",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59707d4994877",
+            "label": "H3 Headline",
+            "name": "main_google_font_h3_name",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "Font-Familiy",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59707d49948ea",
+            "label": "Weight (H3)",
+            "name": "main_google_font_h3_weight",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "Font-Weight",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59707d499495f",
+            "label": "H4 Headline",
+            "name": "main_google_font_h4_name",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "Font-Familiy",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59707d49949d1",
+            "label": "Weight (H4)",
+            "name": "main_google_font_h4_weight",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "Font-Weight",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59707dc0473c1",
+            "label": "Google Web Fonts",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_59707d49943d9",
+            "label": "Info",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "message": "Please note the following guidelines. Font familiy usage: e.g. <code>Open+Sans<\/code>, <code>Source+Sans+Pro<\/code> or <code>Oswald<\/code>, for free spaces in Google Webfonts, use <code>+<\/code>. Font weight usage: Separate the values with comma.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_59707d499444f",
+            "label": "Add new Google Webfonts",
+            "name": "custom_google_fonts_show",
+            "type": "repeater",
+            "instructions": "If you add new google web fonts, you have to separate the \"Font-Name\" and \"Font-Weight\" in the following fields. The default font is Open Sans. Here you can find all <a href=\"\/\/fonts.google.com\/\" target=\"_blank\">google fonts<\/a>.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "Add new",
+            "sub_fields": [
+                {
+                    "key": "field_59707d49c80d4",
+                    "label": "Font-Name",
+                    "name": "custom_google_font_name",
+                    "type": "text",
+                    "instructions": "e.g. \"Open+Sans\" or \"Roboto\".",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_59707d49c8149",
+                    "label": "Font-Weight",
+                    "name": "custom_google_font_weight",
+                    "type": "text",
+                    "instructions": "e.g. \"300,400,600,700,800\" or \"300i,400i\"",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        },
+        {
+            "key": "field_59707dd2473c2",
+            "label": "Typekit Web Fonts",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_598c04f0e271a",
+            "label": "Info",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "message": "After activating, you can define the Typekit Webfonts at the Tab <code>Define Theme Fonts<\/code>. <b>Important<\/b>: You can't embed a Typekit font at the WordPress backend. You can only do this in your Adobe Typekit account!",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_59707d4994a42",
+            "label": "Activation",
+            "name": "adobe_typekit",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Activate",
+            "ui_off_text": "Deactivate"
+        },
+        {
+            "key": "field_59707d4994ab5",
+            "label": "Your Adobe Typekit Token",
+            "name": "adobe_typekit_token",
+            "type": "text",
+            "instructions": "Insert your Adobe Typekit Token (Kit-ID). You have to be <a href=\"\/\/typekit.com\" target=\"_blank\">registered<\/a> to use the fonts from Adobe Typekit.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59707d4994a42",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "Adobe Typekit Token",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "web-fonts"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1502348590
+}

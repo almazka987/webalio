@@ -1,0 +1,85 @@
+{
+    "key": "group_5a75a7f68d477",
+    "title": "Settings: Topbar",
+    "fields": [
+        {
+            "key": "field_5a75a7f692c64",
+            "label": "Activation",
+            "name": "topbar_show",
+            "type": "true_false",
+            "instructions": "Shows the topbar with breadcrumb and social profile icons.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "No",
+            "ui_off_text": "Yes"
+        },
+        {
+            "key": "field_5a75a7f692bf7",
+            "label": "Info",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "If you want to display an additional menu in the top bar, first you have to add a new menu at <code>Appearance > Menus<\/code> for the location <code>Top Menu<\/code>.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5a75a7f692cd0",
+            "label": "Top Menu",
+            "name": "top_menu_show",
+            "type": "radio",
+            "instructions": "Show the Top Menu instead of the breadcrumb or social profile icons.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "layout": "horizontal",
+            "choices": {
+                "none": "Disable",
+                "instead_breadcrumb": "Instead of Breadcrumb",
+                "instead_social": "Instead of Social Profile Icons"
+            },
+            "default_value": "none",
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "allow_null": 0,
+            "return_format": "value"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "theme-topbar"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "field",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1517665611
+}

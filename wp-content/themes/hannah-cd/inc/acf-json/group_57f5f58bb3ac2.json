@@ -1,0 +1,377 @@
+{
+    "key": "group_57f5f58bb3ac2",
+    "title": "Global: Button Select",
+    "fields": [
+        {
+            "key": "field_57f5ed9984a78",
+            "label": "Buttons",
+            "name": "button_show",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "Add new",
+            "sub_fields": [
+                {
+                    "key": "field_57f5ed9991a20",
+                    "label": "Label",
+                    "name": "button_name",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "33",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_57f5ed9996869",
+                    "label": "Linktype",
+                    "name": "button_types",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "33",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "none": "None",
+                        "linktype1": "Page",
+                        "linktype2": "Post",
+                        "linktype8": "Product",
+                        "linktype9": "Category",
+                        "linktype10": "Tag",
+                        "linktype3": "URL",
+                        "linktype4": "PopUp Video",
+                        "linktype5": "PopUp Map",
+                        "linktype6": "PopUp Layer",
+                        "linktype7": "Anchor Link"
+                    },
+                    "default_value": [],
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 1,
+                    "ajax": 1,
+                    "return_format": "value",
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_57f5ed999b6b0",
+                    "label": "Page",
+                    "name": "button_page",
+                    "type": "page_link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_57f5ed9996869",
+                                "operator": "==",
+                                "value": "linktype1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "34",
+                        "class": "",
+                        "id": ""
+                    },
+                    "post_type": [
+                        "page"
+                    ],
+                    "taxonomy": [],
+                    "allow_null": 0,
+                    "allow_archives": 0,
+                    "multiple": 0
+                },
+                {
+                    "key": "field_57f5ed99a04fc",
+                    "label": "Post",
+                    "name": "button_post",
+                    "type": "page_link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_57f5ed9996869",
+                                "operator": "==",
+                                "value": "linktype2"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "34",
+                        "class": "",
+                        "id": ""
+                    },
+                    "post_type": [
+                        "post"
+                    ],
+                    "taxonomy": [],
+                    "allow_null": 0,
+                    "allow_archives": 0,
+                    "multiple": 0
+                },
+                {
+                    "key": "field_5953bef00bf7e",
+                    "label": "Product",
+                    "name": "button_product",
+                    "type": "page_link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_57f5ed9996869",
+                                "operator": "==",
+                                "value": "linktype8"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "34",
+                        "class": "",
+                        "id": ""
+                    },
+                    "post_type": [
+                        "product"
+                    ],
+                    "taxonomy": [],
+                    "allow_null": 0,
+                    "allow_archives": 0,
+                    "multiple": 0
+                },
+                {
+                    "key": "field_5953bf7aa18bd",
+                    "label": "Category",
+                    "name": "button_category",
+                    "type": "taxonomy",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_57f5ed9996869",
+                                "operator": "==",
+                                "value": "linktype9"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "34",
+                        "class": "",
+                        "id": ""
+                    },
+                    "taxonomy": "category",
+                    "field_type": "select",
+                    "allow_null": 0,
+                    "add_term": 1,
+                    "save_terms": 0,
+                    "load_terms": 0,
+                    "return_format": "id",
+                    "multiple": 0
+                },
+                {
+                    "key": "field_5953bff1cb74c",
+                    "label": "Tag",
+                    "name": "button_tag",
+                    "type": "taxonomy",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_57f5ed9996869",
+                                "operator": "==",
+                                "value": "linktype10"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "34",
+                        "class": "",
+                        "id": ""
+                    },
+                    "taxonomy": "post_tag",
+                    "field_type": "select",
+                    "allow_null": 0,
+                    "add_term": 1,
+                    "save_terms": 0,
+                    "load_terms": 0,
+                    "return_format": "object",
+                    "multiple": 0
+                },
+                {
+                    "key": "field_57f5ed99a534b",
+                    "label": "URL",
+                    "name": "button_custom_link",
+                    "type": "url",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_57f5ed9996869",
+                                "operator": "==",
+                                "value": "linktype3"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "34",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_57f5ed99aa1a1",
+                    "label": "PopUp Video",
+                    "name": "button_youtube",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_57f5ed9996869",
+                                "operator": "==",
+                                "value": "linktype4"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "34",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "<a target=\"_blank\" href=\"\/\/www.creative-dive.de\/themes\/docu\/hannah\/\">Help?<\/a>",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_580be68c1a157",
+                    "label": "PopUp Map",
+                    "name": "button_map",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_57f5ed9996869",
+                                "operator": "==",
+                                "value": "linktype5"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "34",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "<a target=\"_blank\" href=\"\/\/www.creative-dive.de\/themes\/docu\/hannah\/\">Help?<\/a>",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_57f5ed99aeff5",
+                    "label": "PopUp Layer by ID",
+                    "name": "button_form",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_57f5ed9996869",
+                                "operator": "==",
+                                "value": "linktype6"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "34",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "<a target=\"_blank\" href=\"\/\/www.creative-dive.de\/themes\/docu\/hannah\/\">Help?<\/a>",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_57f5ed99b3e47",
+                    "label": "Anchor Link",
+                    "name": "button_ankerlink",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_57f5ed9996869",
+                                "operator": "==",
+                                "value": "linktype7"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "34",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "<a target=\"_blank\" href=\"\/\/www.creative-dive.de\/themes\/docu\/hannah\/\">Help?<\/a>",
+                    "maxlength": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "landingpage.php"
+            }
+        ]
+    ],
+    "menu_order": 10,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "",
+    "modified": 1498662711
+}

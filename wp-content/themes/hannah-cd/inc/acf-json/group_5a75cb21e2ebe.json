@@ -1,0 +1,446 @@
+{
+    "key": "group_5a75cb21e2ebe",
+    "title": "Area: Post, Product, Category, Tag Carousel",
+    "fields": [
+        {
+            "key": "field_5a75cb2205a90",
+            "label": "Type",
+            "name": "area_carousel_type",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "carousel_post": "Post Carousel",
+                "carousel_product": "Product Carousel",
+                "cat_tag_teaser": "Category \/ Tag Carousel"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 1,
+            "ajax": 1,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_5a75cb2205b78",
+            "label": "Output",
+            "name": "area_types",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5a75cb2205a90",
+                        "operator": "==",
+                        "value": "carousel_post"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "popular": "Popular Posts",
+                "liked": "Most Liked Posts",
+                "rated": "Most Rated Posts",
+                "commented": "Most Commented Posts",
+                "recent": "Recent Posts",
+                "selected": "Selected Posts"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_5a75cb2205bea",
+            "label": "Post(s)",
+            "name": "area_post_selected",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5a75cb2205a90",
+                        "operator": "==",
+                        "value": "carousel_post"
+                    },
+                    {
+                        "field": "field_5a75cb2205b78",
+                        "operator": "==",
+                        "value": "selected"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "post"
+            ],
+            "taxonomy": [],
+            "allow_null": 0,
+            "multiple": 1,
+            "return_format": "id",
+            "ui": 1
+        },
+        {
+            "key": "field_5a75cb2205c5b",
+            "label": "Output",
+            "name": "area_product_types",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5a75cb2205a90",
+                        "operator": "==",
+                        "value": "carousel_product"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "product_popular": "Popular Products",
+                "product_rated": "Most Rated Products",
+                "product_sales": "Most Selling Products",
+                "product_reduced": "Reduced Products",
+                "product_recent": "Recent Products",
+                "product_selected": "Selected Products"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_5a75cb2205ccb",
+            "label": "Product(s)",
+            "name": "area_product_selected",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5a75cb2205a90",
+                        "operator": "==",
+                        "value": "carousel_product"
+                    },
+                    {
+                        "field": "field_5a75cb2205c5b",
+                        "operator": "==",
+                        "value": "product_selected"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "product"
+            ],
+            "taxonomy": [],
+            "allow_null": 0,
+            "multiple": 1,
+            "return_format": "id",
+            "ui": 1
+        },
+        {
+            "key": "field_5a75cb2205d3a",
+            "label": "Column Count",
+            "name": "area_item_column",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5a75cb2205a90",
+                        "operator": "==",
+                        "value": "carousel_post"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5a75cb2205a90",
+                        "operator": "==",
+                        "value": "carousel_product"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "col_1": "One column",
+                "col_2": "Two columns",
+                "col_3": "Three columns"
+            },
+            "default_value": [
+                "col_3"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 1,
+            "ajax": 1,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_5a75cb2205dac",
+            "label": "Output",
+            "name": "area_cat_tag_teaser_output",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5a75cb2205a90",
+                        "operator": "==",
+                        "value": "cat_tag_teaser"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "cats": "Categories",
+                "tags": "Tags"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_5a75cb2205e20",
+            "label": "Filtered by category",
+            "name": "area_cat_tag_teaser_cat_filter",
+            "type": "taxonomy",
+            "instructions": "If no category selected, all available categories will be displayed.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5a75cb2205a90",
+                        "operator": "==",
+                        "value": "cat_tag_teaser"
+                    },
+                    {
+                        "field": "field_5a75cb2205dac",
+                        "operator": "==",
+                        "value": "cats"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "category",
+            "field_type": "multi_select",
+            "allow_null": 0,
+            "add_term": 0,
+            "save_terms": 0,
+            "load_terms": 0,
+            "return_format": "id",
+            "multiple": 0
+        },
+        {
+            "key": "field_5a75cb2205e94",
+            "label": "Filtered by tag",
+            "name": "area_cat_tag_teaser_tag_filter",
+            "type": "taxonomy",
+            "instructions": "If no tag selected, all available tags will be displayed.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5a75cb2205a90",
+                        "operator": "==",
+                        "value": "cat_tag_teaser"
+                    },
+                    {
+                        "field": "field_5a75cb2205dac",
+                        "operator": "==",
+                        "value": "tags"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "post_tag",
+            "field_type": "multi_select",
+            "allow_null": 0,
+            "add_term": 0,
+            "save_terms": 0,
+            "load_terms": 0,
+            "return_format": "id",
+            "multiple": 0
+        },
+        {
+            "key": "field_5a75cb2205f07",
+            "label": "Hide empty categories \/ tags",
+            "name": "area_cat_tag_teaser_hide_empty",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5a75cb2205a90",
+                        "operator": "==",
+                        "value": "cat_tag_teaser"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5a75cb2205f7a",
+            "label": "Column Count",
+            "name": "area_cat_tag_teaser_column",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5a75cb2205a90",
+                        "operator": "==",
+                        "value": "cat_tag_teaser"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "col_1": "One column",
+                "col_2": "Two columns",
+                "col_3": "Three columns"
+            },
+            "default_value": [
+                "col_3"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 1,
+            "ajax": 1,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_5a75cb2205feb",
+            "label": "Amount of Items",
+            "name": "area_post_amount",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5a75cb2205a90",
+                        "operator": "==",
+                        "value": "carousel_post"
+                    },
+                    {
+                        "field": "field_5a75cb2205b78",
+                        "operator": "!=",
+                        "value": "selected"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5a75cb2205a90",
+                        "operator": "==",
+                        "value": "carousel_product"
+                    },
+                    {
+                        "field": "field_5a75cb2205c5b",
+                        "operator": "!=",
+                        "value": "product_selected"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 1,
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "theme-leading-area"
+            }
+        ]
+    ],
+    "menu_order": 10,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "field",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "",
+    "modified": 1518011195
+}

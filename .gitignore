@@ -18,6 +18,7 @@ wp-content/cache/
 wp-content/upgrade/
 wp-content/wp-cache-config.php
 wp-content/plugins/hello.php
+wp-content/plugins/alio-ads-monitor
 wp-content/debug.log
 
 

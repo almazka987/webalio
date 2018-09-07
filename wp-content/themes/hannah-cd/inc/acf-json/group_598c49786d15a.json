@@ -1,0 +1,195 @@
+{
+    "key": "group_598c49786d15a",
+    "title": "Global: Newsletter Select",
+    "fields": [
+        {
+            "key": "field_598eacbbc6816",
+            "label": "Newsletter Form",
+            "name": "newsletter_form_show",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 1,
+            "layout": "block",
+            "button_label": "Define",
+            "sub_fields": [
+                {
+                    "key": "field_598c497874eeb",
+                    "label": "Plugin",
+                    "name": "newsletter_select",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "mail_chimp": "MailChimp",
+                        "mail_poet": "MailPoet",
+                        "the_newsletter": "The Newsletter Plugin"
+                    },
+                    "default_value": [],
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 1,
+                    "ajax": 1,
+                    "return_format": "value",
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_598c497874f5e",
+                    "label": "MailChimp Form ID",
+                    "name": "form_id_mailchimp",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_598c497874eeb",
+                                "operator": "==",
+                                "value": "mail_chimp"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "Form ID",
+                    "min": "",
+                    "max": "",
+                    "step": ""
+                },
+                {
+                    "key": "field_598c4aa678d24",
+                    "label": "MailPoet Form ID",
+                    "name": "form_id_mailpoet",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_598c497874eeb",
+                                "operator": "==",
+                                "value": "mail_poet"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "Form ID",
+                    "min": "",
+                    "max": "",
+                    "step": ""
+                },
+                {
+                    "key": "field_598d5cf3f776d",
+                    "label": "The Newsletter Plugin Form",
+                    "name": "the_newsletter_plugin_form",
+                    "type": "radio",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_598c497874eeb",
+                                "operator": "==",
+                                "value": "the_newsletter"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "default_form": "Default Form",
+                        "custom_form": "Custom Form"
+                    },
+                    "allow_null": 0,
+                    "other_choice": 0,
+                    "save_other_choice": 0,
+                    "default_value": "default_form",
+                    "layout": "horizontal",
+                    "return_format": "value"
+                },
+                {
+                    "key": "field_598c4acc78d25",
+                    "label": "The Newsletter Plugin Form ID",
+                    "name": "form_id_the_newsletter_plugin",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_598c497874eeb",
+                                "operator": "==",
+                                "value": "the_newsletter"
+                            },
+                            {
+                                "field": "field_598d5cf3f776d",
+                                "operator": "==",
+                                "value": "custom_form"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "Form ID",
+                    "min": "",
+                    "max": "",
+                    "step": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "default"
+            }
+        ]
+    ],
+    "menu_order": 10,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "",
+    "modified": 1502607776
+}

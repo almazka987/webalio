@@ -1,0 +1,380 @@
+{
+    "key": "group_57ebb0ed86db6",
+    "title": "Settings: Social",
+    "fields": [
+        {
+            "key": "field_58203ac39ddcd",
+            "label": "Settings",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_598aaf452dbeb",
+            "label": "Social Profile Sidebar",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_595404b42b7fc",
+            "label": "Activation",
+            "name": "social_profile_sidebar",
+            "type": "true_false",
+            "instructions": "Shows your social profiles as sidebar.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Hide",
+            "ui_off_text": "Show"
+        },
+        {
+            "key": "field_59555be52d171",
+            "label": "Alignment",
+            "name": "social_profile_sidebar_align",
+            "type": "true_false",
+            "instructions": "Show the bar on the right or left side.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_595404b42b7fc",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Right",
+            "ui_off_text": "Left"
+        },
+        {
+            "key": "field_59555b07ba6f1",
+            "label": "Coloring",
+            "name": "social_profile_sidebar_colored",
+            "type": "true_false",
+            "instructions": "Show social icons in their own color.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_595404b42b7fc",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Default",
+            "ui_off_text": "Colored"
+        },
+        {
+            "key": "field_598aaf5c2dbec",
+            "label": "Social Share Sidebar",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5804d259c319f",
+            "label": "Activation",
+            "name": "social_slidebar_show",
+            "type": "true_false",
+            "instructions": "Shows a fixed social sharing sidebar in posts. (is visible by page scrolling)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Hide",
+            "ui_off_text": "Show"
+        },
+        {
+            "key": "field_5804d3c19c630",
+            "label": "Coloring",
+            "name": "social_slidebar_color",
+            "type": "true_false",
+            "instructions": "Show social icons in their own color.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5804d259c319f",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Default",
+            "ui_off_text": "Colored"
+        },
+        {
+            "key": "field_598aaf7a2dbed",
+            "label": "Other",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_580fd1b8065bb",
+            "label": "Pin Button on Post Images",
+            "name": "pin_button_show",
+            "type": "true_false",
+            "instructions": "The button appears on mouseover the post image.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Hide",
+            "ui_off_text": "Show"
+        },
+        {
+            "key": "field_5804f39443821",
+            "label": "Post Social Sharing Bar",
+            "name": "social_postbar_show",
+            "type": "true_false",
+            "instructions": "Will displayed at the bottom of post content.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Hide",
+            "ui_off_text": "Show"
+        },
+        {
+            "key": "field_5a907969e8a87",
+            "label": "Blog-List Social Sharing Bar",
+            "name": "social_blogbar_show",
+            "type": "true_false",
+            "instructions": "Will displayed for each post at the blog list page.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Hide",
+            "ui_off_text": "Show"
+        },
+        {
+            "key": "field_57ebb0ed90094",
+            "label": "Social Profile Icons at Footer",
+            "name": "social_footer_icons_show",
+            "type": "true_false",
+            "instructions": "Shows your social profile icons at the bottom of the page.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Hide",
+            "ui_off_text": "Show"
+        },
+        {
+            "key": "field_57ebb0ed94ef3",
+            "label": "Your Social Profiles",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_57ebb0eda39dd",
+            "label": "Social Profiles",
+            "name": "socialbar_column_show",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "Add new",
+            "sub_fields": [
+                {
+                    "key": "field_57ebb0edb722f",
+                    "label": "Link",
+                    "name": "socialbar_column_link",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "40",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "URL",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_57ebb0edb23ef",
+                    "label": "Icon",
+                    "name": "socialbar_column_icon",
+                    "type": "text",
+                    "instructions": "<a href=\"\/\/fontawesome.com\/v4.7.0\/icons\/\" target=\"_blank\">All icons here<\/a> e.g. \"fa-check\"",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "30",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "fa-facebook",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5954087ccab9d",
+                    "label": "Label",
+                    "name": "socialbar_column_label",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "30",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "Facebook",
+                    "prepend": "",
+                    "append": "Label",
+                    "maxlength": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "theme-social"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1520702623
+}

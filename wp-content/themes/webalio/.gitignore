@@ -1,5 +1,6 @@
 # All Gulp plugins & dependencies
 node_modules
+wp-content/themes/webalio/static/node_modules
 
 # SASS cache
 .sass-cache

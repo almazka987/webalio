@@ -1,0 +1,35 @@
+## Customize the test machine
+machine:
+
+  timezone:
+    America/Los_Angeles # Set the timezone
+
+  # Version of ruby to use
+  php:
+    version:
+      7.0.4
+
+## Customize dependencies
+dependencies:
+  pre:
+    - git clone -b master --depth 1 https://github.com/squizlabs/PHP_CodeSniffer.git /tmp/phpcs
+    - git clone -b master --depth 1 https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards.git /tmp/sniffs
+    - git clone -b master --depth 1 https://github.com/wimg/PHPCompatibility.git /tmp/sniffs/PHPCompatibility
+    - /tmp/phpcs/scripts/phpcs --config-set installed_paths /tmp/sniffs
+    - phpenv rehash
+    - npm install -g jscs
+    - npm install -g jshint
+    - wget https://develop.svn.wordpress.org/trunk/.jshintrc
+
+## Customize test commands
+test:
+  override:
+    - find . \( -name '*.php' \) -exec php -lf {} \;
+    - jshint ./assets/js/general/*.js
+    - jshint ./assets/js/library/*fusion*.js
+    - jscs ./assets/js/general/*.js
+    - jscs ./assets/js/library/*fusion*.js
+    - /tmp/phpcs/scripts/phpcs -p -s -v -n *.php --standard=./phpcs.ruleset.xml --extensions=php
+    - /tmp/phpcs/scripts/phpcs -p -s -v -n inc/*.php --standard=./phpcs.ruleset.xml --extensions=php
+    - /tmp/phpcs/scripts/phpcs -p -s -v -n inc/templates/*.php --standard=./phpcs.ruleset.xml --extensions=php
+    - /tmp/phpcs/scripts/phpcs -p -s -v -n inc/redux/*.php --standard=./phpcs.ruleset.xml --extensions=php

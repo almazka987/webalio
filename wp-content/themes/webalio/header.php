@@ -33,11 +33,12 @@
 			<div class="container">
 			<div class="row contacts-holder">
 				<div class="col-md-6 col-sm-6 col-xs-12 contacts-top">
-					<span class="skype"><i></i><a href="skype:almazka987?chat">almazka987</a></span>
-					<span class="github"><i></i><a href="https://github.com/aliomaster">aliomaster</a></span>
+                    <span class="contact-item skype"><a href="skype:almazka987?chat"><i class="fab fa-skype fa-fw" aria-hidden="true"></i>@almazka987</a></span>
+					<span class="contact-item paper-plane"><a href="https://t.me/almazka987" target="blank"><i class="fa fa-paper-plane fa-fw" aria-hidden="true"></i>@almazka987</a></span>
 				</div>
 				<div class="col-md-6 col-sm-6 col-xs-12 right contacts-bottom">
-					<span class="mail"><i></i><a href="mailto:aliowebdeveloper@gmail.com">aliowebdeveloper@gmail.com</a></span>
+                    <span class="contact-item github"><a href="https://github.com/aliowebdeveloper" target="blank"><i class="fab fa-github-alt fa-fw" aria-hidden="true"></i>aliowebdeveloper</a></span>
+					<span class="contact-item mail"><a href="mailto:aliowebdeveloper@gmail.com"><i class="fa fa-envelope fa-fw" aria-hidden="true"></i>aliowebdeveloper@gmail.com</a></span>
 				</div>
 			</div>
 			</div>
@@ -102,11 +103,11 @@
 					<div class="bottom">
 						<div class="container">
 							<div class="description">
-									<small>Нужен сайт?</small>
-									<span class="address">Вы по адресу</span>
-									<a href="#lnk_order-form" class="alio-btn">
-									<i class="fa fa-lightbulb-o" aria-hidden="true"></i>
-									<span class="in-button"> Заказать сайт</span></a>
+								<small><?php _e("Нужен сайт?", "webalio"); ?></small>
+								<span class="address"><?php _e("Вы по адресу", "webalio"); ?></span>
+								<a href="#lnk_order-form" class="alio-btn">
+								<i class="fa fa-lightbulb" aria-hidden="true"></i>
+								<span class="in-button"><?php _e("Заказать разработку", "webalio"); ?></span></a>
 							</div>
 						</div>
 					</div>
@@ -120,5 +121,6 @@
 					</div>
 				<?php endif; ?>
 			</div>
+            <div class="bg-bottom"></div>
 		</header>
 		<!-- end Header -->

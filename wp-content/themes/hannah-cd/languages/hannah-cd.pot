@@ -1,0 +1,5817 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: Hannah CD\n"
+"POT-Creation-Date: 2018-02-11 14:18+0100\n"
+"PO-Revision-Date: 2018-02-11 14:17+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.8\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: 404.php:50
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:58
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr ""
+
+#: 404.php:111
+msgid "Go to Home"
+msgstr ""
+
+#: author-bio.php:12
+msgid "Published by"
+msgstr ""
+
+#: author-bio.php:24
+#, php-format
+msgid "View all posts by %s"
+msgstr ""
+
+#: comments.php:19
+#, php-format
+msgctxt "comments title"
+msgid "One comment on &bdquo;%2$s&rdquo;"
+msgid_plural "%1$s comments on &bdquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:38
+msgid "Comments are closed."
+msgstr ""
+
+#: content-magazine.php:176 content-visual.php:203 content.php:181
+msgid "Read More"
+msgstr ""
+
+#: content-none.php:19
+msgid "Nothing Found"
+msgstr ""
+
+#: content-none.php:23
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: content-none.php:25
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: footer.php:126
+msgid "Add widgets or disable the Footerbar by the theme settings."
+msgstr ""
+
+#: footer.php:177
+msgid "Assign the footer menu to show menu items."
+msgstr ""
+
+#: footer.php:263 woocommerce/cart/mini-cart.php:71
+msgid "No products in the cart."
+msgstr ""
+
+#: footer.php:265
+msgid "Cart"
+msgstr ""
+
+#: functions.php:642 inc/acf-field-groups.php:21437
+#: inc/acf-field-groups.php:21459
+msgid "Page"
+msgstr ""
+
+#: functions.php:642
+msgid " of "
+msgstr ""
+
+#: functions.php:1114
+msgid "0 Views"
+msgstr ""
+
+#: functions.php:1118
+msgid "View"
+msgstr ""
+
+#: functions.php:1120 inc/acf-field-groups.php:642 inc/admin-settings.php:528
+#: inc/admin-settings.php:665
+msgid "Views"
+msgstr ""
+
+#: functions.php:1205
+msgid "Pin it"
+msgstr ""
+
+#: functions.php:1300 inc/acf-field-groups.php:4617
+#: inc/acf-field-groups.php:4634
+msgid "Related Posts"
+msgstr ""
+
+#: functions.php:1361
+msgid "Home"
+msgstr ""
+
+#: functions.php:1362
+#, php-format
+msgid "Archive by Category \"%s\""
+msgstr ""
+
+#: functions.php:1363
+#, php-format
+msgid "Search Results for \"%s\" Query"
+msgstr ""
+
+#: functions.php:1364
+#, php-format
+msgid "Posts Tagged \"%s\""
+msgstr ""
+
+#: functions.php:1365
+#, php-format
+msgid "Articles Posted by %s"
+msgstr ""
+
+#: functions.php:1366
+msgid "Error 404"
+msgstr ""
+
+#: functions.php:1367
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: functions.php:1368
+#, php-format
+msgid "Comment Page %s"
+msgstr ""
+
+#: functions.php:1642
+msgid "No matches were found"
+msgstr ""
+
+#: functions.php:2084
+msgid ""
+"This content is password protected. To view it please enter your password "
+"below."
+msgstr ""
+
+#: functions.php:2085
+msgid "Password"
+msgstr ""
+
+#: functions.php:2087
+msgid "Enter"
+msgstr ""
+
+#: functions.php:2283
+msgctxt "breadcrumb"
+msgid "Home"
+msgstr ""
+
+#: header.php:133 header.php:349
+msgid "Assign the primary menu to show menu items."
+msgstr ""
+
+#: header.php:247
+msgid "My Account"
+msgstr ""
+
+#: header.php:251
+msgid "Login / Register"
+msgstr ""
+
+#: image.php:31
+msgid "Next Image"
+msgstr ""
+
+#: image.php:36
+msgid "Previous Image"
+msgstr ""
+
+#: image.php:52 postformat/postformat-image.php:19 single.php:167
+msgid "Share"
+msgstr ""
+
+#: image.php:84
+#, php-format
+msgid ""
+"Published <time class=\"entry-date\" datetime=\"%1$s\">%2$s</time> at <a "
+"href=\"%3$s\" title=\"Link to full-size image\">%4$s &times; %5$s</a> in <a "
+"href=\"%6$s\" title=\"Return to %7$s\" rel=\"gallery\">%7$s</a>"
+msgstr ""
+
+#: image.php:102
+#, php-format
+msgid ""
+"<a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">Post a "
+"comment</a> or leave a trackback: <a class=\"trackback-link\" href=\"%s\" "
+"title=\"Trackback URL for your post\" rel=\"trackback\">Trackback URL</a>."
+msgstr ""
+
+#: image.php:111
+#, php-format
+msgid ""
+"Comments are closed, but you can leave a trackback: <a class=\"trackback-link"
+"\" href=\"%s\" title=\"Trackback URL for your post\" rel=\"trackback"
+"\">Trackback URL</a>."
+msgstr ""
+
+#: image.php:120
+msgid ""
+"Trackbacks are closed, but you can <a class=\"comment-link\" href=\"#respond"
+"\" title=\"Post a comment\">post a comment</a>."
+msgstr ""
+
+#: image.php:125
+msgid "Both comments and trackbacks are currently closed."
+msgstr ""
+
+#: inc/acf-area-post-type-carousel.php:173 inc/acf-flexible-layout.php:1695
+msgid "You have to activate the WooCommerce plugin to show products here."
+msgstr ""
+
+#: inc/acf-area-post-type-carousel.php:218
+#: inc/acf-featured-slider-content-post.php:335
+#: inc/acf-flexible-layout.php:1749 inc/acf-header-content-post.php:333
+msgid "Sale"
+msgstr ""
+
+#: inc/acf-area-random-ad-banner.php:8
+#: inc/acf-featured-slider-content-post.php:375 inc/acf-featured-slider.php:60
+#: inc/acf-header-content-post.php:371 inc/acf-header.php:69
+#: inc/widgets/banner.php:82
+msgid "No content selected"
+msgstr ""
+
+#: inc/acf-featured-slider-content-post.php:284
+#: inc/acf-header-content-post.php:283
+msgid "You have to activate the WooCommerce plugin to show products here"
+msgstr ""
+
+#: inc/acf-featured-slider-content-post.php:356
+#: inc/acf-header-content-post.php:352
+msgid "Shop now"
+msgstr ""
+
+#: inc/acf-featured-slider-content-post.php:358
+#: inc/acf-header-content-post.php:354 inc/widgets/posts-carousel.php:199
+#: inc/widgets/twitter.php:164
+msgid "Read more"
+msgstr ""
+
+#: inc/acf-field-groups.php:6
+msgid "Settings: 404 Page"
+msgstr ""
+
+#: inc/acf-field-groups.php:10 inc/acf-field-groups.php:1662
+#: inc/acf-field-groups.php:2031 inc/acf-field-groups.php:2810
+#: inc/acf-field-groups.php:2845 inc/acf-field-groups.php:3861
+#: inc/acf-field-groups.php:4241 inc/acf-field-groups.php:4308
+#: inc/acf-field-groups.php:4343 inc/acf-field-groups.php:5408
+#: inc/acf-field-groups.php:5443 inc/acf-field-groups.php:6794
+#: inc/acf-field-groups.php:7003 inc/acf-field-groups.php:7568
+#: inc/acf-field-groups.php:7917 inc/acf-field-groups.php:8454
+#: inc/acf-field-groups.php:8473 inc/acf-field-groups.php:8791
+#: inc/acf-field-groups.php:9211 inc/acf-field-groups.php:9690
+#: inc/acf-field-groups.php:9862 inc/acf-field-groups.php:10244
+#: inc/acf-field-groups.php:10799 inc/acf-field-groups.php:11122
+#: inc/acf-field-groups.php:11143 inc/acf-field-groups.php:11558
+#: inc/acf-field-groups.php:11807 inc/acf-field-groups.php:12059
+#: inc/acf-field-groups.php:12080 inc/acf-field-groups.php:12289
+#: inc/acf-field-groups.php:12642 inc/acf-field-groups.php:12969
+#: inc/acf-field-groups.php:13219 inc/acf-field-groups.php:13482
+#: inc/acf-field-groups.php:13745 inc/acf-field-groups.php:13954
+#: inc/acf-field-groups.php:14347 inc/acf-field-groups.php:14482
+#: inc/acf-field-groups.php:14621 inc/acf-field-groups.php:14736
+#: inc/acf-field-groups.php:14981 inc/acf-field-groups.php:15141
+#: inc/acf-field-groups.php:15157 inc/acf-field-groups.php:15504
+#: inc/acf-field-groups.php:15617 inc/acf-field-groups.php:15849
+#: inc/acf-field-groups.php:16134 inc/acf-field-groups.php:16476
+#: inc/acf-field-groups.php:16818 inc/acf-field-groups.php:17041
+#: inc/acf-field-groups.php:17205 inc/acf-field-groups.php:17363
+#: inc/acf-field-groups.php:17478 inc/acf-field-groups.php:17706
+#: inc/acf-field-groups.php:17898 inc/acf-field-groups.php:18226
+#: inc/acf-field-groups.php:18556 inc/acf-field-groups.php:18846
+#: inc/acf-field-groups.php:19529 inc/acf-field-groups.php:19545
+#: inc/acf-field-groups.php:21854 inc/acf-field-groups.php:23350
+#: inc/shortcodes.php:275 inc/shortcodes.php:311 inc/shortcodes.php:369
+#: inc/shortcodes.php:566
+msgid "Content"
+msgstr ""
+
+#: inc/acf-field-groups.php:26 inc/acf-field-groups.php:1686
+#: inc/acf-field-groups.php:2826 inc/acf-field-groups.php:3569
+#: inc/acf-field-groups.php:4324 inc/acf-field-groups.php:6658
+#: inc/acf-field-groups.php:7291 inc/acf-field-groups.php:7451
+#: inc/acf-field-groups.php:7514 inc/acf-field-groups.php:7803
+#: inc/acf-field-groups.php:7837 inc/acf-field-groups.php:8186
+#: inc/acf-field-groups.php:8292 inc/acf-field-groups.php:8435
+#: inc/acf-field-groups.php:11084 inc/acf-field-groups.php:11422
+#: inc/acf-field-groups.php:12021 inc/acf-field-groups.php:14498
+#: inc/acf-field-groups.php:14637 inc/acf-field-groups.php:14752
+#: inc/acf-field-groups.php:14997 inc/acf-field-groups.php:15520
+#: inc/acf-field-groups.php:15633 inc/acf-field-groups.php:15760
+#: inc/acf-field-groups.php:15969 inc/acf-field-groups.php:16150
+#: inc/acf-field-groups.php:16311 inc/acf-field-groups.php:16492
+#: inc/acf-field-groups.php:16653 inc/acf-field-groups.php:16834
+#: inc/acf-field-groups.php:17057 inc/acf-field-groups.php:17221
+#: inc/acf-field-groups.php:17379 inc/acf-field-groups.php:17494
+#: inc/acf-field-groups.php:17722 inc/acf-field-groups.php:17914
+#: inc/acf-field-groups.php:18242 inc/acf-field-groups.php:18375
+#: inc/acf-field-groups.php:18572 inc/acf-field-groups.php:18862
+#: inc/acf-field-groups.php:20456 inc/acf-field-groups.php:21870
+#: inc/acf-field-groups.php:23394 inc/acf-field-groups.php:23448
+#: inc/shortcodes.php:116 inc/widgets/facebook.php:243
+#: inc/widgets/google-plus.php:250 inc/widgets/instagram.php:165
+#: inc/widgets/pinterest-board.php:169 inc/widgets/pinterest.php:161
+#: inc/widgets/social-counter.php:761 inc/widgets/twitter.php:265
+msgid "Title"
+msgstr ""
+
+#: inc/acf-field-groups.php:45 inc/acf-field-groups.php:5016
+#: inc/acf-field-groups.php:16228 inc/acf-field-groups.php:16570
+#: inc/acf-field-groups.php:16888 inc/acf-field-groups.php:17076
+msgid "Alignment"
+msgstr ""
+
+#: inc/acf-field-groups.php:57 inc/acf-field-groups.php:4784
+#: inc/acf-field-groups.php:5039 inc/acf-field-groups.php:6459
+#: inc/acf-field-groups.php:7259 inc/acf-field-groups.php:8154
+#: inc/acf-field-groups.php:9930 inc/acf-field-groups.php:10312
+#: inc/acf-field-groups.php:11054 inc/acf-field-groups.php:15198
+#: inc/acf-field-groups.php:16240 inc/acf-field-groups.php:16582
+#: inc/acf-field-groups.php:16900 inc/acf-field-groups.php:17088
+#: inc/acf-field-groups.php:19586 inc/acf-field-groups.php:24585
+msgid "Left"
+msgstr ""
+
+#: inc/acf-field-groups.php:58 inc/acf-field-groups.php:15200
+#: inc/acf-field-groups.php:17089 inc/acf-field-groups.php:19588
+msgid "Center"
+msgstr ""
+
+#: inc/acf-field-groups.php:59 inc/acf-field-groups.php:4785
+#: inc/acf-field-groups.php:5038 inc/acf-field-groups.php:6460
+#: inc/acf-field-groups.php:7260 inc/acf-field-groups.php:8155
+#: inc/acf-field-groups.php:9931 inc/acf-field-groups.php:10313
+#: inc/acf-field-groups.php:11055 inc/acf-field-groups.php:15199
+#: inc/acf-field-groups.php:16241 inc/acf-field-groups.php:16583
+#: inc/acf-field-groups.php:16901 inc/acf-field-groups.php:17090
+#: inc/acf-field-groups.php:19587 inc/acf-field-groups.php:24586
+msgid "Right"
+msgstr ""
+
+#: inc/acf-field-groups.php:73 inc/acf-field-groups.php:1705
+#: inc/acf-field-groups.php:14517 inc/acf-field-groups.php:14656
+#: inc/acf-field-groups.php:14771 inc/acf-field-groups.php:15016
+#: inc/acf-field-groups.php:15242 inc/acf-field-groups.php:15539
+#: inc/acf-field-groups.php:15652 inc/acf-field-groups.php:15779
+#: inc/acf-field-groups.php:15884 inc/acf-field-groups.php:16070
+#: inc/acf-field-groups.php:16169 inc/acf-field-groups.php:16412
+#: inc/acf-field-groups.php:16511 inc/acf-field-groups.php:16754
+#: inc/acf-field-groups.php:16853 inc/acf-field-groups.php:17104
+#: inc/acf-field-groups.php:17240 inc/acf-field-groups.php:17398
+#: inc/acf-field-groups.php:17513 inc/acf-field-groups.php:17741
+#: inc/acf-field-groups.php:17933 inc/acf-field-groups.php:18286
+#: inc/acf-field-groups.php:18472 inc/acf-field-groups.php:18591
+#: inc/acf-field-groups.php:18881 inc/acf-field-groups.php:19630
+#: inc/acf-field-groups.php:21889 inc/acf-field-groups.php:23469
+msgid "Text"
+msgstr ""
+
+#: inc/acf-field-groups.php:92 inc/acf-field-groups.php:1724
+#: inc/acf-field-groups.php:2864 inc/acf-field-groups.php:5462
+msgid "Call-to-Action"
+msgstr ""
+
+#: inc/acf-field-groups.php:104
+msgid "Search Form"
+msgstr ""
+
+#: inc/acf-field-groups.php:105 inc/acf-field-groups.php:218
+#: inc/acf-field-groups.php:1737 inc/acf-field-groups.php:1845
+#: inc/acf-field-groups.php:2878 inc/acf-field-groups.php:2916
+#: inc/acf-field-groups.php:4407 inc/acf-field-groups.php:5476
+#: inc/acf-field-groups.php:5504 inc/acf-field-groups.php:17417
+msgid "Subscription Form"
+msgstr ""
+
+#: inc/acf-field-groups.php:106 inc/acf-field-groups.php:1738
+#: inc/acf-field-groups.php:21386
+msgid "Buttons"
+msgstr ""
+
+#: inc/acf-field-groups.php:120 inc/acf-field-groups.php:1455
+#: inc/acf-field-groups.php:1752 inc/acf-field-groups.php:2891
+#: inc/acf-field-groups.php:15171 inc/acf-field-groups.php:15276
+#: inc/acf-field-groups.php:19559 inc/acf-field-groups.php:19664
+msgid "Background Image"
+msgstr ""
+
+#: inc/acf-field-groups.php:145 inc/acf-field-groups.php:2351
+#: inc/acf-field-groups.php:3195 inc/acf-field-groups.php:3681
+#: inc/acf-field-groups.php:4964
+msgid "Settings"
+msgstr ""
+
+#: inc/acf-field-groups.php:161
+msgid "404 Label"
+msgstr ""
+
+#: inc/acf-field-groups.php:175 inc/acf-field-groups.php:194
+#: inc/acf-field-groups.php:512 inc/acf-field-groups.php:546
+#: inc/acf-field-groups.php:580 inc/acf-field-groups.php:599
+#: inc/acf-field-groups.php:618 inc/acf-field-groups.php:637
+#: inc/acf-field-groups.php:656 inc/acf-field-groups.php:693
+#: inc/acf-field-groups.php:712 inc/acf-field-groups.php:801
+#: inc/acf-field-groups.php:820 inc/acf-field-groups.php:2406
+#: inc/acf-field-groups.php:2469 inc/acf-field-groups.php:3063
+#: inc/acf-field-groups.php:3128 inc/acf-field-groups.php:3226
+#: inc/acf-field-groups.php:3263 inc/acf-field-groups.php:3301
+#: inc/acf-field-groups.php:3565 inc/acf-field-groups.php:4517
+#: inc/acf-field-groups.php:4536 inc/acf-field-groups.php:4555
+#: inc/acf-field-groups.php:4574 inc/acf-field-groups.php:4593
+#: inc/acf-field-groups.php:4612 inc/acf-field-groups.php:4648
+#: inc/acf-field-groups.php:4761 inc/acf-field-groups.php:4810
+#: inc/acf-field-groups.php:5011 inc/acf-field-groups.php:5101
+#: inc/acf-field-groups.php:5164 inc/acf-field-groups.php:5183
+#: inc/acf-field-groups.php:5202 inc/acf-field-groups.php:6436
+#: inc/acf-field-groups.php:6672 inc/acf-field-groups.php:6691
+#: inc/acf-field-groups.php:6710 inc/acf-field-groups.php:6729
+#: inc/acf-field-groups.php:7054 inc/acf-field-groups.php:7493
+#: inc/acf-field-groups.php:9913 inc/acf-field-groups.php:10295
+#: inc/acf-field-groups.php:10522 inc/acf-field-groups.php:10541
+#: inc/acf-field-groups.php:10560 inc/acf-field-groups.php:10602
+#: inc/acf-field-groups.php:10674 inc/acf-field-groups.php:10715
+#: inc/acf-field-groups.php:10756 inc/acf-field-groups.php:10775
+#: inc/acf-field-groups.php:11436 inc/acf-field-groups.php:11455
+#: inc/acf-field-groups.php:11474 inc/acf-field-groups.php:11493
+#: inc/acf-field-groups.php:12498 inc/acf-field-groups.php:12517
+#: inc/acf-field-groups.php:14006 inc/acf-field-groups.php:14024
+#: inc/acf-field-groups.php:14933 inc/acf-field-groups.php:14953
+#: inc/acf-field-groups.php:17677 inc/acf-field-groups.php:18159
+#: inc/acf-field-groups.php:18817 inc/acf-field-groups.php:21348
+#: inc/acf-field-groups.php:21782 inc/acf-field-groups.php:22458
+#: inc/acf-field-groups.php:23171 inc/acf-field-groups.php:23190
+#: inc/acf-field-groups.php:23253 inc/acf-field-groups.php:24105
+#: inc/acf-field-groups.php:24384 inc/acf-field-groups.php:24561
+msgid "Hide"
+msgstr ""
+
+#: inc/acf-field-groups.php:176 inc/acf-field-groups.php:195
+#: inc/acf-field-groups.php:511 inc/acf-field-groups.php:545
+#: inc/acf-field-groups.php:581 inc/acf-field-groups.php:600
+#: inc/acf-field-groups.php:619 inc/acf-field-groups.php:638
+#: inc/acf-field-groups.php:657 inc/acf-field-groups.php:692
+#: inc/acf-field-groups.php:711 inc/acf-field-groups.php:802
+#: inc/acf-field-groups.php:821 inc/acf-field-groups.php:2407
+#: inc/acf-field-groups.php:2470 inc/acf-field-groups.php:3064
+#: inc/acf-field-groups.php:3129 inc/acf-field-groups.php:3225
+#: inc/acf-field-groups.php:3264 inc/acf-field-groups.php:3302
+#: inc/acf-field-groups.php:3564 inc/acf-field-groups.php:4518
+#: inc/acf-field-groups.php:4537 inc/acf-field-groups.php:4556
+#: inc/acf-field-groups.php:4575 inc/acf-field-groups.php:4594
+#: inc/acf-field-groups.php:4613 inc/acf-field-groups.php:4649
+#: inc/acf-field-groups.php:4760 inc/acf-field-groups.php:4811
+#: inc/acf-field-groups.php:5012 inc/acf-field-groups.php:5102
+#: inc/acf-field-groups.php:5165 inc/acf-field-groups.php:5184
+#: inc/acf-field-groups.php:5203 inc/acf-field-groups.php:6435
+#: inc/acf-field-groups.php:6673 inc/acf-field-groups.php:6692
+#: inc/acf-field-groups.php:6711 inc/acf-field-groups.php:6730
+#: inc/acf-field-groups.php:7055 inc/acf-field-groups.php:7492
+#: inc/acf-field-groups.php:9914 inc/acf-field-groups.php:10296
+#: inc/acf-field-groups.php:10523 inc/acf-field-groups.php:10542
+#: inc/acf-field-groups.php:10561 inc/acf-field-groups.php:10603
+#: inc/acf-field-groups.php:10675 inc/acf-field-groups.php:10716
+#: inc/acf-field-groups.php:10757 inc/acf-field-groups.php:10776
+#: inc/acf-field-groups.php:11437 inc/acf-field-groups.php:11456
+#: inc/acf-field-groups.php:11475 inc/acf-field-groups.php:11494
+#: inc/acf-field-groups.php:12499 inc/acf-field-groups.php:12518
+#: inc/acf-field-groups.php:14005 inc/acf-field-groups.php:14025
+#: inc/acf-field-groups.php:14934 inc/acf-field-groups.php:14952
+#: inc/acf-field-groups.php:17678 inc/acf-field-groups.php:18160
+#: inc/acf-field-groups.php:18818 inc/acf-field-groups.php:21349
+#: inc/acf-field-groups.php:21781 inc/acf-field-groups.php:22459
+#: inc/acf-field-groups.php:23172 inc/acf-field-groups.php:23191
+#: inc/acf-field-groups.php:23252 inc/acf-field-groups.php:24106
+#: inc/acf-field-groups.php:24383 inc/acf-field-groups.php:24560
+msgid "Show"
+msgstr ""
+
+#: inc/acf-field-groups.php:180
+msgid "Home Button"
+msgstr ""
+
+#: inc/acf-field-groups.php:199
+msgid "Home Button Label"
+msgstr ""
+
+#: inc/acf-field-groups.php:242 inc/acf-field-groups.php:1874
+#: inc/acf-field-groups.php:2940 inc/acf-field-groups.php:4431
+#: inc/acf-field-groups.php:5528 inc/acf-field-groups.php:17433
+#: inc/acf-field-groups.php:19295 inc/acf-field-groups.php:22961
+msgid "Newsletter Form"
+msgstr ""
+
+#: inc/acf-field-groups.php:263 inc/acf-field-groups.php:287
+#: inc/acf-field-groups.php:1895 inc/acf-field-groups.php:1924
+#: inc/acf-field-groups.php:2877 inc/acf-field-groups.php:2961
+#: inc/acf-field-groups.php:2985 inc/acf-field-groups.php:5475
+#: inc/acf-field-groups.php:5549 inc/acf-field-groups.php:5573
+#: inc/acf-field-groups.php:14675 inc/acf-field-groups.php:15439
+#: inc/acf-field-groups.php:16980 inc/acf-field-groups.php:17123
+#: inc/acf-field-groups.php:18493 inc/acf-field-groups.php:19827
+#: inc/acf-field-groups.php:21908 inc/acf-field-groups.php:23488
+msgid "Button(s)"
+msgstr ""
+
+#: inc/acf-field-groups.php:328
+msgid "Settings: Blog List"
+msgstr ""
+
+#: inc/acf-field-groups.php:332 inc/acf-field-groups.php:9016
+msgid "Layout"
+msgstr ""
+
+#: inc/acf-field-groups.php:348
+msgid "List Style"
+msgstr ""
+
+#: inc/acf-field-groups.php:351
+msgid ""
+"Choose the default blog list style for the latest posts, archive or taxonomy "
+"pages like categories and tags."
+msgstr ""
+
+#: inc/acf-field-groups.php:360 inc/acf-field-groups.php:1511
+#: inc/acf-field-groups.php:9028
+msgid "Normal"
+msgstr ""
+
+#: inc/acf-field-groups.php:361 inc/acf-field-groups.php:9029
+msgid "Magazine"
+msgstr ""
+
+#: inc/acf-field-groups.php:362 inc/acf-field-groups.php:9030
+msgid "Metro"
+msgstr ""
+
+#: inc/acf-field-groups.php:363 inc/acf-field-groups.php:9031
+#: inc/acf-field-groups.php:15070 inc/acf-field-groups.php:19458
+msgid "Grid"
+msgstr ""
+
+#: inc/acf-field-groups.php:364 inc/acf-field-groups.php:9032
+msgid "Masonry Grid"
+msgstr ""
+
+#: inc/acf-field-groups.php:365 inc/acf-field-groups.php:9033
+msgid "Visual Left"
+msgstr ""
+
+#: inc/acf-field-groups.php:366 inc/acf-field-groups.php:9034
+msgid "Visual Right"
+msgstr ""
+
+#: inc/acf-field-groups.php:377 inc/acf-field-groups.php:9045
+msgid "Posts per Page"
+msgstr ""
+
+#: inc/acf-field-groups.php:380 inc/acf-field-groups.php:9048
+msgid ""
+"If is an empty value entered, the global post per page setting from "
+"\"Settings > Reading\" will used."
+msgstr ""
+
+#: inc/acf-field-groups.php:398 inc/acf-field-groups.php:6630
+#: inc/acf-field-groups.php:8661 inc/acf-field-groups.php:9066
+#: inc/acf-field-groups.php:11394 inc/acf-field-groups.php:14890
+#: inc/acf-field-groups.php:15687 inc/acf-field-groups.php:15919
+#: inc/acf-field-groups.php:20106 inc/acf-field-groups.php:20278
+#: inc/acf-field-groups.php:20384
+msgid "Column Count"
+msgstr ""
+
+#: inc/acf-field-groups.php:432 inc/acf-field-groups.php:9101
+#: inc/acf-field-groups.php:15423 inc/acf-field-groups.php:19811
+msgid "2"
+msgstr ""
+
+#: inc/acf-field-groups.php:433 inc/acf-field-groups.php:9102
+#: inc/acf-field-groups.php:15424 inc/acf-field-groups.php:19812
+msgid "3"
+msgstr ""
+
+#: inc/acf-field-groups.php:434 inc/acf-field-groups.php:9103
+#: inc/acf-field-groups.php:15425 inc/acf-field-groups.php:19813
+msgid "4"
+msgstr ""
+
+#: inc/acf-field-groups.php:448 inc/acf-field-groups.php:9117
+msgid "First Post Element"
+msgstr ""
+
+#: inc/acf-field-groups.php:451 inc/acf-field-groups.php:9120
+msgid ""
+"Show the first masonry element in double width. It's possible for 3 and 4 "
+"column masonry grid."
+msgstr ""
+
+#: inc/acf-field-groups.php:470 inc/acf-field-groups.php:1657
+#: inc/acf-field-groups.php:1983 inc/acf-field-groups.php:2346
+#: inc/acf-field-groups.php:2581 inc/acf-field-groups.php:2600
+#: inc/acf-field-groups.php:3398 inc/acf-field-groups.php:3751
+#: inc/acf-field-groups.php:3813 inc/acf-field-groups.php:4847
+#: inc/acf-field-groups.php:5339 inc/acf-field-groups.php:5643
+#: inc/acf-field-groups.php:8766 inc/acf-field-groups.php:9139
+#: inc/acf-field-groups.php:21329 inc/acf-field-groups.php:22403
+#: inc/acf-field-groups.php:24049 inc/acf-field-groups.php:24238
+#: inc/acf-field-groups.php:24265 inc/acf-field-groups.php:24292
+#: inc/acf-field-groups.php:24319 inc/acf-field-groups.php:24351
+msgid "Yes"
+msgstr ""
+
+#: inc/acf-field-groups.php:471 inc/acf-field-groups.php:1658
+#: inc/acf-field-groups.php:1984 inc/acf-field-groups.php:2347
+#: inc/acf-field-groups.php:2582 inc/acf-field-groups.php:2601
+#: inc/acf-field-groups.php:3399 inc/acf-field-groups.php:3752
+#: inc/acf-field-groups.php:3814 inc/acf-field-groups.php:4848
+#: inc/acf-field-groups.php:5340 inc/acf-field-groups.php:5642
+#: inc/acf-field-groups.php:8765 inc/acf-field-groups.php:9140
+#: inc/acf-field-groups.php:21330 inc/acf-field-groups.php:22402
+#: inc/acf-field-groups.php:24050 inc/acf-field-groups.php:24239
+#: inc/acf-field-groups.php:24266 inc/acf-field-groups.php:24293
+#: inc/acf-field-groups.php:24320 inc/acf-field-groups.php:24352
+msgid "No"
+msgstr ""
+
+#: inc/acf-field-groups.php:475 inc/acf-field-groups.php:4598
+#: inc/shortcodes.php:470
+msgid "Dropcap"
+msgstr ""
+
+#: inc/acf-field-groups.php:478
+msgid "Show the first letter of the post excerpt as initial letter."
+msgstr ""
+
+#: inc/acf-field-groups.php:516 inc/acf-field-groups.php:604
+#: inc/acf-field-groups.php:6604 inc/acf-field-groups.php:10660
+#: inc/acf-field-groups.php:14818 inc/acf-field-groups.php:20169
+#: inc/widgets/categories.php:10 page-sitemap.php:76 page-sitemap.php:189
+msgid "Categories"
+msgstr ""
+
+#: inc/acf-field-groups.php:519
+msgid "Show the corresponding categories."
+msgstr ""
+
+#: inc/acf-field-groups.php:550 inc/acf-field-groups.php:4541
+msgid "Post Meta"
+msgstr ""
+
+#: inc/acf-field-groups.php:566
+msgid "Meta Box"
+msgstr ""
+
+#: inc/acf-field-groups.php:569
+msgid ""
+"Shows the post meta box (Author, Category, Comments & Views) for the latest "
+"posts, archive or taxonomy pages like categories and tags."
+msgstr ""
+
+#: inc/acf-field-groups.php:585
+msgid "Author"
+msgstr ""
+
+#: inc/acf-field-groups.php:623 inc/admin-settings.php:808
+#: inc/widgets/comments.php:10 inc/widgets/facebook.php:179
+#: inc/widgets/google-plus.php:189 inc/widgets/social-counter.php:554
+#: inc/widgets/social-counter.php:557
+msgid "Comments"
+msgstr ""
+
+#: inc/acf-field-groups.php:661
+msgid "Extra Post Meta Boxes"
+msgstr ""
+
+#: inc/acf-field-groups.php:672
+msgid ""
+"You <u>can't</u> display all of the post meta boxes together. Please select "
+"up to 4 boxes. Otherwise, layout problems may occur. The following post meta "
+"boxes are extra to the default boxes and can be selected instead of this."
+msgstr ""
+
+#: inc/acf-field-groups.php:678 inc/acf-field-groups.php:18997
+msgid "Rating"
+msgstr ""
+
+#: inc/acf-field-groups.php:697 inc/admin-settings.php:713
+#: inc/widgets/facebook.php:176 inc/widgets/google-plus.php:186
+#: inc/widgets/posts-carousel.php:177 inc/widgets/posts.php:178
+#: inc/widgets/twitter.php:188 post-meta.php:124
+msgid "Likes"
+msgstr ""
+
+#: inc/acf-field-groups.php:716
+msgid "Latest Posts Page"
+msgstr ""
+
+#: inc/acf-field-groups.php:732
+msgid "Latest Posts"
+msgstr ""
+
+#: inc/acf-field-groups.php:743
+msgid ""
+"If is the front page selected for \"Your latest posts\" or a specific post "
+"page is selected at “Settings > Reading”, you can manage the title and "
+"content for this page here."
+msgstr ""
+
+#: inc/acf-field-groups.php:749
+msgid "Latest Posts Title"
+msgstr ""
+
+#: inc/acf-field-groups.php:768
+msgid "Latest Posts Content"
+msgstr ""
+
+#: inc/acf-field-groups.php:787 inc/acf-field-groups.php:23157
+msgid "Page Title"
+msgstr ""
+
+#: inc/acf-field-groups.php:790
+msgid "Show or hide the title of archive or latest posts pages."
+msgstr ""
+
+#: inc/acf-field-groups.php:806 inc/acf-field-groups.php:23176
+msgid "Main Content"
+msgstr ""
+
+#: inc/acf-field-groups.php:809
+msgid "Show or hide the main content of archive or latest posts pages."
+msgstr ""
+
+#: inc/acf-field-groups.php:845
+msgid "Settings: Colors & Design"
+msgstr ""
+
+#: inc/acf-field-groups.php:849
+msgid "Logo"
+msgstr ""
+
+#: inc/acf-field-groups.php:865
+msgid "Top Logo"
+msgstr ""
+
+#: inc/acf-field-groups.php:882
+msgid "Logo (colored)"
+msgstr ""
+
+#: inc/acf-field-groups.php:907
+msgid "Logo (white)"
+msgstr ""
+
+#: inc/acf-field-groups.php:932
+msgid "Logo (colored) Width"
+msgstr ""
+
+#: inc/acf-field-groups.php:953
+msgid "Logo (white) Width"
+msgstr ""
+
+#: inc/acf-field-groups.php:974
+msgid "Logo Teaser Text"
+msgstr ""
+
+#: inc/acf-field-groups.php:977
+msgid "Shows a text below the logo."
+msgstr ""
+
+#: inc/acf-field-groups.php:993
+msgid "Logo Width for mobile devices (optional)"
+msgstr ""
+
+#: inc/acf-field-groups.php:996
+msgid "You can setup an individual width for mobile devices."
+msgstr ""
+
+#: inc/acf-field-groups.php:1014
+msgid "Footer Logo"
+msgstr ""
+
+#: inc/acf-field-groups.php:1031
+msgid "Logo for schema.org"
+msgstr ""
+
+#: inc/acf-field-groups.php:1034
+msgid ""
+"Needs for structured data by schema.org. Also appears in the footer. "
+"Important: SVG file will not be accepted!"
+msgstr ""
+
+#: inc/acf-field-groups.php:1056
+msgid "Logo Width"
+msgstr ""
+
+#: inc/acf-field-groups.php:1077
+msgid "Colors"
+msgstr ""
+
+#: inc/acf-field-groups.php:1093 inc/acf-field-groups.php:5065
+#: inc/acf-field-groups.php:5128 inc/acf-field-groups.php:10144
+#: inc/acf-field-groups.php:10355 inc/acf-field-groups.php:24198
+msgid "Default"
+msgstr ""
+
+#: inc/acf-field-groups.php:1096
+msgid "e.g. #222222"
+msgstr ""
+
+#: inc/acf-field-groups.php:1108
+msgid "Default (Second)"
+msgstr ""
+
+#: inc/acf-field-groups.php:1111
+msgid "e.g. #a29581"
+msgstr ""
+
+#: inc/acf-field-groups.php:1123 inc/acf-field-groups.php:5822
+msgid "H1 Headline"
+msgstr ""
+
+#: inc/acf-field-groups.php:1126 inc/acf-field-groups.php:1141
+msgid "e.g. #686868"
+msgstr ""
+
+#: inc/acf-field-groups.php:1138 inc/acf-field-groups.php:5860
+msgid "H2 Headline"
+msgstr ""
+
+#: inc/acf-field-groups.php:1153
+msgid "Links"
+msgstr ""
+
+#: inc/acf-field-groups.php:1156
+msgid "e.g. #377fea"
+msgstr ""
+
+#: inc/acf-field-groups.php:1168 inc/acf-field-groups.php:4560
+msgid "Like Button"
+msgstr ""
+
+#: inc/acf-field-groups.php:1171
+msgid "e.g. #ec6055"
+msgstr ""
+
+#: inc/acf-field-groups.php:1183
+msgid "Rating Stars"
+msgstr ""
+
+#: inc/acf-field-groups.php:1186
+msgid "e.g. #edb867"
+msgstr ""
+
+#: inc/acf-field-groups.php:1198
+msgid "Price / Sale"
+msgstr ""
+
+#: inc/acf-field-groups.php:1201
+msgid "e.g. #77a464"
+msgstr ""
+
+#: inc/acf-field-groups.php:1213
+msgid "Icons"
+msgstr ""
+
+#: inc/acf-field-groups.php:1229
+msgid "Favicon"
+msgstr ""
+
+#: inc/acf-field-groups.php:1232
+msgid ""
+"The icon which appears in the browser. Use \".ICO\" file format in 64 x 64 "
+"px."
+msgstr ""
+
+#: inc/acf-field-groups.php:1254
+msgid "Apple Touch Icon Settings"
+msgstr ""
+
+#: inc/acf-field-groups.php:1266
+msgid "One size for all resolutions"
+msgstr ""
+
+#: inc/acf-field-groups.php:1267
+msgid "Individual icons for each specific resolution"
+msgstr ""
+
+#: inc/acf-field-groups.php:1278
+msgid "Apple Touch Icon"
+msgstr ""
+
+#: inc/acf-field-groups.php:1281
+msgid ""
+"Tipp: Use 180 x 180 px, It's the best way, when the icon will scaled smaller."
+msgstr ""
+
+#: inc/acf-field-groups.php:1311
+msgid "76 x 76 px"
+msgstr ""
+
+#: inc/acf-field-groups.php:1343
+msgid "120 x 120 px"
+msgstr ""
+
+#: inc/acf-field-groups.php:1375
+msgid "152 x 152 px"
+msgstr ""
+
+#: inc/acf-field-groups.php:1407
+msgid "180 x 180 px"
+msgstr ""
+
+#: inc/acf-field-groups.php:1439
+msgid "Background"
+msgstr ""
+
+#: inc/acf-field-groups.php:1458
+msgid "Show a background image on each page."
+msgstr ""
+
+#: inc/acf-field-groups.php:1480
+msgid "Background Settings"
+msgstr ""
+
+#: inc/acf-field-groups.php:1491
+msgid ""
+"Here you can setup your background image. For more features please add "
+"custom css styles to your child theme <code>style.css</code>."
+msgstr ""
+
+#: inc/acf-field-groups.php:1497
+msgid "Background-Size"
+msgstr ""
+
+#: inc/acf-field-groups.php:1512
+msgid "Cover"
+msgstr ""
+
+#: inc/acf-field-groups.php:1513
+msgid "Contain"
+msgstr ""
+
+#: inc/acf-field-groups.php:1514
+msgid "10%"
+msgstr ""
+
+#: inc/acf-field-groups.php:1515
+msgid "20%"
+msgstr ""
+
+#: inc/acf-field-groups.php:1516
+msgid "30%"
+msgstr ""
+
+#: inc/acf-field-groups.php:1517
+msgid "40%"
+msgstr ""
+
+#: inc/acf-field-groups.php:1518
+msgid "50%"
+msgstr ""
+
+#: inc/acf-field-groups.php:1519
+msgid "60%"
+msgstr ""
+
+#: inc/acf-field-groups.php:1520
+msgid "70%"
+msgstr ""
+
+#: inc/acf-field-groups.php:1521
+msgid "80%"
+msgstr ""
+
+#: inc/acf-field-groups.php:1522
+msgid "90%"
+msgstr ""
+
+#: inc/acf-field-groups.php:1523
+msgid "100%"
+msgstr ""
+
+#: inc/acf-field-groups.php:1535
+msgid "Background-Repeat"
+msgstr ""
+
+#: inc/acf-field-groups.php:1549
+msgid "no-repeat"
+msgstr ""
+
+#: inc/acf-field-groups.php:1550
+msgid "repeat"
+msgstr ""
+
+#: inc/acf-field-groups.php:1551
+msgid "repeat-x"
+msgstr ""
+
+#: inc/acf-field-groups.php:1552
+msgid "repeat-y"
+msgstr ""
+
+#: inc/acf-field-groups.php:1564
+msgid "Background-Positions"
+msgstr ""
+
+#: inc/acf-field-groups.php:1575
+msgid ""
+"Possible values for background position are <code>center</code>, <code>top</"
+"code>, <code>right</code>, <code>bottom</code>, <code>left</code> and e.g. "
+"<code>10%</code> or <code>10px</code>."
+msgstr ""
+
+#: inc/acf-field-groups.php:1581
+msgid "Background-Position X"
+msgstr ""
+
+#: inc/acf-field-groups.php:1600
+msgid "Background-Position Y"
+msgstr ""
+
+#: inc/acf-field-groups.php:1639
+msgid "Settings: Coming Soon"
+msgstr ""
+
+#: inc/acf-field-groups.php:1643 inc/acf-field-groups.php:1969
+#: inc/acf-field-groups.php:2332 inc/acf-field-groups.php:3384
+#: inc/acf-field-groups.php:3799 inc/acf-field-groups.php:4833
+#: inc/acf-field-groups.php:4997 inc/acf-field-groups.php:5087
+#: inc/acf-field-groups.php:5325 inc/acf-field-groups.php:5628
+#: inc/acf-field-groups.php:6099
+msgid "Activation"
+msgstr ""
+
+#: inc/acf-field-groups.php:1646
+msgid ""
+"Show a under construction page with coming soon notice and countdown. You "
+"must be logged in to show the complete site in default mode."
+msgstr ""
+
+#: inc/acf-field-groups.php:1736 inc/acf-field-groups.php:2876
+#: inc/acf-field-groups.php:5474
+msgid "Nothing"
+msgstr ""
+
+#: inc/acf-field-groups.php:1777 inc/acf-field-groups.php:1801
+msgid "Countdown"
+msgstr ""
+
+#: inc/acf-field-groups.php:1815 inc/acf-field-groups.php:6113
+#: inc/acf-field-groups.php:23562
+#: inc/plugins/class-tgm-plugin-activation.php:2811
+msgid "Activate"
+msgstr ""
+
+#: inc/acf-field-groups.php:1816 inc/acf-field-groups.php:6114
+msgid "Deactivate"
+msgstr ""
+
+#: inc/acf-field-groups.php:1820
+msgid "Date of the publication"
+msgstr ""
+
+#: inc/acf-field-groups.php:1965
+msgid "Settings: Ending Area"
+msgstr ""
+
+#: inc/acf-field-groups.php:1972
+msgid ""
+"Show a additional area for specific or all sites. This area is displayed "
+"below the content and above the footerbar."
+msgstr ""
+
+#: inc/acf-field-groups.php:1988 inc/acf-field-groups.php:3818
+#: inc/acf-field-groups.php:5344
+msgid "Section(s)"
+msgstr ""
+
+#: inc/acf-field-groups.php:2011 inc/acf-field-groups.php:2741
+#: inc/acf-field-groups.php:3434 inc/acf-field-groups.php:3501
+#: inc/acf-field-groups.php:3841 inc/acf-field-groups.php:4221
+#: inc/acf-field-groups.php:4875 inc/acf-field-groups.php:5238
+#: inc/acf-field-groups.php:5367 inc/acf-field-groups.php:6022
+#: inc/acf-field-groups.php:7341 inc/acf-field-groups.php:8220
+#: inc/acf-field-groups.php:8326 inc/acf-field-groups.php:8728
+#: inc/acf-field-groups.php:9451 inc/acf-field-groups.php:9976
+#: inc/acf-field-groups.php:11080 inc/acf-field-groups.php:12882
+#: inc/acf-field-groups.php:14232 inc/acf-field-groups.php:15731
+#: inc/acf-field-groups.php:15965 inc/acf-field-groups.php:16307
+#: inc/acf-field-groups.php:16649 inc/acf-field-groups.php:17290
+#: inc/acf-field-groups.php:17791 inc/acf-field-groups.php:18355
+#: inc/acf-field-groups.php:18931 inc/acf-field-groups.php:20427
+#: inc/acf-field-groups.php:20618 inc/acf-field-groups.php:21401
+#: inc/acf-field-groups.php:21850 inc/acf-field-groups.php:23346
+#: inc/acf-field-groups.php:23444
+msgid "Add new"
+msgstr ""
+
+#: inc/acf-field-groups.php:2015 inc/acf-field-groups.php:2745
+#: inc/acf-field-groups.php:3049 inc/acf-field-groups.php:3845
+#: inc/acf-field-groups.php:4225 inc/acf-field-groups.php:4748
+#: inc/acf-field-groups.php:5371 inc/acf-field-groups.php:21334
+#: inc/acf-field-groups.php:21767 inc/acf-field-groups.php:23238
+#: inc/acf-field-groups.php:24547
+msgid "Visibility"
+msgstr ""
+
+#: inc/acf-field-groups.php:2043 inc/acf-field-groups.php:3873
+msgid "Post, Product, Category or Tag Carousel"
+msgstr ""
+
+#: inc/acf-field-groups.php:2044 inc/acf-field-groups.php:2126
+#: inc/acf-field-groups.php:3874 inc/acf-field-groups.php:3983
+#: inc/acf-field-groups.php:20412
+msgid "Promo Boxes"
+msgstr ""
+
+#: inc/acf-field-groups.php:2045 inc/acf-field-groups.php:2171
+#: inc/acf-field-groups.php:3875 inc/acf-field-groups.php:4028
+msgid "Random Ad Banner"
+msgstr ""
+
+#: inc/acf-field-groups.php:2046 inc/acf-field-groups.php:2216
+#: inc/acf-field-groups.php:3876 inc/acf-field-groups.php:4073
+#: inc/acf-field-groups.php:6831 inc/acf-field-groups.php:7059
+#: inc/acf-field-groups.php:7605 inc/acf-field-groups.php:7954
+#: inc/acf-field-groups.php:8510 inc/acf-field-groups.php:8828
+#: inc/acf-field-groups.php:9248 inc/acf-field-groups.php:9727
+#: inc/acf-field-groups.php:10836 inc/acf-field-groups.php:11180
+#: inc/acf-field-groups.php:11595 inc/acf-field-groups.php:11844
+#: inc/acf-field-groups.php:12117 inc/acf-field-groups.php:12326
+#: inc/acf-field-groups.php:12679 inc/acf-field-groups.php:13006
+#: inc/acf-field-groups.php:13256 inc/acf-field-groups.php:13519
+#: inc/acf-field-groups.php:13782 inc/acf-field-groups.php:14029
+#: inc/acf-field-groups.php:14384 inc/acf-field-groups.php:21231
+#: inc/acf-field-groups.php:21236
+msgid "Content Grid"
+msgstr ""
+
+#: inc/acf-field-groups.php:2047 inc/acf-field-groups.php:2261
+#: inc/acf-field-groups.php:3877 inc/acf-field-groups.php:4118
+#: inc/acf-field-groups.php:15574 inc/acf-field-groups.php:19892
+#: inc/acf-field-groups.php:21262 inc/acf-field-groups.php:21267
+msgid "Custom HTML"
+msgstr ""
+
+#: inc/acf-field-groups.php:2060 inc/acf-field-groups.php:2761
+#: inc/acf-field-groups.php:3438 inc/acf-field-groups.php:3890
+#: inc/acf-field-groups.php:4287 inc/acf-field-groups.php:4917
+#: inc/acf-field-groups.php:5387
+msgid "Visibility Selection"
+msgstr ""
+
+#: inc/acf-field-groups.php:2081 inc/acf-field-groups.php:3938
+msgid "Carousel"
+msgstr ""
+
+#: inc/acf-field-groups.php:2105 inc/acf-field-groups.php:3962
+msgid "Carousel Selection"
+msgstr ""
+
+#: inc/acf-field-groups.php:2150 inc/acf-field-groups.php:4007
+msgid "Promo Boxes Selection"
+msgstr ""
+
+#: inc/acf-field-groups.php:2195 inc/acf-field-groups.php:4052
+msgid "Random Ad Banner Selection"
+msgstr ""
+
+#: inc/acf-field-groups.php:2240 inc/acf-field-groups.php:4097
+#: inc/acf-field-groups.php:6847 inc/acf-field-groups.php:7075
+#: inc/acf-field-groups.php:7621 inc/acf-field-groups.php:7970
+#: inc/acf-field-groups.php:8526 inc/acf-field-groups.php:8844
+#: inc/acf-field-groups.php:9264 inc/acf-field-groups.php:9743
+#: inc/acf-field-groups.php:10852 inc/acf-field-groups.php:11196
+#: inc/acf-field-groups.php:11611 inc/acf-field-groups.php:11860
+#: inc/acf-field-groups.php:12133 inc/acf-field-groups.php:12342
+#: inc/acf-field-groups.php:12695 inc/acf-field-groups.php:13022
+#: inc/acf-field-groups.php:13272 inc/acf-field-groups.php:13535
+#: inc/acf-field-groups.php:13798 inc/acf-field-groups.php:14045
+#: inc/acf-field-groups.php:14400
+msgid "Content Grid Selection"
+msgstr ""
+
+#: inc/acf-field-groups.php:2285 inc/acf-field-groups.php:4142
+msgid "Custom HTML Selection"
+msgstr ""
+
+#: inc/acf-field-groups.php:2328
+msgid "Settings: EU Cookiebar"
+msgstr ""
+
+#: inc/acf-field-groups.php:2335
+msgid "Shows the EU cookie law bar at the bottom of the site."
+msgstr ""
+
+#: inc/acf-field-groups.php:2375
+msgid "Acceptance"
+msgstr ""
+
+#: inc/acf-field-groups.php:2392
+msgid "Accept Button"
+msgstr ""
+
+#: inc/acf-field-groups.php:2411
+msgid "Accept Button Label"
+msgstr ""
+
+#: inc/acf-field-groups.php:2438 js/cookiebar.php:72
+msgid "Privacy Policy"
+msgstr ""
+
+#: inc/acf-field-groups.php:2455
+msgid "Privacy Policy Button"
+msgstr ""
+
+#: inc/acf-field-groups.php:2474
+msgid "Privacy Policy Button Label"
+msgstr ""
+
+#: inc/acf-field-groups.php:2501
+msgid "Privacy Policy Button Link"
+msgstr ""
+
+#: inc/acf-field-groups.php:2504
+msgid "The link to your privacy policy page."
+msgstr ""
+
+#: inc/acf-field-groups.php:2531 inc/acf-field-groups.php:5133
+#: inc/acf-field-groups.php:6352
+msgid "Other"
+msgstr ""
+
+#: inc/acf-field-groups.php:2548
+msgid "Cookiebar Message"
+msgstr ""
+
+#: inc/acf-field-groups.php:2551
+msgid "The note of the cookiebar."
+msgstr ""
+
+#: inc/acf-field-groups.php:2567
+msgid "Accept On Continue"
+msgstr ""
+
+#: inc/acf-field-groups.php:2570
+msgid ""
+"Set to true to silently accept cookies when visitor moves to another page, "
+"instead to click the accept button."
+msgstr ""
+
+#: inc/acf-field-groups.php:2586
+msgid "Accept On Scroll"
+msgstr ""
+
+#: inc/acf-field-groups.php:2589
+msgid "Set to true to accept cookies when visitor scrolls 200 pixels down."
+msgstr ""
+
+#: inc/acf-field-groups.php:2625
+msgid "Settings: Exit PopUp"
+msgstr ""
+
+#: inc/acf-field-groups.php:2629 inc/acf-field-groups.php:4189
+#: inc/acf-field-groups.php:5647 inc/acf-field-groups.php:5729
+#: inc/acf-field-groups.php:5990 inc/acf-field-groups.php:6082
+#: inc/acf-field-groups.php:11024 inc/acf-field-groups.php:21298
+#: inc/widgets/instagram.php:160 inc/widgets/pinterest-board.php:164
+#: inc/widgets/pinterest.php:156
+msgid "Info"
+msgstr ""
+
+#: inc/acf-field-groups.php:2640
+msgid ""
+"Important notice: Make sure that you use not more than one exit popups for "
+"the same site!"
+msgstr ""
+
+#: inc/acf-field-groups.php:2646
+msgid "Cookie Expire"
+msgstr ""
+
+#: inc/acf-field-groups.php:2649
+msgid ""
+"The number of days to track if the popup has already been shown to a "
+"specific visitor."
+msgstr ""
+
+#: inc/acf-field-groups.php:2667
+msgid "Delay"
+msgstr ""
+
+#: inc/acf-field-groups.php:2670
+msgid ""
+"The time, in seconds, until the popup activates and begins watching for exit "
+"intent."
+msgstr ""
+
+#: inc/acf-field-groups.php:2688
+msgid "Show on Delay"
+msgstr ""
+
+#: inc/acf-field-groups.php:2691
+msgid "If true, the popup will show after the delay option time."
+msgstr ""
+
+#: inc/acf-field-groups.php:2707
+msgid "Activate for mobile devices"
+msgstr ""
+
+#: inc/acf-field-groups.php:2710
+msgid ""
+"You can activate the exit popup for mobile devices too. It will be shown "
+"after the user scrolling down by 50%, then up by 10%."
+msgstr ""
+
+#: inc/acf-field-groups.php:2726 inc/acf-field-groups.php:4206
+msgid "PopUp(s)"
+msgstr ""
+
+#: inc/acf-field-groups.php:2782 inc/acf-field-groups.php:3756
+#: inc/acf-field-groups.php:15340 inc/acf-field-groups.php:19728
+#: inc/acf-field-groups.php:23581 inc/acf-field-groups.php:24153
+#: inc/shortcodes.php:555 inc/widgets/social-counter.php:767
+#: inc/widgets/social-counter.php:769 inc/widgets/social-counter.php:770
+msgid "Style"
+msgstr ""
+
+#: inc/acf-field-groups.php:2794
+msgid "Right aligned content"
+msgstr ""
+
+#: inc/acf-field-groups.php:2795
+msgid "Left aligned content"
+msgstr ""
+
+#: inc/acf-field-groups.php:2796
+msgid "Content overlay the image"
+msgstr ""
+
+#: inc/acf-field-groups.php:3028
+msgid "Settings: Footer"
+msgstr ""
+
+#: inc/acf-field-groups.php:3032 inc/admin-settings.php:249
+#: inc/admin-settings.php:285 inc/admin-settings.php:301
+#: inc/admin-settings.php:317 inc/admin-settings.php:333
+#: inc/admin-settings.php:347
+msgid "Footerbar"
+msgstr ""
+
+#: inc/acf-field-groups.php:3043
+msgid "Show a Footerbar, which can include custom widgets."
+msgstr ""
+
+#: inc/acf-field-groups.php:3068 inc/acf-field-groups.php:9609
+#: inc/acf-field-groups.php:15035 inc/acf-field-groups.php:15105
+#: inc/acf-field-groups.php:15903 inc/acf-field-groups.php:15950
+#: inc/acf-field-groups.php:17634 inc/acf-field-groups.php:18116
+#: inc/acf-field-groups.php:18774 inc/acf-field-groups.php:19493
+#: inc/acf-field-groups.php:22285 inc/acf-field-groups.php:23932
+#: inc/shortcodes.php:328 inc/widgets/instagram.php:170
+#: inc/widgets/instagram.php:173 inc/widgets/instagram.php:174
+#: inc/widgets/instagram.php:175 inc/widgets/pinterest-board.php:174
+#: inc/widgets/pinterest-board.php:177 inc/widgets/pinterest-board.php:178
+#: inc/widgets/pinterest-board.php:179 inc/widgets/pinterest.php:166
+#: inc/widgets/pinterest.php:169 inc/widgets/pinterest.php:170
+#: inc/widgets/pinterest.php:171 inc/widgets/social-counter.php:776
+#: inc/widgets/social-counter.php:779 inc/widgets/social-counter.php:780
+msgid "Columns"
+msgstr ""
+
+#: inc/acf-field-groups.php:3080 inc/acf-field-groups.php:6644
+#: inc/acf-field-groups.php:8675 inc/acf-field-groups.php:9621
+#: inc/acf-field-groups.php:11408 inc/acf-field-groups.php:14902
+#: inc/acf-field-groups.php:15082 inc/acf-field-groups.php:15699
+#: inc/acf-field-groups.php:15931 inc/acf-field-groups.php:17646
+#: inc/acf-field-groups.php:18128 inc/acf-field-groups.php:18786
+#: inc/acf-field-groups.php:19470
+msgid "1 Column"
+msgstr ""
+
+#: inc/acf-field-groups.php:3081 inc/acf-field-groups.php:6235
+#: inc/acf-field-groups.php:6336 inc/acf-field-groups.php:6645
+#: inc/acf-field-groups.php:8676 inc/acf-field-groups.php:9622
+#: inc/acf-field-groups.php:11409 inc/acf-field-groups.php:14903
+#: inc/acf-field-groups.php:15083 inc/acf-field-groups.php:15700
+#: inc/acf-field-groups.php:15932 inc/acf-field-groups.php:17647
+#: inc/acf-field-groups.php:18129 inc/acf-field-groups.php:18787
+#: inc/acf-field-groups.php:19471
+msgid "2 Columns"
+msgstr ""
+
+#: inc/acf-field-groups.php:3082 inc/acf-field-groups.php:6236
+#: inc/acf-field-groups.php:6337 inc/acf-field-groups.php:6646
+#: inc/acf-field-groups.php:8677 inc/acf-field-groups.php:9623
+#: inc/acf-field-groups.php:11410 inc/acf-field-groups.php:14904
+#: inc/acf-field-groups.php:15084 inc/acf-field-groups.php:15701
+#: inc/acf-field-groups.php:15933 inc/acf-field-groups.php:17648
+#: inc/acf-field-groups.php:18130 inc/acf-field-groups.php:18788
+#: inc/acf-field-groups.php:19472
+msgid "3 Columns"
+msgstr ""
+
+#: inc/acf-field-groups.php:3083 inc/acf-field-groups.php:6237
+#: inc/acf-field-groups.php:6338 inc/acf-field-groups.php:9624
+#: inc/acf-field-groups.php:14905 inc/acf-field-groups.php:15085
+#: inc/acf-field-groups.php:15702 inc/acf-field-groups.php:15934
+#: inc/acf-field-groups.php:17649 inc/acf-field-groups.php:18131
+#: inc/acf-field-groups.php:18789 inc/acf-field-groups.php:19473
+msgid "4 Columns"
+msgstr ""
+
+#: inc/acf-field-groups.php:3097
+msgid "Footer Info"
+msgstr ""
+
+#: inc/acf-field-groups.php:3114
+msgid "Copyright"
+msgstr ""
+
+#: inc/acf-field-groups.php:3117
+msgid "Shows a copyright line with owner details."
+msgstr ""
+
+#: inc/acf-field-groups.php:3133 inc/acf-field-groups.php:12040
+msgid "Year"
+msgstr ""
+
+#: inc/acf-field-groups.php:3136
+msgid "Established year of the website or company."
+msgstr ""
+
+#: inc/acf-field-groups.php:3152
+msgid "Name / Business Name"
+msgstr ""
+
+#: inc/acf-field-groups.php:3155
+msgid "e.g. Mustermann Ltd."
+msgstr ""
+
+#: inc/acf-field-groups.php:3191
+msgid "Settings: General"
+msgstr ""
+
+#: inc/acf-field-groups.php:3211
+msgid "Logo Overlay"
+msgstr ""
+
+#: inc/acf-field-groups.php:3214
+msgid "Shows a logo overlay while loading the site."
+msgstr ""
+
+#: inc/acf-field-groups.php:3230
+msgid "Sticky Menu"
+msgstr ""
+
+#: inc/acf-field-groups.php:3233
+msgid "Disable the sticky menu on page scrolling down."
+msgstr ""
+
+#: inc/acf-field-groups.php:3249
+msgid "Search Icon"
+msgstr ""
+
+#: inc/acf-field-groups.php:3252
+msgid "Shows the search icon at the right side of the main navigation."
+msgstr ""
+
+#: inc/acf-field-groups.php:3268
+msgid "Thumbnail Stretching"
+msgstr ""
+
+#: inc/acf-field-groups.php:3271
+msgid ""
+"It is useful, if you want to stretch small width thumbnail images of post "
+"listing to full width."
+msgstr ""
+
+#: inc/acf-field-groups.php:3287
+msgid "Scroll to Top Button"
+msgstr ""
+
+#: inc/acf-field-groups.php:3290
+msgid "Shows a Scroll to Top Button at the bottom of the page."
+msgstr ""
+
+#: inc/acf-field-groups.php:3306
+msgid "Custom Code"
+msgstr ""
+
+#: inc/acf-field-groups.php:3322
+msgid "Header Code"
+msgstr ""
+
+#: inc/acf-field-groups.php:3325
+msgid "Will be inserted into the <code>wp_head</code> hook."
+msgstr ""
+
+#: inc/acf-field-groups.php:3341
+msgid "Footer Code"
+msgstr ""
+
+#: inc/acf-field-groups.php:3344
+msgid "Will be inserted into the <code>wp_footer</code> hook."
+msgstr ""
+
+#: inc/acf-field-groups.php:3380
+msgid "Settings: Google Maps"
+msgstr ""
+
+#: inc/acf-field-groups.php:3387
+msgid "Shows a google map section with your selected location."
+msgstr ""
+
+#: inc/acf-field-groups.php:3403
+msgid "Map Section"
+msgstr ""
+
+#: inc/acf-field-groups.php:3419
+msgid "Map(s)"
+msgstr ""
+
+#: inc/acf-field-groups.php:3459 inc/acf-field-groups.php:3911
+msgid "Position"
+msgstr ""
+
+#: inc/acf-field-groups.php:3471 inc/acf-field-groups.php:3924
+msgid "Below the Header"
+msgstr ""
+
+#: inc/acf-field-groups.php:3472
+msgid "Above the Footer"
+msgstr ""
+
+#: inc/acf-field-groups.php:3486
+msgid "Map Location(s)"
+msgstr ""
+
+#: inc/acf-field-groups.php:3505 inc/acf-field-groups.php:3596
+msgid "Address"
+msgstr ""
+
+#: inc/acf-field-groups.php:3508
+msgid ""
+"To set a map marker, enter your address in the following field and click on "
+"the map."
+msgstr ""
+
+#: inc/acf-field-groups.php:3523
+msgid "Map Marker Detail Box"
+msgstr ""
+
+#: inc/acf-field-groups.php:3535
+msgid "Custom details"
+msgstr ""
+
+#: inc/acf-field-groups.php:3536
+msgid "Get the address from the map selection"
+msgstr ""
+
+#: inc/acf-field-groups.php:3550
+msgid "Google Maps Link"
+msgstr ""
+
+#: inc/acf-field-groups.php:3623
+msgid "Phone"
+msgstr ""
+
+#: inc/acf-field-groups.php:3650
+msgid "e-mail"
+msgstr ""
+
+#: inc/acf-field-groups.php:3697 inc/widgets/google-plus.php:301
+#: inc/widgets/social-counter.php:876 inc/widgets/social-counter.php:905
+msgid "API Key"
+msgstr ""
+
+#: inc/acf-field-groups.php:3700
+msgid ""
+"You need a <a target=\"_blank\" href=\"https://developers.google.com/maps/"
+"documentation/javascript/get-api-key\">Google Maps API Key</a> for embed the "
+"map in your website. e.g. \"AIzaSyCEprRgdAfS753A ...\""
+msgstr ""
+
+#: inc/acf-field-groups.php:3716
+msgid "Map Zoom"
+msgstr ""
+
+#: inc/acf-field-groups.php:3719
+msgid ""
+"The custom zoom value is only used, when you have one location selected."
+msgstr ""
+
+#: inc/acf-field-groups.php:3737
+msgid "Map Marker Details"
+msgstr ""
+
+#: inc/acf-field-groups.php:3740
+msgid "Shows the detail box after clicking the map marker only."
+msgstr ""
+
+#: inc/acf-field-groups.php:3759
+msgid "Coloring of the map."
+msgstr ""
+
+#: inc/acf-field-groups.php:3770
+msgid "Lightness"
+msgstr ""
+
+#: inc/acf-field-groups.php:3771 inc/acf-field-groups.php:5066
+#: inc/acf-field-groups.php:5129
+msgid "Colored"
+msgstr ""
+
+#: inc/acf-field-groups.php:3795
+msgid "Settings: Leading Area"
+msgstr ""
+
+#: inc/acf-field-groups.php:3802
+msgid ""
+"Show a additional area for specific or all sites. This area is displayed "
+"below the main menu and above the content."
+msgstr ""
+
+#: inc/acf-field-groups.php:3923
+msgid "Above the Header"
+msgstr ""
+
+#: inc/acf-field-groups.php:4185
+msgid "Settings: PopUp Layer"
+msgstr ""
+
+#: inc/acf-field-groups.php:4200
+msgid ""
+"You can call a PopUp Layer with the assigned unique ID (e.g. <code>"
+"\"register_popup\"</code>). Show the layer by clicking buttons or links (e."
+"g. <code>\"< a data-toggle=\"modal\" href=\"#register_popup\">Click me< /a "
+"></code>)."
+msgstr ""
+
+#: inc/acf-field-groups.php:4253
+msgid "Content / HTML"
+msgstr ""
+
+#: inc/acf-field-groups.php:4254 inc/acf-field-groups.php:4362
+#: inc/plugins/activate-plugins.php:124
+msgid "Contact Form 7"
+msgstr ""
+
+#: inc/acf-field-groups.php:4255
+msgid "Newsletter Subscription"
+msgstr ""
+
+#: inc/acf-field-groups.php:4268 inc/widgets/facebook.php:282
+#: inc/widgets/social-counter.php:832
+msgid "ID"
+msgstr ""
+
+#: inc/acf-field-groups.php:4386
+msgid "Contact Form 7 ID"
+msgstr ""
+
+#: inc/acf-field-groups.php:4482
+msgid "Settings: Posts"
+msgstr ""
+
+#: inc/acf-field-groups.php:4486 inc/acf-field-groups.php:12985
+#: inc/acf-field-groups.php:13235 inc/acf-field-groups.php:13498
+#: inc/acf-field-groups.php:13761 inc/acf-field-groups.php:13970
+#: inc/acf-field-groups.php:14363
+msgid "Post Settings"
+msgstr ""
+
+#: inc/acf-field-groups.php:4503
+msgid "Author Bio."
+msgstr ""
+
+#: inc/acf-field-groups.php:4506
+msgid "Shows the author section below the post."
+msgstr ""
+
+#: inc/acf-field-groups.php:4522 inc/acf-field-groups.php:10701
+#: inc/acf-field-groups.php:11368 inc/acf-field-groups.php:14819
+#: inc/acf-field-groups.php:20170 page-sitemap.php:77 page-sitemap.php:232
+#: single.php:175
+msgid "Tags"
+msgstr ""
+
+#: inc/acf-field-groups.php:4525
+msgid "Shows the tags at bottom of post content."
+msgstr ""
+
+#: inc/acf-field-groups.php:4544
+msgid "Shows the post meta bar below the title."
+msgstr ""
+
+#: inc/acf-field-groups.php:4563
+msgid "Shows a love button with like count."
+msgstr ""
+
+#: inc/acf-field-groups.php:4579
+msgid "Star Rating"
+msgstr ""
+
+#: inc/acf-field-groups.php:4582
+msgid "Shows star rating with the score."
+msgstr ""
+
+#: inc/acf-field-groups.php:4601
+msgid "Shows the first letter of posts as initial."
+msgstr ""
+
+#: inc/acf-field-groups.php:4637
+msgid "Shows related posts after the post content."
+msgstr ""
+
+#: inc/acf-field-groups.php:4653
+msgid "Filtering for Related Posts"
+msgstr ""
+
+#: inc/acf-field-groups.php:4666
+msgid "Filtered by Categories"
+msgstr ""
+
+#: inc/acf-field-groups.php:4667
+msgid "Filtered by Tags"
+msgstr ""
+
+#: inc/acf-field-groups.php:4677
+msgid "Post Format exclude for Related Posts"
+msgstr ""
+
+#: inc/acf-field-groups.php:4680 inc/acf-field-groups.php:12548
+msgid "Exclude specific post format types."
+msgstr ""
+
+#: inc/acf-field-groups.php:4691 inc/acf-field-groups.php:9670
+#: inc/acf-field-groups.php:10644 inc/acf-field-groups.php:12559
+#: inc/acf-field-groups.php:14201 inc/acf-field-groups.php:18184
+#: inc/acf-field-groups.php:19376 inc/acf-field-groups.php:22488
+#: inc/acf-field-groups.php:22706 inc/acf-field-groups.php:24137
+msgid "Video"
+msgstr ""
+
+#: inc/acf-field-groups.php:4692 inc/acf-field-groups.php:9671
+#: inc/acf-field-groups.php:10645 inc/acf-field-groups.php:12560
+#: inc/acf-field-groups.php:12851 inc/acf-field-groups.php:18185
+#: inc/acf-field-groups.php:19377 inc/acf-field-groups.php:22489
+#: inc/acf-field-groups.php:24138
+msgid "Audio"
+msgstr ""
+
+#: inc/acf-field-groups.php:4693 inc/acf-field-groups.php:9672
+#: inc/acf-field-groups.php:10646 inc/acf-field-groups.php:12561
+#: inc/acf-field-groups.php:13691 inc/acf-field-groups.php:13707
+#: inc/acf-field-groups.php:18186 inc/acf-field-groups.php:18978
+#: inc/acf-field-groups.php:19378 inc/acf-field-groups.php:22490
+#: inc/acf-field-groups.php:24139
+msgid "Quote"
+msgstr ""
+
+#: inc/acf-field-groups.php:4694 inc/acf-field-groups.php:5242
+#: inc/acf-field-groups.php:9673 inc/acf-field-groups.php:9999
+#: inc/acf-field-groups.php:10647 inc/acf-field-groups.php:12562
+#: inc/acf-field-groups.php:13428 inc/acf-field-groups.php:15988
+#: inc/acf-field-groups.php:16330 inc/acf-field-groups.php:16672
+#: inc/acf-field-groups.php:18187 inc/acf-field-groups.php:19379
+#: inc/acf-field-groups.php:20475 inc/acf-field-groups.php:22491
+#: inc/acf-field-groups.php:24140
+msgid "Link"
+msgstr ""
+
+#: inc/acf-field-groups.php:4695 inc/acf-field-groups.php:9674
+#: inc/acf-field-groups.php:10648 inc/acf-field-groups.php:12563
+#: inc/acf-field-groups.php:13178 inc/acf-field-groups.php:18188
+#: inc/acf-field-groups.php:19380 inc/acf-field-groups.php:22492
+#: inc/acf-field-groups.php:24141
+msgid "Gallery"
+msgstr ""
+
+#: inc/acf-field-groups.php:4696 inc/acf-field-groups.php:7407
+#: inc/acf-field-groups.php:8392 inc/acf-field-groups.php:9675
+#: inc/acf-field-groups.php:10649 inc/acf-field-groups.php:11693
+#: inc/acf-field-groups.php:11709 inc/acf-field-groups.php:12564
+#: inc/acf-field-groups.php:14536 inc/acf-field-groups.php:14552
+#: inc/acf-field-groups.php:15172 inc/acf-field-groups.php:15308
+#: inc/acf-field-groups.php:15735 inc/acf-field-groups.php:16188
+#: inc/acf-field-groups.php:16204 inc/acf-field-groups.php:16530
+#: inc/acf-field-groups.php:16546 inc/acf-field-groups.php:16872
+#: inc/acf-field-groups.php:16935 inc/acf-field-groups.php:17294
+#: inc/acf-field-groups.php:18189 inc/acf-field-groups.php:18935
+#: inc/acf-field-groups.php:19170 inc/acf-field-groups.php:19209
+#: inc/acf-field-groups.php:19381 inc/acf-field-groups.php:19560
+#: inc/acf-field-groups.php:19696 inc/acf-field-groups.php:20431
+#: inc/acf-field-groups.php:20622 inc/acf-field-groups.php:22493
+#: inc/acf-field-groups.php:22704 inc/acf-field-groups.php:24142
+msgid "Image"
+msgstr ""
+
+#: inc/acf-field-groups.php:4727
+msgid "Settings: Sidebars"
+msgstr ""
+
+#: inc/acf-field-groups.php:4731
+msgid "Global Sidebar Settings"
+msgstr ""
+
+#: inc/acf-field-groups.php:4751
+msgid "Hide or show the sidebar for all posts and pages."
+msgstr ""
+
+#: inc/acf-field-groups.php:4772 inc/acf-field-groups.php:7247
+#: inc/acf-field-groups.php:8142 inc/acf-field-groups.php:11041
+#: inc/acf-field-groups.php:24572
+msgid "Direction"
+msgstr ""
+
+#: inc/acf-field-groups.php:4775 inc/acf-field-groups.php:24575
+msgid "Change the sidebar position to the left or right side."
+msgstr ""
+
+#: inc/acf-field-groups.php:4796
+msgid "Visibility for Archive / Category Pages only"
+msgstr ""
+
+#: inc/acf-field-groups.php:4815
+msgid "Sidebar Areas"
+msgstr ""
+
+#: inc/acf-field-groups.php:4826
+msgid ""
+"Notice: After adding a new sidebar area, you can add individual widgets at "
+"\"Appearance > Widgets\". \n"
+"<u><strong>Important</strong></u>: More than two different sidebar areas "
+"can't be visible on the same site at the same time."
+msgstr ""
+
+#: inc/acf-field-groups.php:4836
+msgid "Add new sidebar areas for specific or all sites."
+msgstr ""
+
+#: inc/acf-field-groups.php:4852
+msgid "Sidebar(s)"
+msgstr ""
+
+#: inc/acf-field-groups.php:4879 inc/acf-field-groups.php:5280
+#: inc/acf-field-groups.php:9980 inc/acf-field-groups.php:17795
+#: inc/acf-field-groups.php:20584 inc/acf-field-groups.php:21405
+msgid "Label"
+msgstr ""
+
+#: inc/acf-field-groups.php:4898 inc/acf-field-groups.php:6677
+#: inc/acf-field-groups.php:11441
+msgid "Description"
+msgstr ""
+
+#: inc/acf-field-groups.php:4960
+msgid "Settings: Social"
+msgstr ""
+
+#: inc/acf-field-groups.php:4980
+msgid "Social Profile Sidebar"
+msgstr ""
+
+#: inc/acf-field-groups.php:5000
+msgid "Shows your social profiles as sidebar."
+msgstr ""
+
+#: inc/acf-field-groups.php:5019
+msgid "Show the bar on the right or left side."
+msgstr ""
+
+#: inc/acf-field-groups.php:5043 inc/acf-field-groups.php:5106
+msgid "Coloring"
+msgstr ""
+
+#: inc/acf-field-groups.php:5046 inc/acf-field-groups.php:5109
+msgid "Show social icons in their own color."
+msgstr ""
+
+#: inc/acf-field-groups.php:5070
+msgid "Social Share Sidebar"
+msgstr ""
+
+#: inc/acf-field-groups.php:5090
+msgid ""
+"Shows a fixed social sharing sidebar in posts. (is visible by page scrolling)"
+msgstr ""
+
+#: inc/acf-field-groups.php:5150
+msgid "Pin Button on Post Images"
+msgstr ""
+
+#: inc/acf-field-groups.php:5153
+msgid "The button appears on mouseover the post image."
+msgstr ""
+
+#: inc/acf-field-groups.php:5169
+msgid "Social Sharing Postbar"
+msgstr ""
+
+#: inc/acf-field-groups.php:5172
+msgid "Shows the social postbar at the bottom of post content."
+msgstr ""
+
+#: inc/acf-field-groups.php:5188
+msgid "Social Profile Icons at Footer"
+msgstr ""
+
+#: inc/acf-field-groups.php:5191
+msgid "Shows your social profile icons at the bottom of the page."
+msgstr ""
+
+#: inc/acf-field-groups.php:5207
+msgid "Your Social Profiles"
+msgstr ""
+
+#: inc/acf-field-groups.php:5223
+msgid "Social Profiles"
+msgstr ""
+
+#: inc/acf-field-groups.php:5261 inc/acf-field-groups.php:5424
+#: inc/acf-field-groups.php:11103 inc/acf-field-groups.php:15170
+#: inc/acf-field-groups.php:15375 inc/acf-field-groups.php:16089
+#: inc/acf-field-groups.php:16431 inc/acf-field-groups.php:16773
+#: inc/acf-field-groups.php:19558 inc/acf-field-groups.php:19763
+#: inc/shortcodes.php:218
+msgid "Icon"
+msgstr ""
+
+#: inc/acf-field-groups.php:5264
+msgid ""
+"<a href=\"//fontawesome.com/v4.7.0/icons/\" target=\"_blank\">All icons "
+"here</a> e.g. \"fa-check\""
+msgstr ""
+
+#: inc/acf-field-groups.php:5321
+msgid "Settings: Top Layer"
+msgstr ""
+
+#: inc/acf-field-groups.php:5328
+msgid ""
+"Shows a layer at the top of the page. E.g. you can use this for a "
+"subscription form or a important message."
+msgstr ""
+
+#: inc/acf-field-groups.php:5446
+msgid ""
+"To display a particular font section larger, use the following shortcode: "
+"[mark]larger[/mark]"
+msgstr ""
+
+#: inc/acf-field-groups.php:5489
+msgid "Background Color"
+msgstr ""
+
+#: inc/acf-field-groups.php:5624
+msgid "Settings: Topbar"
+msgstr ""
+
+#: inc/acf-field-groups.php:5631
+msgid "Shows the topbar with breadcrumb and social profile icons."
+msgstr ""
+
+#: inc/acf-field-groups.php:5658
+msgid ""
+"If you want to display an additional menu in the top bar, first you have to "
+"add a new menu at <code>Appearance > Menus</code> for the location <code>Top "
+"Menu</code>."
+msgstr ""
+
+#: inc/acf-field-groups.php:5664 inc/admin-settings.php:14
+msgid "Top Menu"
+msgstr ""
+
+#: inc/acf-field-groups.php:5667
+msgid "Show the Top Menu instead of the breadcrumb or social profile icons."
+msgstr ""
+
+#: inc/acf-field-groups.php:5677
+msgid "Disable"
+msgstr ""
+
+#: inc/acf-field-groups.php:5678
+msgid "Instead of Breadcrumb"
+msgstr ""
+
+#: inc/acf-field-groups.php:5679
+msgid "Instead of Social Profile Icons"
+msgstr ""
+
+#: inc/acf-field-groups.php:5709
+msgid "Settings: Web Fonts"
+msgstr ""
+
+#: inc/acf-field-groups.php:5713
+msgid "Define Theme Fonts"
+msgstr ""
+
+#: inc/acf-field-groups.php:5740
+msgid ""
+"Please note the following guidelines. Font familiy usage: e.g. <code>Open"
+"+Sans</code> or <code>mrs-eaves</code>, for free spaces in Google Webfonts, "
+"use <code>+</code> and for Typekit Webfonts <code>-</code> instead. Font "
+"weight usage: e.g. <code>300</code> or <code>600</code>, use only one value."
+msgstr ""
+
+#: inc/acf-field-groups.php:5746
+msgid "Default Font"
+msgstr ""
+
+#: inc/acf-field-groups.php:5765
+msgid "Weight (Default Font)"
+msgstr ""
+
+#: inc/acf-field-groups.php:5784
+msgid "Menu"
+msgstr ""
+
+#: inc/acf-field-groups.php:5803
+msgid "Weight (Menu)"
+msgstr ""
+
+#: inc/acf-field-groups.php:5841
+msgid "Weight (H1)"
+msgstr ""
+
+#: inc/acf-field-groups.php:5879
+msgid "Weight (H2)"
+msgstr ""
+
+#: inc/acf-field-groups.php:5898
+msgid "H3 Headline"
+msgstr ""
+
+#: inc/acf-field-groups.php:5917
+msgid "Weight (H3)"
+msgstr ""
+
+#: inc/acf-field-groups.php:5936
+msgid "H4 Headline"
+msgstr ""
+
+#: inc/acf-field-groups.php:5955
+msgid "Weight (H4)"
+msgstr ""
+
+#: inc/acf-field-groups.php:5974
+msgid "Google Web Fonts"
+msgstr ""
+
+#: inc/acf-field-groups.php:6001
+msgid ""
+"Please note the following guidelines. Font familiy usage: e.g. <code>Open"
+"+Sans</code>, <code>Source+Sans+Pro</code> or <code>Oswald</code>, for free "
+"spaces in Google Webfonts, use <code>+</code>. Font weight usage: Separate "
+"the values with comma."
+msgstr ""
+
+#: inc/acf-field-groups.php:6007
+msgid "Add new Google Webfonts"
+msgstr ""
+
+#: inc/acf-field-groups.php:6010
+msgid ""
+"If you add new google web fonts, you have to separate the \"Font-Name\" and "
+"\"Font-Weight\" in the following fields. The default font is Open Sans. Here "
+"you can find all <a href=\"//fonts.google.com/\" target=\"_blank\">google "
+"fonts</a>."
+msgstr ""
+
+#: inc/acf-field-groups.php:6026
+msgid "Font-Name"
+msgstr ""
+
+#: inc/acf-field-groups.php:6029
+msgid "e.g. \"Open+Sans\" or \"Roboto\"."
+msgstr ""
+
+#: inc/acf-field-groups.php:6045
+msgid "Font-Weight"
+msgstr ""
+
+#: inc/acf-field-groups.php:6048
+msgid "e.g. \"300,400,600,700,800\" or \"300i,400i\""
+msgstr ""
+
+#: inc/acf-field-groups.php:6066
+msgid "Typekit Web Fonts"
+msgstr ""
+
+#: inc/acf-field-groups.php:6093
+msgid ""
+"After activating, you can define the Typekit Webfonts at the Tab "
+"<code>Define Theme Fonts</code>. <b>Important</b>: You can't embed a Typekit "
+"font at the WordPress backend. You can only do this in your Adobe Typekit "
+"account!"
+msgstr ""
+
+#: inc/acf-field-groups.php:6118
+msgid "Your Adobe Typekit Token"
+msgstr ""
+
+#: inc/acf-field-groups.php:6121
+msgid ""
+"Insert your Adobe Typekit Token (Kit-ID). You have to be <a href=\"//typekit."
+"com\" target=\"_blank\">registered</a> to use the fonts from Adobe Typekit."
+msgstr ""
+
+#: inc/acf-field-groups.php:6165
+msgid "Settings: WooCommerce"
+msgstr ""
+
+#: inc/acf-field-groups.php:6169 inc/admin-settings.php:45
+#: inc/admin-settings.php:46
+msgid "General"
+msgstr ""
+
+#: inc/acf-field-groups.php:6185
+msgid "Product Listing"
+msgstr ""
+
+#: inc/acf-field-groups.php:6202
+msgid "Products per Page"
+msgstr ""
+
+#: inc/acf-field-groups.php:6205
+msgid "You can change the count of products per page."
+msgstr ""
+
+#: inc/acf-field-groups.php:6223
+msgid "Product Page Column Count"
+msgstr ""
+
+#: inc/acf-field-groups.php:6226
+msgid "You can change the count of columns for product pages."
+msgstr ""
+
+#: inc/acf-field-groups.php:6251
+msgid "Related Products"
+msgstr ""
+
+#: inc/acf-field-groups.php:6268
+msgid "Remove Related Products"
+msgstr ""
+
+#: inc/acf-field-groups.php:6271
+msgid "You can hide the related products section."
+msgstr ""
+
+#: inc/acf-field-groups.php:6287
+msgid "Related Product Count"
+msgstr ""
+
+#: inc/acf-field-groups.php:6290
+msgid ""
+"You can change the count of related products on the single product page."
+msgstr ""
+
+#: inc/acf-field-groups.php:6316
+msgid "Related Product Column Count"
+msgstr ""
+
+#: inc/acf-field-groups.php:6319
+msgid "You can change the count of columns for related products."
+msgstr ""
+
+#: inc/acf-field-groups.php:6369
+msgid "Disable the Default Sorting Dropdown"
+msgstr ""
+
+#: inc/acf-field-groups.php:6372
+msgid "You can hide the Sorting Dropdown for WooCommerce pages."
+msgstr ""
+
+#: inc/acf-field-groups.php:6388
+msgid "Show the My Account / Login Icon"
+msgstr ""
+
+#: inc/acf-field-groups.php:6391
+msgid "You can show the my account / login icon next to the cart icon."
+msgstr ""
+
+#: inc/acf-field-groups.php:6407 inc/acf-field-groups.php:6423
+#: inc/acf-field-groups.php:6868 inc/acf-field-groups.php:7096
+#: inc/acf-field-groups.php:7991 inc/acf-field-groups.php:8865
+#: inc/acf-field-groups.php:9285 inc/acf-field-groups.php:9764
+#: inc/acf-field-groups.php:10873 inc/acf-field-groups.php:11217
+#: inc/acf-field-groups.php:11632 inc/acf-field-groups.php:12154
+#: inc/acf-field-groups.php:12716 inc/acf-field-groups.php:13043
+#: inc/acf-field-groups.php:13293 inc/acf-field-groups.php:13556
+#: inc/acf-field-groups.php:13819 inc/acf-field-groups.php:14066
+#: inc/acf-field-groups.php:14421 inc/admin-settings.php:237
+msgid "Sidebar"
+msgstr ""
+
+#: inc/acf-field-groups.php:6426
+msgid "Hide or show the sidebar for all WooCommerce pages."
+msgstr ""
+
+#: inc/acf-field-groups.php:6447
+msgid "Sidebar Position"
+msgstr ""
+
+#: inc/acf-field-groups.php:6450
+msgid "Shows the sidebar on the left or right side."
+msgstr ""
+
+#: inc/acf-field-groups.php:6471
+msgid "Disable Sidebar for Shop Page"
+msgstr ""
+
+#: inc/acf-field-groups.php:6474
+msgid "You can hide the sidebar only for the main WooCommerce shop page."
+msgstr ""
+
+#: inc/acf-field-groups.php:6510
+msgid "Page: Categories"
+msgstr ""
+
+#: inc/acf-field-groups.php:6514 inc/acf-field-groups.php:6929
+#: inc/acf-field-groups.php:7157 inc/acf-field-groups.php:7666
+#: inc/acf-field-groups.php:8052 inc/acf-field-groups.php:8571
+#: inc/acf-field-groups.php:8926 inc/acf-field-groups.php:9346
+#: inc/acf-field-groups.php:9825 inc/acf-field-groups.php:10207
+#: inc/acf-field-groups.php:10418 inc/acf-field-groups.php:10934
+#: inc/acf-field-groups.php:11278 inc/acf-field-groups.php:11733
+#: inc/acf-field-groups.php:11912 inc/acf-field-groups.php:12215
+#: inc/acf-field-groups.php:12394 inc/acf-field-groups.php:12777
+#: inc/acf-field-groups.php:13104 inc/acf-field-groups.php:13354
+#: inc/acf-field-groups.php:13617 inc/acf-field-groups.php:13880
+#: inc/acf-field-groups.php:14127
+msgid "Header"
+msgstr ""
+
+#: inc/acf-field-groups.php:6530 inc/acf-field-groups.php:6945
+#: inc/acf-field-groups.php:7173 inc/acf-field-groups.php:7682
+#: inc/acf-field-groups.php:8068 inc/acf-field-groups.php:8587
+#: inc/acf-field-groups.php:8942 inc/acf-field-groups.php:9362
+#: inc/acf-field-groups.php:9841 inc/acf-field-groups.php:10223
+#: inc/acf-field-groups.php:10434 inc/acf-field-groups.php:10950
+#: inc/acf-field-groups.php:11294 inc/acf-field-groups.php:11749
+#: inc/acf-field-groups.php:11928 inc/acf-field-groups.php:12231
+#: inc/acf-field-groups.php:12410 inc/acf-field-groups.php:12793
+#: inc/acf-field-groups.php:13120 inc/acf-field-groups.php:13370
+#: inc/acf-field-groups.php:13633 inc/acf-field-groups.php:13896
+#: inc/acf-field-groups.php:14143
+msgid "Header Settings"
+msgstr ""
+
+#: inc/acf-field-groups.php:6551 inc/acf-field-groups.php:6966
+#: inc/acf-field-groups.php:7194 inc/acf-field-groups.php:7703
+#: inc/acf-field-groups.php:8089 inc/acf-field-groups.php:8608
+#: inc/acf-field-groups.php:8963 inc/acf-field-groups.php:9383
+#: inc/acf-field-groups.php:10455 inc/acf-field-groups.php:10971
+#: inc/acf-field-groups.php:11315 inc/acf-field-groups.php:11770
+#: inc/acf-field-groups.php:11949 inc/acf-field-groups.php:12252
+#: inc/acf-field-groups.php:12431 inc/acf-field-groups.php:12814
+#: inc/acf-field-groups.php:13141 inc/acf-field-groups.php:13391
+#: inc/acf-field-groups.php:13654 inc/acf-field-groups.php:13917
+#: inc/acf-field-groups.php:14164
+msgid "Featured Slider"
+msgstr ""
+
+#: inc/acf-field-groups.php:6567 inc/acf-field-groups.php:6982
+#: inc/acf-field-groups.php:7210 inc/acf-field-groups.php:7719
+#: inc/acf-field-groups.php:8105 inc/acf-field-groups.php:8624
+#: inc/acf-field-groups.php:8979 inc/acf-field-groups.php:9399
+#: inc/acf-field-groups.php:10471 inc/acf-field-groups.php:10987
+#: inc/acf-field-groups.php:11331 inc/acf-field-groups.php:11786
+#: inc/acf-field-groups.php:11965 inc/acf-field-groups.php:12268
+#: inc/acf-field-groups.php:12447 inc/acf-field-groups.php:12830
+#: inc/acf-field-groups.php:13157 inc/acf-field-groups.php:13407
+#: inc/acf-field-groups.php:13670 inc/acf-field-groups.php:13933
+#: inc/acf-field-groups.php:14180
+msgid "Featured Slider Settings"
+msgstr ""
+
+#: inc/acf-field-groups.php:6588
+msgid "Category Section"
+msgstr ""
+
+#: inc/acf-field-groups.php:6618
+msgid "Show all categories"
+msgstr ""
+
+#: inc/acf-field-groups.php:6619
+msgid "Show specific categories"
+msgstr ""
+
+#: inc/acf-field-groups.php:6696 inc/acf-field-groups.php:11460
+#: inc/acf-field-groups.php:14938
+msgid "Post Count"
+msgstr ""
+
+#: inc/acf-field-groups.php:6715
+msgid "Empty Categories"
+msgstr ""
+
+#: inc/acf-field-groups.php:6734
+msgid "Exclude Categories"
+msgstr ""
+
+#: inc/acf-field-groups.php:6764
+msgid "Include Categories"
+msgstr ""
+
+#: inc/acf-field-groups.php:6810 inc/acf-field-groups.php:7019
+#: inc/acf-field-groups.php:7584 inc/acf-field-groups.php:7933
+#: inc/acf-field-groups.php:8489 inc/acf-field-groups.php:8807
+#: inc/acf-field-groups.php:9227 inc/acf-field-groups.php:9706
+#: inc/acf-field-groups.php:9878 inc/acf-field-groups.php:10260
+#: inc/acf-field-groups.php:10815 inc/acf-field-groups.php:11159
+#: inc/acf-field-groups.php:11574 inc/acf-field-groups.php:11823
+#: inc/acf-field-groups.php:12096 inc/acf-field-groups.php:12305
+#: inc/acf-field-groups.php:12658
+msgid "Content Settings"
+msgstr ""
+
+#: inc/acf-field-groups.php:6884 inc/acf-field-groups.php:7112
+#: inc/acf-field-groups.php:8007 inc/acf-field-groups.php:8881
+#: inc/acf-field-groups.php:9301 inc/acf-field-groups.php:9780
+#: inc/acf-field-groups.php:10889 inc/acf-field-groups.php:11233
+#: inc/acf-field-groups.php:11648 inc/acf-field-groups.php:12170
+#: inc/acf-field-groups.php:12732 inc/acf-field-groups.php:13059
+#: inc/acf-field-groups.php:13309 inc/acf-field-groups.php:13572
+#: inc/acf-field-groups.php:13835 inc/acf-field-groups.php:14082
+#: inc/acf-field-groups.php:14437
+msgid "Sidebar Settings"
+msgstr ""
+
+#: inc/acf-field-groups.php:6925
+msgid "Page: Classic"
+msgstr ""
+
+#: inc/acf-field-groups.php:7040 inc/acf-field-groups.php:9899
+#: inc/acf-field-groups.php:10281
+msgid "Page Thumbnail"
+msgstr ""
+
+#: inc/acf-field-groups.php:7043
+msgid "Hide the thumbnail above the page content."
+msgstr ""
+
+#: inc/acf-field-groups.php:7153
+msgid "Page: Contact"
+msgstr ""
+
+#: inc/acf-field-groups.php:7231
+msgid "Contact Section"
+msgstr ""
+
+#: inc/acf-field-groups.php:7274
+msgid "Contact Person(s)"
+msgstr ""
+
+#: inc/acf-field-groups.php:7318
+msgid "Person(s)"
+msgstr ""
+
+#: inc/acf-field-groups.php:7345 inc/acf-field-groups.php:8330
+#: inc/acf-field-groups.php:18959
+msgid "Name"
+msgstr ""
+
+#: inc/acf-field-groups.php:7364 inc/acf-field-groups.php:8349
+msgid "Occupational Title"
+msgstr ""
+
+#: inc/acf-field-groups.php:7383 inc/acf-field-groups.php:8368
+msgid "Image Shape"
+msgstr ""
+
+#: inc/acf-field-groups.php:7395 inc/acf-field-groups.php:8380
+#: inc/widgets/author.php:130
+msgid "Square image"
+msgstr ""
+
+#: inc/acf-field-groups.php:7396 inc/acf-field-groups.php:8381
+#: inc/widgets/author.php:137
+msgid "Round image"
+msgstr ""
+
+#: inc/acf-field-groups.php:7434
+msgid "Address Field(s)"
+msgstr ""
+
+#: inc/acf-field-groups.php:7478
+msgid "Address Field"
+msgstr ""
+
+#: inc/acf-field-groups.php:7481
+msgid ""
+"To add custom address fields please setup at \"Theme Settings > Google Maps"
+"\"."
+msgstr ""
+
+#: inc/acf-field-groups.php:7497 inc/acf-field-groups.php:7541
+#: inc/acf-field-groups.php:8418
+msgid "Additional Content"
+msgstr ""
+
+#: inc/acf-field-groups.php:7662
+msgid "Page: Download"
+msgstr ""
+
+#: inc/acf-field-groups.php:7740
+msgid "Download Section"
+msgstr ""
+
+#: inc/acf-field-groups.php:7756
+msgid "Downloads"
+msgstr ""
+
+#: inc/acf-field-groups.php:7771
+msgid "Add file / link"
+msgstr ""
+
+#: inc/acf-field-groups.php:7775 inc/acf-field-groups.php:19156
+#: inc/acf-field-groups.php:19935 inc/acf-field-groups.php:21786
+#: inc/acf-field-groups.php:23282
+#: inc/plugins/class-tgm-plugin-activation.php:2634 inc/shortcodes.php:192
+#: inc/shortcodes.php:264
+msgid "Type"
+msgstr ""
+
+#: inc/acf-field-groups.php:7789 inc/acf-field-groups.php:16002
+#: inc/acf-field-groups.php:16344 inc/acf-field-groups.php:16686
+#: inc/acf-field-groups.php:20489 inc/acf-field-groups.php:21436
+msgid "None"
+msgstr ""
+
+#: inc/acf-field-groups.php:7790 inc/acf-field-groups.php:7864
+#: inc/acf-field-groups.php:10013
+msgid "External Link"
+msgstr ""
+
+#: inc/acf-field-groups.php:7791 inc/acf-field-groups.php:7888
+msgid "File"
+msgstr ""
+
+#: inc/acf-field-groups.php:7792
+msgid "Subheading"
+msgstr ""
+
+#: inc/acf-field-groups.php:8048
+msgid "Page: Event Registration"
+msgstr ""
+
+#: inc/acf-field-groups.php:8126
+msgid "Date(s) Section"
+msgstr ""
+
+#: inc/acf-field-groups.php:8169 inc/acf-field-groups.php:8205
+msgid "Date(s)"
+msgstr ""
+
+#: inc/acf-field-groups.php:8208
+msgid "The dates are automatically displayed in the corresponding form."
+msgstr ""
+
+#: inc/acf-field-groups.php:8224 inc/acf-field-groups.php:19046
+msgid "Date"
+msgstr ""
+
+#: inc/acf-field-groups.php:8241
+msgid "Time (start)"
+msgstr ""
+
+#: inc/acf-field-groups.php:8257
+msgid "Time (end)"
+msgstr ""
+
+#: inc/acf-field-groups.php:8275 inc/acf-field-groups.php:8311
+msgid "Instructor(s)"
+msgstr ""
+
+#: inc/acf-field-groups.php:8567
+msgid "Page: FAQ"
+msgstr ""
+
+#: inc/acf-field-groups.php:8645
+msgid "FAQ Section"
+msgstr ""
+
+#: inc/acf-field-groups.php:8688
+msgid "Collapsing"
+msgstr ""
+
+#: inc/acf-field-groups.php:8701
+msgid "Defined by each question"
+msgstr ""
+
+#: inc/acf-field-groups.php:8702
+msgid "Collapse all"
+msgstr ""
+
+#: inc/acf-field-groups.php:8703
+msgid "Uncollapse all"
+msgstr ""
+
+#: inc/acf-field-groups.php:8713
+msgid "Questions"
+msgstr ""
+
+#: inc/acf-field-groups.php:8732
+msgid "Question (Title)"
+msgstr ""
+
+#: inc/acf-field-groups.php:8751
+msgid "Collapse"
+msgstr ""
+
+#: inc/acf-field-groups.php:8770
+msgid "Answer"
+msgstr ""
+
+#: inc/acf-field-groups.php:8922
+msgid "Page: Filter"
+msgstr ""
+
+#: inc/acf-field-groups.php:9000
+msgid "Post(s) Section"
+msgstr ""
+
+#: inc/acf-field-groups.php:9019
+msgid "Choose the layout for the post listing view."
+msgstr ""
+
+#: inc/acf-field-groups.php:9100
+msgid "Like global settings"
+msgstr ""
+
+#: inc/acf-field-groups.php:9144 inc/acf-field-groups.php:12575
+msgid "Filtered by selected posts"
+msgstr ""
+
+#: inc/acf-field-groups.php:9167 inc/acf-field-groups.php:12598
+msgid "Filtered by post, which are inclued in the following categories"
+msgstr ""
+
+#: inc/acf-field-groups.php:9189 inc/acf-field-groups.php:12620
+msgid "Filtered by post, which are inclued in the following tags"
+msgstr ""
+
+#: inc/acf-field-groups.php:9342
+msgid "Page: Grouped Posts"
+msgstr ""
+
+#: inc/acf-field-groups.php:9420
+msgid "Grouped Posts"
+msgstr ""
+
+#: inc/acf-field-groups.php:9436
+msgid "Post Group(s)"
+msgstr ""
+
+#: inc/acf-field-groups.php:9455 inc/acf-field-groups.php:15865
+msgid "Headline"
+msgstr ""
+
+#: inc/acf-field-groups.php:9474
+msgid "Grouped by"
+msgstr ""
+
+#: inc/acf-field-groups.php:9486
+msgid "All recent Posts"
+msgstr ""
+
+#: inc/acf-field-groups.php:9487
+msgid "All recent Posts from Categories"
+msgstr ""
+
+#: inc/acf-field-groups.php:9488
+msgid "All recent Posts from Tags"
+msgstr ""
+
+#: inc/acf-field-groups.php:9489 inc/acf-field-groups.php:17985
+#: inc/acf-field-groups.php:19987 inc/acf-field-groups.php:21998
+#: inc/acf-field-groups.php:23645
+msgid "Selected Posts"
+msgstr ""
+
+#: inc/acf-field-groups.php:9490
+msgid "Selected Posts from Categories"
+msgstr ""
+
+#: inc/acf-field-groups.php:9491
+msgid "Selected Posts from Tags"
+msgstr ""
+
+#: inc/acf-field-groups.php:9504
+msgid "Selected by Posts"
+msgstr ""
+
+#: inc/acf-field-groups.php:9535
+msgid "Selected by Category"
+msgstr ""
+
+#: inc/acf-field-groups.php:9572
+msgid "Selected by Tag"
+msgstr ""
+
+#: inc/acf-field-groups.php:9637
+msgid "Number of Posts"
+msgstr ""
+
+#: inc/acf-field-groups.php:9658 inc/acf-field-groups.php:10630
+#: inc/acf-field-groups.php:12545 inc/acf-field-groups.php:18164
+#: inc/acf-field-groups.php:22463 inc/acf-field-groups.php:24110
+msgid "Post Format exclude"
+msgstr ""
+
+#: inc/acf-field-groups.php:9821
+msgid "Page: Landing Page"
+msgstr ""
+
+#: inc/acf-field-groups.php:9918 inc/acf-field-groups.php:10300
+msgid "Page Thumbnail Alignment"
+msgstr ""
+
+#: inc/acf-field-groups.php:9945
+msgid "Scrollmenu"
+msgstr ""
+
+#: inc/acf-field-groups.php:9961
+msgid "Menu Items"
+msgstr ""
+
+#: inc/acf-field-groups.php:9964
+msgid ""
+"Each section get a consecutive number. The section ID is depends from the "
+"order of the sections and start with <code>1</code>. The ID of the "
+"<code>Header</code> is <code>top</code>. You can check the number of each "
+"section in the source code. For more information, look at the documentation."
+msgstr ""
+
+#: inc/acf-field-groups.php:10011
+msgid "Section Link (Scroll Down)"
+msgstr ""
+
+#: inc/acf-field-groups.php:10012
+msgid "Internal Link"
+msgstr ""
+
+#: inc/acf-field-groups.php:10027 inc/acf-field-groups.php:13444
+#: inc/acf-field-groups.php:16015 inc/acf-field-groups.php:16357
+#: inc/acf-field-groups.php:16699 inc/acf-field-groups.php:17318
+#: inc/acf-field-groups.php:21442 inc/acf-field-groups.php:21609
+#: inc/shortcodes.php:120
+msgid "URL"
+msgstr ""
+
+#: inc/acf-field-groups.php:10051 inc/acf-field-groups.php:15798
+#: inc/acf-field-groups.php:16039 inc/acf-field-groups.php:16381
+#: inc/acf-field-groups.php:16723 inc/acf-field-groups.php:20526
+msgid "Link to"
+msgstr ""
+
+#: inc/acf-field-groups.php:10082
+msgid "Section ID"
+msgstr ""
+
+#: inc/acf-field-groups.php:10085
+msgid "Scroll to #section_[ID]"
+msgstr ""
+
+#: inc/acf-field-groups.php:10116 inc/acf-field-groups.php:10327
+msgid "Sections"
+msgstr ""
+
+#: inc/acf-field-groups.php:10132 inc/acf-field-groups.php:10343
+msgid "Section Edge"
+msgstr ""
+
+#: inc/acf-field-groups.php:10135 inc/acf-field-groups.php:10346
+msgid "Change the edge style of the following sections."
+msgstr ""
+
+#: inc/acf-field-groups.php:10145 inc/acf-field-groups.php:10356
+#: inc/acf-field-groups.php:24199
+msgid "Triangle descending"
+msgstr ""
+
+#: inc/acf-field-groups.php:10146 inc/acf-field-groups.php:10357
+#: inc/acf-field-groups.php:24200
+msgid "Triangle ascending"
+msgstr ""
+
+#: inc/acf-field-groups.php:10147 inc/acf-field-groups.php:10358
+#: inc/acf-field-groups.php:24201
+msgid "Rounded descending"
+msgstr ""
+
+#: inc/acf-field-groups.php:10148 inc/acf-field-groups.php:10359
+#: inc/acf-field-groups.php:24202
+msgid "Rounded ascending"
+msgstr ""
+
+#: inc/acf-field-groups.php:10162 inc/acf-field-groups.php:10373
+msgid "Section Settings"
+msgstr ""
+
+#: inc/acf-field-groups.php:10203
+msgid "Page: Sections"
+msgstr ""
+
+#: inc/acf-field-groups.php:10414
+msgid "Page: Sitemap"
+msgstr ""
+
+#: inc/acf-field-groups.php:10492
+msgid "Sitemap Section"
+msgstr ""
+
+#: inc/acf-field-groups.php:10508
+msgid "Sitemap Menu"
+msgstr ""
+
+#: inc/acf-field-groups.php:10527
+msgid "Thumbnails"
+msgstr ""
+
+#: inc/acf-field-groups.php:10546 inc/acf-field-groups.php:21808
+#: page-sitemap.php:74 page-sitemap.php:89 single.php:152
+msgid "Pages"
+msgstr ""
+
+#: inc/acf-field-groups.php:10565
+msgid "Page exclude"
+msgstr ""
+
+#: inc/acf-field-groups.php:10588 inc/acf-field-groups.php:21807
+#: inc/acf-flexible-layout.php:1890 inc/admin-settings.php:72
+#: inc/admin-settings.php:73 inc/widgets/categories.php:104
+#: inc/widgets/categories.php:115 inc/widgets/social-counter.php:569
+#: inc/widgets/social-counter.php:572 page-sitemap.php:75 page-sitemap.php:126
+msgid "Posts"
+msgstr ""
+
+#: inc/acf-field-groups.php:10607
+msgid "Post exclude"
+msgstr ""
+
+#: inc/acf-field-groups.php:10679
+msgid "Category exclude"
+msgstr ""
+
+#: inc/acf-field-groups.php:10720
+msgid "Tag exclude"
+msgstr ""
+
+#: inc/acf-field-groups.php:10742 page-sitemap.php:78 page-sitemap.php:213
+msgid "Archives"
+msgstr ""
+
+#: inc/acf-field-groups.php:10761 page-sitemap.php:79 page-sitemap.php:256
+msgid "Authors"
+msgstr ""
+
+#: inc/acf-field-groups.php:10780
+msgid "Author exclude"
+msgstr ""
+
+#: inc/acf-field-groups.php:10783
+msgid "Author ID separated with comma: e.g. 13,5,22"
+msgstr ""
+
+#: inc/acf-field-groups.php:10930
+msgid "Page: Tabs"
+msgstr ""
+
+#: inc/acf-field-groups.php:11008
+msgid "Tab Section"
+msgstr ""
+
+#: inc/acf-field-groups.php:11035
+msgid ""
+"Use Font Awesome to include icons for each tab. If you use no icon, than "
+"will display the first letter of the title instead. Here you can find <a "
+"href=\"//fontawesome.io/icons/\" target=\"_blank\">all icons</a>. e.g. \"fa-"
+"quote-right\""
+msgstr ""
+
+#: inc/acf-field-groups.php:11044
+msgid "Select the direction of the tab menu."
+msgstr ""
+
+#: inc/acf-field-groups.php:11065
+msgid "Tabs"
+msgstr ""
+
+#: inc/acf-field-groups.php:11274
+msgid "Page: Tags"
+msgstr ""
+
+#: inc/acf-field-groups.php:11352
+msgid "Tags Section"
+msgstr ""
+
+#: inc/acf-field-groups.php:11382
+msgid "Show all tags"
+msgstr ""
+
+#: inc/acf-field-groups.php:11383
+msgid "Show specific tags"
+msgstr ""
+
+#: inc/acf-field-groups.php:11479
+msgid "Empty Tags"
+msgstr ""
+
+#: inc/acf-field-groups.php:11498
+msgid "Exclude Tags"
+msgstr ""
+
+#: inc/acf-field-groups.php:11528
+msgid "Include Tags"
+msgstr ""
+
+#: inc/acf-field-groups.php:11689
+msgid "Page: Taxonomy"
+msgstr ""
+
+#: inc/acf-field-groups.php:11908
+msgid "Page: Timeline"
+msgstr ""
+
+#: inc/acf-field-groups.php:11986
+msgid "Timeline Section"
+msgstr ""
+
+#: inc/acf-field-groups.php:12002
+msgid "Timeline"
+msgstr ""
+
+#: inc/acf-field-groups.php:12017
+msgid "Add new item"
+msgstr ""
+
+#: inc/acf-field-groups.php:12211
+msgid "Page: WooCommerce Taxonomy"
+msgstr ""
+
+#: inc/acf-field-groups.php:12390
+msgid "Page: Glossary"
+msgstr ""
+
+#: inc/acf-field-groups.php:12468
+msgid "Glossary Section"
+msgstr ""
+
+#: inc/acf-field-groups.php:12484
+msgid "Thumbnail"
+msgstr ""
+
+#: inc/acf-field-groups.php:12503 inc/acf-field-groups.php:17663
+#: inc/acf-field-groups.php:18803 inc/acf-field-groups.php:22407
+#: inc/acf-field-groups.php:24054
+msgid "Excerpt"
+msgstr ""
+
+#: inc/acf-field-groups.php:12522
+msgid "Post Exclude"
+msgstr ""
+
+#: inc/acf-field-groups.php:12773
+msgid "Postformat: Audio"
+msgstr ""
+
+#: inc/acf-field-groups.php:12867
+msgid "Embed Audio"
+msgstr ""
+
+#: inc/acf-field-groups.php:12870
+msgid "Enter an audio file URL from soundcloud."
+msgstr ""
+
+#: inc/acf-field-groups.php:12886
+msgid "Audio-Type"
+msgstr ""
+
+#: inc/acf-field-groups.php:12898
+msgid "SoundCloud"
+msgstr ""
+
+#: inc/acf-field-groups.php:12899 inc/acf-field-groups.php:14250
+#: inc/acf-field-groups.php:16003 inc/acf-field-groups.php:16345
+#: inc/acf-field-groups.php:16687 inc/acf-field-groups.php:20490
+msgid "Internal"
+msgstr ""
+
+#: inc/acf-field-groups.php:12913
+msgid "Soundcloud-String"
+msgstr ""
+
+#: inc/acf-field-groups.php:12916
+msgid ""
+"Add the string after https://w.soundcloud.com/player/?url=https%3A//api."
+"soundcloud.com/tracks/ [ ... ] to embed a soundcloud audio file\te.g. "
+"\"270538540\"."
+msgstr ""
+
+#: inc/acf-field-groups.php:12940
+msgid "Internal Audio"
+msgstr ""
+
+#: inc/acf-field-groups.php:13100
+msgid "Postformat: Gallery"
+msgstr ""
+
+#: inc/acf-field-groups.php:13194
+msgid "Gallery Images"
+msgstr ""
+
+#: inc/acf-field-groups.php:13197
+msgid "Select all images for the gallery output."
+msgstr ""
+
+#: inc/acf-field-groups.php:13350
+msgid "Postformat: Link"
+msgstr ""
+
+#: inc/acf-field-groups.php:13463
+msgid "Linktext"
+msgstr ""
+
+#: inc/acf-field-groups.php:13613
+msgid "Postformat: Quote"
+msgstr ""
+
+#: inc/acf-field-groups.php:13726
+msgid "Quote Author"
+msgstr ""
+
+#: inc/acf-field-groups.php:13876
+msgid "Postformat: Standard"
+msgstr ""
+
+#: inc/acf-field-groups.php:13991
+msgid "Post Thumbnail Caption"
+msgstr ""
+
+#: inc/acf-field-groups.php:14010
+msgid "Post Thumbnail"
+msgstr ""
+
+#: inc/acf-field-groups.php:14013
+msgid "Hide the thumbnail above the post content."
+msgstr ""
+
+#: inc/acf-field-groups.php:14123
+msgid "Postformat: Video"
+msgstr ""
+
+#: inc/acf-field-groups.php:14217
+msgid "Embed Videos"
+msgstr ""
+
+#: inc/acf-field-groups.php:14220
+msgid "Enter a youtube or vimeo video URL."
+msgstr ""
+
+#: inc/acf-field-groups.php:14236
+msgid "Video-Type"
+msgstr ""
+
+#: inc/acf-field-groups.php:14248 inc/widgets/social-counter.php:192
+#: inc/widgets/social-counter.php:440 inc/widgets/social-counter.php:887
+#: inc/widgets/social-counter.php:894
+msgid "YouTube"
+msgstr ""
+
+#: inc/acf-field-groups.php:14249 inc/widgets/social-counter.php:351
+#: inc/widgets/social-counter.php:473 inc/widgets/social-counter.php:997
+#: inc/widgets/social-counter.php:1004
+msgid "Vimeo"
+msgstr ""
+
+#: inc/acf-field-groups.php:14264
+msgid "YouTube-String"
+msgstr ""
+
+#: inc/acf-field-groups.php:14267
+msgid ""
+"Add the string after https://www.youtube.com/embed/ [ ... ] to embed a "
+"youtube video e.g. \"QoY77paKjLY\"."
+msgstr ""
+
+#: inc/acf-field-groups.php:14291
+msgid "Vimeo-String"
+msgstr ""
+
+#: inc/acf-field-groups.php:14294
+msgid ""
+"Add the string after https://player.vimeo.com/video/ [ ... ] to embed a "
+"vimeo video e.g. \"183560799\"."
+msgstr ""
+
+#: inc/acf-field-groups.php:14318
+msgid "Internal Video"
+msgstr ""
+
+#: inc/acf-field-groups.php:14478
+msgid "Section: Animated Image"
+msgstr ""
+
+#: inc/acf-field-groups.php:14576
+msgid "Image Effect Select"
+msgstr ""
+
+#: inc/acf-field-groups.php:14617
+msgid "Section: Banner"
+msgstr ""
+
+#: inc/acf-field-groups.php:14691 inc/acf-field-groups.php:15455
+#: inc/acf-field-groups.php:16996 inc/acf-field-groups.php:17139
+#: inc/acf-field-groups.php:18509 inc/acf-field-groups.php:19843
+#: inc/acf-field-groups.php:21924 inc/acf-field-groups.php:23504
+msgid "Button Select"
+msgstr ""
+
+#: inc/acf-field-groups.php:14732
+msgid "Section: Category & Tag Teaser"
+msgstr ""
+
+#: inc/acf-field-groups.php:14790 inc/acf-field-groups.php:15671
+#: inc/acf-field-groups.php:17532 inc/acf-field-groups.php:17952
+#: inc/acf-field-groups.php:18610
+msgid "Teaser"
+msgstr ""
+
+#: inc/acf-field-groups.php:14806 inc/acf-field-groups.php:17548
+#: inc/acf-field-groups.php:17968 inc/acf-field-groups.php:18626
+#: inc/acf-field-groups.php:21968 inc/acf-field-groups.php:22009
+#: inc/acf-field-groups.php:22048 inc/acf-field-groups.php:23615
+#: inc/acf-field-groups.php:23656 inc/acf-field-groups.php:23695
+msgid "Filter by"
+msgstr ""
+
+#: inc/acf-field-groups.php:14830 inc/acf-field-groups.php:18027
+#: inc/acf-field-groups.php:18685 inc/acf-field-groups.php:20181
+msgid "Filtered by category"
+msgstr ""
+
+#: inc/acf-field-groups.php:14833 inc/acf-field-groups.php:20184
+msgid "If no category selected, all available categories will be displayed."
+msgstr ""
+
+#: inc/acf-field-groups.php:14860 inc/acf-field-groups.php:18057
+#: inc/acf-field-groups.php:18715 inc/acf-field-groups.php:20216
+msgid "Filtered by tag"
+msgstr ""
+
+#: inc/acf-field-groups.php:14863 inc/acf-field-groups.php:20219
+msgid "If no tag selected, all available tags will be displayed."
+msgstr ""
+
+#: inc/acf-field-groups.php:14919
+msgid "Empty categories / tags"
+msgstr ""
+
+#: inc/acf-field-groups.php:14977
+msgid "Section: Content Grid"
+msgstr ""
+
+#: inc/acf-field-groups.php:15051 inc/acf-field-groups.php:19439
+msgid "Row"
+msgstr ""
+
+#: inc/acf-field-groups.php:15066 inc/acf-field-groups.php:18468
+#: inc/acf-field-groups.php:19454
+msgid "Add row"
+msgstr ""
+
+#: inc/acf-field-groups.php:15086 inc/acf-field-groups.php:15935
+#: inc/acf-field-groups.php:19474
+msgid "5 Columns"
+msgstr ""
+
+#: inc/acf-field-groups.php:15087 inc/acf-field-groups.php:15936
+#: inc/acf-field-groups.php:19475
+msgid "6 Columns"
+msgstr ""
+
+#: inc/acf-field-groups.php:15088 inc/acf-field-groups.php:19476
+msgid "1/5 Columns"
+msgstr ""
+
+#: inc/acf-field-groups.php:15089 inc/acf-field-groups.php:19477
+msgid "2/4 Columns"
+msgstr ""
+
+#: inc/acf-field-groups.php:15090 inc/acf-field-groups.php:19478
+msgid "3/3 Columns"
+msgstr ""
+
+#: inc/acf-field-groups.php:15091 inc/acf-field-groups.php:19479
+msgid "4/2 Columns"
+msgstr ""
+
+#: inc/acf-field-groups.php:15092 inc/acf-field-groups.php:19480
+msgid "5/1 Columns"
+msgstr ""
+
+#: inc/acf-field-groups.php:15120 inc/acf-field-groups.php:19508
+msgid "Add column"
+msgstr ""
+
+#: inc/acf-field-groups.php:15124 inc/acf-field-groups.php:19512
+#: inc/admin-settings.php:285 inc/admin-settings.php:301
+#: inc/admin-settings.php:317 inc/admin-settings.php:333
+#: inc/widgets/instagram.php:172 inc/widgets/pinterest-board.php:176
+#: inc/widgets/pinterest.php:168 inc/widgets/social-counter.php:778
+msgid "Column"
+msgstr ""
+
+#: inc/acf-field-groups.php:15169 inc/acf-field-groups.php:19557
+msgid "Text / HTML"
+msgstr ""
+
+#: inc/acf-field-groups.php:15186 inc/acf-field-groups.php:19574
+msgid "Horizontal Alignment"
+msgstr ""
+
+#: inc/acf-field-groups.php:15214 inc/acf-field-groups.php:19602
+msgid "Vertical Alignment"
+msgstr ""
+
+#: inc/acf-field-groups.php:15226 inc/acf-field-groups.php:19614
+msgid "Top"
+msgstr ""
+
+#: inc/acf-field-groups.php:15227 inc/acf-field-groups.php:19615
+msgid "Middle"
+msgstr ""
+
+#: inc/acf-field-groups.php:15228 inc/acf-field-groups.php:19616
+msgid "Bottom"
+msgstr ""
+
+#: inc/acf-field-groups.php:15360 inc/acf-field-groups.php:19748
+msgid "Original"
+msgstr ""
+
+#: inc/acf-field-groups.php:15361 inc/acf-field-groups.php:19749
+msgid "Square"
+msgstr ""
+
+#: inc/acf-field-groups.php:15362 inc/acf-field-groups.php:19750
+msgid "Rounded"
+msgstr ""
+
+#: inc/acf-field-groups.php:15402 inc/acf-field-groups.php:19790
+msgid "Size"
+msgstr ""
+
+#: inc/acf-field-groups.php:15422 inc/acf-field-groups.php:19810
+msgid "1"
+msgstr ""
+
+#: inc/acf-field-groups.php:15426 inc/acf-field-groups.php:19814
+msgid "5"
+msgstr ""
+
+#: inc/acf-field-groups.php:15500
+msgid "Section: Custom HTML"
+msgstr ""
+
+#: inc/acf-field-groups.php:15558 inc/acf-field-groups.php:19171
+msgid "HTML"
+msgstr ""
+
+#: inc/acf-field-groups.php:15613
+msgid "Section: Custom Teaser"
+msgstr ""
+
+#: inc/acf-field-groups.php:15716 inc/acf-field-groups.php:17776
+#: inc/acf-field-groups.php:18340
+msgid "Items"
+msgstr ""
+
+#: inc/acf-field-groups.php:15845
+msgid "Section: Features 1"
+msgstr ""
+
+#: inc/acf-field-groups.php:16004 inc/acf-field-groups.php:16346
+#: inc/acf-field-groups.php:16688 inc/acf-field-groups.php:20491
+msgid "External"
+msgstr ""
+
+#: inc/acf-field-groups.php:16130
+msgid "Section: Features 2"
+msgstr ""
+
+#: inc/acf-field-groups.php:16255 inc/acf-field-groups.php:16597
+#: inc/acf-field-groups.php:16959
+msgid "Effect Select"
+msgstr ""
+
+#: inc/acf-field-groups.php:16276 inc/acf-field-groups.php:16292
+#: inc/acf-field-groups.php:16618 inc/acf-field-groups.php:16634
+#: inc/acf-field-groups.php:18453
+msgid "Rows"
+msgstr ""
+
+#: inc/acf-field-groups.php:16472
+msgid "Section: Features 3"
+msgstr ""
+
+#: inc/acf-field-groups.php:16814
+msgid "Section: Image / Text"
+msgstr ""
+
+#: inc/acf-field-groups.php:16915
+msgid "Column Width"
+msgstr ""
+
+#: inc/acf-field-groups.php:16918
+msgid "Change the image column width between 20% and 60%."
+msgstr ""
+
+#: inc/acf-field-groups.php:17037
+msgid "Section: Image & Video Background"
+msgstr ""
+
+#: inc/acf-field-groups.php:17160 inc/acf-field-groups.php:21945
+#: inc/acf-field-groups.php:22691 inc/acf-field-groups.php:23525
+msgid "Background-Image or -Video"
+msgstr ""
+
+#: inc/acf-field-groups.php:17201
+msgid "Section: Logo Carousel"
+msgstr ""
+
+#: inc/acf-field-groups.php:17259 inc/acf-field-groups.php:17275
+#: inc/acf-field-groups.php:20709
+msgid "Logos"
+msgstr ""
+
+#: inc/acf-field-groups.php:17359
+msgid "Section: Newsletter"
+msgstr ""
+
+#: inc/acf-field-groups.php:17474
+msgid "Section: Pages Teaser"
+msgstr ""
+
+#: inc/acf-field-groups.php:17560 inc/acf-field-groups.php:22034
+#: inc/acf-field-groups.php:23681
+msgid "Popular Pages"
+msgstr ""
+
+#: inc/acf-field-groups.php:17561 inc/acf-field-groups.php:22035
+#: inc/acf-field-groups.php:23682
+msgid "Most Commented Pages"
+msgstr ""
+
+#: inc/acf-field-groups.php:17562 inc/acf-field-groups.php:22036
+#: inc/acf-field-groups.php:23683
+msgid "Recent Pages"
+msgstr ""
+
+#: inc/acf-field-groups.php:17563 inc/acf-field-groups.php:22037
+#: inc/acf-field-groups.php:23684
+msgid "Selected Pages"
+msgstr ""
+
+#: inc/acf-field-groups.php:17574 inc/acf-field-groups.php:17996
+#: inc/acf-field-groups.php:18654
+msgid "Selection"
+msgstr ""
+
+#: inc/acf-field-groups.php:17605 inc/acf-field-groups.php:18087
+#: inc/acf-field-groups.php:18745 inc/acf-field-groups.php:20314
+msgid "Amount of Items"
+msgstr ""
+
+#: inc/acf-field-groups.php:17702
+msgid "Section: Pie Charts"
+msgstr ""
+
+#: inc/acf-field-groups.php:17760 inc/acf-field-groups.php:21169
+msgid "Pie Charts"
+msgstr ""
+
+#: inc/acf-field-groups.php:17814
+msgid "Value"
+msgstr ""
+
+#: inc/acf-field-groups.php:17833
+msgid "Unit"
+msgstr ""
+
+#: inc/acf-field-groups.php:17852
+msgid "Filled line"
+msgstr ""
+
+#: inc/acf-field-groups.php:17894
+msgid "Section: Posts Teaser"
+msgstr ""
+
+#: inc/acf-field-groups.php:17980 inc/acf-field-groups.php:19982
+#: inc/acf-field-groups.php:21993 inc/acf-field-groups.php:23640
+msgid "Popular Posts"
+msgstr ""
+
+#: inc/acf-field-groups.php:17981 inc/acf-field-groups.php:19983
+#: inc/acf-field-groups.php:21994 inc/acf-field-groups.php:23641
+msgid "Most Liked Posts"
+msgstr ""
+
+#: inc/acf-field-groups.php:17982 inc/acf-field-groups.php:19984
+#: inc/acf-field-groups.php:21995 inc/acf-field-groups.php:23642
+msgid "Most Rated Posts"
+msgstr ""
+
+#: inc/acf-field-groups.php:17983 inc/acf-field-groups.php:19985
+#: inc/acf-field-groups.php:21996 inc/acf-field-groups.php:23643
+msgid "Most Commented Posts"
+msgstr ""
+
+#: inc/acf-field-groups.php:17984 inc/acf-field-groups.php:19986
+#: inc/acf-field-groups.php:21997 inc/acf-field-groups.php:23644
+msgid "Recent Posts"
+msgstr ""
+
+#: inc/acf-field-groups.php:18145 inc/acf-field-groups.php:21440
+#: inc/acf-field-groups.php:21549
+msgid "Category"
+msgstr ""
+
+#: inc/acf-field-groups.php:18222
+msgid "Section: Prices"
+msgstr ""
+
+#: inc/acf-field-groups.php:18261 inc/acf-field-groups.php:22744
+msgid "Background-Image"
+msgstr ""
+
+#: inc/acf-field-groups.php:18305 inc/acf-field-groups.php:18359
+msgid "Package"
+msgstr ""
+
+#: inc/acf-field-groups.php:18321
+msgid "Currency"
+msgstr ""
+
+#: inc/acf-field-groups.php:18394
+msgid "Price"
+msgstr ""
+
+#: inc/acf-field-groups.php:18415
+msgid "Period"
+msgstr ""
+
+#: inc/acf-field-groups.php:18434
+msgid "Highlight"
+msgstr ""
+
+#: inc/acf-field-groups.php:18552
+msgid "Section: Products Teaser"
+msgstr ""
+
+#: inc/acf-field-groups.php:18638 inc/acf-field-groups.php:20054
+#: inc/acf-field-groups.php:22073 inc/acf-field-groups.php:23720
+msgid "Popular Products"
+msgstr ""
+
+#: inc/acf-field-groups.php:18639 inc/acf-field-groups.php:20055
+#: inc/acf-field-groups.php:22074 inc/acf-field-groups.php:23721
+msgid "Most Rated Products"
+msgstr ""
+
+#: inc/acf-field-groups.php:18640 inc/acf-field-groups.php:20056
+#: inc/acf-field-groups.php:22075 inc/acf-field-groups.php:23722
+msgid "Most Selling Products"
+msgstr ""
+
+#: inc/acf-field-groups.php:18641 inc/acf-field-groups.php:20057
+#: inc/acf-field-groups.php:22076 inc/acf-field-groups.php:23723
+msgid "Reduced Products"
+msgstr ""
+
+#: inc/acf-field-groups.php:18642 inc/acf-field-groups.php:20058
+#: inc/acf-field-groups.php:22077 inc/acf-field-groups.php:23724
+msgid "Recent Products"
+msgstr ""
+
+#: inc/acf-field-groups.php:18643 inc/acf-field-groups.php:20059
+#: inc/acf-field-groups.php:22078 inc/acf-field-groups.php:23725
+msgid "Selected Products"
+msgstr ""
+
+#: inc/acf-field-groups.php:18842
+msgid "Section: Reviews"
+msgstr ""
+
+#: inc/acf-field-groups.php:18900 inc/acf-field-groups.php:18916
+#: inc/acf-field-groups.php:21138 inc/acf-field-groups.php:21143
+msgid "Reviews"
+msgstr ""
+
+#: inc/acf-field-groups.php:19009 inc/rating.php:177
+msgid "1 Star"
+msgstr ""
+
+#: inc/acf-field-groups.php:19010 inc/rating.php:178
+msgid "2 Stars"
+msgstr ""
+
+#: inc/acf-field-groups.php:19011 inc/rating.php:179
+msgid "3 Stars"
+msgstr ""
+
+#: inc/acf-field-groups.php:19012 inc/rating.php:180
+msgid "4 Stars"
+msgstr ""
+
+#: inc/acf-field-groups.php:19013 inc/rating.php:181
+msgid "5 Stars"
+msgstr ""
+
+#: inc/acf-field-groups.php:19027
+msgid "Reviewed Item"
+msgstr ""
+
+#: inc/acf-field-groups.php:19085
+msgid "Widget: About Author"
+msgstr ""
+
+#: inc/acf-field-groups.php:19089
+msgid "Author Image:"
+msgstr ""
+
+#: inc/acf-field-groups.php:19133
+msgid "Widget: Ad Banner"
+msgstr ""
+
+#: inc/acf-field-groups.php:19137
+msgid "Add your Banner"
+msgstr ""
+
+#: inc/acf-field-groups.php:19151
+msgid "Add Banner"
+msgstr ""
+
+#: inc/acf-field-groups.php:19182 inc/acf-field-groups.php:20502
+#: inc/acf-field-groups.php:20647
+msgid "Link (URL)"
+msgstr ""
+
+#: inc/acf-field-groups.php:19242
+msgid "HTML Code"
+msgstr ""
+
+#: inc/acf-field-groups.php:19291
+msgid "Widget: Newsletter"
+msgstr ""
+
+#: inc/acf-field-groups.php:19316
+msgid "Background Image:"
+msgstr ""
+
+#: inc/acf-field-groups.php:19360
+msgid "Widget: Recent / Popular / Trending Posts"
+msgstr ""
+
+#: inc/acf-field-groups.php:19364
+msgid "Post Format exclude:"
+msgstr ""
+
+#: inc/acf-field-groups.php:19435
+msgid "Area: Content Grid"
+msgstr ""
+
+#: inc/acf-field-groups.php:19888
+msgid "Area: Custom HTML"
+msgstr ""
+
+#: inc/acf-field-groups.php:19931
+msgid "Area: Post, Product, Category, Tag Carousel"
+msgstr ""
+
+#: inc/acf-field-groups.php:19947 inc/widgets/posts-carousel.php:10
+msgid "Post Carousel"
+msgstr ""
+
+#: inc/acf-field-groups.php:19948
+msgid "Product Carousel"
+msgstr ""
+
+#: inc/acf-field-groups.php:19949
+msgid "Category / Tag Carousel"
+msgstr ""
+
+#: inc/acf-field-groups.php:19962 inc/acf-field-groups.php:20034
+#: inc/acf-field-groups.php:20149
+msgid "Output"
+msgstr ""
+
+#: inc/acf-field-groups.php:19998 inc/acf-field-groups.php:24693
+msgid "Post(s)"
+msgstr ""
+
+#: inc/acf-field-groups.php:20070 inc/acf-field-groups.php:24724
+msgid "Product(s)"
+msgstr ""
+
+#: inc/acf-field-groups.php:20133 inc/acf-field-groups.php:20298
+#: inc/acf-field-groups.php:20396 inc/acf-field-groups.php:22334
+#: inc/acf-field-groups.php:23981
+msgid "One column"
+msgstr ""
+
+#: inc/acf-field-groups.php:20134 inc/acf-field-groups.php:20299
+#: inc/acf-field-groups.php:20397 inc/acf-field-groups.php:22335
+#: inc/acf-field-groups.php:23982
+msgid "Two columns"
+msgstr ""
+
+#: inc/acf-field-groups.php:20135 inc/acf-field-groups.php:20300
+#: inc/acf-field-groups.php:20398 inc/acf-field-groups.php:22336
+#: inc/acf-field-groups.php:23983
+msgid "Three columns"
+msgstr ""
+
+#: inc/acf-field-groups.php:20251
+msgid "Hide empty categories / tags"
+msgstr ""
+
+#: inc/acf-field-groups.php:20380
+msgid "Area: Promo Box"
+msgstr ""
+
+#: inc/acf-field-groups.php:20580
+msgid "Area: Random Ad Banner"
+msgstr ""
+
+#: inc/acf-field-groups.php:20603 inc/acf-field-groups.php:20735
+#: inc/acf-field-groups.php:20740
+msgid "Banner"
+msgstr ""
+
+#: inc/acf-field-groups.php:20685
+msgid "Global: All Sections"
+msgstr ""
+
+#: inc/acf-field-groups.php:20689
+msgid "Content Sections"
+msgstr ""
+
+#: inc/acf-field-groups.php:20692
+msgid "Add custom content sections and sort them using drag and drop."
+msgstr ""
+
+#: inc/acf-field-groups.php:20704
+msgid "Logo Carousel"
+msgstr ""
+
+#: inc/acf-field-groups.php:20766 inc/acf-field-groups.php:20771
+msgid "Image / Text"
+msgstr ""
+
+#: inc/acf-field-groups.php:20797 inc/acf-field-groups.php:20802
+msgid "Features 1"
+msgstr ""
+
+#: inc/acf-field-groups.php:20828 inc/acf-field-groups.php:20833
+msgid "Features 2"
+msgstr ""
+
+#: inc/acf-field-groups.php:20859 inc/acf-field-groups.php:20864
+msgid "Features 3"
+msgstr ""
+
+#: inc/acf-field-groups.php:20890
+msgid "Image / Video Background"
+msgstr ""
+
+#: inc/acf-field-groups.php:20895
+msgid "Video / Image Background"
+msgstr ""
+
+#: inc/acf-field-groups.php:20921 inc/acf-field-groups.php:20926
+msgid "Animated Image"
+msgstr ""
+
+#: inc/acf-field-groups.php:20952 inc/acf-field-groups.php:20957
+msgid "Custom Teaser"
+msgstr ""
+
+#: inc/acf-field-groups.php:20983 inc/acf-field-groups.php:20988
+msgid "Post Teaser"
+msgstr ""
+
+#: inc/acf-field-groups.php:21014 inc/acf-field-groups.php:21019
+msgid "Page Teaser"
+msgstr ""
+
+#: inc/acf-field-groups.php:21045 inc/acf-field-groups.php:21050
+msgid "Product Teaser"
+msgstr ""
+
+#: inc/acf-field-groups.php:21076 inc/acf-field-groups.php:21081
+msgid "Category / Tag Teaser"
+msgstr ""
+
+#: inc/acf-field-groups.php:21107 inc/acf-field-groups.php:21112
+msgid "Prices"
+msgstr ""
+
+#: inc/acf-field-groups.php:21174
+msgid "Pie Chart"
+msgstr ""
+
+#: inc/acf-field-groups.php:21200 inc/acf-field-groups.php:21205
+#: inc/widgets/newsletter.php:10 inc/widgets/social-counter.php:495
+#: inc/widgets/social-counter.php:808
+msgid "Newsletter"
+msgstr ""
+
+#: inc/acf-field-groups.php:21293
+msgid "WP Content"
+msgstr ""
+
+#: inc/acf-field-groups.php:21309
+msgid ""
+"Usually the main page content (title, text and thumbnail) is displayed at "
+"the top of this site. By adding this section you can use the main page "
+"content as part of the sections."
+msgstr ""
+
+#: inc/acf-field-groups.php:21315
+msgid "Display as part of the sections"
+msgstr ""
+
+#: inc/acf-field-groups.php:21356
+msgid "Add section"
+msgstr ""
+
+#: inc/acf-field-groups.php:21382
+msgid "Global: Button Select"
+msgstr ""
+
+#: inc/acf-field-groups.php:21424
+msgid "Linktype"
+msgstr ""
+
+#: inc/acf-field-groups.php:21438 inc/acf-field-groups.php:21489
+#: inc/admin-settings.php:664 inc/admin-settings.php:712
+#: inc/admin-settings.php:760 inc/admin-settings.php:807
+#: inc/widgets/categories.php:105 inc/widgets/categories.php:116
+msgid "Post"
+msgstr ""
+
+#: inc/acf-field-groups.php:21439 inc/acf-field-groups.php:21519
+msgid "Product"
+msgstr ""
+
+#: inc/acf-field-groups.php:21441 inc/acf-field-groups.php:21579
+msgid "Tag"
+msgstr ""
+
+#: inc/acf-field-groups.php:21443 inc/acf-field-groups.php:21633
+msgid "PopUp Video"
+msgstr ""
+
+#: inc/acf-field-groups.php:21444 inc/acf-field-groups.php:21660
+msgid "PopUp Map"
+msgstr ""
+
+#: inc/acf-field-groups.php:21445 inc/admin-settings.php:153
+#: inc/admin-settings.php:154
+msgid "PopUp Layer"
+msgstr ""
+
+#: inc/acf-field-groups.php:21446 inc/acf-field-groups.php:21714
+msgid "Anchor Link"
+msgstr ""
+
+#: inc/acf-field-groups.php:21687
+msgid "PopUp Layer by ID"
+msgstr ""
+
+#: inc/acf-field-groups.php:21763
+msgid "Global: Featured Slider"
+msgstr ""
+
+#: inc/acf-field-groups.php:21770
+msgid "Shows a featured slider with static content, posts or products."
+msgstr ""
+
+#: inc/acf-field-groups.php:21806 inc/acf-field-groups.php:21822
+#: inc/acf-field-groups.php:23302
+msgid "Static Content"
+msgstr ""
+
+#: inc/acf-field-groups.php:21809
+msgid "Products"
+msgstr ""
+
+#: inc/acf-field-groups.php:22051
+msgid ""
+"To use this the shop plugin WooCommerce must be activated with included "
+"products."
+msgstr ""
+
+#: inc/acf-field-groups.php:22089 inc/acf-field-groups.php:23736
+msgid "Select your specific posts"
+msgstr ""
+
+#: inc/acf-field-groups.php:22130 inc/acf-field-groups.php:23777
+msgid "Select your specific pages"
+msgstr ""
+
+#: inc/acf-field-groups.php:22171 inc/acf-field-groups.php:23818
+msgid "Select your specific products"
+msgstr ""
+
+#: inc/acf-field-groups.php:22212 inc/acf-field-groups.php:23859
+msgid "Total Items"
+msgstr ""
+
+#: inc/acf-field-groups.php:22288 inc/acf-field-groups.php:23935
+msgid "Select the count of visible items."
+msgstr ""
+
+#: inc/acf-field-groups.php:22337 inc/acf-field-groups.php:23984
+msgid "Four columns"
+msgstr ""
+
+#: inc/acf-field-groups.php:22351 inc/acf-field-groups.php:23998
+msgid "Spacing"
+msgstr ""
+
+#: inc/acf-field-groups.php:22354 inc/acf-field-groups.php:24001
+msgid "Shows a space between the items."
+msgstr ""
+
+#: inc/acf-field-groups.php:22410 inc/acf-field-groups.php:24057
+msgid "Show or hide the post excerpt."
+msgstr ""
+
+#: inc/acf-field-groups.php:22526
+msgid "Global: Image Effect"
+msgstr ""
+
+#: inc/acf-field-groups.php:22530
+msgid "Image Effect"
+msgstr ""
+
+#: inc/acf-field-groups.php:22542
+msgid "Bounce"
+msgstr ""
+
+#: inc/acf-field-groups.php:22543
+msgid "Flash"
+msgstr ""
+
+#: inc/acf-field-groups.php:22544
+msgid "Pulse"
+msgstr ""
+
+#: inc/acf-field-groups.php:22545
+msgid "Rubber Band"
+msgstr ""
+
+#: inc/acf-field-groups.php:22546
+msgid "Shake"
+msgstr ""
+
+#: inc/acf-field-groups.php:22547
+msgid "Swing"
+msgstr ""
+
+#: inc/acf-field-groups.php:22548
+msgid "Tada"
+msgstr ""
+
+#: inc/acf-field-groups.php:22549
+msgid "Wobble"
+msgstr ""
+
+#: inc/acf-field-groups.php:22550
+msgid "Jello"
+msgstr ""
+
+#: inc/acf-field-groups.php:22551
+msgid "Bounce In"
+msgstr ""
+
+#: inc/acf-field-groups.php:22552
+msgid "Bounce In Down"
+msgstr ""
+
+#: inc/acf-field-groups.php:22553
+msgid "Bounce In Left"
+msgstr ""
+
+#: inc/acf-field-groups.php:22554
+msgid "Bounce In Right"
+msgstr ""
+
+#: inc/acf-field-groups.php:22555
+msgid "Bounce In Up"
+msgstr ""
+
+#: inc/acf-field-groups.php:22556
+msgid "Bounce Out"
+msgstr ""
+
+#: inc/acf-field-groups.php:22557
+msgid "Bounce Out Down"
+msgstr ""
+
+#: inc/acf-field-groups.php:22558
+msgid "Bounce Out Left"
+msgstr ""
+
+#: inc/acf-field-groups.php:22559
+msgid "Bounce Out Right"
+msgstr ""
+
+#: inc/acf-field-groups.php:22560
+msgid "Bounce Out Up"
+msgstr ""
+
+#: inc/acf-field-groups.php:22561
+msgid "Fade In"
+msgstr ""
+
+#: inc/acf-field-groups.php:22562
+msgid "Fade In Down"
+msgstr ""
+
+#: inc/acf-field-groups.php:22563
+msgid "Fade In Down Big"
+msgstr ""
+
+#: inc/acf-field-groups.php:22564
+msgid "Fade In Left"
+msgstr ""
+
+#: inc/acf-field-groups.php:22565
+msgid "Fade In Left Big"
+msgstr ""
+
+#: inc/acf-field-groups.php:22566
+msgid "Fade In Right"
+msgstr ""
+
+#: inc/acf-field-groups.php:22567
+msgid "Fade In Right Big"
+msgstr ""
+
+#: inc/acf-field-groups.php:22568
+msgid "Fade In Up"
+msgstr ""
+
+#: inc/acf-field-groups.php:22569
+msgid "Fade In Up Big"
+msgstr ""
+
+#: inc/acf-field-groups.php:22570
+msgid "Fade Out"
+msgstr ""
+
+#: inc/acf-field-groups.php:22571
+msgid "Fade Out Down"
+msgstr ""
+
+#: inc/acf-field-groups.php:22572
+msgid "Fade Out Down Big"
+msgstr ""
+
+#: inc/acf-field-groups.php:22573
+msgid "Fade Out Left"
+msgstr ""
+
+#: inc/acf-field-groups.php:22574
+msgid "Fade Out Left Big"
+msgstr ""
+
+#: inc/acf-field-groups.php:22575
+msgid "Fade Out Right"
+msgstr ""
+
+#: inc/acf-field-groups.php:22576
+msgid "Fade Out Right Big"
+msgstr ""
+
+#: inc/acf-field-groups.php:22577
+msgid "Fade Out Up"
+msgstr ""
+
+#: inc/acf-field-groups.php:22578
+msgid "Fade Out Up Big"
+msgstr ""
+
+#: inc/acf-field-groups.php:22579
+msgid "Flip"
+msgstr ""
+
+#: inc/acf-field-groups.php:22580
+msgid "Flip In X"
+msgstr ""
+
+#: inc/acf-field-groups.php:22581
+msgid "Flip In Y"
+msgstr ""
+
+#: inc/acf-field-groups.php:22582
+msgid "Flip Out X"
+msgstr ""
+
+#: inc/acf-field-groups.php:22583
+msgid "Flip Out Y"
+msgstr ""
+
+#: inc/acf-field-groups.php:22584
+msgid "Light Speed In"
+msgstr ""
+
+#: inc/acf-field-groups.php:22585
+msgid "Light Speed Out"
+msgstr ""
+
+#: inc/acf-field-groups.php:22586
+msgid "Rotate In"
+msgstr ""
+
+#: inc/acf-field-groups.php:22587
+msgid "Rotate In Down Left"
+msgstr ""
+
+#: inc/acf-field-groups.php:22588
+msgid "Rotate In Down Right"
+msgstr ""
+
+#: inc/acf-field-groups.php:22589
+msgid "Rotate In Up Left"
+msgstr ""
+
+#: inc/acf-field-groups.php:22590
+msgid "Rotate In Up Right"
+msgstr ""
+
+#: inc/acf-field-groups.php:22591
+msgid "Rotate Out"
+msgstr ""
+
+#: inc/acf-field-groups.php:22592
+msgid "Rotate Out Down Left"
+msgstr ""
+
+#: inc/acf-field-groups.php:22593
+msgid "Rotate Out Down Right"
+msgstr ""
+
+#: inc/acf-field-groups.php:22594
+msgid "Rotate Out Up Left"
+msgstr ""
+
+#: inc/acf-field-groups.php:22595
+msgid "Rotate Out Up Right"
+msgstr ""
+
+#: inc/acf-field-groups.php:22596
+msgid "Hinge"
+msgstr ""
+
+#: inc/acf-field-groups.php:22597
+msgid "Roll In"
+msgstr ""
+
+#: inc/acf-field-groups.php:22598
+msgid "Roll Out"
+msgstr ""
+
+#: inc/acf-field-groups.php:22599
+msgid "Zoom In"
+msgstr ""
+
+#: inc/acf-field-groups.php:22600
+msgid "Zoom In Down"
+msgstr ""
+
+#: inc/acf-field-groups.php:22601
+msgid "Zoom In Left"
+msgstr ""
+
+#: inc/acf-field-groups.php:22602
+msgid "Zoom In Right"
+msgstr ""
+
+#: inc/acf-field-groups.php:22603
+msgid "Zoom In Up"
+msgstr ""
+
+#: inc/acf-field-groups.php:22604
+msgid "Zoom Out"
+msgstr ""
+
+#: inc/acf-field-groups.php:22605
+msgid "Zoom Out Down"
+msgstr ""
+
+#: inc/acf-field-groups.php:22606
+msgid "Zoom Out Left"
+msgstr ""
+
+#: inc/acf-field-groups.php:22607
+msgid "Zoom Out Right"
+msgstr ""
+
+#: inc/acf-field-groups.php:22608
+msgid "Zoom Out Up"
+msgstr ""
+
+#: inc/acf-field-groups.php:22609
+msgid "Slide In Down"
+msgstr ""
+
+#: inc/acf-field-groups.php:22610
+msgid "Slide In Left"
+msgstr ""
+
+#: inc/acf-field-groups.php:22611
+msgid "Slide In Right"
+msgstr ""
+
+#: inc/acf-field-groups.php:22612
+msgid "Slide In Up"
+msgstr ""
+
+#: inc/acf-field-groups.php:22613
+msgid "Slide Out Down"
+msgstr ""
+
+#: inc/acf-field-groups.php:22614
+msgid "Slide Out Left"
+msgstr ""
+
+#: inc/acf-field-groups.php:22615
+msgid "Slide Out Right"
+msgstr ""
+
+#: inc/acf-field-groups.php:22616
+msgid "Slide Out Up"
+msgstr ""
+
+#: inc/acf-field-groups.php:22630
+msgid "Duration"
+msgstr ""
+
+#: inc/acf-field-groups.php:22671
+msgid "Global: Image or Video Background for Section"
+msgstr ""
+
+#: inc/acf-field-groups.php:22675
+msgid "Image or Video"
+msgstr ""
+
+#: inc/acf-field-groups.php:22703
+msgid "Color"
+msgstr ""
+
+#: inc/acf-field-groups.php:22705
+msgid "Featured Image"
+msgstr ""
+
+#: inc/acf-field-groups.php:22707
+msgid "External Video"
+msgstr ""
+
+#: inc/acf-field-groups.php:22721
+msgid "Background-Color"
+msgstr ""
+
+#: inc/acf-field-groups.php:22776
+msgid "Background-Video"
+msgstr ""
+
+#: inc/acf-field-groups.php:22779 inc/acf-field-groups.php:22833
+msgid "File format: mp4"
+msgstr ""
+
+#: inc/acf-field-groups.php:22803
+msgid "Background-Video (alternate)"
+msgstr ""
+
+#: inc/acf-field-groups.php:22806 inc/acf-field-groups.php:22857
+msgid "File format: webm"
+msgstr ""
+
+#: inc/acf-field-groups.php:22830
+msgid "Background-Video external"
+msgstr ""
+
+#: inc/acf-field-groups.php:22854
+msgid "Background-Video external (alternate)"
+msgstr ""
+
+#: inc/acf-field-groups.php:22878
+msgid "Video-Poster"
+msgstr ""
+
+#: inc/acf-field-groups.php:22881
+msgid "Use an alternate image, when the video cannot load."
+msgstr ""
+
+#: inc/acf-field-groups.php:22918
+msgid "Deactivate the transparent overlay"
+msgstr ""
+
+#: inc/acf-field-groups.php:22957
+msgid "Global: Newsletter Select"
+msgstr ""
+
+#: inc/acf-field-groups.php:22976
+msgid "Define"
+msgstr ""
+
+#: inc/acf-field-groups.php:22980
+#: inc/plugins/class-tgm-plugin-activation.php:2632
+msgid "Plugin"
+msgstr ""
+
+#: inc/acf-field-groups.php:22992
+msgid "MailChimp"
+msgstr ""
+
+#: inc/acf-field-groups.php:22993
+msgid "MailPoet"
+msgstr ""
+
+#: inc/acf-field-groups.php:22994
+msgid "The Newsletter Plugin"
+msgstr ""
+
+#: inc/acf-field-groups.php:23007
+msgid "MailChimp Form ID"
+msgstr ""
+
+#: inc/acf-field-groups.php:23036
+msgid "MailPoet Form ID"
+msgstr ""
+
+#: inc/acf-field-groups.php:23065
+msgid "The Newsletter Plugin Form"
+msgstr ""
+
+#: inc/acf-field-groups.php:23085
+msgid "Default Form"
+msgstr ""
+
+#: inc/acf-field-groups.php:23086
+msgid "Custom Form"
+msgstr ""
+
+#: inc/acf-field-groups.php:23097
+msgid "The Newsletter Plugin Form ID"
+msgstr ""
+
+#: inc/acf-field-groups.php:23153
+msgid "Global: Page"
+msgstr ""
+
+#: inc/acf-field-groups.php:23160
+msgid "Show or hide the page title of this site."
+msgstr ""
+
+#: inc/acf-field-groups.php:23179
+msgid "Show or hide the main content of this site."
+msgstr ""
+
+#: inc/acf-field-groups.php:23195 inc/acf-field-groups.php:24444
+msgid "Content below"
+msgstr ""
+
+#: inc/acf-field-groups.php:23198 inc/acf-field-groups.php:24447
+msgid "Enter custom content below the main content here."
+msgstr ""
+
+#: inc/acf-field-groups.php:23234
+msgid "Global: Page Header"
+msgstr ""
+
+#: inc/acf-field-groups.php:23241
+msgid "Shows a static header or a carousel (slideshow)."
+msgstr ""
+
+#: inc/acf-field-groups.php:23257
+msgid "Static Content or Carousel (Slideshow)"
+msgstr ""
+
+#: inc/acf-field-groups.php:23303
+msgid "Post Header / Carousel (Slideshow)"
+msgstr ""
+
+#: inc/acf-field-groups.php:23304
+msgid "Page Header / Carousel (Slideshow)"
+msgstr ""
+
+#: inc/acf-field-groups.php:23305
+msgid "Product Header / Carousel (Slideshow)"
+msgstr ""
+
+#: inc/acf-field-groups.php:23318
+msgid "Header(s)"
+msgstr ""
+
+#: inc/acf-field-groups.php:23366
+msgid "Title Settings"
+msgstr ""
+
+#: inc/acf-field-groups.php:23378
+msgid "Custom title"
+msgstr ""
+
+#: inc/acf-field-groups.php:23379
+msgid "Custom title typewriter effect"
+msgstr ""
+
+#: inc/acf-field-groups.php:23380
+msgid "Show the page title instead of the custom title"
+msgstr ""
+
+#: inc/acf-field-groups.php:23421
+msgid "Typewriter Title"
+msgstr ""
+
+#: inc/acf-field-groups.php:23546 inc/acf-field-groups.php:23596
+msgid "Particles"
+msgstr ""
+
+#: inc/acf-field-groups.php:23593
+msgid "Polygon Grab"
+msgstr ""
+
+#: inc/acf-field-groups.php:23594
+msgid "Polygon Repulse"
+msgstr ""
+
+#: inc/acf-field-groups.php:23595
+msgid "Polygon Bubble"
+msgstr ""
+
+#: inc/acf-field-groups.php:23597
+msgid "Particles Repulse"
+msgstr ""
+
+#: inc/acf-field-groups.php:23598
+msgid "Snow"
+msgstr ""
+
+#: inc/acf-field-groups.php:23599
+msgid "Snow Storm"
+msgstr ""
+
+#: inc/acf-field-groups.php:23600
+msgid "Cosmos"
+msgstr ""
+
+#: inc/acf-field-groups.php:24178
+msgid "Header Edge Style"
+msgstr ""
+
+#: inc/acf-field-groups.php:24216
+msgid "Compact"
+msgstr ""
+
+#: inc/acf-field-groups.php:24243
+msgid "Centered"
+msgstr ""
+
+#: inc/acf-field-groups.php:24270
+msgid "Wide"
+msgstr ""
+
+#: inc/acf-field-groups.php:24297
+msgid "Full Page"
+msgstr ""
+
+#: inc/acf-field-groups.php:24324
+msgid "Fit to full screen"
+msgstr ""
+
+#: inc/acf-field-groups.php:24356
+msgid "Scroll Down Button"
+msgstr ""
+
+#: inc/acf-field-groups.php:24388
+msgid "Scroll Down Button Label"
+msgstr ""
+
+#: inc/acf-field-groups.php:24440
+msgid "Global: Posts"
+msgstr ""
+
+#: inc/acf-field-groups.php:24463
+msgid "Additional Information"
+msgstr ""
+
+#: inc/acf-field-groups.php:24466
+msgid ""
+"For example: You can add information about the copyright owner of the used "
+"images."
+msgstr ""
+
+#: inc/acf-field-groups.php:24482 single.php:56
+msgid "Sponsored Post"
+msgstr ""
+
+#: inc/acf-field-groups.php:24485
+msgid "Mark this post as sponsored."
+msgstr ""
+
+#: inc/acf-field-groups.php:24501
+msgid "Primary Category"
+msgstr ""
+
+#: inc/acf-field-groups.php:24504
+msgid "Will display the selected value as primary category for this post."
+msgstr ""
+
+#: inc/acf-field-groups.php:24543
+msgid "Global: Sidebar"
+msgstr ""
+
+#: inc/acf-field-groups.php:24550
+msgid "Hide or show the sidebar for this post / page."
+msgstr ""
+
+#: inc/acf-field-groups.php:24559 inc/acf-field-groups.php:24584
+msgid "Like global Settings"
+msgstr ""
+
+#: inc/acf-field-groups.php:24617
+msgid "Global: Visibility"
+msgstr ""
+
+#: inc/acf-field-groups.php:24621
+msgid "Location"
+msgstr ""
+
+#: inc/acf-field-groups.php:24633
+msgid "On each site"
+msgstr ""
+
+#: inc/acf-field-groups.php:24634
+msgid "On each page"
+msgstr ""
+
+#: inc/acf-field-groups.php:24635
+msgid "On each post"
+msgstr ""
+
+#: inc/acf-field-groups.php:24636
+msgid "On each product"
+msgstr ""
+
+#: inc/acf-field-groups.php:24637
+msgid "On each category"
+msgstr ""
+
+#: inc/acf-field-groups.php:24638
+msgid "On each product category"
+msgstr ""
+
+#: inc/acf-field-groups.php:24639
+msgid "On each tag"
+msgstr ""
+
+#: inc/acf-field-groups.php:24640
+msgid "On each product tag"
+msgstr ""
+
+#: inc/acf-field-groups.php:24641
+msgid "Only on front page"
+msgstr ""
+
+#: inc/acf-field-groups.php:24642
+msgid "Only on shop front page"
+msgstr ""
+
+#: inc/acf-field-groups.php:24643
+msgid "Only on specific pages"
+msgstr ""
+
+#: inc/acf-field-groups.php:24644
+msgid "Only on specific posts"
+msgstr ""
+
+#: inc/acf-field-groups.php:24645
+msgid "Only on specific products"
+msgstr ""
+
+#: inc/acf-field-groups.php:24646
+msgid "Only on specific categories"
+msgstr ""
+
+#: inc/acf-field-groups.php:24647
+msgid "Only on specific product categories"
+msgstr ""
+
+#: inc/acf-field-groups.php:24648
+msgid "Only on specific tags"
+msgstr ""
+
+#: inc/acf-field-groups.php:24649
+msgid "Only on specific product tags"
+msgstr ""
+
+#: inc/acf-field-groups.php:24662
+msgid "Page(s)"
+msgstr ""
+
+#: inc/acf-field-groups.php:24755
+msgid "Categorie(s)"
+msgstr ""
+
+#: inc/acf-field-groups.php:24785
+msgid "Product Categorie(s)"
+msgstr ""
+
+#: inc/acf-field-groups.php:24815
+msgid "Tag(s)"
+msgstr ""
+
+#: inc/acf-field-groups.php:24845
+msgid "Product Tag(s)"
+msgstr ""
+
+#: inc/acf-flexible-layout.php:491
+msgid "Reviewed"
+msgstr ""
+
+#: inc/acf-map.php:65 page-contact.php:205
+msgid "Open on Google Maps"
+msgstr ""
+
+#: inc/acf-popup.php:37
+msgid "Please insert you contact form id."
+msgstr ""
+
+#: inc/admin-settings.php:13
+msgid "Primary Menu"
+msgstr ""
+
+#: inc/admin-settings.php:15
+msgid "Footer Menu"
+msgstr ""
+
+#: inc/admin-settings.php:36 inc/admin-settings.php:37
+#: inc/admin-settings.php:45 inc/admin-settings.php:54
+#: inc/admin-settings.php:63 inc/admin-settings.php:72
+#: inc/admin-settings.php:81 inc/admin-settings.php:90
+#: inc/admin-settings.php:99 inc/admin-settings.php:108
+#: inc/admin-settings.php:117 inc/admin-settings.php:126
+#: inc/admin-settings.php:135 inc/admin-settings.php:144
+#: inc/admin-settings.php:153 inc/admin-settings.php:162
+#: inc/admin-settings.php:171 inc/admin-settings.php:180
+#: inc/admin-settings.php:189 inc/admin-settings.php:198
+#: inc/admin-settings.php:208
+msgid "Theme Settings"
+msgstr ""
+
+#: inc/admin-settings.php:54 inc/admin-settings.php:55
+msgid "Colors & Design"
+msgstr ""
+
+#: inc/admin-settings.php:63 inc/admin-settings.php:64
+msgid "Blog List"
+msgstr ""
+
+#: inc/admin-settings.php:81 inc/admin-settings.php:82
+msgid "Sidebars"
+msgstr ""
+
+#: inc/admin-settings.php:90 inc/admin-settings.php:91
+#: inc/widgets/social.php:10
+msgid "Social"
+msgstr ""
+
+#: inc/admin-settings.php:99 inc/admin-settings.php:100
+msgid "Web Fonts"
+msgstr ""
+
+#: inc/admin-settings.php:108 inc/admin-settings.php:109
+msgid "Top Layer"
+msgstr ""
+
+#: inc/admin-settings.php:117 inc/admin-settings.php:118
+msgid "Topbar"
+msgstr ""
+
+#: inc/admin-settings.php:126 inc/admin-settings.php:127
+msgid "Leading Area"
+msgstr ""
+
+#: inc/admin-settings.php:135 inc/admin-settings.php:136
+msgid "Ending Area"
+msgstr ""
+
+#: inc/admin-settings.php:144 inc/admin-settings.php:145
+msgid "Footer"
+msgstr ""
+
+#: inc/admin-settings.php:162 inc/admin-settings.php:163
+msgid "Exit PopUp"
+msgstr ""
+
+#: inc/admin-settings.php:171 inc/admin-settings.php:172
+msgid "EU Cookiebar"
+msgstr ""
+
+#: inc/admin-settings.php:180 inc/admin-settings.php:181
+msgid "Google Maps"
+msgstr ""
+
+#: inc/admin-settings.php:189
+msgid "Coming Soon Page"
+msgstr ""
+
+#: inc/admin-settings.php:190
+msgid "Coming Soon"
+msgstr ""
+
+#: inc/admin-settings.php:198 inc/admin-settings.php:199
+msgid "404 Page"
+msgstr ""
+
+#: inc/admin-settings.php:208 inc/admin-settings.php:209
+#: inc/plugins/activate-plugins.php:98
+msgid "WooCommerce"
+msgstr ""
+
+#: inc/admin-settings.php:239
+msgid "Add widgets here to appear in your left or right content sidebar."
+msgstr ""
+
+#: inc/admin-settings.php:249 inc/admin-settings.php:347
+msgid "Full-Size"
+msgstr ""
+
+#: inc/admin-settings.php:249
+msgid "top"
+msgstr ""
+
+#: inc/admin-settings.php:251 inc/admin-settings.php:349
+msgid ""
+"Add widgets here to appear in your full-size footerbar. E.g. It is useful "
+"for a full size instagram or pinterest widget."
+msgstr ""
+
+#: inc/admin-settings.php:287 inc/admin-settings.php:303
+#: inc/admin-settings.php:319 inc/admin-settings.php:335
+msgid "Add widgets here to appear in the footerbar."
+msgstr ""
+
+#: inc/admin-settings.php:347
+msgid "bottom"
+msgstr ""
+
+#: inc/admin-settings.php:360
+msgid "Woocommerce - Shop Sidebar"
+msgstr ""
+
+#: inc/admin-settings.php:362
+msgid "Add your WooCommerce shop widgets here."
+msgstr ""
+
+#: inc/admin-settings.php:562
+msgid "TOP 10: Popular Posts"
+msgstr ""
+
+#: inc/admin-settings.php:630
+msgid "Ordered by views"
+msgstr ""
+
+#: inc/admin-settings.php:634
+msgid "Ordered by likes"
+msgstr ""
+
+#: inc/admin-settings.php:638
+msgid "Ordered by rated"
+msgstr ""
+
+#: inc/admin-settings.php:642
+msgid "Ordered by commented"
+msgstr ""
+
+#: inc/admin-settings.php:761 inc/rating.php:193 post-meta.php:111
+msgid "Score"
+msgstr ""
+
+#: inc/like-button.php:28 inc/like-button.php:37
+msgid "Liked"
+msgstr ""
+
+#: inc/like-button.php:28 inc/like-button.php:37
+msgid "Like"
+msgstr ""
+
+#: inc/plugins/activate-plugins.php:59
+msgid "Advanced Custom Fields Pro"
+msgstr ""
+
+#: inc/plugins/activate-plugins.php:72
+msgid "Hannah CD Helper"
+msgstr ""
+
+#: inc/plugins/activate-plugins.php:85
+msgid "WP Admin Theme CD"
+msgstr ""
+
+#: inc/plugins/activate-plugins.php:111
+msgid "MailChimp for WordPress"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:334
+msgid "Install Required Plugins"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:335
+msgid "Install Plugins"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:337
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:339
+#, php-format
+msgid "Updating Plugin: %s"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:340
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:343
+#, php-format
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:349
+#, php-format
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:355
+#, php-format
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgid_plural ""
+"The following plugins need to be updated to their latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:361
+#, php-format
+msgid "There is an update available for: %1$s."
+msgid_plural "There are updates available for the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:367
+#, php-format
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:373
+#, php-format
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:378
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:383
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:388
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:392
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:393
+#: inc/plugins/class-tgm-plugin-activation.php:912
+#: inc/plugins/class-tgm-plugin-activation.php:2618
+#: inc/plugins/class-tgm-plugin-activation.php:3665
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:394
+#: inc/plugins/class-tgm-plugin-activation.php:3244
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:395
+#: inc/plugins/class-tgm-plugin-activation.php:3037
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:397
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:399
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:401
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:402
+msgid "Dismiss this notice"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:403
+msgid ""
+"There are one or more required or recommended plugins to install, update or "
+"activate."
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:404
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:607
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:608
+msgid "Update Required"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:1019
+msgid ""
+"The remote plugin package does not contain a folder with the desired slug "
+"and renaming did not work."
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:1019
+#: inc/plugins/class-tgm-plugin-activation.php:1022
+msgid ""
+"Please contact the plugin provider and ask them to package their plugin "
+"according to the WordPress guidelines."
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:1022
+msgid ""
+"The remote plugin package consists of more than one file, but the files are "
+"not packaged in a folder."
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:1206
+#: inc/plugins/class-tgm-plugin-activation.php:3033
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:2067
+#, php-format
+msgid "TGMPA v%s"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:2358
+msgid "Required"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:2361
+msgid "Recommended"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:2377
+msgid "WordPress Repository"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:2380
+msgid "External Source"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:2383
+msgid "Pre-Packaged"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:2400
+msgid "Not Installed"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:2404
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:2406
+msgid "Active"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:2412
+msgid "Required Update not Available"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:2415
+msgid "Requires Update"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:2418
+msgid "Update recommended"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:2427
+#, php-format
+msgctxt "Install/Update Status"
+msgid "%1$s, %2$s"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:2473
+#, php-format
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:2477
+#, php-format
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:2481
+#, php-format
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:2485
+#, php-format
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:2567
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:2575
+msgid "Installed version:"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:2583
+msgid "Minimum required version:"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:2595
+msgid "Available version:"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:2618
+msgid "No plugins to install, update or activate."
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:2633
+msgid "Source"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:2638
+msgid "Version"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:2639
+msgid "Status"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:2688
+#, php-format
+msgid "Install %2$s"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:2693
+#, php-format
+msgid "Update %2$s"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:2699
+#, php-format
+msgid "Activate %2$s"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:2769
+msgid "Upgrade message from the plugin author:"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:2802
+msgid "Install"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:2808
+msgid "Update"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:2842
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:2844
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:2885
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:2887
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:2993
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:3019
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:3243
+msgid "Plugin activation failed."
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:3583
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:3586
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:3588
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:3592
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:3594
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:3594
+#: inc/plugins/class-tgm-plugin-activation.php:3602
+msgid "Show Details"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:3594
+#: inc/plugins/class-tgm-plugin-activation.php:3602
+msgid "Hide Details"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:3595
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:3597
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:3600
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:3602
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:3603
+msgid "All installations have been completed."
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:3605
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/rating.php:42
+msgid "Thanks for rating."
+msgstr ""
+
+#: inc/rating.php:43
+msgid "You have already voted."
+msgstr ""
+
+#: inc/rating.php:44
+msgid "An error has occurred."
+msgstr ""
+
+#: inc/rating.php:45
+msgid "It is something went wrong, try again."
+msgstr ""
+
+#: inc/rating.php:200
+msgid "vote"
+msgstr ""
+
+#: inc/rating.php:200
+msgid "votes"
+msgstr ""
+
+#: inc/shortcodes.php:107
+msgid "Button"
+msgstr ""
+
+#: inc/shortcodes.php:111 inc/shortcodes.php:187 inc/shortcodes.php:222
+#: inc/shortcodes.php:259 inc/shortcodes.php:296 inc/shortcodes.php:332
+#: inc/shortcodes.php:364 inc/shortcodes.php:390 inc/shortcodes.php:432
+#: inc/shortcodes.php:474 inc/shortcodes.php:504 inc/shortcodes.php:550
+msgid "Options"
+msgstr ""
+
+#: inc/shortcodes.php:113 inc/shortcodes.php:189 inc/shortcodes.php:224
+#: inc/shortcodes.php:261 inc/shortcodes.php:298 inc/shortcodes.php:334
+#: inc/shortcodes.php:366 inc/shortcodes.php:392 inc/shortcodes.php:434
+#: inc/shortcodes.php:476 inc/shortcodes.php:506 inc/shortcodes.php:552
+msgid "Shortcode Options"
+msgstr ""
+
+#: inc/shortcodes.php:126 inc/shortcodes.php:141 inc/shortcodes.php:151
+#: inc/shortcodes.php:160 inc/shortcodes.php:169 inc/shortcodes.php:178
+#: inc/shortcodes.php:207 inc/shortcodes.php:244 inc/shortcodes.php:281
+#: inc/shortcodes.php:317 inc/shortcodes.php:349 inc/shortcodes.php:375
+#: inc/shortcodes.php:417 inc/shortcodes.php:459 inc/shortcodes.php:489
+#: inc/shortcodes.php:535 inc/shortcodes.php:572
+msgid "Add Shortcode"
+msgstr ""
+
+#: inc/shortcodes.php:137
+msgid "Unordered List"
+msgstr ""
+
+#: inc/shortcodes.php:147
+msgid "Ordered List"
+msgstr ""
+
+#: inc/shortcodes.php:156
+msgid "Tab Menu"
+msgstr ""
+
+#: inc/shortcodes.php:165
+msgid "Accordion Menu"
+msgstr ""
+
+#: inc/shortcodes.php:174
+msgid "Toggle Menu"
+msgstr ""
+
+#: inc/shortcodes.php:183
+msgid "Video Embed"
+msgstr ""
+
+#: inc/shortcodes.php:201
+msgid "Video ID"
+msgstr ""
+
+#: inc/shortcodes.php:227
+msgid "Font Awesome Icon Name"
+msgstr ""
+
+#: inc/shortcodes.php:231
+msgid "Icon Size"
+msgstr ""
+
+#: inc/shortcodes.php:255
+msgid "Alert Box"
+msgstr ""
+
+#: inc/shortcodes.php:292
+msgid "Leadin"
+msgstr ""
+
+#: inc/shortcodes.php:301
+msgid "Align"
+msgstr ""
+
+#: inc/shortcodes.php:337 inc/shortcodes.php:395 inc/shortcodes.php:437
+msgid "Count of Columns"
+msgstr ""
+
+#: inc/shortcodes.php:360
+msgid "Highlight Text"
+msgstr ""
+
+#: inc/shortcodes.php:386
+msgid "Post List"
+msgstr ""
+
+#: inc/shortcodes.php:407
+msgid "Count of Posts"
+msgstr ""
+
+#: inc/shortcodes.php:411
+msgid "Include specific Post IDs only"
+msgstr ""
+
+#: inc/shortcodes.php:428
+msgid "Page List"
+msgstr ""
+
+#: inc/shortcodes.php:449
+msgid "Count of Pages"
+msgstr ""
+
+#: inc/shortcodes.php:453
+msgid "Include specific Page IDs only"
+msgstr ""
+
+#: inc/shortcodes.php:479
+msgid "First Letter"
+msgstr ""
+
+#: inc/shortcodes.php:483
+msgid "Second Part"
+msgstr ""
+
+#: inc/shortcodes.php:500
+msgid "Google Maps Embed"
+msgstr ""
+
+#: inc/shortcodes.php:509
+msgid "Width"
+msgstr ""
+
+#: inc/shortcodes.php:519
+msgid "Height"
+msgstr ""
+
+#: inc/shortcodes.php:529
+msgid "Google Maps URL"
+msgstr ""
+
+#: inc/shortcodes.php:546
+msgid "Divider"
+msgstr ""
+
+#: inc/widgets/author.php:10
+msgid "About Author"
+msgstr ""
+
+#: inc/widgets/author.php:11
+msgid "Show more about the author."
+msgstr ""
+
+#: inc/widgets/author.php:107 inc/widgets/banner.php:121
+#: inc/widgets/categories.php:169 inc/widgets/comments.php:104
+#: inc/widgets/newsletter.php:91 inc/widgets/pages.php:137
+#: inc/widgets/posts-alternative.php:211 inc/widgets/posts-carousel.php:257
+#: inc/widgets/posts-trending.php:143 inc/widgets/posts.php:257
+#: inc/widgets/social.php:76
+msgid "Title:"
+msgstr ""
+
+#: inc/widgets/author.php:114
+msgid "About Author Title:"
+msgstr ""
+
+#: inc/widgets/author.php:121
+msgid "About Author Text:"
+msgstr ""
+
+#: inc/widgets/banner.php:10
+msgid "Ad Banner"
+msgstr ""
+
+#: inc/widgets/banner.php:11
+msgid ""
+"Banner rotation for Ads. The banners are displayed in a random order when "
+"more than one is selected."
+msgstr ""
+
+#: inc/widgets/banner.php:127
+msgid "Label of Advertising:"
+msgstr ""
+
+#: inc/widgets/categories.php:11
+msgid "Show your post categories."
+msgstr ""
+
+#: inc/widgets/categories.php:175
+msgid "Exclude Categories:"
+msgstr ""
+
+#: inc/widgets/categories.php:181
+msgid "Hide empty categories:"
+msgstr ""
+
+#: inc/widgets/categories.php:187
+msgid "Hide Image:"
+msgstr ""
+
+#: inc/widgets/categories.php:193
+msgid "Hide Postcount:"
+msgstr ""
+
+#: inc/widgets/categories.php:199
+msgid "Hide Child Categories:"
+msgstr ""
+
+#: inc/widgets/comments.php:11
+msgid "Show recent comments."
+msgstr ""
+
+#: inc/widgets/comments.php:54
+msgid "to"
+msgstr ""
+
+#: inc/widgets/comments.php:62 inc/widgets/posts-carousel.php:169
+#: inc/widgets/posts.php:170 post-meta.php:85
+msgid "No comments"
+msgstr ""
+
+#: inc/widgets/comments.php:110
+msgid "Number of Comments:"
+msgstr ""
+
+#: inc/widgets/comments.php:116
+msgid "Content Length:"
+msgstr ""
+
+#: inc/widgets/comments.php:122
+msgid "Avatar Size in Pixel:"
+msgstr ""
+
+#: inc/widgets/facebook.php:10
+msgid "Facebook Feed"
+msgstr ""
+
+#: inc/widgets/facebook.php:11
+msgid "Show the latest posts of a facebook fan page timeline."
+msgstr ""
+
+#: inc/widgets/facebook.php:97 inc/widgets/google-plus.php:84
+#: inc/widgets/instagram.php:93 inc/widgets/pinterest-board.php:91
+#: inc/widgets/pinterest.php:86 inc/widgets/social-counter.php:114
+#: inc/widgets/social-counter.php:153 inc/widgets/social-counter.php:192
+#: inc/widgets/social-counter.php:234 inc/widgets/social-counter.php:273
+#: inc/widgets/social-counter.php:312 inc/widgets/social-counter.php:351
+#: inc/widgets/social-counter.php:390 inc/widgets/twitter.php:97
+msgid "Error"
+msgstr ""
+
+#: inc/widgets/facebook.php:249 inc/widgets/google-plus.php:256
+#: inc/widgets/instagram.php:181 inc/widgets/pinterest-board.php:185
+#: inc/widgets/pinterest.php:177 inc/widgets/twitter.php:271
+msgid "Amount"
+msgstr ""
+
+#: inc/widgets/facebook.php:256 inc/widgets/google-plus.php:263
+msgid "Hide attachment box"
+msgstr ""
+
+#: inc/widgets/facebook.php:262 inc/widgets/google-plus.php:269
+#: inc/widgets/twitter.php:284
+msgid "Hide attached media"
+msgstr ""
+
+#: inc/widgets/facebook.php:268 inc/widgets/google-plus.php:275
+#: inc/widgets/twitter.php:290
+msgid "Hide Likes Count"
+msgstr ""
+
+#: inc/widgets/facebook.php:274 inc/widgets/google-plus.php:281
+msgid "Hide Comments Count"
+msgstr ""
+
+#: inc/widgets/facebook.php:280 inc/widgets/facebook.php:292
+#: inc/widgets/facebook.php:302 inc/widgets/social-counter.php:114
+#: inc/widgets/social-counter.php:407 inc/widgets/social-counter.php:823
+#: inc/widgets/social-counter.php:830
+msgid "Facebook"
+msgstr ""
+
+#: inc/widgets/facebook.php:287 inc/widgets/google-plus.php:294
+#: inc/widgets/social-counter.php:837 inc/widgets/social-counter.php:872
+#: inc/widgets/social-counter.php:930 inc/widgets/twitter.php:309
+msgid "Page URL"
+msgstr ""
+
+#: inc/widgets/facebook.php:294 inc/widgets/social-counter.php:841
+msgid "App ID"
+msgstr ""
+
+#: inc/widgets/facebook.php:295 inc/widgets/facebook.php:305
+#: inc/widgets/google-plus.php:302 inc/widgets/instagram.php:191
+#: inc/widgets/pinterest-board.php:223 inc/widgets/pinterest.php:187
+#: inc/widgets/social-counter.php:841 inc/widgets/social-counter.php:847
+#: inc/widgets/social-counter.php:876 inc/widgets/social-counter.php:905
+#: inc/widgets/social-counter.php:934 inc/widgets/social-counter.php:940
+#: inc/widgets/social-counter.php:946 inc/widgets/social-counter.php:952
+#: inc/widgets/social-counter.php:969 inc/widgets/social-counter.php:986
+#: inc/widgets/social-counter.php:1015 inc/widgets/social-counter.php:1043
+#: inc/widgets/twitter.php:317 inc/widgets/twitter.php:327
+#: inc/widgets/twitter.php:337 inc/widgets/twitter.php:347
+msgid "Get here"
+msgstr ""
+
+#: inc/widgets/facebook.php:304 inc/widgets/social-counter.php:847
+msgid "App Secret Code"
+msgstr ""
+
+#: inc/widgets/google-plus.php:10
+msgid "Google Plus Feed"
+msgstr ""
+
+#: inc/widgets/google-plus.php:11
+msgid "Show the latest activities of a google plus user page."
+msgstr ""
+
+#: inc/widgets/google-plus.php:287 inc/widgets/google-plus.php:299
+#: inc/widgets/social-counter.php:153 inc/widgets/social-counter.php:418
+#: inc/widgets/social-counter.php:858 inc/widgets/social-counter.php:865
+msgid "Google Plus"
+msgstr ""
+
+#: inc/widgets/google-plus.php:289 inc/widgets/social-counter.php:867
+#: inc/widgets/social-counter.php:1006 inc/widgets/social-counter.php:1034
+msgid "User ID"
+msgstr ""
+
+#: inc/widgets/instagram.php:10 inc/widgets/instagram.php:188
+#: inc/widgets/social-counter.php:312 inc/widgets/social-counter.php:451
+#: inc/widgets/social-counter.php:980
+msgid "Instagram"
+msgstr ""
+
+#: inc/widgets/instagram.php:11
+msgid "Show instagram photos from your account."
+msgstr ""
+
+#: inc/widgets/instagram.php:161 inc/widgets/pinterest-board.php:165
+#: inc/widgets/pinterest.php:157
+msgid ""
+"If this widget located inside the \"Footerbar Full-Size\" and the amount of "
+"images is set bigger than 10 images, the widget items will displayed as a "
+"carousel."
+msgstr ""
+
+#: inc/widgets/instagram.php:190 inc/widgets/pinterest-board.php:222
+#: inc/widgets/pinterest.php:186 inc/widgets/social-counter.php:934
+#: inc/widgets/social-counter.php:969 inc/widgets/social-counter.php:986
+#: inc/widgets/social-counter.php:1015 inc/widgets/social-counter.php:1043
+#: inc/widgets/twitter.php:316
+msgid "Access Token"
+msgstr ""
+
+#: inc/widgets/newsletter.php:11
+msgid "Show a subscription form."
+msgstr ""
+
+#: inc/widgets/newsletter.php:97
+msgid "Text before Form:"
+msgstr ""
+
+#: inc/widgets/newsletter.php:103
+msgid "Text after Form:"
+msgstr ""
+
+#: inc/widgets/pages.php:10
+msgid "Recent / Popular Pages"
+msgstr ""
+
+#: inc/widgets/pages.php:11
+msgid "Show recent or popular pages."
+msgstr ""
+
+#: inc/widgets/pages.php:143 inc/widgets/posts-alternative.php:217
+#: inc/widgets/posts-carousel.php:263 inc/widgets/posts-trending.php:149
+#: inc/widgets/posts.php:263
+msgid "Amount:"
+msgstr ""
+
+#: inc/widgets/pages.php:149 inc/widgets/posts-alternative.php:223
+#: inc/widgets/posts-carousel.php:269 inc/widgets/posts.php:269
+msgid "Type:"
+msgstr ""
+
+#: inc/widgets/pages.php:153 inc/widgets/posts-alternative.php:227
+#: inc/widgets/posts-carousel.php:273 inc/widgets/posts.php:273
+msgid "Recent"
+msgstr ""
+
+#: inc/widgets/pages.php:156
+msgid "Popular"
+msgstr ""
+
+#: inc/widgets/pages.php:162 inc/widgets/posts-carousel.php:309
+#: inc/widgets/posts.php:309
+msgid "Hide Views:"
+msgstr ""
+
+#: inc/widgets/pinterest-board.php:10
+msgid "Pinterest Board Pins"
+msgstr ""
+
+#: inc/widgets/pinterest-board.php:11
+msgid "Show the latest pinterest pins from a user board."
+msgstr ""
+
+#: inc/widgets/pinterest-board.php:192 inc/widgets/pinterest-board.php:206
+#: inc/widgets/pinterest-board.php:220 inc/widgets/pinterest.php:184
+#: inc/widgets/social-counter.php:273 inc/widgets/social-counter.php:462
+#: inc/widgets/social-counter.php:963
+msgid "Pinterest"
+msgstr ""
+
+#: inc/widgets/pinterest-board.php:194 inc/widgets/social-counter.php:925
+#: inc/widgets/twitter.php:304
+msgid "Username"
+msgstr ""
+
+#: inc/widgets/pinterest-board.php:200 inc/widgets/social-counter.php:1011
+#: inc/widgets/social-counter.php:1039
+msgid "User URL"
+msgstr ""
+
+#: inc/widgets/pinterest-board.php:208
+msgid "Board Name"
+msgstr ""
+
+#: inc/widgets/pinterest-board.php:214
+msgid "Board URL"
+msgstr ""
+
+#: inc/widgets/pinterest.php:10
+msgid "Pinterest User Pins"
+msgstr ""
+
+#: inc/widgets/pinterest.php:11
+msgid "Show the latest pinterest pins from your account."
+msgstr ""
+
+#: inc/widgets/posts-alternative.php:10
+msgid "Recent / Popular Posts V.2"
+msgstr ""
+
+#: inc/widgets/posts-alternative.php:11
+msgid "Show recent or popular posts in alternative style."
+msgstr ""
+
+#: inc/widgets/posts-alternative.php:230 inc/widgets/posts-carousel.php:276
+#: inc/widgets/posts.php:276
+msgid "Popular by most viewed"
+msgstr ""
+
+#: inc/widgets/posts-alternative.php:233 inc/widgets/posts-carousel.php:279
+#: inc/widgets/posts.php:279
+msgid "Popular by most liked"
+msgstr ""
+
+#: inc/widgets/posts-alternative.php:236 inc/widgets/posts-carousel.php:282
+#: inc/widgets/posts.php:282
+msgid "Popular by most rated"
+msgstr ""
+
+#: inc/widgets/posts-alternative.php:239 inc/widgets/posts-carousel.php:285
+#: inc/widgets/posts.php:285
+msgid "Popular by most commented"
+msgstr ""
+
+#: inc/widgets/posts-carousel.php:11
+msgid "Show posts as a carousel."
+msgstr ""
+
+#: inc/widgets/posts-carousel.php:169 inc/widgets/posts.php:170
+#: post-meta.php:85
+msgid "One comment"
+msgstr ""
+
+#: inc/widgets/posts-carousel.php:169 inc/widgets/posts.php:170
+#: post-meta.php:85
+#, php-format
+msgid "% comments"
+msgstr ""
+
+#: inc/widgets/posts-carousel.php:185 inc/widgets/posts.php:186
+msgid "Stars"
+msgstr ""
+
+#: inc/widgets/posts-carousel.php:291 inc/widgets/posts.php:291
+msgid "Hide Comments:"
+msgstr ""
+
+#: inc/widgets/posts-carousel.php:297 inc/widgets/posts.php:297
+msgid "Hide Likes:"
+msgstr ""
+
+#: inc/widgets/posts-carousel.php:303 inc/widgets/posts.php:303
+msgid "Hide Rating:"
+msgstr ""
+
+#: inc/widgets/posts-trending.php:10
+msgid "Trending Posts"
+msgstr ""
+
+#: inc/widgets/posts-trending.php:11
+msgid "Shows trending posts of a specific period."
+msgstr ""
+
+#: inc/widgets/posts-trending.php:155
+msgid "Show trending post of the last days, ordered by postview:"
+msgstr ""
+
+#: inc/widgets/posts.php:10
+msgid "Recent / Popular Posts V.1"
+msgstr ""
+
+#: inc/widgets/posts.php:11
+msgid "Show recent or popular posts."
+msgstr ""
+
+#: inc/widgets/social-counter.php:10
+msgid "Social Counter"
+msgstr ""
+
+#: inc/widgets/social-counter.php:11
+msgid "Show the follower count of your social profiles."
+msgstr ""
+
+#: inc/widgets/social-counter.php:234 inc/widgets/social-counter.php:429
+#: inc/widgets/social-counter.php:916 inc/widgets/social-counter.php:923
+#: inc/widgets/twitter.php:302 inc/widgets/twitter.php:314
+#: inc/widgets/twitter.php:324 inc/widgets/twitter.php:334
+#: inc/widgets/twitter.php:344
+msgid "Twitter"
+msgstr ""
+
+#: inc/widgets/social-counter.php:390 inc/widgets/social-counter.php:484
+msgid "Dribbble"
+msgstr ""
+
+#: inc/widgets/social-counter.php:410 inc/widgets/social-counter.php:542
+msgid "Fans"
+msgstr ""
+
+#: inc/widgets/social-counter.php:421 inc/widgets/social-counter.php:432
+#: inc/widgets/social-counter.php:454 inc/widgets/social-counter.php:465
+#: inc/widgets/social-counter.php:476 inc/widgets/social-counter.php:487
+msgid "Follower"
+msgstr ""
+
+#: inc/widgets/social-counter.php:443 inc/widgets/social-counter.php:498
+msgid "Subscribers"
+msgstr ""
+
+#: inc/widgets/social-counter.php:506
+msgid "Total Fans"
+msgstr ""
+
+#: inc/widgets/social-counter.php:788
+msgid "Hide total fan count"
+msgstr ""
+
+#: inc/widgets/social-counter.php:795
+msgid "Hide comments count"
+msgstr ""
+
+#: inc/widgets/social-counter.php:802
+msgid "Hide posts count"
+msgstr ""
+
+#: inc/widgets/social-counter.php:812
+msgid "Subscriber Count"
+msgstr ""
+
+#: inc/widgets/social-counter.php:821 inc/widgets/social-counter.php:856
+#: inc/widgets/social-counter.php:885 inc/widgets/social-counter.php:914
+#: inc/widgets/social-counter.php:961 inc/widgets/social-counter.php:978
+#: inc/widgets/social-counter.php:995 inc/widgets/social-counter.php:1023
+msgid "Connect to"
+msgstr ""
+
+#: inc/widgets/social-counter.php:896
+msgid "Channel ID"
+msgstr ""
+
+#: inc/widgets/social-counter.php:901
+msgid "Channel URL"
+msgstr ""
+
+#: inc/widgets/social-counter.php:940 inc/widgets/twitter.php:326
+msgid "Access Token Secret"
+msgstr ""
+
+#: inc/widgets/social-counter.php:946 inc/widgets/twitter.php:336
+msgid "Consumer Key"
+msgstr ""
+
+#: inc/widgets/social-counter.php:952 inc/widgets/twitter.php:346
+msgid "Consumer Key Secret"
+msgstr ""
+
+#: inc/widgets/social-counter.php:1025 inc/widgets/social-counter.php:1032
+msgid "Dibbble"
+msgstr ""
+
+#: inc/widgets/social.php:11
+msgid "Show your social links."
+msgstr ""
+
+#: inc/widgets/social.php:81
+msgid ""
+"Manage your social profiles in WP admin &rarr; Theme Settings &rarr; Social"
+msgstr ""
+
+#: inc/widgets/twitter.php:10
+msgid "Twitter Feed"
+msgstr ""
+
+#: inc/widgets/twitter.php:11
+msgid "Show the latest twitter tweets of a user."
+msgstr ""
+
+#: inc/widgets/twitter.php:193
+msgid "Retweet"
+msgstr ""
+
+#: inc/widgets/twitter.php:278
+msgid "Hide Hashtags"
+msgstr ""
+
+#: inc/widgets/twitter.php:296
+msgid "Hide Retweet Count"
+msgstr ""
+
+#: js/cookiebar.php:48
+msgid ""
+"This website uses cookies to ensure you get the best experience on our "
+"website."
+msgstr ""
+
+#: js/cookiebar.php:54
+msgid "I understand"
+msgstr ""
+
+#: page-download.php:96
+msgid "not found"
+msgstr ""
+
+#: page-seminar.php:145
+msgid "Currently no dates are available."
+msgstr ""
+
+#: page-under-construction.php:40
+msgid "week%!w"
+msgstr ""
+
+#: page-under-construction.php:41
+msgid "day%!d"
+msgstr ""
+
+#: page-under-construction.php:42
+msgid "hours"
+msgstr ""
+
+#: page-under-construction.php:43
+msgid "minutes"
+msgstr ""
+
+#: page-under-construction.php:44
+msgid "seconds"
+msgstr ""
+
+#: page-under-construction.php:80
+msgid "We are coming very soon."
+msgstr ""
+
+#: post-meta.php:26
+msgid "by"
+msgstr ""
+
+#: post-meta.php:31
+#, php-format
+msgid "%1$s ago"
+msgstr ""
+
+#: postformat/postformat-image.php:55
+msgid "Full Image Resolution"
+msgstr ""
+
+#: postformat/postformat-image.php:61
+msgid "No image found"
+msgstr ""
+
+#: search.php:23
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: woocommerce/cart/mini-cart.php:26 woocommerce/cart/mini-cart.php:77
+msgid "Return To Shop"
+msgstr ""
+
+#: woocommerce/cart/mini-cart.php:49
+msgid "Remove this item"
+msgstr ""
+
+#: woocommerce/cart/mini-cart.php:91
+msgid "Subtotal"
+msgstr ""
+
+#: woocommerce/cart/mini-cart.php:99
+msgid "View Cart"
+msgstr ""
+
+#: woocommerce/cart/mini-cart.php:103
+msgid "Checkout"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "Hannah CD"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "http://www.creative-dive.de/themes/hannah/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Hannah - The Fashion and Lifestyle Blog"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Martin Jost"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://www.creative-dive.de"
+msgstr ""

@@ -3,7 +3,7 @@
 <?php if ( have_posts() ) : ?>
 		<div class="content container">
 			<?php while ( have_posts() ) : the_post(); ?>
-				<h2>Описание проекта</h2>
+				<h2><?php _e("Описание проекта", "webalio"); ?></h2>
 				<?php the_content(); ?>
 				<?php 
 				$images = ( get_field( 'gallery' ) ) ? get_field( 'gallery' ) : '';
@@ -12,7 +12,7 @@
 				<?php if( $images ): ?>
 				<div class="gallery-box">
 				<hr>
-				<h3>Скриншоты:</h3>
+				<h3><?php _e("Скриншоты:", "webalio"); ?></h3>
 					<ul class="single-gallery">
 						<?php foreach( $images as $image ): ?>
 							<li>
@@ -33,10 +33,11 @@
 								$plugin_categ = true;
 							}
 						}
-						$text = ( $plugin_categ ) ? 'Страница плагина на WordPress.org' : 'Перейти к просмотру живого сайта';
+						$text = ( $plugin_categ ) ? __("Страница плагина на WordPress.org", "webalio") : __("Перейти к просмотру живого сайта", "webalio");
 					?>
-					<a href="<?php echo $live_website_link; ?>" class="live-site-lnk inline-lnk" target="blank"><?php echo $text; ?></a>
-				<?php endif; ?>
+					<a href="<?php echo $live_website_link; ?>" class="live-site-lnk inline-lnk" target="blank"><?php echo $text; ?></a> | 
+                <?php endif; ?>
+                    <a href="http://webalio/en/#lnk_works"><?php _e("Вернуться к списку работ", "webalio"); ?></a>
 			 <?php endwhile; ?>
 			<?php echo do_shortcode( '[alio_divider bottom="50"]' ); ?>
 		</div>
