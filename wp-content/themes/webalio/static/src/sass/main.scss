@@ -143,6 +143,11 @@ ol, ul {
     margin-left: 18px;
 }
 
+.single .content.container > ul.point-list {
+    list-style: none;
+    margin-left: 0;
+}
+
 ul.dropdown-menu, ul#menu-footer-menu {
     margin: 0;
     list-style: none;
@@ -461,6 +466,7 @@ ul {
 .point-list li, .three-columns .item p {
     text-align: left;
     color: #000;
+    margin-bottom: 10px;
 }
 
 .point-list li:before {
@@ -750,12 +756,17 @@ a:active, a:hover, button:focus {
 header .bg-bottom {
     background-image: url("../img/white-bg-top.png");
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     width: 100%;
 }
 
 .odd .bg-top {
     background-image: url("../img/bg-top.png");
+}
+
+.bg-top {
+    position: relative;
+    bottom: -1px;
 }
 
 .gray {

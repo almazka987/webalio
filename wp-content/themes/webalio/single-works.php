@@ -26,18 +26,42 @@
 				<?php endif; ?>
 				<?php if ( $live_website_link ): ?>
 					<?php
-						$categs = get_the_terms( get_the_ID(), 'workscategory' );
-						$plugin_categ = false;
-						foreach ( $categs as $value ) {
-							if ( $value->slug == 'plugins' ) {
-								$plugin_categ = true;
-							}
-						}
-						$text = ( $plugin_categ ) ? __("Страница плагина на WordPress.org", "webalio") : __("Перейти к просмотру живого сайта", "webalio");
+                        $categs = get_the_terms( get_the_ID(), 'workscategory' );
+                        $plugin_categ = false;
+                        $app_categ = false;
+                        foreach ( $categs as $value ) {
+                            if ( $value->slug == 'plugins' ) {
+                                $plugin_categ = true;
+                            }
+                            if ( $value->slug == 'apps' ) {
+                                $app_categ = true;
+                            }
+                        }
+                        $regexp = '/(https?:)?(\/\/)?((github|wordpress.org)[^\/]*\/)/';
+                        preg_match( $regexp, $live_website_link, $url_filter );
+                        if ( !empty( $url_filter ) && is_array($url_filter ) ) {
+                            $site = '';
+                            switch ( $url_filter[4] ) {
+                                case 'wordpress.org':
+                                    $site = 'WordPress.org';
+                                    break;
+                                case 'github':
+                                    $site = 'GitHub.com';
+                                    break;
+                            }
+                            if ( $plugin_categ ) {
+                                $text = __("Страница плагина на " . $site, "webalio");
+                            }
+                            if ( $app_categ ) {
+                                $text = __("Страница приложения на " . $site, "webalio");
+                            }
+                        } else {
+                            $text = __("Перейти к просмотру живого сайта", "webalio");
+                        }
 					?>
 					<a href="<?php echo $live_website_link; ?>" class="live-site-lnk inline-lnk" target="blank"><?php echo $text; ?></a> | 
                 <?php endif; ?>
-                    <a href="http://webalio/en/#lnk_works"><?php _e("Вернуться к списку работ", "webalio"); ?></a>
+                    <a href="<?php echo get_site_url() . "/#lnk_works"; ?>"><?php _e("Вернуться к списку работ", "webalio"); ?></a>
 			 <?php endwhile; ?>
 			<?php echo do_shortcode( '[alio_divider bottom="50"]' ); ?>
 		</div>

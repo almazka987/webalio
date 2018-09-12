@@ -36,8 +36,11 @@ msgstr "Large"
 msgid "Перейти к просмотру живого сайта"
 msgstr "Go to live website"
 
-msgid "Страница плагина на WordPress.org"
-msgstr "The plugin page on WordPress.org"
+msgid "Страница плагина на "
+msgstr "The plugin page on "
+
+msgid "Страница приложения на "
+msgstr "The application page on "
 
 msgid "Скриншоты:"
 msgstr "Screenshots:"
