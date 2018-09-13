@@ -37,7 +37,7 @@
 					<span class="contact-item paper-plane"><a href="https://t.me/almazka987" target="blank"><i class="fa fa-paper-plane fa-fw" aria-hidden="true"></i>@almazka987</a></span>
 				</div>
 				<div class="col-md-6 col-sm-6 col-xs-12 right contacts-bottom">
-                    <span class="contact-item github"><a href="https://github.com/aliowebdeveloper" target="blank"><i class="fab fa-github-alt fa-fw" aria-hidden="true"></i>aliowebdeveloper</a></span>
+                    <span class="contact-item github"><a href="https://github.com/almazka987" target="blank"><i class="fab fa-github-alt fa-fw" aria-hidden="true"></i>almazka987</a></span>
 					<span class="contact-item mail"><a href="mailto:aliowebdeveloper@gmail.com"><i class="fa fa-envelope fa-fw" aria-hidden="true"></i>aliowebdeveloper@gmail.com</a></span>
 				</div>
 			</div>
