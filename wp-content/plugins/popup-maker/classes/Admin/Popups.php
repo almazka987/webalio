@@ -33,6 +33,7 @@ class PUM_Admin_Popups {
 		// Process meta saving.
 		add_action( 'save_post', array( __CLASS__, 'save' ), 10, 2 );
 
+
 		// Set the slug properly on save.
 		add_filter( 'wp_insert_post_data', array( __CLASS__, 'set_slug' ), 99, 2 );
 
@@ -71,12 +72,15 @@ class PUM_Admin_Popups {
 		return $title;
 	}
 
-
 	/**
 	 * Renders the popup title meta field.
 	 */
 	public static function title_meta_field() {
 		global $post, $pagenow, $typenow;
+
+		if ( has_blocks( $post ) || ( function_exists( 'use_block_editor_for_post' ) && use_block_editor_for_post( $post ) ) ) {
+			return;
+		}
 
 		if ( ! is_admin() ) {
 			return;
@@ -105,6 +109,10 @@ class PUM_Admin_Popups {
 	public static function popup_post_title_contextual_message() {
 		global $post, $pagenow, $typenow;
 
+		if ( has_blocks( $post ) || ( function_exists( 'use_block_editor_for_post' ) && use_block_editor_for_post( $post ) ) ) {
+			return;
+		}
+
 		if ( ! is_admin() ) {
 			return;
 		}
@@ -129,10 +137,10 @@ class PUM_Admin_Popups {
 	public static function render_settings_meta_box() {
 		global $post;
 
-		$popup = pum_get_popup( $post->ID, true );
+		$popup = pum_get_popup( $post->ID );
 
 		// Get the meta directly rather than from cached object.
-		$settings = $popup->get_settings( true );
+		$settings = $popup->get_settings();
 
 		if ( empty( $settings ) ) {
 			$settings = self::defaults();
@@ -251,7 +259,7 @@ class PUM_Admin_Popups {
 
 		$settings = self::sanitize_settings( $settings );
 
-		$popup->update_meta( 'popup_settings', $settings );
+		$popup->update_settings( $settings, false );
 
 		// TODO Remove this and all other code here. This should be clean and all code more compartmentalized.
 		foreach ( self::deprecated_meta_fields() as $field ) {
@@ -295,6 +303,7 @@ class PUM_Admin_Popups {
 			'close'     => __( 'Close', 'popup-maker' ),
 			'triggers'  => __( 'Triggers', 'popup-maker' ),
 			'targeting' => __( 'Targeting', 'popup-maker' ),
+			'advanced'  => __( 'Advanced', 'popup-maker' ),
 		) );
 	}
 
@@ -310,7 +319,6 @@ class PUM_Admin_Popups {
 			),
 			'triggers'  => array(
 				'main' => __( 'Triggers & Cookies', 'popup-maker' ),
-				'advanced'  => __( 'Advanced', 'popup-maker' ),
 			),
 			'targeting' => array(
 				'main' => __( 'Conditions', 'popup-maker' ),
@@ -325,6 +333,9 @@ class PUM_Admin_Popups {
 			'close'     => array(
 				'button'            => __( 'Button', 'popup-maker' ),
 				'alternate_methods' => __( 'Alternate Methods', 'popup-maker' ),
+			),
+			'advanced'  => array(
+				'main' => __( 'Advanced', 'popup-maker' ),
 			),
 		) );
 	}
@@ -360,13 +371,6 @@ class PUM_Admin_Popups {
 							'priority' => 20,
 						),
 					),
-					'advanced' => array(
-						'disable_form_reopen' => array(
-							'label'    => __( 'Disable automatic re-triggering of popup after non-ajax form submission.', 'popup-maker' ),
-							'type'     => 'checkbox',
-							'priority' => 10,
-						),
-					),
 				) ),
 				'targeting' => apply_filters( 'pum_popup_targeting_settings_fields', array(
 					'main' => array(
@@ -394,8 +398,8 @@ class PUM_Admin_Popups {
 							'label'        => __( 'Popup Theme', 'popup-maker' ),
 							'dynamic_desc' => sprintf( '%1$s<br/><a id="edit_theme_link" href="%3$s">%2$s</a>', __( 'Choose a theme for this popup.', 'popup-maker' ), __( 'Customize This Theme', 'popup-maker' ), admin_url( "post.php?action=edit&post={{data.value}}" ) ),
 							'type'         => 'select',
-							'options'      => PUM_Helpers::popup_theme_selectlist(),
-							'std'          => popmake_get_default_popup_theme(),
+							'options'      => pum_is_popup_editor() ? PUM_Helpers::popup_theme_selectlist() : null,
+							'std'          => pum_get_default_theme_id(),
 						),
 					),
 					'size'      => array(
@@ -701,6 +705,21 @@ class PUM_Admin_Popups {
 						),
 					),
 				) ),
+				'advanced'  => apply_filters( 'pum_popup_advanced_settings_fields', array(
+					'main' => array(
+						'disable_form_reopen'   => array(
+							'label'    => __( 'Disable automatic re-triggering of popup after non-ajax form submission.', 'popup-maker' ),
+							'type'     => 'checkbox',
+							'priority' => 10,
+						),
+						'disable_accessibility' => array(
+							'label'    => __( 'Disable accessibility features.', 'popup-maker' ),
+							'desc'     => __( 'This includes trapping the tab key & focus inside popup while open, force focus the first element when popup open, and refocus last click trigger when closed.', 'popup-maker' ),
+							'type'     => 'checkbox',
+							'priority' => 10,
+						),
+					),
+				) ),
 			) );
 
 			foreach ( $tabs as $tab_id => $sections ) {
@@ -868,7 +887,7 @@ class PUM_Admin_Popups {
 			<?php do_action( 'pum_popup_analytics_metabox_before', $post->ID ); ?>
 
 			<?php
-			$opens           = $popup->get_event_count( 'open', 'current' );
+			$opens = $popup->get_event_count( 'open', 'current' );
 			//$conversions     = $popup->get_event_count( 'conversion', 'current' );
 			//$conversion_rate = $opens > 0 && $opens >= $conversions ? $conversions / $opens * 100 : false;
 			?>
@@ -913,7 +932,7 @@ class PUM_Admin_Popups {
 									<?php /* if ( $popup->get_event_count( 'conversion', 'total' ) > 0 ) : ?>
 										<br />
 										<strong><?php _e( 'Lifetime Conversions', 'popup-maker' ); ?>:</strong> <?php echo $popup->get_event_count( 'conversion', 'total' ); ?>
-									<?php endif; */  ?>
+									<?php endif; */ ?>
 								</small>
 							<?php endif; ?>
 						</td>
@@ -985,11 +1004,11 @@ class PUM_Admin_Popups {
 	 */
 	public static function dashboard_columns( $_columns ) {
 		$columns = array(
-			'cb'              => '<input type="checkbox"/>',
-			'title'           => __( 'Name', 'popup-maker' ),
-			'popup_title'     => __( 'Title', 'popup-maker' ),
-			'class'           => __( 'CSS Classes', 'popup-maker' ),
-			'opens'           => __( 'Opens', 'popup-maker' ),
+			'cb'          => '<input type="checkbox"/>',
+			'title'       => __( 'Name', 'popup-maker' ),
+			'popup_title' => __( 'Title', 'popup-maker' ),
+			'class'       => __( 'CSS Classes', 'popup-maker' ),
+			'opens'       => __( 'Opens', 'popup-maker' ),
 			//'conversions'     => __( 'Conversions', 'popup-maker' ),
 			//'conversion_rate' => __( 'Conversion Rate', 'popup-maker' ),
 		);
@@ -1083,6 +1102,7 @@ class PUM_Admin_Popups {
 	public static function sortable_columns( $columns ) {
 		$columns['popup_title'] = 'popup_title';
 		$columns['opens']       = 'opens';
+
 		// $columns['conversions'] = 'conversions';
 
 		return $columns;
