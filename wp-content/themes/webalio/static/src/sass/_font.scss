@@ -7,11 +7,10 @@
 @import "FA/fontawesome";
 
 @font-face {
-  font-family: "ArchiveRegular";
-  src: url("#{$fonts-path}/ArchiveRegular/ArchiveRegular.eot");
-  src: url("#{$fonts-path}/ArchiveRegular/ArchiveRegular.eot?#iefix")format("embedded-opentype"),
-  url("#{$fonts-path}/ArchiveRegular/ArchiveRegular.woff") format("woff"),
-  url("#{$fonts-path}/ArchiveRegular/ArchiveRegular.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
+    font-family: 'Hermes';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Hermes'), local('Hermes-Normal'),
+    url("#{$fonts-path}/hermes.woff") format('woff'),
+    url("#{$fonts-path}/hermes.ttf") format('truetype');
 }

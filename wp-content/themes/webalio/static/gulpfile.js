@@ -63,3 +63,5 @@ gulp.task('watch', function() {
 gulp.task('build', gulp.parallel('js', 'css'));
 
 gulp.task('default', gulp.parallel('build'));
+
+gulp.task('watcher', gulp.parallel('build', 'watch'));
