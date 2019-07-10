@@ -1,2 +1,17 @@
 /* fonts */
 
+@import "FA/fa-brands";
+@import "FA/fa-light";
+@import "FA/fa-regular";
+@import "FA/fa-solid";
+@import "FA/fontawesome";
+
+@font-face {
+  font-family: "ArchiveRegular";
+  src: url("#{$fonts-path}/ArchiveRegular/ArchiveRegular.eot");
+  src: url("#{$fonts-path}/ArchiveRegular/ArchiveRegular.eot?#iefix")format("embedded-opentype"),
+  url("#{$fonts-path}/ArchiveRegular/ArchiveRegular.woff") format("woff"),
+  url("#{$fonts-path}/ArchiveRegular/ArchiveRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}

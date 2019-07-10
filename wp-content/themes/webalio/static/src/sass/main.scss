@@ -1,10 +1,5 @@
 @import 'vars';
 @import 'font';
-@import 'button';
-@import 'footer';
-@import 'header';
-
-$footerSize: 251px;
 
 html, body {
     height: 100%;
@@ -427,7 +422,7 @@ ul {
 }
 
 .navbar .container .bg-navbar div {
-    background-image: url("../img/bg-nav-bottom.png");
+    background-image: url("#{$img-path}/bg-nav-bottom.png");
     background-position: bottom center;
     background-repeat: repeat-x;
     height: 10px;
@@ -439,7 +434,7 @@ ul {
 }
 
 .navbar.sticky .container .bg-navbar div {
-    background-image: url("../img/bg-nav-bottom-white.png");
+    background-image: url("#{$img-path}/bg-nav-bottom-white.png");
     opacity: .8;
     border-bottom-right-radius: 45px;
 }
@@ -529,7 +524,7 @@ ul {
 .header {
     min-height: 397px;
     width: 100%;
-    background: url("../img/bg-header.jpg") no-repeat;
+    background: url("#{$img-path}/bg-header.jpg") no-repeat;
     background-size: cover;
     position: relative;
 }
@@ -754,14 +749,14 @@ a:active, a:hover, button:focus {
 }
 
 header .bg-bottom {
-    background-image: url("../img/white-bg-top.png");
+    background-image: url("#{$img-path}/white-bg-top.png");
     position: absolute;
     bottom: -1px;
     width: 100%;
 }
 
 .odd .bg-top {
-    background-image: url("../img/bg-top.png");
+    background-image: url("#{$img-path}/bg-top.png");
 }
 
 .bg-top {
@@ -771,13 +766,13 @@ header .bg-bottom {
 
 .gray {
     .bg-top {
-        background-image: url("../img/gray-bg-top.png");
+        background-image: url("#{$img-path}/gray-bg-top.png");
     }
     .bg-middle {
         background-color: #ccc;
     }
     .bg-bottom {
-        background-image: url("../img/gray-bg-bottom.png");
+        background-image: url("#{$img-path}/gray-bg-bottom.png");
         &.no-wave {
             background: -moz-linear-gradient(top,  rgba(204,204,204,1) 0%, rgba(255,255,255,0) 100%);
             background: -webkit-linear-gradient(top,  rgba(204,204,204,1) 0%,rgba(255,255,255,0) 100%);
@@ -796,7 +791,7 @@ header .bg-bottom {
 }
 
 .odd .bg-bottom {
-    background-image: url("../img/bg-bottom.png");
+    background-image: url("#{$img-path}/bg-bottom.png");
     &.no-wave {
         background: -moz-linear-gradient(top,  rgba(239,251,251,1) 0%, rgba(255,255,255,0) 100%);
         background: -webkit-linear-gradient(top,  rgba(239,251,251,1) 0%,rgba(255,255,255,0) 100%);
@@ -1079,7 +1074,7 @@ footer .menu a:hover {
 }
 
 footer .footer-bottom {
-    background-image: url("../img/bg-ribbon-b.png");
+    background-image: url("#{$img-path}/bg-ribbon-b.png");
     background-position: center top;
     background-repeat: repeat-x;
     color: #fff;

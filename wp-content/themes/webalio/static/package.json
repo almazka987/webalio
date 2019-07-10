@@ -8,27 +8,23 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+ssh://bitbucket.org/aliowebdeveloper/webalio.git"
+		"url": "git+ssh://github.com/almazka987/webalio.git"
 	},
 	"author": "alio",
 	"license": "ISC",
-	"bugs": {
-		"url": "https://bitbucket.org/aliowebdeveloper/webalio/issues"
-	},
-	"homepage": "https://bitbucket.org/aliowebdeveloper/webalio#README",
-	"dependencies": {
-        "gulp": "^3.9.1",
-        "gulp-autoprefixer": "^3.1.1",
-        "gulp-clean-css": "^2.4.0",
-        "gulp-concat": "^2.6.1",
-        "gulp-group-css-media-queries": "^1.2.2",
-        "gulp-minify": "0.0.14",
-        "gulp-notify": "^2.2.0",
-        "gulp-plumber": "^1.2.0",
-        "gulp-sass": "^4.0.1",
-        "gulp-sourcemaps": "^2.6.4",
-        "gulp-uglifyjs": "^0.6.2",
-        "gulp-watch": "^4.3.11",
+	"homepage": "https://github.com/almazka987/webalio",
+	"devDependencies": {
+		"autoprefixer": "^9.6.1",
+		"gulp": "^4.0.2",
+		"gulp-clean-css": "^2.4.0",
+		"gulp-concat": "^2.6.1",
+		"gulp-notify": "^2.2.0",
+		"gulp-plumber": "^1.2.0",
+		"gulp-postcss": "^8.0.0",
+		"gulp-sass": "^4.0.1",
+		"gulp-sourcemaps": "^2.6.5",
+		"gulp-uglifyjs": "^0.6.2",
+		"gulp-watch": "^4.3.11",
 		"node-sass": "^4.9.3"
 	}
 }
