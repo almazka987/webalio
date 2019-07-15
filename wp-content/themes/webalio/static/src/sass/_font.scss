@@ -11,6 +11,18 @@
     font-style: normal;
     font-weight: 400;
     src: local('Hermes'), local('Hermes-Normal'),
-    url("#{$fonts-path}/hermes.woff") format('woff'),
-    url("#{$fonts-path}/hermes.ttf") format('truetype');
+    url("#{$fonts-path}/hermes/hermes.woff") format('woff'),
+    url("#{$fonts-path}/hermes/hermes.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto Condensed Regular';
+    font-style: normal;
+    src: url("#{$fonts-path}/Roboto_Condensed/RobotoCondensed-Regular.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto Condensed Bold';
+    font-style: normal;
+    src: url("#{$fonts-path}/Roboto_Condensed/RobotoCondensed-Regular.ttf") format('truetype');
 }

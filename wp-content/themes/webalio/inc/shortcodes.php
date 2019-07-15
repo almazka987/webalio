@@ -38,9 +38,10 @@ function alio_form_block( $atts, $afb_content = null ) {
 		'afb_section' => '',
 		'afb_bottom_shape' => '',
 		'afb_additional_class' => '',
+		'afb_additional_class' => '',
 	), $atts ) );
 	$out = '';
-	$add_class = ( $afb_additional_class ) ? ' ' . $afb_additional_class : '';
+    $afb_add_class = ( $afb_additional_class ) ? ' ' . $afb_additional_class : '';
 	$bt_class = ( $afb_bottom_shape ) ? ' no-wave' : '';
 	if ( $afb_section ) {
 		$out .= '<section class="' . $afb_section . ' shortcode-box">
@@ -81,13 +82,14 @@ function alio_three_columns_block( $atts, $atcb_content = null ){
 	$atcb_img = ( $atcb_img ) ? wp_get_attachment_url( $atcb_img ) : '';
 
 	if ( $atcb_content && $atcb_img ) {
-		$out .= '<div class="col-md-4 item">
-					<img src="' . $atcb_img . '" alt="">';
+		$out .= '<div class="col-md-4"><div class="item"><img src="' . $atcb_img . '" alt="">';
+
 		if ( $atcb_title ) {
 			$out .= '<' . $atcb_tag . '>' . $atcb_title . '</' . $atcb_tag . '>';
 		}
+
 		$out .= $atcb_content;
-		$out .= '</div>';
+		$out .= '</div></div>';
 	}
 
 	return $out;
@@ -113,10 +115,12 @@ function alio_three_columns_area( $atts, $atca_content = null ){
 						<div class="bg-top"></div>
 							<div class="bg-middle">';
 		}
-		$out .= '<div class="container three-columns' . $class_box . '">';
-		if ( $atca_title ) {
-			$out .= '<' . $atca_tag . $atca_lnk_id . '>' . $atca_title . '</' . $atca_tag . '>';
-		}
+
+        $out .= '<div class="container">';
+        if ( $atca_title ) {
+            $out .= '<' . $atca_tag . $atca_lnk_id . '>' . $atca_title . '</' . $atca_tag . '>';
+        }
+        $out .= '<div class="three-columns' . $class_box . '">';
 		$out .= '<div class="row">';
 		$arr = explode( '|', $atca_content );
 		if ( is_array( $arr ) ) {
@@ -124,7 +128,7 @@ function alio_three_columns_area( $atts, $atca_content = null ){
 				$out .= do_shortcode( $value );
 			}
 		}
-		$out .= '</div></div>';
+		$out .= '</div></div></div>';
 		if ( $atca_section ) {
 			$out .= '</div>
 				<div class="bg-bottom' . $bt_class . '"></div>
@@ -193,7 +197,7 @@ function alio_works_area( $atts, $awa_content = null ) {
 						<div class="holder">
 							<div class="image-block">';
 			if ( has_post_thumbnail() ) {
-				$out .= get_the_post_thumbnail( $id, 'sizeThumb' );
+				$out .= get_the_post_thumbnail( null, 'sizeThumb' );
 			} else {
 				$out .= '<img src="' . get_template_directory_uri() . '/img/image.png" alt="' . get_the_title() . '">';
 			}

@@ -1,0 +1,127 @@
+.alio-btn, input[type=submit]:not(#searchsubmit) {
+    background: $middleGreen;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 20px 28px 16px;
+    line-height: 100%;
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 3px 0px 0px $darkGreen;
+    border-width: 2px;
+    text-transform: uppercase;
+    border: 0;
+    outline: none;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+    transition: color .1s ease-in-out,background .1s ease-in-out,border .1s ease-in-out;
+    font-family: 'Roboto Condensed Regular', sans-serif;
+
+    &:hover {
+        background: $lightGreen;
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        transition: all 0.2s ease-out;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%) rotate(45deg) translateZ(0);
+        height: 0;
+        width: 0;
+        opacity: 0;
+        background-color: $purple;
+    }
+
+    &:focus, &:focus span {
+        color: #fff;
+    }
+
+    &:hover i, &:hover span {
+        color: #FFF;
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        opacity: 1;
+    }
+
+    .in-button {
+        display: inline-block;
+        transform: translateX(-17px);
+        transition: transform .2s;
+        transition-delay: .01s;
+    }
+}
+
+input[type=submit]:not(#searchsubmit) {
+    padding: 12px 28px;
+}
+
+.alio-btn i {
+    font-size: 30px;
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: opacity .2s, transform .2s;
+    color: #FFF;
+    line-height: 4px;
+}
+
+a {
+    color: #0099cc;
+}
+
+.alio-btn:focus span, a.alio-btn:active, a.alio-btn:hover {
+    color: #fff;
+}
+
+a:active, a:hover, button:focus {
+    color: #ff0066;
+    outline: 0;
+    text-decoration: none;
+}
+
+.point-list {
+
+    li {
+        text-align: left;
+        color: #000;
+
+        ul {
+            margin-top: 6px;
+        }
+
+        &:before {
+            content: "\f013";
+            margin-right: 5px;
+        }
+    }
+
+    > li {
+        margin-bottom: 10px;
+
+        &:before {
+            font-weight: bold;
+        }
+
+        > li {
+            &:before {
+                font-weight: lighter;
+            }
+        }
+    }
+
+}
+
+.point-list li:before, .inline-lnk:before {
+    display: inline-block;
+    font-family: 'Font Awesome\ 5 Pro';
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

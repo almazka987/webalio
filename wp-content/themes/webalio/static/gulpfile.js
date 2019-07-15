@@ -2,7 +2,7 @@ let gulp = require('gulp'),
 	sass = require('gulp-sass'),
 	autoprefixer = require('autoprefixer'),
 	plumber = require('gulp-plumber'),
-	uglify = require('gulp-uglifyjs'),
+	uglify = require('gulp-uglify'),
 	notify = require('gulp-notify'),
     concat = require('gulp-concat'),
 	cleanCSS = require('gulp-clean-css'),
@@ -50,7 +50,7 @@ gulp.task('css', function () {
 gulp.task('js', function() {
     return gulp.src(path.src.js)
         .pipe(concat('main.min.js'))
-        .pipe(uglify())
+        //.pipe(uglify())
         .pipe(gulp.dest(path.dist.js))
         .pipe(notify({ message: 'js task completed!'}));
 });

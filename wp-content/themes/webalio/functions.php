@@ -21,6 +21,17 @@ function add_translations() {
     load_theme_textdomain( 'webalio', get_stylesheet_directory() . '/languages' );
 }
 
+// qTranslate-X fix menu link title
+add_filter( 'nav_menu_link_attributes', 'translate_btn_title_fix', 10, 4 );
+
+function translate_btn_title_fix( $atts, $item, $args ){
+    if (isset($item->item_lang)) {
+        $atts['title'] = $item->attr_title;
+    }
+
+    return $atts;
+}
+
 // add images thumbnails
 add_theme_support( 'post-thumbnails' );
 add_image_size( 'sizeThumb', 300, 320, array( 'top', 'left' ) );

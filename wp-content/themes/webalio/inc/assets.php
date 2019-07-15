@@ -11,8 +11,6 @@ function add_scripts() {
     /* include styles */
     wp_register_style( 'animateStyle', get_template_directory_uri() . '/css/animate.css' );
     wp_register_style( 'hmbrgrStyle', get_template_directory_uri() . '/css/hmbrgr.min.css' );
-    wp_register_style( 'montcerratFont', 'https://fonts.googleapis.com/css?family=Montserrat:400,700' );
-    wp_register_style( 'ubuntuFont', 'https://fonts.googleapis.com/css?family=Ubuntu:400,500,700' );
     wp_register_style( 'maincss', get_template_directory_uri() . '/css/main.min.css' );
     wp_register_style( 'bootstraptheme', get_template_directory_uri() . '/css/bootstrap-theme.css' );
     wp_register_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.css' );
@@ -28,14 +26,11 @@ function add_scripts() {
 
     wp_enqueue_style( 'hmbrgrStyle' );
     wp_enqueue_style( 'animateStyle' );
-    wp_enqueue_style( 'montcerratFont' );
-    wp_enqueue_style( 'ubuntuFont' );
     wp_enqueue_style( 'bootstraptheme' );
     wp_enqueue_style( 'bootstrap' );
     wp_enqueue_style( 'bootstrapmap' );
     wp_enqueue_style( 'prettyphoto' );
     wp_enqueue_style( 'maincss' );
-    wp_enqueue_style( 'maincssmap' );
 
     wp_enqueue_script( 'hamburgerButton' );
     wp_enqueue_script( 'isotopeJS' );
@@ -44,3 +39,6 @@ function add_scripts() {
     wp_enqueue_script( 'mainscripts' );
 }
 add_action( 'wp_enqueue_scripts', 'add_scripts' );
+
+remove_filter( 'the_content', 'wpautop' );
+remove_filter( 'the_excerpt', 'wpautop' );

@@ -1,6 +1,9 @@
 @import 'vars';
 @import 'font';
 
+@import "interface";
+@import "shortcodes";
+
 html, body {
     height: 100%;
 }
@@ -10,8 +13,8 @@ b, strong {
 }
 
 body {
-    font-family: 'Ubuntu', sans-serif;
-    color: $textColor;
+    font-family: 'Roboto Condensed Regular',sans-serif;
+    color: $grayColor;
     font-size: 14px;
 }
 
@@ -239,14 +242,14 @@ html, body {
     min-height: 100%}
 
 body {
-    font-family: 'Ubuntu',  sans-serif;
+    font-family: 'Roboto Condensed Regular',sans-serif;
     font-size: 16px;
-    color: #6b7285;
+    color: $grayColor;
     background-color: #fff;
 }
 
 a {
-    font-family: 'Ubuntu',  sans-serif;
+    font-family: 'Roboto Condensed Regular',sans-serif;
     text-decoration: none;
 }
 
@@ -255,7 +258,7 @@ h1 {
 }
 
 h2 {
-    color: #6b7285;
+    color: $grayColor;
     font-size: 2.2em;
     font-weight: 300;
     margin: 0 0 20px 0;
@@ -269,15 +272,15 @@ h2:before {
 }
 
 h3 {
-    color: #6b7285;
+    color: $grayColor;
     font-size: 1.5em;
     font-weight: 400;
     margin-bottom: 12px;
 }
 
 p {
-    color: #6b7285;
-    font-family: 'Ubuntu',  sans-serif;
+    color: $grayColor;
+    font-family: 'Roboto Condensed Regular',sans-serif;
     font-size: 100%;
     font-weight: 300;
     line-height: 1.5em;
@@ -285,7 +288,7 @@ p {
 
 ul {
     color: #000;
-    font-family: 'Ubuntu',  sans-serif;
+    font-family: 'Roboto Condensed Regular',sans-serif;
     line-height: 1.5em;
     font-weight: 300;
 }
@@ -323,7 +326,7 @@ ul {
             padding-top: 9px;
             padding-bottom: 9px;
             color: #333333;
-            font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+            font-family: 'Roboto Condensed Regular',sans-serif;
             font-weight: 400;
             font-size: 13px;
             border: 0;
@@ -439,52 +442,6 @@ ul {
     border-bottom-right-radius: 45px;
 }
 
-.three-columns {
-    text-align: center;
-}
-
-.three-columns:hover .item {
-    opacity: 0.5;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
-    filter: alpha(opacity=50);
-    -webkit-transition: background-color .3s ease,  border .3s ease,  color .3s ease,  opacity .3s ease-in-out,  outline .3s ease;
-    -moz-transition: background-color .3s ease,  border .3s ease,  color .3s ease,  opacity .3s ease-in-out,  outline .3s ease;
-    -ms-transition: background-color .3s ease,  border .3s ease,  color .3s ease,  opacity .3s ease-in-out,  outline .3s ease;
-    -o-transition: background-color .3s ease,  border .3s ease,  color .3s ease,  opacity .3s ease-in-out,  outline .3s ease;
-    transition: background-color .3s ease,  border .3s ease,  color .3s ease,  opacity .3s ease-in-out,  outline .3s ease;
-}
-
-.three-columns h3 {
-    margin-bottom: 10px;
-}
-
-.point-list li, .three-columns .item p {
-    text-align: left;
-    color: #000;
-    margin-bottom: 10px;
-}
-
-.point-list li:before {
-    content: "\f00c";
-    margin-right: 5px;
-}
-
-.point-list li:before, .inline-lnk:before {
-    display: inline-block;
-    font: normal normal normal 14px/1 "Font Awesome\ 5 Pro";
-    font-family: 'Font Awesome\ 5 Pro';
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-.three-columns .item:hover {
-    opacity: 1;
-    -ms-filter: none;
-    filter: none;
-}
-
 .alio-navbar > li > a:after {
     content: "";
     display: block;
@@ -557,7 +514,7 @@ ul {
 }
 
 .footer-contacts .contact-item {
-    font-family: Ubuntu;
+    font-family: 'Roboto Condensed Regular',sans-serif;
     text-transform: none;
     font-weight: bold;
 }
@@ -570,7 +527,7 @@ ul {
     transition: all .3s ease;
     a {
         text-transform: uppercase;
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Roboto Condensed Regular',sans-serif;
         padding-top: 2px;
         display: block;
         float: left;
@@ -625,94 +582,6 @@ ul {
 
 .description .alio-btn {
     margin-top: 20px;
-}
-
-.alio-btn, input[type=submit]:not(#searchsubmit) {
-    background: #2c8d0a;
-    background: linear-gradient(to bottom, #b5fe01, #2c8d0a);
-    display: inline-block;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 20px 28px 16px;
-    line-height: 100%;
-    color: #fff;
-    overflow: hidden;
-    position: relative;
-    text-align: center;
-    text-shadow: 0 1px rgba(0, 0, 0, 0.4);
-    box-shadow: 0px 3px 0px 0px #206a07;
-    border-width: 2px;
-    text-transform: uppercase;
-    border: 0;
-    outline: none;
-    letter-spacing: 1px;
-    border-radius: 6px;
-    box-sizing: border-box;
-    backface-visibility: hidden;
-    transition: color .1s ease-in-out,background .1s ease-in-out,border .1s ease-in-out;
-    font-family: Hermes,  sans-serif;
-
-    &:hover {
-        background: linear-gradient(to bottom,  #5ef700,  #2b8c0b);
-    }
-
-    &:after {
-        content: "";
-        position: absolute;
-        transition: all 0.2s ease-out;
-        left: 50%;
-        top: 50%;
-        transform: translateX(-50%) translateY(-50%) rotate(45deg) translateZ(0);
-        height: 0;
-        width: 0;
-        opacity: 0;
-        background-color: $purple;
-    }
-
-    &:focus, &:focus span {
-        color: #fff;
-    }
-
-    &:hover i, &:hover span {
-        color: #FFF;
-        transform: translateX(0);
-        -webkit-transform: translateX(0);
-        opacity: 1;
-    }
-
-    .in-button {
-        display: inline-block;
-        transform: translateX(-17px);
-        transition: transform .2s;
-        transition-delay: .01s;
-    }
-}
-
-input[type=submit]:not(#searchsubmit) {
-    padding: 12px 28px;
-}
-
-.alio-btn i {
-    font-size: 30px;
-    opacity: 0;
-    transform: translateX(-30px);
-    transition: opacity .2s, transform .2s;
-    color: #FFF;
-    line-height: 4px;
-}
-
-a {
-    color: #0099cc;
-}
-
-.alio-btn:focus span, a.alio-btn:active, a.alio-btn:hover {
-    color: #fff;
-}
-
-a:active, a:hover, button:focus {
-    color: #ff0066;
-    outline: 0;
-    text-decoration: none;
 }
 
 .live-site-lnk {
@@ -1017,7 +886,7 @@ footer #contacts span {
 footer #contacts a {
     color: #FFF;
     text-decoration: none;
-    font-family: Ubuntu;
+    font-family: 'Roboto Condensed Regular',sans-serif;
     text-transform: none;
     font-weight: bold;
 }
