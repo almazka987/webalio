@@ -28,7 +28,7 @@ function work_init() {
         'has_archive' => true,
         'hierarchical' => false,
         'menu_position' => null,
-        'menu_icon' => get_stylesheet_directory_uri() . '/img/career.png',
+        'menu_icon' => '', // get_stylesheet_directory_uri() . '/img/career.png',
         'supports' => array( 'title', 'editor', 'thumbnail', 'excerpt' ),
         'taxonomies' => array('workscategory')
         );

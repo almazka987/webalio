@@ -41,7 +41,7 @@ gulp.task('css', function () {
         .pipe(sass().on('error', sass.logError))
         .pipe(postcss([ autoprefixer ]))
         .pipe(cleanCSS())
-        .pipe(concat('main.min.css'))
+        //.pipe(concat('main.min.css'))
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest(path.dist.style))
         .pipe(notify({ message: 'css task completed!'}));

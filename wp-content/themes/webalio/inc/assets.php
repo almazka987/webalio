@@ -1,17 +1,19 @@
 <?php
 
-// Register scripts and styles
+// Register admin scripts and styles
 function add_scripts_admin() {
     wp_enqueue_script( 'js_admin', get_template_directory_uri() . '/js/admin.js', array( 'jquery' ) );
+    wp_enqueue_style('alio_admin_style', get_template_directory_uri() . '/css/admin.css');
 }
 add_action( 'admin_init', 'add_scripts_admin' );
 
+// Register scripts and styles
 function add_scripts() {
 
     /* include styles */
     wp_register_style( 'animateStyle', get_template_directory_uri() . '/css/animate.css' );
     wp_register_style( 'hmbrgrStyle', get_template_directory_uri() . '/css/hmbrgr.min.css' );
-    wp_register_style( 'maincss', get_template_directory_uri() . '/css/main.min.css' );
+    wp_register_style( 'maincss', get_template_directory_uri() . '/css/main.css' );
     wp_register_style( 'bootstraptheme', get_template_directory_uri() . '/css/bootstrap-theme.css' );
     wp_register_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.css' );
     wp_register_style( 'bootstrapmap', get_template_directory_uri() . '/css/bootstrap.css.map' );

@@ -5,15 +5,20 @@
         .item {
             opacity: 0.5;
             filter: alpha(opacity=50);
-            transition: background-color .3s ease,  border .3s ease,  color .3s ease,  opacity .3s ease-in-out,  outline .3s ease;
+            transition: all .3s ease;
         }
     }
 
     .item {
-        height: 100%;
+        padding-bottom: 50px;
+        transition: all .3s ease;
 
         .alio-btn {
             margin-top: 12px;
+
+            &:hover {
+                background: $middleGreen;
+            }
         }
 
         p {
@@ -24,7 +29,6 @@
 
         &:hover {
             opacity: 1;
-            -ms-filter: none;
             filter: none;
         }
     }

@@ -1,0 +1,9 @@
+@import 'vars';
+@import 'font';
+
+#adminmenu #menu-posts-works div.wp-menu-image:before {
+    font-family:  "Font Awesome 5 Pro" !important;
+    content: '\f49d';
+    font-weight: 600;
+    color: $lnkRed;
+}
