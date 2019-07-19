@@ -1,17 +1,26 @@
 .three-columns {
     text-align: center;
 
-    &:hover {
+    &:not(.no-dynamic-opacity):hover {
         .item {
             opacity: 0.5;
             filter: alpha(opacity=50);
             transition: all .3s ease;
+
+            &:hover {
+                opacity: 1;
+                filter: none;
+            }
         }
     }
 
     .item {
         padding-bottom: 50px;
         transition: all .3s ease;
+
+        img {
+            max-width: 100%;
+        }
 
         .alio-btn {
             margin-top: 12px;
@@ -25,11 +34,7 @@
             text-align: left;
             color: #000;
             margin-bottom: 10px;
-        }
-
-        &:hover {
-            opacity: 1;
-            filter: none;
+            display: inline-block;
         }
     }
 

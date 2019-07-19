@@ -33,6 +33,9 @@ msgstr "Read More..."
 msgid "Увеличить"
 msgstr "Large"
 
+msgid "Категории"
+msgstr "Categories"
+
 msgid "Перейти к просмотру живого сайта"
 msgstr "Go to live website"
 

@@ -1,0 +1,85 @@
+// WordPress Core
+.alignnone {
+    margin: 0 15px 15px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 0 auto 15px auto;
+}
+
+.alignright {
+    float: right;
+    margin: 0 0 15px 15px;
+}
+
+.alignleft {
+    float: left;
+    margin: 0 15px 15px 0;
+}
+
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px auto;
+}
+
+a img.alignright {
+    float: right;
+    margin: 0 0 15px 15px;
+}
+
+a img.alignnone {
+    margin: 0 15px 15px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 0 15px 15px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wp-caption {
+    background: #f2f2f2;
+    border: 1px solid #e6e6e6;
+    max-width: 100%;
+    padding: 6px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 0 15px 15px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 0 15px 15px 0;
+}
+
+.wp-caption.alignright {
+    margin: 0 0 15px 15px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 100%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 14px;
+    margin: 0;
+    padding: 6px 6px 0;
+}
+
+.sticky {
+    display: block;
+}
+// WordPress Core end

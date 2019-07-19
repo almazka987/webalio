@@ -67,13 +67,13 @@ jQuery(document).ready(function($){
 
     // anchor scrolling
     $('a[href*="#lnk_"]').bind("click", function(e) {
-        e.preventDefault();
         let anchor = $(this);
         let id = anchor.attr('href').split('#');
         id = '#' + id[id.length - 1];
         $('html, body').stop().animate({
             scrollTop: $(id).offset().top - 120
          }, 1000);
+        e.preventDefault();
     });
 
     jQuery(window).bind("load", function() {

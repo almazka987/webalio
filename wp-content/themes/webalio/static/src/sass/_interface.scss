@@ -85,6 +85,36 @@ a:active, a:hover, button:focus {
     text-decoration: none;
 }
 
+a, a:hover, .alio-navbar > li > a:after, .alio-navbar > li:hover > a:after, .loop-btn, .loop-btn:hover, .single-gallery .layer, .single-gallery li:hover .layer {
+    transition: all 0.2s ease-out;
+}
+
+b, strong {
+    font-weight: bold;
+}
+
+body {
+    font-family: 'Roboto Condensed Regular',sans-serif;
+    color: $grayColor;
+    font-size: 14px;
+}
+
+html {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+ul {
+    color: #000;
+    font-family: 'Roboto Condensed Regular',sans-serif;
+    line-height: 1.5em;
+    font-weight: 300;
+    padding-inline-start: 0;
+}
+
 .point-list {
 
     li {
@@ -93,6 +123,7 @@ a:active, a:hover, button:focus {
 
         ul {
             margin-top: 6px;
+            padding-inline-start: 40px;
         }
 
         &:before {
@@ -124,4 +155,91 @@ a:active, a:hover, button:focus {
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+div, span, a, li, h1, h2, h3, h4, h5, h6, td, input, textarea, button {
+    -webkit-text-size-adjust: none;
+    -o-text-size-adjust: none;
+    -moz--text-size-adjust: none;
+    text-size-adjust: none;
+    max-height: 999999px;
+}
+
+input[type=text], input[type=password], input[type=submit], textarea {
+    -webkit-appearance: none !important;
+}
+
+html, body {
+    min-height: 100%}
+
+body {
+    font-family: 'Roboto Condensed Regular',sans-serif;
+    font-size: 16px;
+    color: $grayColor;
+    background-color: #fff;
+}
+
+a {
+    font-family: 'Roboto Condensed Regular',sans-serif;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 38px;
+}
+
+h2 {
+    color: $grayColor;
+    font-size: 2.2em;
+    font-weight: 300;
+    margin: 0 0 20px 0;
+    text-align: center;
+}
+
+h2:before {
+    content: '~ ';
+    font-weight: 300;
+}
+
+h3 {
+    color: $grayColor;
+    font-size: 1.5em;
+    font-weight: 400;
+    margin-bottom: 12px;
+}
+
+p {
+    color: $grayColor;
+    font-family: 'Roboto Condensed Regular',sans-serif;
+    font-size: 100%;
+    font-weight: 300;
+    line-height: 1.5em;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+caption, th, td {
+    text-align: left;
+    font-weight: normal;
+    vertical-align: middle;
+}
+
+q, blockquote {
+    quotes: none;
+}
+
+q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none;
+}
+
+a img {
+    border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+    display: block;
 }

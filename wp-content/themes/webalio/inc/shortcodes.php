@@ -79,8 +79,7 @@ function alio_three_columns_block( $atts, $atcb_content = null ){
 	), $atts ) );
 	$out = '';
 
-	$atcb_img = ( $atcb_img ) ? wp_get_attachment_url( $atcb_img ) : '';
-
+	$atcb_img = ( $atcb_img ) ? wp_get_attachment_image_url( $atcb_img, 'medium' ) : '';
 	if ( $atcb_content && $atcb_img ) {
 		$out .= '<div class="col-md-4"><div class="item"><img src="' . $atcb_img . '" alt="">';
 
@@ -103,7 +102,10 @@ function alio_three_columns_area( $atts, $atca_content = null ){
 		'atca_tag' => 'h2',
 		'atca_section' => '',
 		'atca_bottom_shape' => '',
+		'atca_hover_style' => 0,
 	), $atts ) );
+
+	$atca_hover_style = ( $atca_hover_style ) ? " no-dynamic-opacity" : "";
 	$atca_lnk_id = ( $atca_lnk_id ) ? ' id="lnk_' . $atca_lnk_id . '"' : '';
 	$bt_class = ( $atca_bottom_shape ) ? ' no-wave' : '';
 	$class_box = ( $atca_section ) ? '' : ' shortcode-box';
@@ -120,7 +122,7 @@ function alio_three_columns_area( $atts, $atca_content = null ){
         if ( $atca_title ) {
             $out .= '<' . $atca_tag . $atca_lnk_id . '>' . $atca_title . '</' . $atca_tag . '>';
         }
-        $out .= '<div class="three-columns' . $class_box . '">';
+        $out .= '<div class="three-columns' . $class_box . $atca_hover_style . '">';
 		$out .= '<div class="row">';
 		$arr = explode( '|', $atca_content );
 		if ( is_array( $arr ) ) {
