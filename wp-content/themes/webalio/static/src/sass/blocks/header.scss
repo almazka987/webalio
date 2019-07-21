@@ -8,29 +8,33 @@
     &-top {
         font-size: 12px;
         font-weight: 800;
-        line-height: 32px;
-        min-height: 46px;
+        padding: 12px 0;
+    }
+
+    &-contacts-box {
+        text-align: center;
     }
 
     &-contact-item {
-        overflow: hidden;
-        display: inline-block;
-        position: relative;
-        opacity: .5;
+        display: block;
         transition: all .3s ease;
+        clear: both;
+        text-align: right;
 
         a {
             text-transform: uppercase;
             font-family: 'Roboto Condensed Regular', sans-serif;
             padding-top: 2px;
-            display: block;
-            float: left;
+            display: inline-block;
             color: #fff;
-            margin-left: 34px;
+            padding-right: 30px;
+            line-height: 23px;
+            position: relative;
+            opacity: .5;
 
             i {
                 position: absolute;
-                left: 5px;
+                right: 0;
                 background: #fff;
                 border-radius: 100%;
                 padding: 4px;
@@ -45,12 +49,9 @@
         }
 
         a:hover {
+            opacity: 1;
             color: #FFF;
             text-decoration: none;
-        }
-
-        &:hover {
-            opacity: 1;
         }
     }
 
@@ -84,23 +85,15 @@
             margin-top: 20px;
         }
     }
+
+    .bg-bottom {
+        background-image: url("#{$img-path}/white-bg-top.png");
+        position: absolute;
+        bottom: -1px;
+        width: 100%;
+    }
 }
 
 .header.middle {
     min-height: 280px;
-}
-
-.header-top .row>div {
-    overflow: hidden;
-}
-
-.header-top .row .right.contacts-top, .header-top .row .right.contacts-bottom {
-    text-align: center;
-}
-
-header .bg-bottom {
-    background-image: url("#{$img-path}/white-bg-top.png");
-    position: absolute;
-    bottom: -1px;
-    width: 100%;
 }

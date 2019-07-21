@@ -89,10 +89,11 @@ jQuery(document).ready(function($){
     $('.hmbrgr').hmbrgr({
         width     : 30,
         height    : 20,
-        barHeight : 4
+        barHeight : 4,
+        barColor  : '#000'
     });
 
-    $('.hmbrgr').click(function(event) {
+    $('.hmbrgr').click(function() {
         $('#primary-navbar-collapse').stop().slideToggle().toggleClass('animated slideInTop');
     });
 
@@ -121,16 +122,19 @@ jQuery(document).ready(function($){
 
     if ( $( '.navbar' ).size() > 0 ) {
         scrollIntervalID = setInterval( function() {
-            var orgElementTop = $( 'header .top' ).height();
+            let navbar = $('.navbar');
+            let navHeight = navbar.height();
+            let navbarFluid = $('.navbar-fluid');
+            let orgElementTop = $( 'header .header-top' ).height() + navHeight + 100;
+            let coordsOrgElement = navbar.offset();
+            let leftOrgElement = coordsOrgElement.left;
 
             if ( $( window ).scrollTop() >= ( orgElementTop ) ) {
-                orgElement = $('.navbar');
-                coordsOrgElement = orgElement.offset();
-                leftOrgElement = coordsOrgElement.left;
-                //widthOrgElement = orgElement.css('width');
-                $( '.navbar' ).addClass('sticky').css('margin-top',barSpace).css('left',leftOrgElement+'px').css('top',0);//.css('width',widthOrgElement);
+                $( '.navbar' ).addClass('sticky').css('margin-top', barSpace).css('left',leftOrgElement+'px').css('top', 0);
+                navbarFluid.height(navHeight);
             } else {
                 $('.navbar').removeClass('sticky').css('margin-top','');
+                navbarFluid.height(0);
             }
         }, 10 );
     }

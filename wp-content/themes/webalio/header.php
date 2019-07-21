@@ -47,6 +47,7 @@
         </div>
     </div>
     <!-- begin Nav -->
+    <div class="navbar-fluid"></div>
     <nav class="navbar">
         <div class="container">
             <div class="row nav-holder">

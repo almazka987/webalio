@@ -1,11 +1,11 @@
 .hmbrgr {
-    margin-top: 26px;
+    margin-top: 18px;
     float: left;
 }
 
 .alio-logo {
     float: right;
-    padding: 5px 15px 11px 0;
+    padding: 5px 0 11px 0;
 }
 
 .navbar-toggle {
@@ -47,7 +47,7 @@
 
 .alio-navbar > li {
     display: block;
-    margin: 27px 5px 0px;
+    margin: 27px 0 0;
 }
 
 .alio-navbar li a {
@@ -56,7 +56,7 @@
     font-size: 14px;
     font-weight: 700;
     line-height: 19px;
-    padding: 0 12px;
+    padding: 0;
     text-transform: uppercase;
 }
 
@@ -81,9 +81,14 @@
     border: none;
     width: 100%;
     position: relative;
+
+    &.sticky {
+        position: fixed;
+        z-index: 1000;
+    }
 }
 
-.admin-bar .navbar {
+.admin-bar .navbar.sticky {
     top: 32px;
 }
 
@@ -95,13 +100,29 @@
     border-radius: 46px;
 }
 
+@keyframes slide-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 0.9;
+        transform: translateY(0);
+    }
+}
+
 .navbar.sticky {
+    animation: slide-down 0.7s;
+
     .container {
         background: rgba(255, 255, 255, 0.8);
         box-shadow: 1px -4px 6px -1px rgba(0, 0, 0, 0.3), -1px -4px 6px -1px rgba(0, 0, 0, 0.3);
     }
 }
 
+.navbar-collapse {
+    padding-right: 0;
+}
 
 #primary-navbar-collapse {
     text-align: right;
@@ -115,7 +136,7 @@
 }
 
 .nav-holder {
-    padding: 10px 0;
+    padding: 10px 0 20px;
 }
 
 .navbar .container .bg-navbar div {
