@@ -1,97 +1,101 @@
 .header {
-    min-height: 397px;
+    min-height: 295px;
     width: 100%;
+    position: relative;
     background: url("#{$img-path}/bg-header.jpg") no-repeat;
     background-size: cover;
-    position: relative;
+
+    &-top {
+        font-size: 12px;
+        font-weight: 800;
+        line-height: 32px;
+        min-height: 46px;
+    }
+
+    &-contact-item {
+        overflow: hidden;
+        display: inline-block;
+        position: relative;
+        opacity: .5;
+        transition: all .3s ease;
+
+        a {
+            text-transform: uppercase;
+            font-family: 'Roboto Condensed Regular', sans-serif;
+            padding-top: 2px;
+            display: block;
+            float: left;
+            color: #fff;
+            margin-left: 34px;
+
+            i {
+                position: absolute;
+                left: 5px;
+                background: #fff;
+                border-radius: 100%;
+                padding: 4px;
+                font-size: 14px;
+                width: 22px;
+                height: 22px;
+            }
+
+            i:before {
+                color: #000;
+            }
+        }
+
+        a:hover {
+            color: #FFF;
+            text-decoration: none;
+        }
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    &-bottom {
+        text-transform: uppercase;
+        font-family: Hermes,  sans-serif;
+        text-shadow: 3px 0 rgba(250, 111, 142, .5), 6px 0 rgba(250, 111, 142, .4), 9px 0 rgba(250, 111, 142, .3), 12px 0 rgba(250, 111, 142, .2), 15px 0 rgba(250, 111, 142, .1);
+        font-size: 14px;
+    }
+
+    &-action {
+        position: relative;
+        color: #FFF;
+        margin: 22px auto 50px;
+        text-align: right;
+
+        &-heading {
+            font-size: 40px;
+            font-weight: 300;
+            line-height: 72px;
+        }
+
+        &-answer {
+            font-size: 62px;
+            font-weight: 300;
+            display: block;
+            line-height: 60px;
+        }
+
+        .alio-btn {
+            margin-top: 20px;
+        }
+    }
 }
 
 .header.middle {
     min-height: 280px;
 }
 
-.header .top {
-    font-size: 12px;
-    font-weight: 800;
-    line-height: 32px;
-    min-height: 46px;
-}
-
-.header .top .row>div {
+.header-top .row>div {
     overflow: hidden;
 }
 
-.header .contact-item:hover {
-    opacity: 1;
-}
-
-.header .top .row .right.contacts-top, .header .top .row .right.contacts-bottom {
+.header-top .row .right.contacts-top, .header-top .row .right.contacts-bottom {
     text-align: center;
-}
-
-.contacts-holder {
-    line-height: 25px;
-}
-
-.contact-item {
-    overflow: hidden;
-    display: inline-block;
-    position: relative;
-    opacity: .5;
-    transition: all .3s ease;
-    a {
-        text-transform: uppercase;
-        font-family: 'Roboto Condensed Regular',sans-serif;
-        padding-top: 2px;
-        display: block;
-        float: left;
-        color: #fff;
-        margin-left: 34px;
-        i {
-            position: absolute;
-            left: 5px;
-            background: #fff;
-            border-radius: 100%;
-            padding: 4px;
-            font-size: 14px;
-            width: 22px;
-            height: 22px;
-        }
-        i:before {
-            color: #000;
-        }
-    }
-    a:hover {
-        color: #FFF;
-        text-decoration: none;
-    }
-}
-
-.header .bottom {
-    text-transform: uppercase;
-    font-family: Hermes,  sans-serif;
-    text-shadow: 3px 0 rgba(250, 111, 142, .5), 6px 0 rgba(250, 111, 142, .4), 9px 0 rgba(250, 111, 142, .3), 12px 0 rgba(250, 111, 142, .2), 15px 0 rgba(250, 111, 142, .1);
-    font-size: 14px;
-}
-
-.header .bottom .description {
-    position: relative;
-    color: #FFF;
-    margin: 22px auto 50px;
-    text-align: right;
-}
-
-.header .bottom .description small {
-    font-size: 40px;
-    font-weight: 300;
-    line-height: 72px;
-}
-
-.header .bottom .description span.address {
-    font-size: 62px;
-    font-weight: 300;
-    display: block;
-    line-height: 60px;
 }
 
 header .bg-bottom {

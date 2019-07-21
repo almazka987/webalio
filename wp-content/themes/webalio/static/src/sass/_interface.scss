@@ -165,6 +165,64 @@ div, span, a, li, h1, h2, h3, h4, h5, h6, td, input, textarea, button {
     max-height: 999999px;
 }
 
+input:focus {
+    outline:none;
+}
+
+.page-title {
+    margin-top: 33px;
+    color: #FFF;
+    margin-bottom: 20px;
+}
+
+input[type=text], input[type=email], input[type=file] {
+    height: 40px;
+}
+
+.loop-btn {
+    background: none;
+    border: 1px solid transparent;
+    position: absolute;
+    right: 6px;
+    top: 11px;
+    opacity: .6;
+    &:hover {
+        opacity: 1;
+    }
+}
+
+input[type=text], input[type=email], textarea, input[type=file] {
+    border: 1px solid #e3e3e3;
+    color: #667282;
+    font-size: 14px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+form:not(#searchform) {
+    input[type=submit] {
+        margin-top: 20px;
+    }
+    input[type=text], input[type=email], textarea, input[type=file] {
+        position: relative;
+        background: url('../img/inputs-bg.png') left top repeat-y #ffffff;
+        padding: 10px 10px 10px 45px;
+        margin-top: 13px;
+    }
+    input[type=text]:focus, input[type=email]:focus, textarea:focus {
+        border-color: #66afe9;
+        outline: 0;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(102,175,233,0.6);
+        box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(102,175,233,0.6);
+    }
+}
+
+input[type=text], input[type=email], textarea, input[type=file] {
+    width: 100%;
+}
+
 input[type=text], input[type=password], input[type=submit], textarea {
     -webkit-appearance: none !important;
 }
@@ -176,7 +234,6 @@ body {
     font-family: 'Roboto Condensed Regular',sans-serif;
     font-size: 16px;
     color: $grayColor;
-    background-color: #fff;
 }
 
 a {

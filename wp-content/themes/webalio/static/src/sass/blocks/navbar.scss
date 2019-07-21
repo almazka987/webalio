@@ -80,31 +80,24 @@
 .navbar {
     border: none;
     width: 100%;
+    position: relative;
+}
+
+.admin-bar .navbar {
+    top: 32px;
 }
 
 .navbar .container {
     background: #d1e5ee;
-    background: -webkit-linear-gradient(top,  #f6fafd 0%,  #d1e5ee 100%);
-    background: -moz-linear-gradient(top,  #f6fafd 0%,  #d1e5ee 100%);
-    background: -o-linear-gradient(top,  #f6fafd 0%,  #d1e5ee 100%);
-    background: -ms-linear-gradient(top,  #f6fafd 0%,  #d1e5ee 100%);
     background: linear-gradient(to bottom,  #f6fafd 0%,  #d1e5ee 100%);
-    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     position: relative;
-    border-bottom-left-radius: 46px;
-    border-top-left-radius: 46px;
-    border-bottom-right-radius: 46px;
-    border-top-right-radius: 46px;
+    border-radius: 46px;
 }
 
 .navbar.sticky {
-    position: fixed;
-    top: -1px;
-    z-index: 500;
     .container {
         background: rgba(255, 255, 255, 0.8);
-        -webkit-box-shadow: 1px 6px 15px 0px rgba(0, 0, 0, 0.3), -1px -4px 6px -1px rgba(0, 0, 0, 0.3);
         box-shadow: 1px -4px 6px -1px rgba(0, 0, 0, 0.3), -1px -4px 6px -1px rgba(0, 0, 0, 0.3);
     }
 }
@@ -177,4 +170,18 @@
     background-color: transparent;
     color: $blue;
     text-decoration: none;
+}
+
+.search-holder.col-xs-9 {
+    float: right;
+}
+
+#searchform {
+    position: relative;
+    float: right;
+    width: 200px;
+    input[type=text] {
+        padding: 10px 45px 10px 10px;
+        border-radius: 20px;
+    }
 }

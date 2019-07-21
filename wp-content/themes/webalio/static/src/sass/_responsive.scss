@@ -67,22 +67,9 @@
 		float: left;
 	}
 
-	.header .contact-item a {
+	.header-contact-item a {
 		padding-top: 11px;
 	}
-
-	.contacts-holder {
-		line-height: inherit;
-		margin-bottom: 0;
-	}
-
-    .col-md-6.contacts-top {
-        padding-left: 0;
-    }
-
-    .col-md-6.contacts-bottom {
-        padding-right: 0;
-    }
 
     .navbar .container .bg-navbar div {
         border-top-left-radius: 55px;
@@ -93,13 +80,10 @@
         padding-right: 39px;
     }
 
-	.header .contact-item a i {
+	.header-contact-item a i {
 		top: 17px;
 	}
 
-	.header .top .row .right.contacts-top, .header .top .row .right.contacts-bottom {
-		text-align: right;
-	}
 }
 
 /* min-width: 992px */
