@@ -90,21 +90,15 @@ jQuery(document).ready(function($){
         }
     });
 
-    // Menu
-    $('.hmbrgr').hmbrgr({
-        width     : 30,
-        height    : 20,
-        barHeight : 4,
-        barColor  : '#000'
-    });
-
-    $('.hmbrgr').click(function() {
+    // Mobile Menu
+    $('.hamburger').click(function() {
         $('#primary-navbar-collapse').stop().slideToggle().toggleClass('animated slideInTop');
+        $(this).stop().toggleClass('is-active');
     });
 
     // Close mobile menu
     $('#menu-primary-mobile li a').on("click", function() {
-        $('.hmbrgr').click();
+        $('.hamburger').click();
     });
 
     // Nav hover
@@ -120,13 +114,13 @@ jQuery(document).ready(function($){
 
     // Sticky menu
     var barSpace = 0;
-    if ( $( 'body' ).hasClass( 'mobile' ) ) {
-        if ( $( 'body' ).hasClass( 'admin-bar' ) && document.documentElement.offsetWidth > 600 ) {
-            barSpace = $( '#wpadminbar' ).height() - 1;
+    if ($('body').hasClass('mobile')) {
+        if ($('body').hasClass('admin-bar') && document.documentElement.offsetWidth > 600) {
+            barSpace = $('#wpadminbar').height() - 1;
         }
     } else {
-        if ( $( 'body' ).hasClass( 'admin-bar' ) && document.documentElement.offsetWidth > 600 ) {
-            barSpace = $( '#wpadminbar' ).height() - 1;
+        if ($('body').hasClass('admin-bar') && document.documentElement.offsetWidth > 600) {
+            barSpace = $('#wpadminbar').height() - 1;
         }
     }
 
@@ -139,11 +133,11 @@ jQuery(document).ready(function($){
             let coordsOrgElement = navbar.offset();
             let leftOrgElement = coordsOrgElement.left;
 
-            if ( $( window ).scrollTop() >= ( orgElementTop ) ) {
-                $( '.navbar' ).addClass('sticky').css('margin-top', barSpace).css('left',leftOrgElement+'px').css('top', 0);
+            if ($(window).scrollTop() >= (orgElementTop)) {
+                $('.navbar').addClass('sticky').css('margin-top', barSpace).css('left',leftOrgElement+'px').css('top', 0);
                 navbarFluid.height(navHeight);
             } else {
-                $('.navbar').removeClass('sticky').css('margin-top','');
+                $('.navbar').removeClass('sticky').css('margin-top', '');
                 navbarFluid.height(0);
             }
         }, 10 );

@@ -56,12 +56,17 @@
         <div class="container">
             <div class="row nav-holder">
                 <div class="col-sm-3">
-                    <a href="#" class="hmbrgr"></a>
+                    <!--<a href="#" class="hmbrgr"></a>-->
+                    <button class="hamburger hamburger--squeeze" type="button">
+                      <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                      </span>
+                    </button>
                     <a class="alio-logo" href="/"><img src="<?php echo get_template_directory_uri() . '/img/logo.png' ?>" alt="Logo" /></a>
                     <div class="clearfix"></div>
                 </div>
                 <?php if ( $mobile ): ?>
-                    <div class="search-holder col-xs-9 col-sm-9">
+                    <div class="search-holder col-xs-9 col-sm-9 pull-right">
                         <?php get_search_form(); ?>
                     </div>
                     <div class="col-xs-12">
