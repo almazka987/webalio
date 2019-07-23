@@ -14,7 +14,10 @@ jQuery(document).ready(function($){
         columns.height(tallestcolumn);
     }
 
-    setEqualHeight($(".three-columns .item"));
+    if (!$('body').is('.mobile')) {
+        setEqualHeight($(".three-columns .item"));
+    }
+
 
     // prettyPhoto
     if($("a[rel^='prettyPhoto']").length > 0){
@@ -70,17 +73,19 @@ jQuery(document).ready(function($){
         let anchor = $(this);
         let id = anchor.attr('href').split('#');
         id = '#' + id[id.length - 1];
+        let navHeight = $('.navbar').height() + 20;
         $('html, body').stop().animate({
-            scrollTop: $(id).offset().top - 120
+            scrollTop: $(id).offset().top - navHeight
          }, 1000);
         e.preventDefault();
     });
 
     jQuery(window).bind("load", function() {
         let hash =  jQuery(location).attr('hash');
+        let navHeight = $('.navbar').height() + 20;
         if(hash != '') {
             jQuery('html, body').stop().animate({
-                scrollTop: jQuery(hash).offset().top - 120
+                scrollTop: jQuery(hash).offset().top - navHeight
             }, 1000);
         }
     });
@@ -95,6 +100,11 @@ jQuery(document).ready(function($){
 
     $('.hmbrgr').click(function() {
         $('#primary-navbar-collapse').stop().slideToggle().toggleClass('animated slideInTop');
+    });
+
+    // Close mobile menu
+    $('#menu-primary-mobile li a').on("click", function() {
+        $('.hmbrgr').click();
     });
 
     // Nav hover

@@ -1,0 +1,111 @@
+.lnk-opacity, footer #contacts span, footer .menu li {
+    opacity: 0.5;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+    filter: alpha(opacity=60);
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.lnk-opacity:hover, footer #contacts span:hover, footer .menu li:hover {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+}
+
+footer {
+    padding-top: 50px;
+    color: #fff;
+    position: relative;
+    background: url(../img/bg-footer.png) no-repeat;
+    background-size: cover;
+    .top-footer {
+        padding-bottom: 18px;
+    }
+}
+
+footer p {
+    color: #FFF;
+    margin-bottom: 25px;
+}
+
+footer #contacts {
+    overflow: hidden;
+}
+
+footer #contacts span {
+    display: block;
+    float: left;
+    clear: both;
+}
+
+footer #contacts a {
+    color: #FFF;
+    text-decoration: none;
+    font-family: 'Roboto Condensed Regular',sans-serif;
+    text-transform: none;
+    font-weight: bold;
+    position: relative;
+    padding-left: 25px;
+    line-height: 29px;
+}
+
+footer #contacts i {
+    position: absolute;
+    display: block;
+    left: 0;
+    width: 23px;
+    height: 23px;
+    line-height: 29px;
+}
+
+footer #contacts i.point {
+    width: 22px;
+    height: 24px;
+}
+
+footer #contacts i.mail {
+    width: 22px;
+    height: 22px;
+}
+
+footer .menu li {
+    float: left;
+    clear: both;
+}
+
+footer .menu a {
+    color: #fff;
+}
+
+menu-footer-menu-container {
+    margin-top: 20px;
+}
+
+footer .menu a:hover {
+    text-decoration: none;
+}
+
+footer .footer-bottom {
+    background-image: url("#{$img-path}/bg-ribbon-b.png");
+    background-position: center top;
+    background-repeat: repeat-x;
+    color: #fff;
+    font-size: 0.8em;
+    line-height: 47px;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+    filter: alpha(opacity=60);
+    padding: 20px 0 0 0;
+    position: relative;
+}
+
+footer .footer-bottom .row {
+    padding: 0;
+}
+
+footer .footer-bottom .copy {
+    text-transform: uppercase;
+}
+

@@ -31,13 +31,17 @@
     <div class="header-top">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="col-xs-4">
+                    <div class="lang-switcher">
+                        <?php echo qtranxf_generateLanguageSelectCode('both'); ?>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-6 col-xs-8 pull-right">
                     <div class="header-contacts-box">
                         <span class="header-contact-item skype"><a href="skype:almazka987?chat"><i class="fab fa-skype fa-fw" aria-hidden="true"></i>@almazka987</a></span>
                         <span class="header-contact-item paper-plane"><a href="https://t.me/almazka987" target="blank"><i class="fa fa-paper-plane fa-fw" aria-hidden="true"></i>@almazka987</a></span>
                     </div>
-                </div>
-                <div class="col-md-6 col-sm-6 col-xs-12">
                     <div class="header-contacts-box">
                         <span class="header-contact-item github"><a href="https://github.com/almazka987" target="blank"><i class="fab fa-github-alt fa-fw" aria-hidden="true"></i>almazka987</a></span>
                         <span class="header-contact-item mail"><a href="mailto:aliowebdeveloper@gmail.com"><i class="fa fa-envelope fa-fw" aria-hidden="true"></i>aliowebdeveloper@gmail.com</a></span>
@@ -51,19 +55,20 @@
     <nav class="navbar">
         <div class="container">
             <div class="row nav-holder">
-                <div class="col-md-3">
+                <div class="col-sm-3">
                     <a href="#" class="hmbrgr"></a>
                     <a class="alio-logo" href="/"><img src="<?php echo get_template_directory_uri() . '/img/logo.png' ?>" alt="Logo" /></a>
+                    <div class="clearfix"></div>
                 </div>
                 <?php if ( $mobile ): ?>
-                    <div class="search-holder col-xs-9">
+                    <div class="search-holder col-xs-9 col-sm-9">
                         <?php get_search_form(); ?>
                     </div>
                     <div class="col-xs-12">
                     <?php
                         wp_nav_menu(
                             array(
-                                'menu'              => 'primary',
+                                'menu'              => 'primary-mobile',
                                 'theme_location'    => 'primary',
                                 'depth'             => 2,
                                 'container'         => 'div',

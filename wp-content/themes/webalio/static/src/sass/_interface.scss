@@ -19,12 +19,21 @@
     border-radius: 6px;
     box-sizing: border-box;
     backface-visibility: hidden;
-    transition: color .1s ease-in-out,background .1s ease-in-out,border .1s ease-in-out;
+    transition: color .1s ease-in-out, background .1s ease-in-out, border .1s ease-in-out;
     font-family: 'Roboto Condensed Regular', sans-serif;
+}
 
-    &:hover {
-        background: $lightGreen;
+.mobile .alio-btn {
+    font-size: 20px;
+    line-height: 24px;
+
+    span {
+        transform: translateX(0px);
     }
+}
+
+
+.alio-btn {
 
     &:after {
         content: "";
@@ -41,13 +50,6 @@
 
     &:focus, &:focus span {
         color: #fff;
-    }
-
-    &:hover i, &:hover span {
-        color: #FFF;
-        transform: translateX(0);
-        -webkit-transform: translateX(0);
-        opacity: 1;
     }
 
     .in-button {
@@ -143,6 +145,11 @@ ul {
             &:before {
                 font-weight: lighter;
             }
+        }
+
+        &:after {
+            content: '';
+            display: block;
         }
     }
 
@@ -256,6 +263,10 @@ h2 {
 h2:before {
     content: '~ ';
     font-weight: 300;
+}
+
+.mobile h2:before {
+    content: '';
 }
 
 h3 {

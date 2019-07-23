@@ -1,19 +1,6 @@
 .three-columns {
     text-align: center;
 
-    &:not(.no-dynamic-opacity):hover {
-        .item {
-            opacity: 0.5;
-            filter: alpha(opacity=50);
-            transition: all .3s ease;
-
-            &:hover {
-                opacity: 1;
-                filter: none;
-            }
-        }
-    }
-
     .item {
         padding-bottom: 50px;
         transition: all .3s ease;
@@ -40,5 +27,18 @@
 
     h3 {
         margin-bottom: 10px;
+    }
+}
+
+body:not(.mobile) .three-columns:not(.no-dynamic-opacity):hover {
+    .item {
+        opacity: 0.5;
+        filter: alpha(opacity=50);
+        transition: all .3s ease;
+
+        &:hover {
+            opacity: 1;
+            filter: none;
+        }
     }
 }

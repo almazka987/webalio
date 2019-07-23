@@ -1,7 +1,18 @@
 /* M E D I A  Q U E R I E S */
 
-/* max-width: 768px */
-@media screen and (max-width: 768px) {
+/* max-width: 767px */
+@media screen and (max-width: 767px) {
+    .alio-navbar .open .dropdown-menu {
+        position: static;
+        float: none;
+        width: auto;
+        margin-top: 0;
+        background-color: transparent;
+        border: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
     .navbar .container {
         width: 100%;
         border-radius: 0;
@@ -47,12 +58,50 @@
 
 /* min-width: 768px */
 @media screen and (min-width: 768px) {
+
+    .point-list {
+        max-width: 315px;
+        margin: auto;
+    }
+
+    #primary-navbar-collapse {
+        text-align: center;
+    }
+
+    .header-contact-item a {
+        text-transform: uppercase;
+    }
+
+    .lang-switcher {
+        min-height: 53px;
+    }
+
+    .dropdown-menu {
+        left: 0px;
+    }
+
+    .bg-bottom.no-wave {
+        height: 50px;
+    }
+
 	.hmbrgr {
 		display: none;
 	}
 
+    .alio-btn:hover {
+        background: $lightGreen;
+    }
+
+    .alio-btn:hover i, .alio-btn:hover span {
+        color: #FFF;
+        transform: translateX(0);
+        opacity: 1;
+    }
+
 	.alio-navbar > li {
 		display: inline-block;
+        margin-left: 12px;
+        margin-right: 12px;
 	}
 
 	.menu-footer-menu-container {
@@ -68,7 +117,7 @@
 	}
 
 	.header-contact-item a {
-		padding-top: 11px;
+        line-height: 25px;
 	}
 
     .navbar .container .bg-navbar div {
@@ -80,9 +129,10 @@
         padding-right: 39px;
     }
 
-	.header-contact-item a i {
-		top: 17px;
-	}
+    .header-contacts-box {
+        float: right;
+        margin-left: 12px;
+    }
 
 }
 
