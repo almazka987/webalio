@@ -1,8 +1,9 @@
 <?php
 	$detect = new Mobile_Detect;
-	$mobile = ( $detect->isMobile() && ! $detect->isTablet() ) ? true : false;
+	$mobile = $detect->isMobile() && ! $detect->isTablet();
+	$tablet = ( $detect->isTablet() ) || (! $mobile && $detect->version( "iPad" ) );
 	$mob_class = ( $mobile ) ? ' mobile' : '';
-
+    $tab_class = ( $tablet ) ? ' tablet' : '';
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -19,7 +20,7 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class( 'alio' . $mob_class ); ?>>
+<body <?php body_class( 'alio' . $mob_class . $tab_class ); ?>>
 
 <!-- begin main-container -->
 <?php
@@ -56,7 +57,6 @@
         <div class="container">
             <div class="row nav-holder">
                 <div class="col-sm-3">
-                    <!--<a href="#" class="hmbrgr"></a>-->
                     <button class="hamburger hamburger--squeeze" type="button">
                       <span class="hamburger-box">
                         <span class="hamburger-inner"></span>
@@ -65,49 +65,27 @@
                     <a class="alio-logo" href="/"><img src="<?php echo get_template_directory_uri() . '/img/logo.png' ?>" alt="Logo" /></a>
                     <div class="clearfix"></div>
                 </div>
-                <?php if ( $mobile ): ?>
-                    <div class="search-holder col-xs-9 col-sm-9 pull-right">
-                        <?php get_search_form(); ?>
-                    </div>
-                    <div class="col-xs-12">
-                    <?php
-                        wp_nav_menu(
-                            array(
-                                'menu'              => 'primary-mobile',
-                                'theme_location'    => 'primary',
-                                'depth'             => 2,
-                                'container'         => 'div',
-                                'container_class'   => 'collapse navbar-collapse',
-                                'container_id'      => 'primary-navbar-collapse',
-                                'menu_class'        => 'alio-navbar',
-                                'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
-                                'walker' => new wp_bootstrap_navwalker(),
-                            )
-                        );
-                    ?>
-                    </div>
-                <?php else: ?>
-                    <div class="col-md-7">
-                        <?php
-                            wp_nav_menu(
-                                array(
-                                    'menu'              => 'primary',
-                                    'theme_location'    => 'primary',
-                                    'depth'             => 2,
-                                    'container'         => 'div',
-                                    'container_class'   => 'collapse navbar-collapse',
-                                    'container_id'      => 'primary-navbar-collapse',
-                                    'menu_class'        => 'alio-navbar',
-                                    'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
-                                    'walker' => new wp_bootstrap_navwalker(),
-                                )
-                            );
-                        ?>
-                    </div>
-                    <div class="col-md-2">
-                        <?php get_search_form(); ?>
-                    </div>
-                <?php endif; ?>
+
+                <div class="search-holder col-xs-9 col-sm-9 pull-right">
+                    <?php get_search_form(); ?>
+                </div>
+                <div class="col-xs-12">
+                <?php
+                    wp_nav_menu(
+                        array(
+                            'menu'              => 'primary',
+                            'theme_location'    => 'primary',
+                            'depth'             => 2,
+                            'container'         => 'div',
+                            'container_class'   => 'collapse navbar-collapse',
+                            'container_id'      => 'primary-navbar-collapse',
+                            'menu_class'        => 'alio-navbar',
+                            'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+                            'walker' => new wp_bootstrap_navwalker(),
+                        )
+                    );
+                ?>
+                </div>
             </div>
             <div class="bg-navbar"><div></div></div>
         </div>
