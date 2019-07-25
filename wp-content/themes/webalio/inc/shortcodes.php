@@ -195,7 +195,7 @@ function alio_works_area( $atts, $awa_content = null ) {
 					$cat_nm .= $obj->slug . ' ';
 				}
 			}
-			$out .= '<div class="' . $cat_nm . 'item col-sm-6 col-md-4">
+			$out .= '<div class="' . $cat_nm . 'item col-xs-12 col-sm-6 col-md-4">
 						<div class="holder">
 							<div class="image-block">';
 			if ( has_post_thumbnail() ) {

@@ -55,40 +55,45 @@
     <div class="navbar-fluid"></div>
     <nav class="navbar">
         <div class="container">
-            <div class="row nav-holder">
-                <div class="col-sm-3">
-                    <button class="hamburger hamburger--squeeze" type="button">
-                      <span class="hamburger-box">
-                        <span class="hamburger-inner"></span>
-                      </span>
-                    </button>
-                    <a class="alio-logo" href="/"><img src="<?php echo get_template_directory_uri() . '/img/logo.png' ?>" alt="Logo" /></a>
-                    <div class="clearfix"></div>
-                </div>
+            <div class="nav-design">
+                <div class="nav-holder">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <button class="hamburger hamburger--squeeze" type="button">
+                          <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                          </span>
+                            </button>
+                            <a class="alio-logo" href="/"><img src="<?php echo get_template_directory_uri() . '/img/logo.png' ?>" alt="Logo" /></a>
+                            <div class="clearfix"></div>
+                        </div>
 
-                <div class="search-holder col-xs-9 col-sm-9 pull-right">
-                    <?php get_search_form(); ?>
+                        <div class="search-holder col-xs-9 col-sm-9 pull-right">
+                            <?php get_search_form(); ?>
+                        </div>
+                        <div class="col-xs-12">
+                            <?php
+                            wp_nav_menu(
+                                array(
+                                    'menu'              => 'primary',
+                                    'theme_location'    => 'primary',
+                                    'depth'             => 2,
+                                    'container'         => 'div',
+                                    'container_class'   => 'collapse navbar-collapse',
+                                    'container_id'      => 'primary-navbar-collapse',
+                                    'menu_class'        => 'alio-navbar',
+                                    'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+                                    'walker' => new wp_bootstrap_navwalker(),
+                                )
+                            );
+                            ?>
+                        </div>
+                    </div><!-- /row -->
                 </div>
-                <div class="col-xs-12">
-                <?php
-                    wp_nav_menu(
-                        array(
-                            'menu'              => 'primary',
-                            'theme_location'    => 'primary',
-                            'depth'             => 2,
-                            'container'         => 'div',
-                            'container_class'   => 'collapse navbar-collapse',
-                            'container_id'      => 'primary-navbar-collapse',
-                            'menu_class'        => 'alio-navbar',
-                            'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
-                            'walker' => new wp_bootstrap_navwalker(),
-                        )
-                    );
-                ?>
-                </div>
-            </div>
-            <div class="bg-navbar"><div></div></div>
-        </div>
+                <div class="bg-navbar"><div></div></div>
+            </div><!-- /nav-holder -->
+        </div><!-- /container -->
+        <div class="bg-navbar full"><div></div></div>
     </nav>
     <!-- end Nav -->
     <?php if ( is_front_page() ): ?>

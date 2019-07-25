@@ -13,56 +13,21 @@
         box-shadow: none;
     }
 
-    .navbar .container {
-        width: 100%;
-        border-radius: 0;
-    }
-
-    .navbar .container .bg-navbar {
-        top: 100%;
+    .alio-btn i {
+        display: none;
     }
 
     .header .top {
         display: none;
     }
 
-    #isotope-list .item .image-block img {
-        -ms-transform: scale(1.15);
-        transform: scale(1.15);
-    }
-
-    #isotope-list .item .image-block .img-hover-overlay {
-        opacity: .5;
-    }
-
-    #isotope-list .item .image-block .icons-holder {
-        top: 60%;
-        opacity: 1;
-    }
-
-    #isotope-list .item .image-block .meta-info {
-        opacity: 1;
-        bottom: 60%;
-    }
-
-    #isotope-list .item .image-block .img-hover-overlay:before {
-        -ms-transform: scaleY(1)!important;
-        transform: scaleY(1)!important;
-    }
-
-    #isotope-list .item .image-block .img-hover-overlay:after {
-        -ms-transform: scaleX(1)!important;
-        transform: scaleX(1)!important;
+    .hamburger {
+        display: inline-block;
     }
 }
 
 /* min-width: 768px */
 @media screen and (min-width: 768px) {
-
-    .point-list {
-        max-width: 315px;
-        margin: auto;
-    }
 
     #primary-navbar-collapse {
         text-align: center;
@@ -84,28 +49,15 @@
         height: 50px;
     }
 
-    .alio-btn:hover {
-        background: $lightGreen;
-    }
-
-    .alio-btn:hover i, .alio-btn:hover span {
-        color: #FFF;
-        transform: translateX(0);
-        opacity: 1;
-    }
-
 	.alio-navbar > li {
 		display: inline-block;
-        margin-left: 12px;
-        margin-right: 12px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 17px;
 	}
 
 	.menu-footer-menu-container {
 		margin-top: 0;
-	}
-
-	#searchform {
-		margin-top: 13px;
 	}
 
 	.alio-logo {
@@ -116,13 +68,8 @@
         line-height: 25px;
 	}
 
-    .navbar .container .bg-navbar div {
-        border-top-left-radius: 55px;
-    }
-
-    .navbar .container .bg-navbar {
-        padding-left: 54px;
-        padding-right: 39px;
+    .navbar .bg-navbar {
+        padding: 0 20px;
     }
 
     .header-contacts-box {
@@ -160,12 +107,6 @@
 	.container.isotope {
 	    width: 900px;
 	}
-
-    .navbar .container {
-        width: 1190px;
-        padding-left: 25px;
-        padding-right: 25px;
-    }
 
     .alio-navbar > li {
         display: block;

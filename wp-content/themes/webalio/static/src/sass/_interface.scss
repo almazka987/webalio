@@ -48,6 +48,16 @@
         background-color: $purple;
     }
 
+    &:hover {
+        background: $lightGreen;
+    }
+
+    &:hover i, &:hover span {
+        color: #FFF;
+        transform: translateX(0);
+        opacity: 1;
+    }
+
     &:focus, &:focus span {
         color: #fff;
     }
@@ -71,6 +81,39 @@ input[type=submit]:not(#searchsubmit) {
     transition: opacity .2s, transform .2s;
     color: #FFF;
     line-height: 4px;
+}
+
+.hamburger {
+    display: none;
+}
+
+#alio_to_top a {
+    display: none;
+    z-index: 999;
+    position: fixed;
+    bottom: 5px;
+    right: 3%;
+    width: 73px;
+    height: 123px;
+    opacity: 0.8;
+    background: url('../img/rocket-arrow.png') no-repeat;
+    background-size: contain;
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.inline-lnk {
+    color: #00CCFF;
+    font-weight: 400;
+    &:hover {
+        color: $lnkRed;
+    }
+    &:before {
+        content: '\f08e';
+        font-size: 8px;
+        margin-right: 3px;
+    }
 }
 
 a {
@@ -118,6 +161,8 @@ ul {
 }
 
 .point-list {
+    max-width: 315px;
+    margin: auto;
 
     li {
         text-align: left;
