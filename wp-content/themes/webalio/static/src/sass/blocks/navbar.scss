@@ -20,8 +20,11 @@
     display: inline-block;
 
     .dropdown-menu {
-        background-color: rgba(242, 239, 239, 0.93);
+        background-color: $lightBlue;
         font-weight: 400;
+        min-width: auto;
+        right: 0;
+        left: auto;
 
         a {
             border-bottom: 1px solid #e8e5e5;
@@ -160,8 +163,8 @@
     }
 }
 
-body.home.mobile .navbar {
-    li.menu-item-238, li.qtranxs-lang-menu {
+body.home .navbar {
+    li.menu-item-238 {
         display: none;
     }
 }

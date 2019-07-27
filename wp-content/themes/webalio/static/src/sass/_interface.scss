@@ -21,6 +21,10 @@
     backface-visibility: hidden;
     transition: color .1s ease-in-out, background .1s ease-in-out, border .1s ease-in-out;
     font-family: 'Roboto Condensed Regular', sans-serif;
+
+    &:hover {
+        background: $lightGreen;
+    }
 }
 
 .mobile .alio-btn {
@@ -42,10 +46,6 @@
         width: 0;
         opacity: 0;
         background-color: $purple;
-    }
-
-    &:hover {
-        background: $lightGreen;
     }
 
     &:hover i, &:hover span {

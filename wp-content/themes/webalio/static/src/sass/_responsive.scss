@@ -2,6 +2,10 @@
 
 /* max-width: 767px */
 @media screen and (max-width: 767px) {
+    li.qtranxs-lang-menu {
+        display: none;
+    }
+
     .alio-navbar .open .dropdown-menu {
         position: static;
         float: none;
@@ -62,10 +66,6 @@
 
     .lang-switcher {
         min-height: 53px;
-    }
-
-    .dropdown-menu {
-        left: 0px;
     }
 
     .bg-bottom.no-wave {
@@ -155,15 +155,5 @@
 	.container.isotope {
 	    width: 900px;
 	}
-
-    .alio-navbar > li {
-        display: block;
-        margin: 27px 5px 0;
-    }
-
-    .alio-navbar li a {
-        padding: 0 12px;
-    }
-
 }
 

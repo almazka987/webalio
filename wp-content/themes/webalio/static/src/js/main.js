@@ -154,7 +154,7 @@ jQuery(document).ready(function($){
     $('#alio_to_top a').click(function () {
         $('body,html').animate({
             scrollTop: 0
-        }, 'slow');
+        }, 500);
         return false;
     });
 }); /* document ready end */
