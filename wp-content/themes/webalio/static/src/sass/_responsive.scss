@@ -13,8 +13,28 @@
         box-shadow: none;
     }
 
-    .alio-btn i {
-        display: none;
+    .alio-navbar > li {
+        float: right;
+        clear: both;
+        margin-top: 27px;
+    }
+
+    .navbar {
+        background: #d1e5ee;
+
+        .nav-design {
+            padding: 10px 0 20px;
+            box-shadow: none;
+            background: none;
+
+            &:before, &:after {
+                content: none;
+            }
+        }
+
+        .bg-navbar:not(.full) {
+            display: none;
+        }
     }
 
     .header .top {
@@ -28,6 +48,9 @@
 
 /* min-width: 768px */
 @media screen and (min-width: 768px) {
+    .alio-btn, input[type=submit]:not(#searchsubmit) {
+        padding: 20px 28px 16px;
+    }
 
     #primary-navbar-collapse {
         text-align: center;
@@ -68,8 +91,37 @@
         line-height: 25px;
 	}
 
-    .navbar .bg-navbar {
-        padding: 0 20px;
+    .navbar {
+
+        #searchform {
+            margin-top: 15px;
+        }
+
+        &.sticky {
+            .nav-design {
+                padding-bottom: 5px;
+            }
+
+            .alio-logo {
+                padding: 0;
+
+                img {
+                    width: 150px;
+                }
+            }
+
+            #searchform {
+                margin-top: 5px;
+            }
+        }
+
+        .bg-navbar {
+            padding: 0 20px;
+
+            &.full {
+                display: none;
+            }
+        }
     }
 
     .header-contacts-box {
@@ -83,10 +135,6 @@
 @media screen and (min-width: 992px) {
 	footer .menu a {
 		padding-left: 8px;
-	}
-
-	#searchform {
-		width: 100%;
 	}
 
 	.navbar-collapse {

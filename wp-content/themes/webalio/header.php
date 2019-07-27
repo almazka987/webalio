@@ -1,9 +1,7 @@
 <?php
 	$detect = new Mobile_Detect;
-	$mobile = $detect->isMobile() && ! $detect->isTablet();
-	$tablet = ( $detect->isTablet() ) || (! $mobile && $detect->version( "iPad" ) );
+	$mobile = ( $detect->isMobile() && ! $detect->isTablet() ) || ( $detect->isMobile() && $detect->isTablet() );
 	$mob_class = ( $mobile ) ? ' mobile' : '';
-    $tab_class = ( $tablet ) ? ' tablet' : '';
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -20,7 +18,7 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class( 'alio' . $mob_class . $tab_class ); ?>>
+<body <?php body_class( 'alio' . $mob_class ); ?>>
 
 <!-- begin main-container -->
 <?php

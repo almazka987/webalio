@@ -14,7 +14,7 @@ jQuery(document).ready(function($){
         columns.height(tallestcolumn);
     }
 
-    if (!$('body').is('.mobile') || window.screen.availWidth > 757) {
+    if (window.screen.availWidth > 757) {
         setEqualHeight($(".three-columns .item"));
     }
 
@@ -128,7 +128,7 @@ jQuery(document).ready(function($){
     });
 
     // Close mobile menu
-    $('.mobile #menu-primary li a, .tablet #menu-primary li a').on("click", function() {
+    $(document).on("click", '.mobile .navbar #menu-primary li a', function() {
         $('.hamburger').click();
     });
 
@@ -144,23 +144,17 @@ jQuery(document).ready(function($){
     });
 
     // Scroll to Top Button
-    var scroll_timer;
-    var displayed = false;
-    var top = jQuery( document.body ).children(0).position().top;
-    jQuery( window ).scroll(function () {
-        window.clearTimeout( scroll_timer );
-        scroll_timer = window.setTimeout( function () {
-            if( jQuery( window ).scrollTop() <= top ) {
-                displayed = false;
-                jQuery( '#alio_to_top a' ).fadeOut(500);
-            }
-            else if(displayed == false) {
-                displayed = true;
-                jQuery( '#alio_to_top a' ).stop( true, true ).show().click( function () { jQuery( '#alio_to_top a' ).fadeOut( 500 ); } );
-            }
-        }, 100);
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 0) {
+            $('#alio_to_top a').fadeIn();
+        } else {
+            $('#alio_to_top a').fadeOut();
+        }
     });
-    jQuery('#alio_to_top a').click(function(){
-        jQuery('html, body').animate({scrollTop:0}, 'slow');
+    $('#alio_to_top a').click(function () {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 'slow');
+        return false;
     });
 }); /* document ready end */

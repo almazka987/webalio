@@ -81,7 +81,7 @@ function alio_three_columns_block( $atts, $atcb_content = null ){
 
 	$atcb_img = ( $atcb_img ) ? wp_get_attachment_image_url( $atcb_img, 'medium' ) : '';
 	if ( $atcb_content && $atcb_img ) {
-		$out .= '<div class="col-md-4"><div class="item"><img src="' . $atcb_img . '" alt="">';
+		$out .= '<div class="col-sm-4"><div class="item"><img src="' . $atcb_img . '" alt="">';
 
 		if ( $atcb_title ) {
 			$out .= '<' . $atcb_tag . '>' . $atcb_title . '</' . $atcb_tag . '>';
