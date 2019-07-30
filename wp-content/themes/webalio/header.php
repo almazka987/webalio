@@ -66,7 +66,8 @@
                                 <div class="clearfix"></div>
                             </div>
 
-                            <div class="search-holder col-xs-9 col-sm-9 pull-right">
+                            <div class="col-xs-9 col-sm-9 pull-right">
+                                <a href="<?php echo get_site_url() . "/#lnk_order-form"; ?>" class="alio-btn">Заказать сайт</a>
                                 <?php get_search_form(); ?>
                             </div>
                             <div class="col-xs-12">

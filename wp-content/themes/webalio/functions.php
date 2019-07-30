@@ -15,6 +15,9 @@ if ( ! function_exists( 'pr' ) ) {
 	}
 }
 
+// ignoring wpcf7 errors
+add_filter( 'wpcf7_validate_configuration', '__return_false' );
+
 // translate custom
 add_action( 'after_setup_theme', 'add_translations' );
 function add_translations() {

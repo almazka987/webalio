@@ -32,7 +32,6 @@
     line-height: 24px;
 }
 
-
 .alio-btn {
 
     &:after {
@@ -54,9 +53,16 @@
         opacity: 1;
     }
 
-    &:focus, &:focus span {
+    &:focus {
+        outline: none;
+        text-decoration: none;
         color: #fff;
+
+        span {
+            color: #fff;
+        }
     }
+
 
     .in-button {
         display: inline-block;
@@ -114,16 +120,16 @@ input[type=submit]:not(#searchsubmit) {
 
 a {
     color: #0099cc;
+
+    &:hover, &:active, &:focus, button:focus {
+        color: #ff0066;
+        outline: 0;
+        text-decoration: none;
+    }
 }
 
 .alio-btn:focus span, a.alio-btn:active, a.alio-btn:hover {
     color: #fff;
-}
-
-a:active, a:hover, button:focus {
-    color: #ff0066;
-    outline: 0;
-    text-decoration: none;
 }
 
 a, a:hover, .alio-navbar > li > a:after, .alio-navbar > li:hover > a:after, .loop-btn, .loop-btn:hover, .single-gallery .layer, .single-gallery li:hover .layer {
@@ -223,7 +229,7 @@ input[type=text], input[type=email], input[type=file] {
     border: 1px solid transparent;
     position: absolute;
     right: 6px;
-    top: 11px;
+    top: 7px;
     opacity: .6;
     &:hover {
         opacity: 1;

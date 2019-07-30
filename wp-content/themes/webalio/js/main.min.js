@@ -105,7 +105,7 @@ jQuery(document).ready(function($){
         }, 10 );
     }
 
-    // anchor scrolling
+    // Scrolling to anchor
     $('a[href*="#lnk_"]').bind("click", function(e) {
         let anchor = $(this);
         let id = anchor.attr('href').split('#');

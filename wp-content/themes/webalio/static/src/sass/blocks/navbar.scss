@@ -87,6 +87,13 @@
     width: 100%;
     position: relative;
 
+    .alio-btn {
+        float: right;
+        margin: 3px 12px;
+        padding: 15px 15px 12px;
+        font-size: 13px;
+    }
+
     .nav-design {
         padding: 10px 15px 10px;
         margin-left: auto;
@@ -127,6 +134,12 @@
     &.sticky {
         position: fixed;
         z-index: 1000;
+    }
+}
+
+.navbar:not(.sticky) {
+    .alio-btn {
+        display: none;
     }
 }
 
