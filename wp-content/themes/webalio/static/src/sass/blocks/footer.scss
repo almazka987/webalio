@@ -19,8 +19,9 @@ footer {
     padding-top: 50px;
     color: #fff;
     position: relative;
-    background: url(../img/bg-footer.png) no-repeat;
+    background: url("#{$img-path}/bg-footer.png") no-repeat;
     background-size: cover;
+
     .top-footer {
         padding-bottom: 18px;
     }

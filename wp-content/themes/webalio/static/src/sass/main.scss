@@ -10,20 +10,31 @@
 @import "blocks/work";
 @import "blocks/footer";
 
-#main-container {
-    min-height: 100%;
-    height: auto !important; /* for IE6 support */
+html, body {
     height: 100%;
-    margin: 0 auto;
-    margin-bottom: -$footerSize;
-    background: #fff;
 }
 
-#push {
-    height: $footerSize;
+.site-wrapper {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+#main-container {
+    display: table-row;
+    height: 100%;
+    background: #fff;
+
+    img {
+        max-width: 100%;
+    }
 }
 
 /******** General styles end ********/
+
+#fullResImage {
+    max-width: 100%;
+}
 
 .single .content.container > ol, .single .content.container > ul {
     list-style: inherit;

@@ -18,23 +18,29 @@ jQuery(document).ready(function($){
         setEqualHeight($(".three-columns .item"));
     }
 
-
     // prettyPhoto
-    if($("a[rel^='prettyPhoto']").length > 0){
+    if($("a[rel^='prettyPhoto']").length > 0) {
         $("a[rel^='prettyPhoto']").prettyPhoto({
-        animation_speed: 'fast',
-        autoplay_slideshow: true,
-        slideshow: 3000,
-        opacity: 0.60,
-        show_title: true,
-        default_width: 500,
-        autoplay_slideshow: false,
-        default_height: 500,
-        counter_separator_label: ' из ',
-        theme: 'facebook',
-        modal: false,
-        social_tools: false
-    });
+            animation_speed: 'fast',
+            slideshow: 3000,
+            opacity: 0.60,
+            show_title: true,
+            default_width: 500,
+            autoplay_slideshow: false,
+            default_height: 500,
+            allow_resize: true,
+            counter_separator_label: ' из ',
+            theme: 'facebook',
+            modal: false,
+            social_tools: false,
+            changepicturecallback: function () {
+                let windowWidth = $(window).width(),
+                    $pp_pic_holder = $('.pp_pic_holder');
+                if (imgPreloader.width > windowWidth) {
+                    $pp_pic_holder.find('.pp_expand').hide();
+                }
+            },
+        });
     }
 
     // filter image block

@@ -1,6 +1,11 @@
 .three-columns {
     text-align: center;
 
+    .point-list {
+         max-width: 315px;
+         margin: auto;
+    }
+
     .item {
         padding-bottom: 50px;
         transition: all .3s ease;
