@@ -74,57 +74,70 @@ jQuery(document).ready(function($){
         });
     }
 
-    // Sticky menu
-    let barSpace = 0;
-    if ($('body').hasClass('mobile')) {
-        if ($('body').hasClass('admin-bar') && document.documentElement.offsetWidth > 600) {
-            barSpace = $('#wpadminbar').height() - 1;
-        }
-    } else {
-        if ($('body').hasClass('admin-bar') && document.documentElement.offsetWidth > 600) {
-            barSpace = $('#wpadminbar').height() - 1;
+    // Sticky menu and anchor scroll
+    let $nav = $('.navbar'),
+        barSpace = ($('body').hasClass('admin-bar') && document.documentElement.offsetWidth > 600) ? $('#wpadminbar').outerHeight() - 1 : 0,
+        $navbarFluid = $('.navbar-fluid'),
+        navStaticHeight = $nav.outerHeight();
+
+    function stickyNav(){
+        if ($(window).scrollTop() >= $('.header-top').outerHeight() + navStaticHeight + 150) {
+            $nav.addClass('sticky');
+            $navbarFluid.height(navStaticHeight + 20);
+        } else {
+            $nav.removeClass('sticky');
+            $navbarFluid.height(0);
         }
     }
 
-    if ( $( '.navbar' ).size() > 0 ) {
-        scrollIntervalID = setInterval( function() {
-            let navbar = $('.navbar');
-            let navHeight = navbar.height();
-            let navbarFluid = $('.navbar-fluid');
-            let orgElementTop = $( 'header .header-top' ).height() + navHeight + 100;
-            let coordsOrgElement = navbar.offset();
-            let leftOrgElement = coordsOrgElement.left;
+    stickyNav();
 
-            if ($(window).scrollTop() >= (orgElementTop)) {
-                $('.navbar').addClass('sticky').css('margin-top', barSpace).css('left',leftOrgElement+'px').css('top', 0);
-                navbarFluid.height(navHeight);
-            } else {
-                $('.navbar').removeClass('sticky').css('margin-top', '');
-                navbarFluid.height(0);
-            }
-        }, 10 );
-    }
+    // run it again every time you scroll
+    $(window).scroll(function() {
+        stickyNav();
+    });
 
     // Scrolling to anchor
+    jQuery(window).bind("load", function() {
+        let hash =  jQuery(location).attr('hash');
+
+        // Get the sticky navbar height, to do so, I need to clone it since it's invisible
+        let $stickyFake = $nav.clone().addClass('sticky fake').appendTo($('body')).css({
+            'position':'absolute',
+            'top':-10000
+        });
+
+        $nav.data('hSticky', $stickyFake.outerHeight());
+        $stickyFake.remove();
+
+        if(hash != '') {
+            jQuery('html, body').stop().animate({
+                scrollTop: jQuery(hash).offset().top - $nav.data('hSticky') - 20 - barSpace
+            }, 1000);
+        }
+    });
+
     $('a[href*="#lnk_"]').bind("click", function(e) {
         let anchor = $(this);
         let id = anchor.attr('href').split('#');
         id = '#' + id[id.length - 1];
-        let navHeight = $('.navbar').height() + 20;
+
+        // if opened mobile menu
+        let parentUl = $(this).parents('ul.alio-navbar'),
+            parentNavbar = $(this).parents('.navbar'),
+            scrollPlace;
+        if (parentUl && parentNavbar && !$(parentNavbar[0]).is('.sticky') && document.documentElement.offsetWidth < 767) {
+            scrollPlace = $(id).offset().top - $(parentNavbar[0]).outerHeight() - 20 - barSpace;
+            console.log('scrollPlace', scrollPlace);
+        } else {
+            scrollPlace = $(id).offset().top - $nav.data('hSticky') - 20 - barSpace;
+            console.log('scrollPlace1', scrollPlace);
+        }
+
         $('html, body').stop().animate({
-            scrollTop: $(id).offset().top - navHeight - barSpace
+            scrollTop: scrollPlace
          }, 1000);
         e.preventDefault();
-    });
-
-    jQuery(window).bind("load", function() {
-        let hash =  jQuery(location).attr('hash');
-        let navHeight = $('.navbar').height() + 20;
-        if(hash != '') {
-            jQuery('html, body').stop().animate({
-                scrollTop: jQuery(hash).offset().top - navHeight - barSpace
-            }, 1000);
-        }
     });
 
     // Mobile Menu
@@ -151,12 +164,15 @@ jQuery(document).ready(function($){
 
     // Scroll to Top Button
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 0) {
-            $('#alio_to_top a').fadeIn();
+        if ($(this).scrollTop() > 300) {
+            $('#alio_to_top a').css('display', 'block').addClass('active');
         } else {
-            $('#alio_to_top a').fadeOut();
+            $('#alio_to_top a').fadeOut("slow", function() {
+                $(this).removeClass("active");
+            });
         }
     });
+
     $('#alio_to_top a').click(function () {
         $('body,html').animate({
             scrollTop: 0

@@ -96,10 +96,18 @@ input[type=submit]:not(#searchsubmit) {
     bottom: 5px;
     right: 3%;
     width: 73px;
+    opacity: 0;
+    transition: opacity .5s;
     height: 123px;
-    opacity: 0.8;
-    background: url('../img/rocket-arrow.png') no-repeat;
+    background: url("#{$img-path}/rocket-arrow.png") no-repeat;
     background-size: contain;
+
+    &.active {
+        display: block;
+        animation: slideInUp 0.7s;
+        opacity: .8;
+    }
+
     &:hover {
         opacity: 1;
     }
@@ -108,9 +116,11 @@ input[type=submit]:not(#searchsubmit) {
 .inline-lnk {
     color: #00CCFF;
     font-weight: 400;
+
     &:hover {
         color: $lnkRed;
     }
+
     &:before {
         content: '\f08e';
         font-size: 8px;
@@ -121,11 +131,14 @@ input[type=submit]:not(#searchsubmit) {
 a {
     color: #0099cc;
 
-    &:hover, &:active, &:focus, button:focus {
+    &:hover {
         color: #ff0066;
-        outline: 0;
-        text-decoration: none;
     }
+}
+
+a:hover, a:active, a:focus, button:focus {
+    outline: none;
+    text-decoration: none;
 }
 
 .alio-btn:focus span, a.alio-btn:active, a.alio-btn:hover {
@@ -252,7 +265,7 @@ form:not(#searchform) {
     }
     input[type=text], input[type=email], textarea, input[type=file] {
         position: relative;
-        background: url('../img/inputs-bg.png') left top repeat-y #ffffff;
+        background: url("#{$img-path}/inputs-bg.png") left top repeat-y #ffffff;
         padding: 10px 10px 10px 45px;
         margin-top: 13px;
     }

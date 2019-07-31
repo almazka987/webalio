@@ -1,5 +1,23 @@
 /* M E D I A  Q U E R I E S */
 
+/* max-width: 374px */
+@media screen and (max-width: 374px) {
+    .navbar {
+        &.sticky {
+            #searchform {
+                width: 140px;
+            }
+        }
+    }
+}
+
+/* max-width: 600px */
+@media screen and (max-width: 600px) {
+    .admin-bar .navbar.sticky {
+        top: 0;
+    }
+}
+
 /* max-width: 767px */
 @media screen and (max-width: 767px) {
     li.qtranxs-lang-menu {
@@ -25,6 +43,13 @@
 
     .navbar {
         background: #d1e5ee;
+
+        &.sticky {
+            #searchform {
+                float: left;
+                width: 180px;
+            }
+        }
 
         .nav-design {
             padding: 10px 0 20px;
