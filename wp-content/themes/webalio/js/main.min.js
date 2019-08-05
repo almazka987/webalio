@@ -1,5 +1,4 @@
 jQuery(document).ready(function($){
-
     // Equal Height
     function setEqualHeight(columns) {
         var tallestcolumn = 0;
@@ -18,30 +17,29 @@ jQuery(document).ready(function($){
         setEqualHeight($(".three-columns .item"));
     }
 
+
     // prettyPhoto
-    if($("a[rel^='prettyPhoto']").length > 0) {
-        $("a[rel^='prettyPhoto']").prettyPhoto({
-            animation_speed: 'fast',
-            slideshow: 3000,
-            opacity: 0.60,
-            show_title: true,
-            default_width: 500,
-            autoplay_slideshow: false,
-            default_height: 500,
-            allow_resize: true,
-            counter_separator_label: ' из ',
-            theme: 'facebook',
-            modal: false,
-            social_tools: false,
-            changepicturecallback: function () {
-                let windowWidth = $(window).width(),
-                    $pp_pic_holder = $('.pp_pic_holder');
-                if (imgPreloader.width > windowWidth) {
-                    $pp_pic_holder.find('.pp_expand').hide();
-                }
-            },
-        });
-    }
+    $("a[rel^='prettyPhoto']").prettyPhoto({
+        animation_speed: 'fast',
+        slideshow: 3000,
+        opacity: 0.60,
+        show_title: true,
+        default_width: 500,
+        autoplay_slideshow: false,
+        default_height: 500,
+        allow_resize: true,
+        counter_separator_label: ' из ',
+        theme: 'facebook',
+        modal: false,
+        social_tools: false,
+        changepicturecallback: function () {
+            var windowWidth = $(window).width(),
+                $pp_pic_holder = $('.pp_pic_holder');
+            if (imgPreloader.width > windowWidth) {
+                $pp_pic_holder.find('.pp_expand').hide();
+            }
+        },
+    });
 
     // filter image block
     if ( $('#isotope-list').size() > 0 ) {
@@ -75,7 +73,7 @@ jQuery(document).ready(function($){
     }
 
     // Sticky menu and anchor scroll
-    let $nav = $('.navbar'),
+    var $nav = $('.navbar'),
         barSpace = ($('body').hasClass('admin-bar') && document.documentElement.offsetWidth > 600) ? $('#wpadminbar').outerHeight() - 1 : 0,
         $navbarFluid = $('.navbar-fluid'),
         navStaticHeight = $nav.outerHeight();
@@ -99,10 +97,10 @@ jQuery(document).ready(function($){
 
     // Scrolling to anchor
     jQuery(window).bind("load", function() {
-        let hash =  jQuery(location).attr('hash');
+        var hash =  jQuery(location).attr('hash');
 
         // Get the sticky navbar height, to do so, I need to clone it since it's invisible
-        let $stickyFake = $nav.clone().addClass('sticky fake').appendTo($('body')).css({
+        var $stickyFake = $nav.clone().addClass('sticky fake').appendTo($('body')).css({
             'position':'absolute',
             'top':-10000
         });
@@ -118,12 +116,12 @@ jQuery(document).ready(function($){
     });
 
     $('a[href*="#lnk_"]').bind("click", function(e) {
-        let anchor = $(this);
-        let id = anchor.attr('href').split('#');
+        var anchor = $(this);
+        var id = anchor.attr('href').split('#');
         id = '#' + id[id.length - 1];
 
         // if opened mobile menu
-        let parentUl = $(this).parents('ul.alio-navbar'),
+        var parentUl = $(this).parents('ul.alio-navbar'),
             parentNavbar = $(this).parents('.navbar'),
             scrollPlace;
         if (parentUl && parentNavbar && !$(parentNavbar[0]).is('.sticky') && document.documentElement.offsetWidth < 767) {
