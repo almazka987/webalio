@@ -214,8 +214,8 @@ body.home .navbar {
 }
 
 .navbar .bg-navbar div {
-    background-image: url("#{$img-path}/bg-nav-bottom.png");
-    background-position: bottom center;
+    background-image: url("#{$img-path}/bg-nav-bottom2.png");
+    background-position: 100% -16px;
     background-repeat: repeat-x;
     height: 10px;
     width: 100%;

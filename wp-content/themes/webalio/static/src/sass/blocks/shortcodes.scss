@@ -58,6 +58,7 @@ body:not(.mobile) .three-columns:not(.no-dynamic-opacity):hover {
     background-repeat: repeat-x;
     height: 15px;
     background-color: transparent;
+    background-position: 100% 100%;
 }
 
 .odd .bg-top {
@@ -74,7 +75,7 @@ body:not(.mobile) .three-columns:not(.no-dynamic-opacity):hover {
         background-image: url("#{$img-path}/gray-bg-top.png");
     }
     .bg-middle {
-        background-color: #ccc;
+        background-color: #cdcdcd;
     }
     .bg-bottom {
         background-image: url("#{$img-path}/gray-bg-bottom.png");

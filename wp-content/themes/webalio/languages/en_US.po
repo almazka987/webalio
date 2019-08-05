@@ -16,7 +16,10 @@ msgid "Вы по адресу"
 msgstr "You have got to address"
 
 msgid "Заказать разработку"
-msgstr "Order Website Development"
+msgstr "Order a Website"
+
+msgid "Заказать сайт"
+msgstr "Order a Website"
 
 msgid "Веб-верстка, разработка сайтов"
 msgstr "Web developer, html, js and php coder. Freelancer"

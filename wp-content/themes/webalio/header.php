@@ -68,7 +68,7 @@
                             </div>
 
                             <div class="col-xs-12 col-sm-9 pull-right">
-                                <a href="<?php echo get_site_url() . "/#lnk_order-form"; ?>" class="alio-btn">Заказать сайт</a>
+                                <a href="<?php echo get_site_url() . "/#lnk_order-form"; ?>" class="alio-btn"><?php _e("Заказать сайт", "webalio"); ?></a>
                                 <?php get_search_form(); ?>
                             </div>
                             <div class="col-xs-12">
