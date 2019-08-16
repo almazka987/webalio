@@ -41,7 +41,7 @@ gulp.task('css', function () {
         .pipe(sass().on('error', sass.logError))
         .pipe(postcss([ autoprefixer ]))
         .pipe(cleanCSS())
-        //.pipe(concat('main.min.css'))
+        .pipe(concat('main.min.css'))
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest(path.dist.style))
         .pipe(notify({ message: 'css task completed!'}));
@@ -50,7 +50,7 @@ gulp.task('css', function () {
 gulp.task('js', function() {
     return gulp.src(path.src.js)
         .pipe(concat('main.min.js'))
-        //.pipe(uglify())
+        .pipe(uglify())
         .pipe(gulp.dest(path.dist.js))
         .pipe(notify({ message: 'js task completed!'}));
 });

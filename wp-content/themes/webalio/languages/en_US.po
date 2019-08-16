@@ -13,7 +13,7 @@ msgid "Нужен сайт?"
 msgstr "Need a site?"
 
 msgid "Вы по адресу"
-msgstr "You have got to address"
+msgstr "You came to the address"
 
 msgid "Заказать разработку"
 msgstr "Order a Website"

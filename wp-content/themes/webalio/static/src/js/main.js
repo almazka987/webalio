@@ -126,10 +126,8 @@ jQuery(document).ready(function($){
             scrollPlace;
         if (parentUl && parentNavbar && !$(parentNavbar[0]).is('.sticky') && document.documentElement.offsetWidth < 767) {
             scrollPlace = $(id).offset().top - $(parentNavbar[0]).outerHeight() - 20 - barSpace;
-            console.log('scrollPlace', scrollPlace);
         } else {
             scrollPlace = $(id).offset().top - $nav.data('hSticky') - 20 - barSpace;
-            console.log('scrollPlace1', scrollPlace);
         }
 
         $('html, body').stop().animate({

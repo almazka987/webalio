@@ -3,6 +3,7 @@
     <!-- end main-container -->
     <!-- begin Footer -->
     <footer id="footer">
+        <div class="bg-top"></div>
         <div class="container top-footer">
             <div class="row">
                 <div class="col-sm-4">

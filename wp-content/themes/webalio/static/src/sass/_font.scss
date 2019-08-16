@@ -8,6 +8,7 @@
 
 @font-face {
     font-family: 'Hermes';
+    font-display: swap;
     font-style: normal;
     font-weight: 400;
     src: local('Hermes'), local('Hermes-Normal'),
@@ -17,12 +18,14 @@
 
 @font-face {
     font-family: 'Roboto Condensed Regular';
+    font-display: swap;
     font-style: normal;
     src: url("#{$fonts-path}/Roboto_Condensed/RobotoCondensed-Regular.ttf") format('truetype');
 }
 
 @font-face {
     font-family: 'Roboto Condensed Bold';
+    font-display: swap;
     font-style: normal;
     src: url("#{$fonts-path}/Roboto_Condensed/RobotoCondensed-Regular.ttf") format('truetype');
 }
