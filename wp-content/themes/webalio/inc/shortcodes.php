@@ -5,26 +5,29 @@
 add_shortcode( 'alio_text_block', 'alio_text_block' );
 function alio_text_block( $atts, $atb_content = null ) {
 	extract( shortcode_atts( array(
-		'atb_class' => 'col-md-12',
-		'atb_lnk_id' => '',
-		'atb_title' => '',
-		'atb_tag' => 'h2',
+	    'id' => '',
 	), $atts ) );
 	$out = '';
 
-	$atb_lnk_id = ( $atb_lnk_id ) ? ' id="lnk_' . $atb_lnk_id . '"' : '';
+	if ( $id ) {
+        $id = intval( $id );
+        $alio_text_block = get_field( 'alio_text_block' );
+        $atb_item = $alio_text_block[$id - 1];
+        $atb_lnk_id = ( $atb_item['atb_lnk_id'] ) ? ' id="lnk_' . $atb_item['atb_lnk_id'] . '"' : '';
 
-	if ( $atb_content ) {
-		$out .= '<div class="container shortcode-box">
-					<div class="row">
-						<div class="' . $atb_class . '">';
-		if ( $atb_title ) {
-			$out .= '<' . $atb_tag . $atb_lnk_id . '>' . $atb_title . '</' . $atb_tag . '>';
-		}
-		$out .= $atb_content . '</div>
-						</div>
-					</div>';
-	}
+        if ( $atb_item['atb_content'] ) {
+            $out .= '<div class="container shortcode-box">
+                        <div class="row">
+                            <div class="' . $atb_item['atb_class'] . '">';
+            if ( $atb_item['atb_title'] ) {
+                $out .= '<' . $atb_item['atb_tag'] . $atb_lnk_id . '>' . $atb_item['atb_title'] . '</' . $atb_item['atb_tag'] . '>';
+            }
+            $out .= $atb_item['atb_content'] . '</div>
+                            </div>
+                        </div>';
+        }
+    }
+
 	return $out;
 }
 
@@ -234,18 +237,26 @@ function alio_works_area( $atts, $awa_content = null ) {
 add_shortcode('alio_divider', 'alio_divider');
 function alio_divider( $atts, $ad_content = null ) {
 	extract( shortcode_atts( array(
-		'ad_style' => 'empty',
-		'ad_top' => '',
-		'ad_bottom' => '',
+		'id' => '',
 	), $atts ) );
-	$ad_style = ( $ad_style ) ? $ad_style : 'empty';
-	$marg_top = ( $ad_top ) ? 'margin-top: ' . $ad_top . 'px;' : '';
-	$marg_bottom = ( $ad_bottom ) ? 'margin-bottom: ' . $ad_bottom . 'px;' : '';
-	$css_style ='';
-	if ( $marg_top || $marg_bottom ) {
-		$css_style = ' style="' . $marg_top . ' ' . $marg_bottom . '"';
-	}
-	$out = '<div class="divider ' . $ad_style . '"' . $css_style . '></div>';
+    $out = '';
+
+    if ( $id ) {
+        $id = intval($id);
+        $alio_divider = get_field('alio_divider');
+        $atb_item = $alio_divider[$id - 1];
+        $ad_style = ( $atb_item['ad_style'] ) ? $atb_item['ad_style'] : 'empty';
+        $marg_top = ( $atb_item['ad_top'] ) ? 'margin-top: ' . $atb_item['ad_top'] . 'px;' : '';
+        $marg_bottom = ( $atb_item['ad_bottom'] ) ? 'margin-bottom: ' . $atb_item['ad_bottom'] . 'px;' : '';
+        $css_style = '';
+
+        if ( $marg_top || $marg_bottom ) {
+            $css_style = ' style="' . $marg_top . ' ' . $marg_bottom . '"';
+        }
+
+        $out = '<div class="divider ' . $ad_style . '"' . $css_style . '></div>';
+    }
+
 	return $out;
 }
 

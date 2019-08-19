@@ -17,7 +17,7 @@ function add_scripts() {
     wp_register_script( 'prettyPhotojs', get_template_directory_uri() . '/js/jquery.prettyPhoto.js', array('jquery'), false, true );
 
     /* include styles */
-    wp_register_style( 'maincss', get_template_directory_uri() . '/css/main.min.css' );
+    wp_register_style( 'maincss', get_template_directory_uri() . '/css/main.css' );
 
     wp_enqueue_script( 'isotopeJS' );
     wp_enqueue_script( 'prettyPhotojs' );

@@ -7,3 +7,30 @@
     font-weight: 600;
     color: $lnkRed;
 }
+
+.acf-field-repeater .acf-row .btn-copy {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0 5px;
+    height: 100%;
+    text-decoration: none;
+    color: #3415B0;
+
+    i {
+        display: table;
+        height: 100%;
+        font-size: 17px;
+
+        &:before {
+            vertical-align: middle;
+            display: table-cell;
+        }
+    }
+
+    &:hover, &:focus {
+        color: #0073aa;
+        outline: none;
+        box-shadow: none;
+    }
+}

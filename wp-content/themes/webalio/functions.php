@@ -15,34 +15,6 @@ if ( ! function_exists( 'pr' ) ) {
 	}
 }
 
-// Scripts preload
-add_action('wp_head', function () {
-    global $wp_scripts;
-    foreach($wp_scripts->queue as $handle) {
-        $script = $wp_scripts->registered[$handle];
-        //-- Weird way to check if script is being enqueued in the footer.
-        if($script->extra['group'] === 1) {
-            //-- If version is set, append to end of source.
-            $source = $script->src . ($script->ver ? "?ver={$script->ver}" : "");
-            //-- Spit out the tag.
-            echo "<link rel='preload' href='{$source}' as='script' onload='var script = document.createElement('script'); script.src = this.href; document.body.appendChild(script);'/>\n";
-        }
-    }
-}, 1);
-
-// Styles preload
-function add_rel_preload($html, $handle, $href, $media) {
-    if (is_admin()) {
-        return $html;
-    } else {
-        $html = <<<EOT
-<link rel='preload' as='style' onload="this.onload=null;this.rel='stylesheet'" id='$handle' href='$href' type='text/css' media='all' />
-EOT;
-        return $html;
-    }
-}
-add_filter( 'style_loader_tag', 'add_rel_preload', 10, 4 );
-
 // ignoring wpcf7 errors
 add_filter( 'wpcf7_validate_configuration', '__return_false' );
 
