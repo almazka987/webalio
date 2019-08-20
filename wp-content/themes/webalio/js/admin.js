@@ -1,9 +1,6 @@
 jQuery(document).ready(function($){
 
-    function updShortcodeIds(from, key) {
-console.log('foo started from', from);
-console.log('key', key);
-console.log('getNeededRepeaterFields(key)', getNeededRepeaterFields(key));
+    function updShortcodeIds(key) {
         getNeededRepeaterFields(key).find('.acf-repeater').not('.-empty').find('.acf-row').not('.acf-clone').each(function (idx, row) {
             var regexpData = new RegExp('insert$');
             var shortcodeName = $(row).parents('.acf-field-repeater').eq(0).data('name');
@@ -11,7 +8,6 @@ console.log('getNeededRepeaterFields(key)', getNeededRepeaterFields(key));
             $(row).find('.acf-field').not('.acf-hidden').filter(function() {
                 return regexpData.test($(this).data('name'))
             }).each(function (idx, el) {
-console.log('works with', el);
                 var $curInput = $(el).find('.acf-input');
                 var shortcodeId = $(row).find('.acf-row-handle.order span').eq(0).text();
 
@@ -80,7 +76,7 @@ console.log('works with', el);
     }
 
 	if ($('#acf-group_57380c1a6623c')) {
-	    updShortcodeIds('prosto');
+	    updShortcodeIds();
 
         setInterval(function() {
             var $t = getNeededRepeaterFields(),
@@ -96,12 +92,15 @@ console.log('works with', el);
         $('.acf-field-repeater').filter(function () {
             return ! $(this).parents('.acf-field-repeater').size() && ! $(this).parents('.-empty').size();
         }).bind('rowcountchanged', function(event){
-console.log('row change event on', event.currentTarget);
-            updShortcodeIds('rowcountchanged');
+            updShortcodeIds();
         });
 
         $('.acf-tab-button').bind('click', function (e) {
-            updShortcodeIds('click tab', $(e.currentTarget).data('key'));
+            updShortcodeIds();
+        });
+
+        $(document).on('click', '.qtranxs-lang-switch-wrap .qtranxs-lang-switch', function () {
+            updShortcodeIds();
         });
 
         $(document).on('click', '.acf-row .js-copy-to-clipboard', function(event) {

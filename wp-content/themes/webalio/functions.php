@@ -61,3 +61,4 @@ function register_alio_sidebars() {
 	);
 }
 add_action( 'widgets_init', 'register_alio_sidebars' );
+

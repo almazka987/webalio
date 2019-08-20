@@ -34,65 +34,47 @@ function alio_text_block( $atts, $atb_content = null ) {
 add_shortcode('alio_form_block', 'alio_form_block');
 function alio_form_block( $atts, $afb_content = null ) {
 	extract( shortcode_atts( array(
-		'afb_class' => 'col-md-12',
-		'afb_lnk_id' => '',
-		'afb_title' => '',
-		'afb_tag' => 'h2',
-		'afb_section' => '',
-		'afb_bottom_shape' => '',
-		'afb_additional_class' => '',
-		'afb_additional_class' => '',
+		'id' => '',
 	), $atts ) );
+
 	$out = '';
-    $afb_add_class = ( $afb_additional_class ) ? ' ' . $afb_additional_class : '';
-	$bt_class = ( $afb_bottom_shape ) ? ' no-wave' : '';
-	if ( $afb_section ) {
-		$out .= '<section class="' . $afb_section . ' shortcode-box">
+
+    if ( $id ) {
+        $id = intval($id);
+        $afb_field = get_field('alio_form_block');
+        $afb = $afb_field[$id - 1];
+        $afb_class = ( isset( $afb['afb_class'] ) ) ? $afb['afb_class'] : 'col-md-12';
+        $afb_tag = ( isset( $afb['afb_tag'] ) ) ? $afb['afb_tag'] : 'h2';
+        $afb_add_class = ( isset( $afb['afb_additional_class'] ) ) ? ' ' . $afb['afb_additional_class'] : '';
+        $bt_class = ( isset( $afb['afb_bottom_shape'] ) ) ? ' no-wave' : '';
+        $afb_section = ( isset( $afb['afb_section'] ) ) ? $afb['afb_section'] : false;
+        $afb_title = ( isset( $afb['afb_title'] ) ) ? $afb['afb_title'] : false;
+
+        if ( $afb_section ) {
+            $out .= '<section class="' . $afb_section . ' shortcode-box">
 					<div class="bg-top"></div>
 						<div class="bg-middle">';
-	}
-	$afb_lnk_id = ( $afb_lnk_id ) ? ' id="lnk_' . $afb_lnk_id . '"' : '';
+        }
+        $afb_lnk_id = ( isset( $afb['afb_lnk_id'] ) ) ? ' id="lnk_' . $afb['afb_lnk_id'] . '"' : '';
 
-	if ( $afb_content ) {
-		$out .= '<div class="container shortcode-box' . $afb_add_class . '">
+        if ( isset( $afb['afb_content'] ) ) {
+            $out .= '<div class="container shortcode-box' . $afb_add_class . '">
 					<div class="row">
 						<div class="' . $afb_class . '">';
-		if ( $afb_title ) {
-			$out .= '<' . $afb_tag . $afb_lnk_id . '>' . $afb_title . '</' . $afb_tag . '>';
-		}
-		$out .= do_shortcode( $afb_content );
-		$out .= '</div>
+            if ( $afb_title ) {
+                $out .= '<' . $afb_tag . $afb_lnk_id . '>' . $afb_title . '</' . $afb_tag . '>';
+            }
+            $out .= do_shortcode( $afb['afb_content'] );
+            $out .= '</div>
 			</div>
 		</div>';
-	}
-	if ( $afb_section ) {
-		$out .= '</div>
+        }
+        if ( $afb_section ) {
+            $out .= '</div>
 			<div class="bg-bottom' . $bt_class . '"></div>
 		</section>';
-	}
-	return $out;
-}
-
-add_shortcode('alio_three_columns_block', 'alio_three_columns_block');
-function alio_three_columns_block( $atts, $atcb_content = null ){
-	extract( shortcode_atts( array(
-		'atcb_title' => '',
-		'atcb_tag' => 'h3',
-		'atcb_img' => '',
-	), $atts ) );
-	$out = '';
-
-	$atcb_img = ( $atcb_img ) ? wp_get_attachment_image_url( $atcb_img, 'medium' ) : '';
-	if ( $atcb_content && $atcb_img ) {
-		$out .= '<div class="col-sm-4"><div class="item"><img src="' . $atcb_img . '" alt="">';
-
-		if ( $atcb_title ) {
-			$out .= '<' . $atcb_tag . '>' . $atcb_title . '</' . $atcb_tag . '>';
-		}
-
-		$out .= $atcb_content;
-		$out .= '</div></div>';
-	}
+        }
+    }
 
 	return $out;
 }
@@ -100,46 +82,65 @@ function alio_three_columns_block( $atts, $atcb_content = null ){
 add_shortcode('alio_three_columns_area', 'alio_three_columns_area');
 function alio_three_columns_area( $atts, $atca_content = null ){
 	extract( shortcode_atts( array(
-		'atca_lnk_id' => '',
-		'atca_title' => '',
-		'atca_tag' => 'h2',
-		'atca_section' => '',
-		'atca_bottom_shape' => '',
-		'atca_hover_style' => 0,
+		'id' => '',
 	), $atts ) );
 
-	$atca_hover_style = ( $atca_hover_style ) ? " no-dynamic-opacity" : "";
-	$atca_lnk_id = ( $atca_lnk_id ) ? ' id="lnk_' . $atca_lnk_id . '"' : '';
-	$bt_class = ( $atca_bottom_shape ) ? ' no-wave' : '';
-	$class_box = ( $atca_section ) ? '' : ' shortcode-box';
-	$out = '';
+    $out = '';
 
-	if ( $atca_content ) {
-		if ( $atca_section ) {
-			$out .= '<section class="' . $atca_section . ' shortcode-box">
+    if ( $id ) {
+        $id = intval($id);
+        $atca = get_field('alio_three_columns_area');
+        $atca_item = $atca[$id - 1];
+        $atca_hover_style = ( ! $atca_item['atca_hover_style'] ) ? " no-dynamic-opacity" : "";
+        $atca_lnk_id = ( $atca_item['atca_lnk_id'] ) ? ' id="lnk_' . $atca_item['atca_lnk_id'] . '"' : '';
+        $atca_section = $atca_item['atca_section'];
+        $atca_title = $atca_item['atca_title'];
+        $atca_tag = $atca_item['atca_tag'];
+        $bt_class = ( $atca_item['atca_bottom_shape'] ) ? ' no-wave' : '';
+        $class_box = ( $atca_item['atca_section'] ) ? '' : ' shortcode-box';
+        $atca_blocks = $atca_item['alio_three_columns_block'];
+
+        if ( ! empty( $atca_blocks ) && is_array( $atca_blocks ) ) {
+            if ( $atca_section ) {
+                $out .= '<section class="' . $atca_section . ' shortcode-box">
 						<div class="bg-top"></div>
 							<div class="bg-middle">';
-		}
+            }
 
-        $out .= '<div class="container">';
-        if ( $atca_title ) {
-            $out .= '<' . $atca_tag . $atca_lnk_id . '>' . $atca_title . '</' . $atca_tag . '>';
-        }
-        $out .= '<div class="three-columns' . $class_box . $atca_hover_style . '">';
-		$out .= '<div class="row">';
-		$arr = explode( '|', $atca_content );
-		if ( is_array( $arr ) ) {
-			foreach ( $arr as $value ) {
-				$out .= do_shortcode( $value );
-			}
-		}
-		$out .= '</div></div></div>';
-		if ( $atca_section ) {
-			$out .= '</div>
+            $out .= '<div class="container">';
+            if ( $atca_title ) {
+                $out .= '<' . $atca_tag . $atca_lnk_id . '>' . $atca_title . '</' . $atca_tag . '>';
+            }
+            $out .= '<div class="three-columns' . $class_box . $atca_hover_style . '">';
+            $out .= '<div class="row">';
+
+            foreach ( $atca_blocks as $atcb ) {
+                $atcb_img = ( $atcb['atcb_img'] ) ? wp_get_attachment_image( $atcb['atcb_img']['id'], 'medium' ) : '';
+                $atcb_content = $atcb['atcb_content'];
+                $atcb_tag = $atcb['atcb_tag'];
+                $atcb_title = $atcb['atcb_title'];
+
+                if ( $atcb_content && $atcb_img ) {
+                    $out .= '<div class="col-sm-4"><div class="item">' . $atcb_img;
+
+                    if ( $atcb_title ) {
+                        $out .= '<' . $atcb_tag . '>' . $atcb_title . '</' . $atcb_tag . '>';
+                    }
+
+                    $out .= $atcb_content;
+                    $out .= '</div></div>';
+                }
+            }
+
+            $out .= '</div></div></div>';
+
+            if ( $atca_section ) {
+                $out .= '</div>
 				<div class="bg-bottom' . $bt_class . '"></div>
 			</section>';
-		}
-	}
+            }
+        }
+    }
 
 	return $out;
 }
@@ -147,89 +148,95 @@ function alio_three_columns_area( $atts, $atca_content = null ){
 add_shortcode( 'alio_works_area', 'alio_works_area' );
 function alio_works_area( $atts, $awa_content = null ) {
 	extract( shortcode_atts( array(
-		'awa_lnk_id' => '',
-		'awa_title' => '',
-		'awa_tag' => 'h2',
-		'awa_section' => '',
-		'awa_bottom_shape' => '',
-		'awa_count_posts' => -1,
+		'id' => '',
 	), $atts ) );
-	$awa_lnk_id = ( $awa_lnk_id ) ? ' id="lnk_' . $awa_lnk_id . '"' : '';
-	$bt_class = ( $awa_bottom_shape ) ? ' no-wave' : '';
-	$class_box = ( $awa_section ) ? '' : ' shortcode-box';
+
 	$out = '';
 
-	if ( $awa_section ) {
-		$out .= '<section class="' . $awa_section . ' shortcode-box">
+    if ( $id ) {
+        $id = intval($id);
+        $alio_works_area = get_field('alio_works_area');
+        $awa = $alio_works_area[$id - 1];
+        $awa_lnk_id = ( $awa['awa_lnk_id'] ) ? ' id="lnk_' . $awa['awa_lnk_id'] . '"' : '';
+        $bt_class = ( isset( $awa['$awa_bottom_shape'] ) ) ? ' no-wave' : '';
+        $class_box = ( $awa['awa_section'] ) ? '' : ' shortcode-box';
+        $awa_tag = $awa['awa_tag'];
+
+        if ( $awa['awa_section'] ) {
+            $out .= '<section class="' . $awa['awa_section'] . ' shortcode-box">
 					<div class="bg-top"></div>
 						<div class="bg-middle">';
-	}
-	$out .= '<div class="isotope-block' . $class_box . '">';
-	if ( $awa_title ) {
-		$out .= '<' . $awa_tag . $awa_lnk_id . '>' . $awa_title . '</' . $awa_tag . '>';
-	}
+        }
 
-	$terms = get_terms( 'workscategory' );
-	$count = count( $terms );
-	if ( $count > 0 ) {
-		$out .= '<ul id="filters">';
-		$out .= '<li class="filter selected" data-filter="all"><a href="#" data-filter="*" class="selected">' . __("Все", "webalio") . '</a></li>';
-		foreach ( $terms as $term ) {
-			$out .= "<li><a href='#' data-filter='.".$term->slug."'>" . $term->name . "</a></li>\n";
-		}
-		$out .= '</ul>';
-	}
+        $out .= '<div class="isotope-block' . $class_box . '">';
 
-	$args = array(
-		'post_type' => 'works',
-		'posts_per_page' => $awa_count_posts,
-	);
-	$query = new WP_Query( $args );
+        if ( $awa['awa_title'] ) {
+            $out .= '<' . $awa_tag . $awa_lnk_id . '>' . $awa['awa_title'] . '</' . $awa_tag . '>';
+        }
 
-	if( $query->have_posts() ) {
-		$out .= '<div class="isotope container">
+        $terms = get_terms( 'workscategory' );
+        $count = count( $terms );
+
+        if ( $count > 0 ) {
+            $out .= '<ul id="filters">';
+            $out .= '<li class="filter selected" data-filter="all"><a href="#" data-filter="*" class="selected">' . __("Все", "webalio") . '</a></li>';
+            foreach ( $terms as $term ) {
+                $out .= "<li><a href='#' data-filter='.".$term->slug."'>" . $term->name . "</a></li>\n";
+            }
+            $out .= '</ul>';
+        }
+
+        $args = array(
+            'post_type' => 'works',
+            'posts_per_page' => $awa['awa_count_posts'],
+        );
+        $query = new WP_Query( $args );
+
+        if( $query->have_posts() ) {
+            $out .= '<div class="isotope container">
 					<div id="isotope-list" class="row">';
-		while ( $query->have_posts() ) {
-			$query->the_post();
-			$categ = get_the_terms( get_the_ID(), 'workscategory' );
-			$cat_nm = '';
-			if ( is_array( $categ ) ) {
-				foreach ( $categ as $key => $obj ) {
-					$cat_nm .= $obj->slug . ' ';
-				}
-			}
-			$out .= '<div class="' . $cat_nm . 'item col-xs-12 col-sm-6 col-md-4">
+            while ( $query->have_posts() ) {
+                $query->the_post();
+                $categ = get_the_terms( get_the_ID(), 'workscategory' );
+                $cat_nm = '';
+                if ( is_array( $categ ) ) {
+                    foreach ( $categ as $key => $obj ) {
+                        $cat_nm .= $obj->slug . ' ';
+                    }
+                }
+                $out .= '<div class="' . $cat_nm . 'item col-xs-12 col-sm-6 col-md-4">
 						<div class="holder">
 							<div class="image-block">';
-			if ( has_post_thumbnail() ) {
-				$out .= get_the_post_thumbnail( null, 'sizeThumb' );
-			} else {
-				$out .= '<img src="' . get_template_directory_uri() . '/img/image.png" alt="' . get_the_title() . '">';
-			}
-			$out .= '<div class="img-hover-overlay"></div>';
-			$out .= '<div class="icons-holder">
+                if ( has_post_thumbnail() ) {
+                    $out .= get_the_post_thumbnail( null, 'sizeThumb' );
+                } else {
+                    $out .= '<img src="' . get_template_directory_uri() . '/img/image.png" alt="' . get_the_title() . '">';
+                }
+                $out .= '<div class="img-hover-overlay"></div>';
+                $out .= '<div class="icons-holder">
 			<a class="hover-icon" target="" href="' . get_permalink() . '"><i class="fa fa-arrow-right" aria-hidden="true"></i><small>' . __("Подробнее...", "webalio") . '</small></a>
 						<a class="lnk-zoom hover-icon" href="' . wp_get_attachment_url( get_post_thumbnail_id() ) . '" title="' . get_the_title() . '" rel="prettyPhoto[gallery]"><i class="fa fa-search-plus" aria-hidden="true"></i><small>' . __("Увеличить", "webalio") . '</small></a>
 					</div>';
-			$out .= '<div class="meta-info">
+                $out .= '<div class="meta-info">
 						<div class="add-middle-align">
 							<h3 class="the-title">' . get_the_title() . '</h3>
 						</div>
 					</div>';
-			$out .= '</div>
+                $out .= '</div>
 				</div>
 			</div><!-- end of item -->';
-		}
-		$out .= '</div></div><!-- end of container -->';
-	}
-	wp_reset_query();
+            }
+            $out .= '</div></div><!-- end of container -->';
+        }
+        wp_reset_query();
 
-	$out .= '</div><!-- end of isotope-block -->';
-	if ( $awa_section ) {
-		$out .= '</div>
+        $out .= '</div><!-- end of isotope-block -->';
+        if ( $awa['awa_section'] ) {
+            $out .= '</div>
 			<div class="bg-bottom' . $bt_class . '"></div>
 		</section>';
-	}
+        }
+    }
 
 	return $out;
 }
